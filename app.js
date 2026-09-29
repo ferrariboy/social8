@@ -142,8 +142,10 @@ function renderCurrentView() {
     }
     renderDashboard();
   } else if (appState.activeView === "unit") {
-    const currentModNum = appState.currentModuleIndex + 1;
-    if (viewTitle) viewTitle.innerText = `Module ${currentModNum}`;
+    const curriculum = window.CURRICULUM_DATA || [];
+    const module = curriculum[appState.currentModuleIndex];
+    const unit = module && module.units ? module.units[appState.currentUnitIndex] : null;
+    if (viewTitle) viewTitle.innerText = unit ? unit.title : "Lesson View";
     if (backBtn) {
       backBtn.style.visibility = "visible";
       backBtn.removeAttribute("aria-hidden");
@@ -402,6 +404,9 @@ function renderDashboard() {
  */
 function renderUnitView() {
   const container = document.getElementById("viewDisplayEngine");
+  const backBtn = document.getElementById("globalBackBtn");
+  const viewTitle = document.getElementById("headerViewTitle");
+
   if (!container) return;
 
   const curriculum = window.CURRICULUM_DATA || [];
@@ -417,6 +422,17 @@ function renderUnitView() {
     return;
   }
 
+  // 1. Update top global header title and unhide back button
+  if (viewTitle) {
+    viewTitle.innerText = unit.title;
+  }
+  if (backBtn) {
+    backBtn.style.visibility = "visible";
+    backBtn.removeAttribute("aria-hidden");
+    backBtn.innerText = "← Home";
+    backBtn.onclick = () => navigateTo("dashboard");
+  }
+
   const isCompleted = appState.appSessionState.completedUnits.includes(unit.unitId);
   const score = appState.appSessionState.quizHighScores[unit.unitId];
 
@@ -424,131 +440,99 @@ function renderUnitView() {
   const bgParagraphs = (unit.content.background || "").split(/\n\n+/).filter(p => p.trim().length > 0);
 
   let html = `
-    <!-- Unit Meta Header -->
-    <div class="mb-4">
-      <div class="flex items-center justify-between gap-2 mb-2">
-        <span class="text-xs font-black uppercase tracking-wider text-indigo-700 bg-indigo-100 px-3 py-1 rounded-full">
-          ${unit.unitId} • Module ${appState.currentModuleIndex + 1}
-        </span>
-        ${isCompleted ? `
-          <span class="inline-flex items-center gap-1 text-xs font-black bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full">
-            ✓ Complete ${typeof score === "number" ? `(${score}%)` : ""}
+    <!-- Single-Column Reading Stack -->
+    <div class="space-y-6">
+      
+      <!-- Unit Meta Badge & Title -->
+      <div class="mb-2">
+        <div class="flex items-center justify-between gap-2 mb-2">
+          <span class="text-xs font-black uppercase tracking-wider text-indigo-700 bg-indigo-100 px-3 py-1 rounded-full">
+            ${unit.unitId} • Module ${appState.currentModuleIndex + 1}
           </span>
-        ` : `
-          <span class="text-xs font-bold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-full">
-            20-30 min study
-          </span>
-        `}
+          ${isCompleted ? `
+            <span class="inline-flex items-center gap-1 text-xs font-black bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full">
+              ✓ Completed ${typeof score === "number" ? `(${score}%)` : ""}
+            </span>
+          ` : `
+            <span class="text-xs font-bold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-full">
+              20-30 min study
+            </span>
+          `}
+        </div>
+
+        <h2 class="text-3xl font-black text-slate-900 tracking-tight leading-tight">
+          ${unit.title}
+        </h2>
       </div>
 
-      <h2 class="text-3xl font-black text-slate-900 tracking-tight leading-tight mb-4">
-        ${unit.title}
-      </h2>
-    </div>
-
-    <!-- YouTube Embed Video Frame -->
-    <div class="mb-6 rounded-3xl overflow-hidden shadow-lg border border-slate-200 bg-slate-950">
-      <div class="relative w-full aspect-video">
+      <!-- 2. Aspect-Ratio Locked Video Wrapper with Fluid iframe Player -->
+      <div class="aspect-video rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-slate-950">
         <iframe 
-          class="absolute top-0 left-0 w-full h-full"
+          class="w-full h-full"
           src="${unit.videoEmbedUrl}" 
           title="${unit.title}" 
           frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin"
+          referrerpolicy="strict-origin-when-cross-origin" 
           allowfullscreen>
         </iframe>
       </div>
-      <div class="p-3 bg-slate-900 text-slate-300 text-xs flex items-center justify-between">
-        <span class="truncate font-semibold">📺 Video Lesson</span>
-        <a href="${unit.videoEmbedUrl.replace('embed/', 'watch?v=').replace('www.youtube-nocookie.com', 'www.youtube.com')}" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:text-indigo-300 underline font-bold shrink-0 ml-2">
-          Open in YouTube ↗
-        </a>
-      </div>
-    </div>
 
-    <!-- Prominent "Start Practice Quiz" CTA -->
-    <div class="mb-8">
-      <button 
-        id="unitStartQuizTopBtn" 
-        class="w-full min-h-[52px] px-5 py-3.5 my-1 bg-gradient-to-r from-indigo-600 to-indigo-700 hover:from-indigo-700 hover:to-indigo-800 active:scale-98 text-white font-black text-lg rounded-2xl shadow-md transition-all flex items-center justify-center gap-2">
-        <span>🎯 Start Practice Quiz (${(unit.quiz || []).length} Question)</span>
-      </button>
-    </div>
-
-    <!-- 4 High-Density Structured Content Sections -->
-    <div class="space-y-6 mb-8">
-      
-      <!-- 1. Historical Background -->
+      <!-- 3. Sub-header 1: Historical Context -->
       <article class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200">
-        <div class="flex items-center gap-2.5 mb-3">
-          <div class="w-8 h-8 rounded-xl bg-indigo-50 text-indigo-700 flex items-center justify-center font-bold text-base">
-            🏛️
-          </div>
-          <h3 class="text-xl font-black text-slate-900 tracking-tight">
-            1. Historical Background
-          </h3>
-        </div>
+        <h3 class="text-xl font-black text-slate-900 tracking-tight mb-4 flex items-center gap-2">
+          <span>🏛️</span>
+          <span>1. Historical Context</span>
+        </h3>
         <div class="text-lg text-slate-800 leading-relaxed font-normal space-y-4">
           ${bgParagraphs.map(p => `<p>${p.trim()}</p>`).join("")}
         </div>
       </article>
 
-      <!-- 2. Primary Source Deep Dive -->
-      <article class="bg-amber-50/70 rounded-3xl p-6 shadow-sm border border-amber-200/80">
-        <div class="flex items-center gap-2.5 mb-3">
-          <div class="w-8 h-8 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-base">
-            📜
-          </div>
-          <h3 class="text-xl font-black text-slate-900 tracking-tight">
-            2. Primary Source Deep Dive
-          </h3>
-        </div>
-        <blockquote class="italic text-slate-800 text-lg leading-relaxed border-l-4 border-amber-400 pl-4 my-3 bg-white/70 p-4 rounded-r-2xl shadow-inner font-serif">
+      <!-- 3. Sub-header 2: Primary Source Deep Dive (Left-bordered visual callout box) -->
+      <article class="bg-amber-50/70 border-l-4 border-amber-500 rounded-2xl p-6 shadow-sm border-y border-r border-amber-200/80">
+        <h3 class="text-xl font-black text-slate-900 tracking-tight mb-3 flex items-center gap-2">
+          <span>📜</span>
+          <span>2. Primary Source Deep Dive</span>
+        </h3>
+        <blockquote class="italic text-slate-800 text-lg leading-relaxed font-serif bg-white/60 p-4 rounded-xl shadow-inner my-2">
           "${unit.content.primarySource}"
         </blockquote>
       </article>
 
-      <!-- 3. Technical & Cultural Focus -->
+      <!-- 3. Sub-header 3: Specialized Focus -->
       <article class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200">
-        <div class="flex items-center gap-2.5 mb-3">
-          <div class="w-8 h-8 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold text-base">
-            ⚙️
-          </div>
-          <h3 class="text-xl font-black text-slate-900 tracking-tight">
-            3. Technical & Cultural Focus
-          </h3>
-        </div>
-        <div class="text-lg text-slate-800 leading-relaxed font-normal bg-emerald-50/30 p-4 rounded-2xl border border-emerald-100">
+        <h3 class="text-xl font-black text-slate-900 tracking-tight mb-4 flex items-center gap-2">
+          <span>⚙️</span>
+          <span>3. Specialized Focus</span>
+        </h3>
+        <div class="text-lg text-slate-800 leading-relaxed font-normal bg-emerald-50/30 p-5 rounded-2xl border border-emerald-100">
           <p>${unit.content.focus}</p>
         </div>
       </article>
 
-      <!-- 4. Imagery & Geographic Index -->
-      <article class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200">
-        <div class="flex items-center gap-2.5 mb-3">
-          <div class="w-8 h-8 rounded-xl bg-sky-50 text-sky-700 flex items-center justify-center font-bold text-base">
-            🗺️
-          </div>
-          <h3 class="text-xl font-black text-slate-900 tracking-tight">
-            4. Imagery & Geographic Index
-          </h3>
-        </div>
-        <div class="text-slate-800 text-base leading-relaxed bg-slate-50 p-4 rounded-2xl border border-slate-200 font-mono text-sm">
+      <!-- 3. Sub-header 4: Artifact & Map Reference Index (Clean gray container box) -->
+      <article class="bg-slate-100 border border-slate-200 rounded-3xl p-6 shadow-sm">
+        <h3 class="text-xl font-black text-slate-900 tracking-tight mb-3 flex items-center gap-2">
+          <span>🗺️</span>
+          <span>4. Artifact & Map Reference Index</span>
+        </h3>
+        <div class="text-base text-slate-800 leading-relaxed font-mono text-sm bg-white/90 p-4 rounded-2xl border border-slate-200">
           ${unit.content.graphicDescription}
         </div>
       </article>
-    </div>
 
-    <!-- Bottom Action & Navigation Bar -->
-    <div class="sticky bottom-4 z-40 bg-white/95 backdrop-blur-md p-4 rounded-3xl shadow-xl border border-slate-200 space-y-3">
-      <button 
-        id="unitStartQuizBottomBtn" 
-        class="w-full min-h-[52px] px-5 py-3.5 bg-indigo-600 hover:bg-indigo-700 active:scale-98 text-white font-black text-lg rounded-2xl shadow-md transition-all flex items-center justify-center gap-2">
-        <span>🎯 Start Practice Quiz</span>
-      </button>
+      <!-- 4. Prominent CTA Button at base of reading pane -->
+      <div class="pt-4 pb-2">
+        <button 
+          id="launchUnitPracticeQuizBtn"
+          class="w-full min-h-[52px] bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white font-black py-4 px-6 rounded-2xl shadow-md active:scale-98 transition-all flex items-center justify-center gap-2 text-lg">
+          <span>Launch Unit Practice Quiz →</span>
+        </button>
+      </div>
 
-      <div class="flex items-center justify-between gap-3 pt-1">
+      <!-- Navigation Links (Prev, Hub, Next) -->
+      <div class="flex items-center justify-between gap-3 pt-2 pb-8">
         <button 
           id="unitNavPrevBtn" 
           class="flex-1 min-h-[48px] px-3 py-2 border-2 border-slate-200 rounded-2xl text-slate-700 hover:bg-slate-50 font-bold text-sm active:scale-98 transition-all truncate">
@@ -572,17 +556,19 @@ function renderUnitView() {
 
   container.innerHTML = html;
 
-  // Event bindings
-  const startQuiz = () => navigateTo("quiz", appState.currentModuleIndex, appState.currentUnitIndex);
+  // 4. Attach CTA click listener to launch practice quiz
+  const quizBtn = document.getElementById("launchUnitPracticeQuizBtn");
+  if (quizBtn) {
+    quizBtn.addEventListener("click", () => {
+      navigateTo("quiz", appState.currentModuleIndex, appState.currentUnitIndex);
+    });
+  }
 
-  const topQuizBtn = document.getElementById("unitStartQuizTopBtn");
-  if (topQuizBtn) topQuizBtn.addEventListener("click", startQuiz);
-
-  const bottomQuizBtn = document.getElementById("unitStartQuizBottomBtn");
-  if (bottomQuizBtn) bottomQuizBtn.addEventListener("click", startQuiz);
-
+  // Hub navigation
   const hubBtn = document.getElementById("unitNavHubBtn");
-  if (hubBtn) hubBtn.addEventListener("click", () => navigateTo("dashboard"));
+  if (hubBtn) {
+    hubBtn.addEventListener("click", () => navigateTo("dashboard"));
+  }
 
   // Prev Unit
   const prevBtn = document.getElementById("unitNavPrevBtn");
