@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <meta name="description" content="BC Grade 8 Social Studies Discovery Portal - Interactive study portal covering 600 CE to 1750 CE with 24 units, primary sources, videos, and practice quizzes.">
-    <meta name="theme-color" content="#4338ca">
-    <title>BC Grade 8 Social Studies Discovery Portal | Ryo's Learning App</title>
-
-    <!-- Tailwind CSS CDN v3.x -->
+    <title>BC Grade 8 Social Studies Discovery Portal</title>
+    
+    <!-- 1. Tailwind CSS v3 CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -22,70 +20,53 @@
     </script>
 
     <style>
-        /* Smooth custom scrollbars */
+        /* Custom scrollbar */
         .custom-scrollbar::-webkit-scrollbar { width: 6px; }
         .custom-scrollbar::-webkit-scrollbar-thumb { background-color: #cbd5e1; border-radius: 3px; }
-        
-        /* Focus-visible accessibility outline */
-        button:focus-visible, a:focus-visible, input:focus-visible {
+
+        /* Focus & touch target ergonomics */
+        button:focus-visible, a:focus-visible {
             outline: 3px solid #6366f1;
             outline-offset: 2px;
         }
-
-        /* Active touch target feel */
         .active\:scale-98:active {
             transform: scale(0.98);
         }
     </style>
 </head>
-<body class="bg-slate-50 font-sans min-h-screen flex flex-col antialiased text-slate-800">
+<body class="bg-slate-50 font-sans min-h-screen flex flex-col antialiased text-slate-800 select-none">
     
-    <!-- Mobile Sticky Header Frame -->
+    <!-- 3. Sticky Mobile Header Frame -->
     <header class="sticky top-0 bg-white/95 backdrop-blur-md border-b border-slate-200 z-50 px-4 py-2 shadow-sm flex items-center justify-between min-h-[64px]">
-        <!-- Global Back Button (Touch target >= 48px) -->
+        <!-- 4. Home / Back Button (Touch target >= 48px with clear margins) -->
         <button 
             id="globalBackBtn" 
-            aria-label="Return to previous view"
-            class="text-indigo-600 hover:text-indigo-800 font-bold text-base min-w-[48px] min-h-[48px] px-3 flex items-center justify-center rounded-2xl active:bg-slate-100 transition-colors">
+            aria-label="Return to Dashboard Hub"
+            class="text-indigo-600 hover:text-indigo-800 font-black text-base min-w-[48px] min-h-[48px] px-3.5 my-1 flex items-center justify-center rounded-2xl active:bg-slate-100 transition-all active:scale-98">
             ← Home
         </button>
 
-        <!-- Current View Title -->
-        <h1 id="headerViewTitle" class="text-lg sm:text-xl font-black text-slate-900 tracking-tight truncate max-w-[190px] sm:max-w-xs text-center">
-            Socials 8 Hub
+        <!-- View Title Element -->
+        <h1 
+            id="headerViewTitle" 
+            class="text-lg sm:text-xl font-black text-slate-900 tracking-tight truncate max-w-[190px] sm:max-w-xs text-center">
+            Dashboard
         </h1>
 
-        <!-- Header Right Utilities (Sound Toggle + Progress Badge) -->
-        <div class="flex items-center gap-2">
-            <button 
-                id="soundToggleBtn" 
-                title="Toggle Sound Effects"
-                aria-label="Toggle Sound Effects"
-                class="min-h-[44px] min-w-[44px] p-2 text-slate-600 hover:text-indigo-600 rounded-xl hover:bg-slate-100 active:scale-95 transition-all flex items-center justify-center text-sm font-semibold">
-                🔔
-            </button>
-
-            <div 
-                id="globalProgressBarBadge" 
-                class="bg-indigo-100 text-indigo-900 text-xs sm:text-sm font-black px-3 py-1.5 rounded-full shadow-sm shrink-0">
-                0% Done
-            </div>
+        <!-- Global Progress Badge -->
+        <div 
+            id="globalProgressBarBadge" 
+            class="bg-indigo-100 text-indigo-900 text-xs sm:text-sm font-black px-3.5 py-1.5 rounded-full shadow-sm shrink-0">
+            0% Done
         </div>
     </header>
 
-    <!-- Master SPA Application Container -->
-    <main id="viewDisplayEngine" class="flex-grow max-w-xl mx-auto w-full px-4 py-6 mb-8">
-        <!-- Dynamically populated by app.js based on state -->
-        <div class="flex flex-col items-center justify-center py-20 text-slate-400">
-            <div class="animate-spin rounded-full h-10 w-10 border-b-2 border-indigo-600 mb-4"></div>
-            <p class="font-bold text-sm">Loading Ryo's Social Studies Portal...</p>
-        </div>
+    <!-- 6. Central Dynamic Master Application Container -->
+    <main id="viewDisplayEngine" class="flex-grow max-w-xl mx-auto w-full px-4 py-6">
+        <!-- SPA viewDisplayEngine dynamically populated by client views -->
     </main>
 
-    <!-- Confetti Particle Canvas for 100% Quiz Celebrations -->
-    <canvas id="confettiCanvas" class="fixed inset-0 pointer-events-none z-50 hidden"></canvas>
-
-    <!-- Global Application Scripts (Independent of Node/Bundlers for direct GitHub Pages compatibility) -->
+    <!-- 2. Master Curriculum Data Script Link -->
     <script src="courseData.js"></script>
     <script src="app.js"></script>
 </body>
