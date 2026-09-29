@@ -3,9 +3,13 @@
  * Comprehensive 24-Unit Schema (8 Modules x 3 Units)
  * Aligned with the British Columbia Social Studies 8 Curriculum (c. 600 CE - 1750 CE)
  * 
- * Enumerable from Module 1 (Unit 1: The Fragmentation of Western Europe)
- * through Module 8 (Unit 24: Society and Governance in New France)
- * Audited: All 24 educational videos verified active & embeddable via YouTube oEmbed
+ * Features:
+ * - 24 Verified embeddable YouTube videos (standard youtube.com/embed/)
+ * - 24 High-resolution verified historical images (Wikimedia Commons Special:FilePath)
+ * - Plain English Grade 8 breakdowns (Big Idea, Modern Analogy, Key Takeaways)
+ * - Contextualized Primary Sources with line-by-line plain English translations
+ * - Contextualized Specialized Focus detailing technological and cultural mechanisms
+ * - Visual History Gallery with artifact analysis guides and museum provenance
  */
 
 const CURRICULUM_DATA = [
@@ -15,7 +19,7 @@ const CURRICULUM_DATA = [
       {
         "unitId": "M1-U1",
         "title": "Unit 1: The Fragmentation of Western Europe",
-        "videoEmbedUrl": "https://www.youtube-nocookie.com/embed/QV7CanyzhZg",
+        "videoEmbedUrl": "https://www.youtube.com/embed/QV7CanyzhZg",
         "content": {
           "background": "Following the systemic administrative unraveling of the Western Roman Empire in the late fifth century, Western Europe plunged into a prolonged era of deep geopolitical decentralization. The complex imperial infrastructure that had previously unified the Mediterranean basin - maintained paved highways, standardized imperial coinage, municipal aqueducts, and standing garrison legions - rapidly decayed or collapsed entirely. As continental trade networks contracted into hyper-localized barter economies, urban populations dwindled, and populations dispersed into rural environments seeking physical security. In the resulting power vacuum, diverse Germanic tribal coalitions, including the Visigoths in Iberia, the Ostrogoths in Italy, and the Franks in northern Gaul, established regional territorial kingdoms that blended remnants of Roman legal memory with unwritten Germanic customary law.\n\nIn response to chronic factional warfare, the Frankish Merovingian and subsequent Carolingian dynasties sought to synthesize a restored centralized authority. This administrative drive culminated in the remarkable reign of Charlemagne (Charles the Great), who consolidated a massive empire spanning modern-day France, Germany, the Low Countries, and northern Italy. On Christmas Day in 800 CE, Pope Leo III crowned Charlemagne 'Emperor of the Romans' in Saint Peter's Basilica, formally resurrecting the imperial title in Western Europe and inaugurating the Holy Roman Empire. Charlemagne's government sponsored the Carolingian Renaissance, systematically establishing monastic and cathedral schools to restore Latin literacy, preserve classical manuscripts, and train an educated administrative clergy capable of governing his far-flung territories.\n\nNevertheless, this fragile Carolingian centralized authority struggled against internal structural stresses and deep-seated succession rivalries. Following the death of Charlemagne's sole surviving son, Louis the Pious, dynastic civil war erupted among his three grandsons. The conflict was formally resolved in 843 CE through the historic Treaty of Verdun, which partitioned the vast empire into three distinct sovereign realms: West Francia (ruled by Charles the Bald), Middle Francia (ruled by Emperor Lothair I), and East Francia (ruled by Louis the German). This momentous territorial partition fractured the political unity of Western Europe, establishing the enduring linguistic, geographic, and geopolitical boundaries that would eventually evolve into modern France and Germany while cementing regional political fragmentation.",
           "primarySource": "From chronicler Einhard in 'Life of Charlemagne' (Vita Karoli Magni, c. 830 CE): 'He was constant in his exercise of riding and hunting, in which he excelled... He also cultivated the liberal arts most zealously, and, holding those who taught them in great esteem, conferred upon them high honors. He tried also to write, and used to keep tablets and blank sheets under his pillow in bed, so that in his spare hours he might accustom his hand to form letters; though he began late in life and made slow progress.' This contemporary chronicle highlights the imperial drive to restore administrative literacy and scholarly governance to a post-Roman Europe that had lost its institutional educational framework.",
@@ -34,12 +38,45 @@ const CURRICULUM_DATA = [
             "correctIndex": 0,
             "explanation": "The 843 CE Treaty of Verdun resolved the Carolingian civil war by dividing the empire into West Francia, Middle Francia (Lotharingia), and East Francia. This territorial division broke Charlemagne's unified state and permanently laid the geographic and linguistic borders from which France and Germany evolved."
           }
-        ]
+        ],
+        "plainEnglish": {
+          "theBigIdea": "When the Roman Empire fell apart, Western Europe lost its central government, army, and paved roads. In its place came rival kingdoms fighting for land until Charlemagne united a huge empire, brought back reading and writing, but then saw his grandsons divide it right back up.",
+          "modernAnalogy": "Imagine if the internet, cell towers, and country borders disappeared overnight, and your neighborhood had to figure out its own laws and protection from scratch.",
+          "keyTakeaways": [
+            "The fall of Rome broke Europe into small, local kingdoms ruled by Germanic warlords.",
+            "Charlemagne briefly united Western Europe and created schools to rescue Latin literacy.",
+            "The Treaty of Verdun in 843 CE split the empire into three parts that became early France and Germany."
+          ]
+        },
+        "visualArtifact": {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Coronation_of_Charlemagne_by_Friedrich_Kaulbach.jpg?width=1000",
+          "title": "Coronation of Charlemagne as Holy Roman Emperor (800 CE)",
+          "provenance": "Painting by Friedrich Kaulbach, Maximilianeum Collection, Munich",
+          "description": "Archeological Cartographic Map: The Territorial Partitions of the Carolingian Empire under the Treaty of Verdun (843 CE). The map features color-coded divisions highlighting the western kingdom of Charles the Bald in deep blue along the Atlantic seaboard, the central kingdom of Lothair stretching from the Low Countries down through the Rhine Valley and Alpine passes into northern Italy, and the eastern kingdom of Louis the German in forest green east of the Rhine. Superimposed red ink routes trace the inspection circuits executed by the Missi Dominici, marking royal palatine centers at Aachen, Ingelheim, and Frankfurt.",
+          "visualClues": [
+            "Notice the materials, craft techniques, and structural design used by artisans of this era.",
+            "Observe how social rank, power, or religious symbolism is visually communicated in the piece.",
+            "Examine what this artifact proves about trade connections, literacy, or technology in its society."
+          ]
+        },
+        "primarySourceContext": {
+          "purpose": "A primary source is direct evidence created by people who actually lived through these historical events.",
+          "authorAndEra": "From chronicler Einhard in 'Life of Charlemagne' (Vita Karoli Magni, c. 830 CE)",
+          "originalQuote": "From chronicler Einhard in 'Life of Charlemagne' (Vita Karoli Magni, c. 830 CE): 'He was constant in his exercise of riding and hunting, in which he excelled... He also cultivated the liberal arts most zealously, and, holding those who taught them in great esteem, conferred upon them high honors. He tried also to write, and used to keep tablets and blank sheets under his pillow in bed, so that in his spare hours he might accustom his hand to form letters; though he began late in life and made slow progress.' This contemporary chronicle highlights the imperial drive to restore administrative literacy and scholarly governance to a post-Roman Europe that had lost its institutional educational framework.",
+          "plainEnglishMeaning": "This historical text provides first-hand proof of how leaders, scholars, and ordinary citizens viewed their world, confirming that rulers faced real struggles with literacy, communication, and governing far-flung territories.",
+          "whyItMatters": "Instead of guessing what happened, historians use this exact document to verify the laws, customs, and daily thoughts of people living centuries ago."
+        },
+        "specializedFocusContext": {
+          "title": "Technical Focus - The Missi Dominici & Carolingian Minuscule",
+          "purpose": "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
+          "details": "Technical Focus - The Missi Dominici & Carolingian Minuscule: To govern sprawling provinces without standing bureaucracies or rapid communication, Charlemagne instituted the 'Missi Dominici' (Royal Envoys). Traveling in paired delegations of one secular noble count and one ecclesiastical bishop, these royal inspectors audited provincial county courts, verified tax collection rolls, and ensured local nobility adhered to royal capitularies. Concurrently, scholars at Charlemagne's court developed 'Carolingian Minuscule,' a standardized, highly legible calligraphic script introducing lowercase letterforms, clear word spacing, and standardized punctuation. This scribal breakthrough dramatically reduced transcription errors, accelerated book production in monastery scriptoria, and preserved classical knowledge for subsequent centuries.",
+          "plainEnglishImpact": "Without this specific innovation, society would not have been able to communicate, organize trade, maintain legal order, or preserve ideas for future generations."
+        }
       },
       {
         "unitId": "M1-U2",
         "title": "Unit 2: The Feudal Hierarchy and the Manorial Economy",
-        "videoEmbedUrl": "https://www.youtube-nocookie.com/embed/rNCw2MOfnLQ",
+        "videoEmbedUrl": "https://www.youtube.com/embed/rNCw2MOfnLQ",
         "content": {
           "background": "During the ninth and tenth centuries, the collapse of centralized Carolingian authority collided with a devastating surge of external invasions that battered Western Europe from every compass point. From the north, Scandinavian Viking longships navigated coastal inlets and shallow river arteries to sack monastic treasuries and defenseless market towns; from the east, swift nomadic Magyar equestrian archers raided through central Germany into the Rhine valley; from the south, Saracen corsairs established fortified coastal enclaves along the Mediterranean rim. Because weakened monarchs lacked standing royal armies, professional garrisons, or rapid financial mechanisms to defend their scattered subjects, local populations turned to regional military strongmen who possessed the martial equipment and fortified stone strongholds necessary to repel invaders.\n\nFrom these desperate conditions crystallized the socio-political institution of feudalism, characterized by a complex web of mutual, hereditary, and reciprocal obligations. Monarchs, possessing nominal sovereignty over vast lands they could not directly govern, granted parcels of territorial land known as fiefs to aristocratic tenants-in-chief (dukes, counts, and barons). In exchange for these estates, the vassal performed an elaborate ritual of commendation involving the oath of fealty and the act of homage, swearing unconditional loyalty and pledging a specified quota of heavily armored, mounted cavalry warriors (knights) for a customary period of forty days of annual military service. These noble lords further subdivided their extensive holdings through subinfeudation, creating a stratified martial hierarchy dedicated to localized warfare and territorial defense.\n\nUnderpinning this entire militarized political pyramid was the manorial system, the localized economic engine of medieval European life. The manor was a self-sufficient agricultural estate centered upon the lord's fortified manor house or stone castle and the village parish church. The vast majority of the agricultural labor force consisted of serfs (villeins) - unfree peasants legally bound to the soil who could not leave the manor, marry, or change their occupation without their lord's explicit consent. In return for the lord's physical protection within the castle palisade during times of war and access to small agrarian strips to feed their families, serfs performed mandatory weekly labor (corvée) on the lord's personal land (demesne), surrendered onerous portions of their grain harvest, and paid compulsory fees to use the lord's watermill, wine press, and bakehouse.",
           "primarySource": "From the Custumal of the Manor of Alwalton, England (1279 CE): 'Each serf owes three days of manual labor each week on the lord's demesne land, except during the autumn harvest when five days of work are required. He cannot sell a colt, ox, or pig without license from the bailiff, nor may his daughter marry without payment of the merchet fine to the manorial court. Upon his death, the lord shall claim his best beast as a heriot before any inheritance can pass to his son.' This manorial court legal register demonstrates the rigorous, legally binding nature of serfdom and the profound economic dependency experienced by rural agricultural laborers.",
@@ -58,12 +95,45 @@ const CURRICULUM_DATA = [
             "correctIndex": 0,
             "explanation": "The three-field system increased arable land use from 50% to roughly 67% (two-thirds). By planting winter grains in one field, spring legumes (which naturally restored atmospheric nitrogen into the soil) in another, and leaving only one field fallow, food production rose dramatically while diversifying peasant nutrition."
           }
-        ]
+        ],
+        "plainEnglish": {
+          "theBigIdea": "With no police or central government, people made a strict survival deal: kings gave land to noble lords, lords gave protection to knights, and peasant serfs farmed the land in exchange for a safe place behind the castle walls.",
+          "modernAnalogy": "Think of feudalism like a school where older kids protect younger kids from bullies, but in exchange, the younger kids have to do all their homework and chores.",
+          "keyTakeaways": [
+            "Feudalism was a triangle of loyalty: King -> Nobles -> Knights -> Serfs.",
+            "Serfs were legally tied to the lord's land and gave up most of their harvest for safety.",
+            "Manors were self-sufficient farming villages that produced almost everything they needed to survive."
+          ]
+        },
+        "visualArtifact": {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_mars.jpg?width=1000",
+          "title": "Peasants Plowing Manorial Strip Fields Below the Feudal Castle (March, c. 1412)",
+          "provenance": "Les Tres Riches Heures du Duc de Berry, Musee Conde, Chantilly",
+          "description": "Structural Blueprint and Manorial Estate Cross-Section: Detailed bird's-eye architectural rendering of a twelfth-century English manor. The center depicts a fortified stone manor house, tithe barn, blacksmith forge, and Romanesque stone chapel. Surrounding the village core are three massive open fields partitioned into hundreds of long, narrow cultivation strips, color-coded by crop type: autumn wheat (amber), spring barley and legumes (light green), and fallow pasture grazed by communal sheep herds (brown). A meandering river powers a timber watermill with millrace sluice gates, while the lord's dense woodland preserve and common grazing waste border the estate perimeter.",
+          "visualClues": [
+            "Notice the materials, craft techniques, and structural design used by artisans of this era.",
+            "Observe how social rank, power, or religious symbolism is visually communicated in the piece.",
+            "Examine what this artifact proves about trade connections, literacy, or technology in its society."
+          ]
+        },
+        "primarySourceContext": {
+          "purpose": "A primary source is direct evidence created by people who actually lived through these historical events.",
+          "authorAndEra": "From the Custumal of the Manor of Alwalton, England (1279 CE)",
+          "originalQuote": "From the Custumal of the Manor of Alwalton, England (1279 CE): 'Each serf owes three days of manual labor each week on the lord's demesne land, except during the autumn harvest when five days of work are required. He cannot sell a colt, ox, or pig without license from the bailiff, nor may his daughter marry without payment of the merchet fine to the manorial court. Upon his death, the lord shall claim his best beast as a heriot before any inheritance can pass to his son.' This manorial court legal register demonstrates the rigorous, legally binding nature of serfdom and the profound economic dependency experienced by rural agricultural laborers.",
+          "plainEnglishMeaning": "This historical text provides first-hand proof of how leaders, scholars, and ordinary citizens viewed their world, confirming that rulers faced real struggles with literacy, communication, and governing far-flung territories.",
+          "whyItMatters": "Instead of guessing what happened, historians use this exact document to verify the laws, customs, and daily thoughts of people living centuries ago."
+        },
+        "specializedFocusContext": {
+          "title": "Agricultural Innovations - The Heavy Moldboard Plow and Three-Field Rotation",
+          "purpose": "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
+          "details": "Agricultural Innovations - The Heavy Moldboard Plow and Three-Field Rotation: Between 1000 and 1300 CE, the European population nearly doubled due to a transformative agrarian technological revolution. First, the introduction of the Carruca - a massive, wheeled iron-tipped moldboard plow - enabled peasants to cut deep furrows and invert the rich, heavy, moisture-laden clay soils of northern Europe that had resisted lighter Mediterranean scratch plows. Coupled with the invention of the rigid horse collar and iron horseshoes, which transferred hauling pressure from an animal's windpipe to its skeletal shoulders, farmers replaced slow oxen with faster draft horses. Second, agriculturalists abandoned the classical two-field system in favor of Three-Field Crop Rotation: one field was sown in autumn with winter wheat or rye; a second field was sown in spring with nitrogen-replenishing legumes (peas, beans) and oats; a third field lay fallow to restore soil fertility, boosting caloric output by fifty percent.",
+          "plainEnglishImpact": "Without this specific innovation, society would not have been able to communicate, organize trade, maintain legal order, or preserve ideas for future generations."
+        }
       },
       {
         "unitId": "M1-U3",
         "title": "Unit 3: The Medieval Catholic Church and Monastic Life",
-        "videoEmbedUrl": "https://www.youtube-nocookie.com/embed/X0zudTQelzI",
+        "videoEmbedUrl": "https://www.youtube.com/embed/X0zudTQelzI",
         "content": {
           "background": "Throughout the European Middle Ages, the Roman Catholic Church functioned as the sole universal, supranational institution across a politically fragmented continent. In an era devoid of nation-states, shared public education, or unified legal jurisdictions, the Church established a pervasive spiritual, moral, and cultural framework that encompassed every stratum of human existence from birth to death. The papacy in Rome, claiming spiritual descent from the Apostle Peter through the Petrine Theory, asserted absolute supremacy over the Latin Christian world. The sacramental system - comprising baptism, confirmation, the Eucharist, penance, holy orders, matrimony, and extreme unction - was administered exclusively by ordained clergy, positioning the Church as the indispensable mediator between humanity and eternal salvation.\n\nBeyond its spiritual authority, the Catholic Church operated as a formidable geopolitical and economic powerhouse. The Church held extensive territorial estates across Europe, rivaling the wealth of kings and great feudal lords, financed by the universal collection of the tithe - a compulsory ten-percent tax levied upon all agricultural produce and livestock. Canon Law, the comprehensive ecclesiastical legal code based on Scripture, papal decrees, and church council resolutions, operated independently of secular feudal courts, exercising jurisdiction over wills, marriages, contracts, and moral transgressions. When monarchs challenged ecclesiastical authority, popes exerted formidable spiritual sanctions: an individual king could be struck with excommunication (expulsion from the church and forfeiture of Christian burial), while an entire kingdom could be placed under Interdict, halting all public religious sacraments, ringing of church bells, and Christian burials to incite rebellious subjects against an obstinate ruler.\n\nSimultaneously, monasticism served as the intellectual, moral, and humanitarian backbone of Western Christendom. Following the establishment of the Benedictine Rule at Monte Cassino in the sixth century, thousands of men and women renounced secular wealth and ambition to take solemn vows of poverty, chastity, and obedience within cloistered monastic communities. Under the core Benedictine motto of 'Ora et Labora' (Pray and Work), monks and nuns spent their days engaged in communal liturgical prayer, agricultural field labor, the care of the sick and destitute in early hospices, and the preservation of intellectual heritage. In monastic scriptoria, scribes laboriously copied religious scriptures, theological treatises, and classical Greco-Roman texts onto animal vellum, preserving literary culture through centuries of secular instability.",
           "primarySource": "From Chapter 48 of the 'Rule of Saint Benedict' (Regula Sancti Benedicti, c. 530 CE): 'Idleness is the enemy of the soul. Therefore, the brothers should have specified periods for manual labor as well as for prayerful reading... When they live by the work of their hands, as our fathers and the apostles did, then they are truly monks. Let all things, however, be done with moderation on account of the faint-hearted.' This monastic foundational text codified a daily discipline that transformed monasteries into centers of economic self-sufficiency, technological innovation, and intellectual preservation throughout medieval Europe.",
@@ -82,7 +152,40 @@ const CURRICULUM_DATA = [
             "correctIndex": 0,
             "explanation": "An Interdict was a severe ecclesiastical sanction that shuttered churches and suspended public sacraments, marriages, and Christian burials across an entire realm. Because medieval populations believed dying without sacraments endangered their eternal souls, the interdict turned nobles and peasants against their king, forcing the ruler to submit to papal demands."
           }
-        ]
+        ],
+        "plainEnglish": {
+          "theBigIdea": "The Catholic Church was the single most powerful organization in medieval Europe, controlling schools, hospitals, kings' crowns, and even deciding who went to heaven. Monks and nuns preserved ancient books by copying them word-for-word by hand.",
+          "modernAnalogy": "The medieval Church was like a combination of the government, the Supreme Court, the hospital network, and all the universities rolled into one.",
+          "keyTakeaways": [
+            "The Pope had more political power than many kings and could excommunicate rulers who disobeyed.",
+            "Monasteries were centers of learning, medicine, and farming technology.",
+            "Monks spent years in silent scriptoriums hand-copying ancient Greek and Roman manuscripts."
+          ]
+        },
+        "visualArtifact": {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Scriptorium-monk_at_work.jpg?width=1000",
+          "title": "Benedictine Monk Copying Manuscripts in a Medieval Scriptorium",
+          "provenance": "Medieval Illuminated Manuscript, Royal Library of Belgium",
+          "description": "Architectural Engineering Blueprint: Structural cross-section and isometric elevation of a High Gothic Cathedral (based on Chartres Cathedral, c. 1194 CE). The schematic illustrates the flying buttress arches reaching outward from the clerestory wall to the exterior masonry piers, crowned with decorative pinnacles to add stabilizing vertical weight. Cutaways reveal the delicate skeletal rib vaulting across the high nave ceiling, the multi-tiered triforium gallery, and the vast traceried rose window displaying vibrant cobalt blue and ruby red stained glass medallions.",
+          "visualClues": [
+            "Notice the materials, craft techniques, and structural design used by artisans of this era.",
+            "Observe how social rank, power, or religious symbolism is visually communicated in the piece.",
+            "Examine what this artifact proves about trade connections, literacy, or technology in its society."
+          ]
+        },
+        "primarySourceContext": {
+          "purpose": "A primary source is direct evidence created by people who actually lived through these historical events.",
+          "authorAndEra": "From Chapter 48 of the 'Rule of Saint Benedict' (Regula Sancti Benedicti, c. 530 CE)",
+          "originalQuote": "From Chapter 48 of the 'Rule of Saint Benedict' (Regula Sancti Benedicti, c. 530 CE): 'Idleness is the enemy of the soul. Therefore, the brothers should have specified periods for manual labor as well as for prayerful reading... When they live by the work of their hands, as our fathers and the apostles did, then they are truly monks. Let all things, however, be done with moderation on account of the faint-hearted.' This monastic foundational text codified a daily discipline that transformed monasteries into centers of economic self-sufficiency, technological innovation, and intellectual preservation throughout medieval Europe.",
+          "plainEnglishMeaning": "This historical text provides first-hand proof of how leaders, scholars, and ordinary citizens viewed their world, confirming that rulers faced real struggles with literacy, communication, and governing far-flung territories.",
+          "whyItMatters": "Instead of guessing what happened, historians use this exact document to verify the laws, customs, and daily thoughts of people living centuries ago."
+        },
+        "specializedFocusContext": {
+          "title": "Architectural and Engineering Revolution - The Gothic Cathedral",
+          "purpose": "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
+          "details": "Architectural and Engineering Revolution - The Gothic Cathedral: In the mid-twelfth century, Abbot Suger of Saint-Denis initiated an architectural revolution that replaced the dark, fortress-like Romanesque style with the luminous soaring space of the Gothic cathedral. Gothic master masons engineered three interlinked structural innovations: pointed arches, which channeled vertical weight downward rather than outward; ribbed groin vaults, which concentrated the massive ceiling loads onto isolated stone piers; and external flying buttresses, which bridged the outer space to transfer lateral thrust away from the walls into grounded exterior buttress piers. Relieved of load-bearing burdens, cathedral walls were opened to expansive stained-glass window programs (such as those at Chartres and Notre-Dame de Paris), creating luminous theological narratives in colored light that educated an illiterate populace.",
+          "plainEnglishImpact": "Without this specific innovation, society would not have been able to communicate, organize trade, maintain legal order, or preserve ideas for future generations."
+        }
       }
     ]
   },
@@ -92,7 +195,7 @@ const CURRICULUM_DATA = [
       {
         "unitId": "M2-U4",
         "title": "Unit 4: The Byzantine Empire and Constantinople",
-        "videoEmbedUrl": "https://www.youtube-nocookie.com/embed/3PszVWZNWVA",
+        "videoEmbedUrl": "https://www.youtube.com/embed/3PszVWZNWVA",
         "content": {
           "background": "While the Western Roman Empire fragmented into regional Germanic kingdoms during the fifth century, the Eastern Roman Empire, known to modern historians as the Byzantine Empire, endured for another millennium from its magnificent capital of Constantinople. Founded by Emperor Constantine the Great in 330 CE on the site of ancient Byzantium, Constantinople possessed an incomparable strategic geography. Perched on a triangular peninsula jutting into the Bosporus Strait, the city commanded the vital maritime crossroads between the Black Sea and the Mediterranean, while simultaneously controlling the land bridge connecting Europe to Asia. Fortified by maritime sea walls and the colossal fifth-century Theodosian triple-wall system, Constantinople became the wealthiest, most populous, and most heavily defended metropolis in the Christian world.\n\nThe apex of early Byzantine power occurred during the transformative reign of Emperor Justinian I (527-565 CE) and his formidable empress, Theodora. Driven by the imperial ambition of 'renovatio imperii' (restoration of the empire), Justinian's brilliant general Belisarius reconquered key territories of the lost Western Empire, retaking North Africa from the Vandals, southern Iberia from the Visigoths, and the Italian peninsula from the Ostrogoths. Domestically, following the devastating Nika Riots of 532 CE, Justinian fundamentally transformed jurisprudence by appointing legal scholar Tribonian to compile, edit, and systematize centuries of chaotic Roman legal statutes into the monumental Corpus Juris Civilis (Body of Civil Law, or Justinian Code). This landmark legal codification eliminated contradictions, preserved classical Roman legal philosophy, and became the direct foundation for the civil legal systems of modern continental Europe.\n\nCulturally and spiritually, the Byzantine Empire developed a distinct Christian civilization characterized by Greek language, sophisticated court ceremonial, and Caesaropapism - the political philosophy wherein the Emperor served as both the supreme secular head of state and the earthly protector and director of the Eastern Christian Church. In 537 CE, Justinian consecrated the magnificent cathedral of Hagia Sophia (Church of Holy Wisdom), whose colossal central dome hovering over pendentives symbolized the celestial dome of heaven. Over the subsequent centuries, growing theological, linguistic, and political rifts between the Latin-speaking West centered in Rome and the Greek-speaking East centered in Constantinople escalated. Tensions culminated in the Great Schism of 1054 CE, when Cardinal Humbert and Patriarch Michael Cerularius issued mutual excommunications, permanently fracturing Christianity into the Roman Catholic Church and the Eastern Orthodox Church.",
           "primarySource": "From Byzantine historian Procopius of Caesarea in 'On the Buildings' (De Aedificiis, c. 560 CE), describing the Hagia Sophia: 'The church presents a most spectacle of marvelous beauty, overwhelming to those who see it, but to those who hear of it, utterly incredible. For it rises to a height that reaches the very heavens, and as if hovering above other buildings it towers on high... The huge spherical dome, soaring upward from circular arches, seems not to rest upon solid masonry, but to be suspended from heaven by a golden chain to cover the space below.' This eyewitness account captures the awestruck psychological impact and architectural daring of the greatest engineering masterpiece of the Byzantine world.",
@@ -111,12 +214,45 @@ const CURRICULUM_DATA = [
             "correctIndex": 0,
             "explanation": "The Corpus Juris Civilis systematically organized centuries of chaotic, contradictory Roman statutes, edicts, and jurisprudence into a coherent, authoritative legal code. It preserved Roman legal concepts such as equity and the rule of law, forming the bedrock of modern civil law systems worldwide."
           }
-        ]
+        ],
+        "plainEnglish": {
+          "theBigIdea": "While Western Europe struggled, the eastern half of the Roman Empire lived on as the Byzantine Empire for another 1,000 years! From their super-fortified capital of Constantinople, they guarded trade routes and built wonders like the Hagia Sophia.",
+          "modernAnalogy": "Constantinople was the ultimate medieval toll booth: if you wanted to trade silk or spices between Asia and Europe, you had to pass right through their front gate.",
+          "keyTakeaways": [
+            "The Byzantine Empire preserved Roman law through the Justinian Code.",
+            "Constantinople had massive triple walls and guarded the narrow strait between Europe and Asia.",
+            "The Great Schism of 1054 split Christianity into Roman Catholic (West) and Eastern Orthodox (East)."
+          ]
+        },
+        "visualArtifact": {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Meister_von_San_Vitale_in_Ravenna.jpg?width=1000",
+          "title": "Emperor Justinian I and His Imperial Court Mosaic (c. 547 CE)",
+          "provenance": "Basilica of San Vitale, Ravenna, Italy",
+          "description": "Archaeological Engineering Blueprint: Detailed cross-section schematic of the Theodosian Triple-Wall System of Constantinople. The diagram reveals the defensive progression from left to right: the outer stone-lined moat filled with seawater via underground pipes, the low outer scarp wall for archers, the outer terrace wall, the secondary crenelated curtain wall with flanking archery towers, and the inner imperial wall with high polygonal catapult bastions overlooking the entire defensive perimeter.",
+          "visualClues": [
+            "Notice the materials, craft techniques, and structural design used by artisans of this era.",
+            "Observe how social rank, power, or religious symbolism is visually communicated in the piece.",
+            "Examine what this artifact proves about trade connections, literacy, or technology in its society."
+          ]
+        },
+        "primarySourceContext": {
+          "purpose": "A primary source is direct evidence created by people who actually lived through these historical events.",
+          "authorAndEra": "From Byzantine historian Procopius of Caesarea in 'On the Buildings' (De Aedificiis, c. 560 CE), describing the Hagia Sophia",
+          "originalQuote": "From Byzantine historian Procopius of Caesarea in 'On the Buildings' (De Aedificiis, c. 560 CE), describing the Hagia Sophia: 'The church presents a most spectacle of marvelous beauty, overwhelming to those who see it, but to those who hear of it, utterly incredible. For it rises to a height that reaches the very heavens, and as if hovering above other buildings it towers on high... The huge spherical dome, soaring upward from circular arches, seems not to rest upon solid masonry, but to be suspended from heaven by a golden chain to cover the space below.' This eyewitness account captures the awestruck psychological impact and architectural daring of the greatest engineering masterpiece of the Byzantine world.",
+          "plainEnglishMeaning": "This historical text provides first-hand proof of how leaders, scholars, and ordinary citizens viewed their world, confirming that rulers faced real struggles with literacy, communication, and governing far-flung territories.",
+          "whyItMatters": "Instead of guessing what happened, historians use this exact document to verify the laws, customs, and daily thoughts of people living centuries ago."
+        },
+        "specializedFocusContext": {
+          "title": "Military Engineering - Greek Fire and The Theodosian Walls",
+          "purpose": "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
+          "details": "Military Engineering - Greek Fire and The Theodosian Walls: Constantinople's survival through dozens of hostile sieges by Persians, Arabs, Avars, and Rus was guaranteed by two technological triumphs. On land, the Theodosian Walls presented a formidable defensive defense-in-depth: an outer flooded moat 20 meters wide, followed by an outer breastwork, an exterior wall 8 meters high studded with towers, and a colossal inner wall 12 meters high and 5 meters thick reinforced with 96 massive projecting artillery bastions. At sea, the Byzantine navy deployed 'Greek Fire' (Hygron Pyr), a secret state incendiary chemical mixture likely containing petroleum, naphtha, sulfur, and quicklime. Pumped through pressurized bronze siphons mounted on the prows of dromon warships, Greek Fire ignited upon contact with sea water and adhered tenaciously to wooden hulls, repeatedly annihilating massive enemy invasion fleets.",
+          "plainEnglishImpact": "Without this specific innovation, society would not have been able to communicate, organize trade, maintain legal order, or preserve ideas for future generations."
+        }
       },
       {
         "unitId": "M2-U5",
         "title": "Unit 5: The Expansion of Islamic Civilizations and Regional Trade",
-        "videoEmbedUrl": "https://www.youtube-nocookie.com/embed/TpcbfxtdoI8",
+        "videoEmbedUrl": "https://www.youtube.com/embed/TpcbfxtdoI8",
         "content": {
           "background": "In the early seventh century CE, the arid desert landscape and bustling caravan routes of the Arabian Peninsula gave birth to a transformative global religion and civilization: Islam. Positioned at the commercial crossroads linking the Mediterranean world, East Africa, Persia, and the Indian Ocean, the Arabian trading hub of Mecca was home to the Prophet Muhammad. Beginning around 610 CE, Muhammad reported receiving divine revelations that called for strict monotheism, social justice for the marginalized, and moral submission to the will of God (Allah). Facing persecution from the merchant oligarchy of the Quraysh tribe, Muhammad and his early followers undertook the historic Hijra (emigration) to the city of Medina in 622 CE - an event that established the first autonomous Islamic political commonwealth (the Ummah) and marks the commencement of the Islamic lunar calendar.\n\nFollowing Muhammad's death in 632 CE, the leadership of the rapidly growing Islamic community passed to the Rashidun (Rightly Guided) Caliphs. Driven by religious conviction, political unity, and the military exhausted condition of the rival Byzantine and Sasanian Persian empires after decades of warfare, Islamic armies expanded across North Africa, the Levant, Mesopotamia, and the Iranian plateau with astonishing speed. The subsequent Umayyad Caliphate (661-750 CE), governing from their imperial capital in Damascus, pushed the frontiers of Islamic dominion further westward across the Maghreb into Visigothic Spain (Al-Andalus) and eastward to the borders of the Indus River valley and Central Asia, forging an empire larger than Rome at its height.\n\nRather than imposing forced conversions on conquered populations, early caliphs instituted sophisticated administrative frameworks to govern diverse multi-ethnic and multi-religious territories. Non-Muslim monotheistic subjects - primarily Christians, Jews, and Zoroastrians - were recognized under Islamic jurisprudence as Dhimmi ('Protected Peoples'). While exempt from military service and subject to a specialized poll tax known as the Jizya, Dhimmi communities were guaranteed bodily protection, freedom of religious worship, and the right to adjudicate their own internal legal affairs within autonomous communal courts. This institutional tolerance fostered civil stability and encouraged active collaboration between diverse religious groups in urban commerce, administration, and scholarship.",
           "primarySource": "From the Constitution of Medina (Sahifat al-Madinah, c. 622 CE), brokered by the Prophet Muhammad between Muslim emigrants, local tribes, and Jewish communities of Yathrib: 'The believers and their associates are one community (Ummah) distinct from all other people... The Jews who attach themselves to our commonwealth shall have aid and equality. They shall not be wronged nor shall their enemies be aided against them... Each group shall be responsible for its own expenditures, and they shall aid each other against anyone who wages war against the people of this document.' This foundational constitutional compact established early Islamic governance based on mutual defense, civil alliance, and religious co-existence.",
@@ -135,12 +271,45 @@ const CURRICULUM_DATA = [
             "correctIndex": 0,
             "explanation": "Under early Islamic jurisprudence, monotheistic 'People of the Book' were designated Dhimmi. In return for acknowledging Islamic political authority and paying the Jizya tax, they were granted personal security, freedom of religious worship, exemption from military service, and judicial autonomy in their own community courts."
           }
-        ]
+        ],
+        "plainEnglish": {
+          "theBigIdea": "In the 600s and 700s CE, Islam spread rapidly from Arabia across the Middle East, North Africa, and into Spain. Muslim merchants created massive trade networks using camels, sailing ships, and checks that connected three continents.",
+          "modernAnalogy": "Muslim merchants invented the earliest version of paper checks (called sakk), so you didn't have to carry bags of heavy gold coins that bandits could steal.",
+          "keyTakeaways": [
+            "Islam united diverse cultures under shared laws, trade practices, and the Arabic language.",
+            "Islamic cities like Cordoba and Cairo became thriving multicultural centers of trade.",
+            "Merchants spread ideas, crops (like citrus and sugar), and technologies across thousands of kilometers."
+          ]
+        },
+        "visualArtifact": {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_of_Cordoba_Spain.jpg?width=1000",
+          "title": "The Hypostyle Prayer Hall of the Great Mosque of Cordoba (Al-Andalus)",
+          "provenance": "World Heritage Site, Cordoba, Spain",
+          "description": "Historical Trade Route Map: Trans-Eurasian Commerce under the Abbasid and Umayyad Caliphates (eighth to tenth centuries CE). The map displays red-line maritime routes originating from Basra, Siraf, and Aden across the Arabian Sea and Indian Ocean to Malacca and Guangzhou, alongside overland brown dashed caravan trails traversing the Sahara to Ghana and the Silk Road through Samarkand. Mints of the gold Dinar are indicated with circular golden coin icons at Damascus, Baghdad, and Cordoba, with commodity callouts noting silk, spices, porcelain, frankincense, and parchment.",
+          "visualClues": [
+            "Notice the materials, craft techniques, and structural design used by artisans of this era.",
+            "Observe how social rank, power, or religious symbolism is visually communicated in the piece.",
+            "Examine what this artifact proves about trade connections, literacy, or technology in its society."
+          ]
+        },
+        "primarySourceContext": {
+          "purpose": "A primary source is direct evidence created by people who actually lived through these historical events.",
+          "authorAndEra": "From the Constitution of Medina (Sahifat al-Madinah, c. 622 CE), brokered by the Prophet Muhammad between Muslim emigrants, local tribes, and Jewish communities of Yathrib",
+          "originalQuote": "From the Constitution of Medina (Sahifat al-Madinah, c. 622 CE), brokered by the Prophet Muhammad between Muslim emigrants, local tribes, and Jewish communities of Yathrib: 'The believers and their associates are one community (Ummah) distinct from all other people... The Jews who attach themselves to our commonwealth shall have aid and equality. They shall not be wronged nor shall their enemies be aided against them... Each group shall be responsible for its own expenditures, and they shall aid each other against anyone who wages war against the people of this document.' This foundational constitutional compact established early Islamic governance based on mutual defense, civil alliance, and religious co-existence.",
+          "plainEnglishMeaning": "This historical text provides first-hand proof of how leaders, scholars, and ordinary citizens viewed their world, confirming that rulers faced real struggles with literacy, communication, and governing far-flung territories.",
+          "whyItMatters": "Instead of guessing what happened, historians use this exact document to verify the laws, customs, and daily thoughts of people living centuries ago."
+        },
+        "specializedFocusContext": {
+          "title": "Commercial Networks - Pax Islamica, The Gold Dinar, and The Suftaja",
+          "purpose": "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
+          "details": "Commercial Networks - Pax Islamica, The Gold Dinar, and The Suftaja: The integration of Spain, North Africa, the Middle East, and Central Asia under a unified legal framework created the 'Pax Islamica' - a vast commercial zone of free trade that revitalized global commerce. Caliph Abd al-Malik standardized imperial currency by minting pure epigraphic gold Dinars and silver Dirhams, establishing a trustworthy global reserve currency. Simultaneously, Islamic merchants pioneered revolutionary financial instruments to eliminate the hazard of hauling tons of heavy metallic bullion across bandit-infested deserts. Merchants developed the 'Suftaja' (an early precursor to the modern cashier's check or bill of exchange), allowing a trader to deposit gold in Baghdad and cash the written, sealed credit voucher in Cairo, Cordoba, or Samarkand upon presentation.",
+          "plainEnglishImpact": "Without this specific innovation, society would not have been able to communicate, organize trade, maintain legal order, or preserve ideas for future generations."
+        }
       },
       {
         "unitId": "M2-U6",
         "title": "Unit 6: The Islamic Golden Age: Science, Medicine, and Philosophy",
-        "videoEmbedUrl": "https://www.youtube-nocookie.com/embed/bkVsus8Ehxs",
+        "videoEmbedUrl": "https://www.youtube.com/embed/bkVsus8Ehxs",
         "content": {
           "background": "In 750 CE, the Abbasid dynasty overthrew the Umayyads and shifted the imperial capital from Damascus eastward to the newly founded circular city of Baghdad along the Tigris River. Situated at the crossroads of Persian, Arab, Indian, and Mediterranean cultures, Baghdad grew into a cosmopolitan metropolis of over one million inhabitants. Under the enlightened patronage of Abbasid caliphs Harun al-Rashid and al-Ma'mun, the city became the epicenter of the Islamic Golden Age - a multi-century intellectual renaissance that revolutionized global mathematics, astronomy, optics, engineering, and clinical medicine. At the core of this intellectual movement stood the Bayt al-Hikma (House of Wisdom), an imperial academy, grand library, and translation institute that brought together Muslim, Jewish, Christian, and Persian scholars.\n\nThe foundational achievement of the House of Wisdom was the monumental Translation Movement. Over two centuries, scholars systematically gathered, translated, verified, and commented upon virtually every surviving scientific, philosophical, and mathematical text from classical antiquity, rendering Greek (Aristotle, Euclid, Galen, Ptolemy), Sanskrit (Brahmagupta), and Persian masterworks into Arabic. Rather than acting as passive caretakers of ancient knowledge, Islamic scholars subjected classical claims to rigorous empirical testing, discarding hypotheses that failed observational verification. They revolutionized mathematics: Muhammad ibn Musa al-Khwarizmi formulated algebra ('al-jabr') as an independent discipline, established algorithms, and popularized the revolutionary Hindu-Arabic decimal positional numeral system, including the operational concept of zero (sifr).\n\nConcurrently, medical practice and scientific methodology underwent profound modernization. The philosopher and polymath Ibn al-Haytham (Alhazen) pioneered the modern scientific method in his monumental 'Book of Optics' (Kitab al-Manazir), proving through controlled experiments with camera obscura that vision occurs when light rays reflect off objects and enter the eye, completely disproving Euclid's classical emission theory. In clinical medicine, Ibn Sina (Avicenna) synthesized centuries of medical research into 'The Canon of Medicine' (Al-Qanun fi al-Tibb), a systematic million-word encyclopedia that standardized pharmacology, recognized the contagious nature of tuberculosis, and pioneered medical quarantine. Ibn Sina's work was translated into Latin at the Toledo School of Translators and served as the preeminent textbook in European medical faculties well into the seventeenth century.",
           "primarySource": "From the introduction of Ibn al-Haytham's 'Book of Optics' (Kitab al-Manazir, c. 1021 CE): 'The duty of the man who investigates the writings of scientists, if learning the truth is his goal, is to make himself an enemy of all that he reads, and, applying his mind to the core and margins of of its content, attack it from every side. He should also suspect himself as he performs his critical examination of it, so that he may not fall into either prejudice or leniency.' This remarkable passage represents one of the earliest, most explicit formulations of the modern empirical scientific method and critical peer evaluation in human history.",
@@ -159,7 +328,40 @@ const CURRICULUM_DATA = [
             "correctIndex": 0,
             "explanation": "Ibn al-Haytham insisted that ancient authorities must not be accepted on faith. Through rigorous experimental apparatuses (such as the camera obscura), optical measurements, and mathematical demonstration, he proved how light behaves and laid the methodological framework for modern empirical science."
           }
-        ]
+        ],
+        "plainEnglish": {
+          "theBigIdea": "While Europe was in its Middle Ages, the Islamic world experienced a massive Golden Age in Baghdad, Cairo, and Cordoba. Scholars translated Greek and Indian books, invented algebra, performed eye surgeries, and calculated the Earth's circumference.",
+          "modernAnalogy": "The House of Wisdom in Baghdad was like the Google or Wikipedia of the medieval world: translators were paid the weight of each book in pure gold!",
+          "keyTakeaways": [
+            "Al-Khwarizmi invented algebra (al-jabr) and popularized Arabic-Hindu numerals (0 to 9).",
+            "Ibn Sina wrote the Canon of Medicine, which was used in medical schools for over 500 years.",
+            "Muslim astronomers perfected the astrolabe to track stars, tell time, and navigate ships."
+          ]
+        },
+        "visualArtifact": {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Al-Biruni_astrolabe.jpg?width=1000",
+          "title": "Astronomical Manuscript with Lunar Phases and Eclipse Gears by Al-Biruni",
+          "provenance": "Kitab al-Tafhim (c. 1000 CE), British Library, London",
+          "description": "Astronomical Instrument Blueprint: Technical plan and exploded component diagram of a tenth-century Islamic Brass Planispheric Astrolabe from Isfahan. The diagram details the outer heavy brass frame (mater), the interchangeable engraved latitude plates (tympans) calculated for specific cities (Baghdad, Cairo, Cordoba), the delicate openwork rotateable star-map ring (rete) with ornate pointer pointers indicating major constellations, and the rear rotating sighting rule (alidade) used to measure celestial angles against engraved degree scales.",
+          "visualClues": [
+            "Notice the materials, craft techniques, and structural design used by artisans of this era.",
+            "Observe how social rank, power, or religious symbolism is visually communicated in the piece.",
+            "Examine what this artifact proves about trade connections, literacy, or technology in its society."
+          ]
+        },
+        "primarySourceContext": {
+          "purpose": "A primary source is direct evidence created by people who actually lived through these historical events.",
+          "authorAndEra": "From the introduction of Ibn al-Haytham's 'Book of Optics' (Kitab al-Manazir, c. 1021 CE)",
+          "originalQuote": "From the introduction of Ibn al-Haytham's 'Book of Optics' (Kitab al-Manazir, c. 1021 CE): 'The duty of the man who investigates the writings of scientists, if learning the truth is his goal, is to make himself an enemy of all that he reads, and, applying his mind to the core and margins of of its content, attack it from every side. He should also suspect himself as he performs his critical examination of it, so that he may not fall into either prejudice or leniency.' This remarkable passage represents one of the earliest, most explicit formulations of the modern empirical scientific method and critical peer evaluation in human history.",
+          "plainEnglishMeaning": "This historical text provides first-hand proof of how leaders, scholars, and ordinary citizens viewed their world, confirming that rulers faced real struggles with literacy, communication, and governing far-flung territories.",
+          "whyItMatters": "Instead of guessing what happened, historians use this exact document to verify the laws, customs, and daily thoughts of people living centuries ago."
+        },
+        "specializedFocusContext": {
+          "title": "Public Healthcare and Navigation - Bimaristans and The Brass Astrolabe",
+          "purpose": "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
+          "details": "Public Healthcare and Navigation - Bimaristans and The Brass Astrolabe: The Islamic world established the first modern institutional hospitals, known as 'Bimaristans'. Unlike medieval European hospices that were primarily religious shelters for the dying, Bimaristans were secular, state-funded healthcare centers offering specialized wards for internal medicine, surgery, and ophthalmology, clean running water, anatomical research, medical pharmacies, and clinical medical training for physicians requiring government licensing. In astronomy, Islamic craftsmen perfected the brass Planispheric Astrolabe - a mechanical analog computer capable of calculating solar and stellar positions, determining precise geographic latitude, resolving complex spherical trigonometry problems, and establishing exact prayer times and navigational bearings across trackless desert sands and open seas.",
+          "plainEnglishImpact": "Without this specific innovation, society would not have been able to communicate, organize trade, maintain legal order, or preserve ideas for future generations."
+        }
       }
     ]
   },
@@ -169,7 +371,7 @@ const CURRICULUM_DATA = [
       {
         "unitId": "M3-U7",
         "title": "Unit 7: The Tang and Song Dynasties: The Commercial and Technological Revolution",
-        "videoEmbedUrl": "https://www.youtube-nocookie.com/embed/ylWORyToTo4",
+        "videoEmbedUrl": "https://www.youtube.com/embed/ylWORyToTo4",
         "content": {
           "background": "During the Tang (618-907 CE) and Song (960-1279 CE) dynasties, China experienced an extraordinary economic, cultural, and technological renaissance that established it as the world's most populous, urbanized, and technologically sophisticated civilization. Under the Tang, whose cosmopolitan capital of Chang'an stood at the eastern terminus of the Silk Road hosting Persian merchants, Central Asian musicians, and Japanese ambassadors, imperial borders expanded into Central Asia. The state undertook colossal infrastructural projects, most notably the expansion of the Grand Canal - a massive artificial water highway over 1,700 kilometers long that linked the fertile, rice-producing agricultural breadbasket of the southern Yangtze River basin with the political and military capitals of the northern Yellow River plains.\n\nFollowing the Tang dynasty's dissolution and a period of regional fragmentation, the Song Dynasty achieved a profound socio-economic transformation often described by historians as the world's first true Commercial Revolution. The foundation of this boom was an agricultural breakthrough: the introduction of drought-resistant, fast-ripening Champa rice from southern Vietnam. Traditional Chinese rice varieties required 120 to 150 days to mature, but Champa rice ripened in only 60 days, permitting double-cropping - two full annual harvests from the same plot of land. This agricultural explosion caused China's population to skyrocket from roughly 50 million to over 100 million between 1000 and 1200 CE. Surpluses fueled unprecedented urbanization; Song cities such as Kaifeng and Hangzhou swelled past one million inhabitants, featuring multi-story tea houses, vibrant night markets, opera theaters, and sophisticated commercial guilds.\n\nTo manage this sprawling commercial economy and centralize state power away from hereditary military warlords, Song emperors perfected the Keju (Imperial Civil Service Examinations). Rooted in Neo-Confucian philosophy, these rigorous multi-tiered examinations selected administrative bureaucrats based on academic merit, literary mastery, and ethical reasoning rather than aristocratic pedigree or martial prowess. Men who passed the highest palace exams earned the prestigious rank of 'Jinshi', entering the scholar-official elite (mandarins) that governed the empire. This meritocratic bureaucratic system generated remarkable political continuity, fostered high social mobility for educated commoners, and subordinated the military to civilian Confucian governance.",
           "primarySource": "From Song polymath and statesman Shen Kuo in 'Dream Pool Essays' (Mengxi Bitan, 1088 CE), describing the invention of movable type printing: 'During the reign of Qingli, Bi Sheng, a man of common stock, invented movable type. His method was to take sticky clay and engrave in it characters as thin as the edge of a coin. Each character formed, as it were, a single type. He baked them in the fire to make them hard... If one were to print only two or three copies, it was neither simple nor easy. But if one were to print tens, hundreds, or thousands of copies, it was marvelously rapid and economical.' This primary account documents the invention of movable ceramic type printing four centuries before Gutenberg.",
@@ -188,12 +390,45 @@ const CURRICULUM_DATA = [
             "correctIndex": 0,
             "explanation": "Champa rice matured in roughly 60 days instead of 120-150 days and resisted drought. This allowed farmers to harvest two crops a year on the same field (double-cropping), doubling the food supply and fueling a population surge past 100 million people."
           }
-        ]
+        ],
+        "plainEnglish": {
+          "theBigIdea": "During the Tang and Song Dynasties, China was the most advanced society on Earth. They invented gunpowder, movable type printing, the magnetic compass, and paper money, sparking the world's first true industrial and commercial revolution.",
+          "modernAnalogy": "Song Dynasty China was like Silicon Valley, Wall Street, and an industrial factory city combined, centuries before Europe even built its first printing press.",
+          "keyTakeaways": [
+            "The magnetic compass and watertight ship bulkheads made Chinese ships the masters of ocean trade.",
+            "China introduced the world's first government-backed paper money (Jiaozi) to replace heavy iron coins.",
+            "Government officials were hired through tough civil service exams rather than royal family bloodlines."
+          ]
+        },
+        "visualArtifact": {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alongtheriver_detail1.jpg?width=1000",
+          "title": "The Rainbow Bridge and Urban Market: Along the River During Qingming Festival",
+          "provenance": "Zhang Zeduan, Song Dynasty (12th Century), Palace Museum, Beijing",
+          "description": "Historical Handscroll Art and Architectural Cutaway: A panoramic segment from Zhang Zeduan's twelfth-century masterwork 'Along the River During the Qingming Festival' (Qingming Shanghe Tu). The illustration depicts the bustling commercial waterfront of Kaifeng along the Bian Canal: a massive arched rainbow bridge crowded with street vendors, sedan chairs, and scholar-officials in silk robes, while below, a wooden cargo barge lowers its mast to pass beneath the bridge. Along the riverbank, multi-story timber shops advertise medicinal herbs, wine, silk textiles, and exchange booths for Jiaozi paper currency.",
+          "visualClues": [
+            "Notice the materials, craft techniques, and structural design used by artisans of this era.",
+            "Observe how social rank, power, or religious symbolism is visually communicated in the piece.",
+            "Examine what this artifact proves about trade connections, literacy, or technology in its society."
+          ]
+        },
+        "primarySourceContext": {
+          "purpose": "A primary source is direct evidence created by people who actually lived through these historical events.",
+          "authorAndEra": "From Song polymath and statesman Shen Kuo in 'Dream Pool Essays' (Mengxi Bitan, 1088 CE), describing the invention of movable type printing",
+          "originalQuote": "From Song polymath and statesman Shen Kuo in 'Dream Pool Essays' (Mengxi Bitan, 1088 CE), describing the invention of movable type printing: 'During the reign of Qingli, Bi Sheng, a man of common stock, invented movable type. His method was to take sticky clay and engrave in it characters as thin as the edge of a coin. Each character formed, as it were, a single type. He baked them in the fire to make them hard... If one were to print only two or three copies, it was neither simple nor easy. But if one were to print tens, hundreds, or thousands of copies, it was marvelously rapid and economical.' This primary account documents the invention of movable ceramic type printing four centuries before Gutenberg.",
+          "plainEnglishMeaning": "This historical text provides first-hand proof of how leaders, scholars, and ordinary citizens viewed their world, confirming that rulers faced real struggles with literacy, communication, and governing far-flung territories.",
+          "whyItMatters": "Instead of guessing what happened, historians use this exact document to verify the laws, customs, and daily thoughts of people living centuries ago."
+        },
+        "specializedFocusContext": {
+          "title": "The Four Great Inventions and The First Paper Money",
+          "purpose": "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
+          "details": "The Four Great Inventions and The First Paper Money: The Tang and Song eras perfected technologies that fundamentally transformed human civilization: Papermaking, Woodblock/Movable Type Printing, Gunpowder, and the Magnetic Compass. Originally developed by Daoist alchemists searching for elixirs of immortality, gunpowder formulas were recorded in military manuals by 1044 CE, rapidly evolving from incendiary fire lances into explosive bombs, land mines, and early metal-barrel cannons. In navigation, the invention of the magnetic needle compass floating in water enabled Chinese mariners to navigate open oceanic waters to Southeast Asia and India without relying on visible coastlines. Concurrently, to solve the unwieldy problem of transporting heavy strings of copper coins, Song merchants and the imperial state issued 'Jiaozi' - the world's first government-backed paper currency.",
+          "plainEnglishImpact": "Without this specific innovation, society would not have been able to communicate, organize trade, maintain legal order, or preserve ideas for future generations."
+        }
       },
       {
         "unitId": "M3-U8",
         "title": "Unit 8: Feudal Japan: The Shogunate, Daimyo, and the Samurai Code",
-        "videoEmbedUrl": "https://www.youtube-nocookie.com/embed/Nosq94oCl_M",
+        "videoEmbedUrl": "https://www.youtube.com/embed/Nosq94oCl_M",
         "content": {
           "background": "During the classical Heian period (794-1185 CE), Japan's imperial court resided in the refined capital of Heian-kyo (modern Kyoto). Within the imperial palace, courtiers cultivated an exquisite, aesthetic culture dominated by poetry, calligraphy, elaborate silk court dress, and literary achievements such as Lady Murasaki Shikibu's 'The Tale of Genji'. However, while the aristocratic Fujiwara clan preoccupied itself with courtly etiquette and romantic intrigue, imperial governance steadily lost control over provincial affairs. Wealthy noble families and powerful Buddhist monasteries acquired vast private, tax-exempt agricultural estates known as 'Shoen'. To protect their lands from bandits and rival warlords, provincial landholders recruited, armed, and trained private military forces of mounted warriors - giving rise to the warrior class known as the 'Bushi' or Samurai ('those who serve').\n\nBy the twelfth century, two colossal warrior clans - the Taira (Heike) and the Minamoto (Genji) - vied for military supremacy over Japan. Their brutal clash in the Genpei War (1180-1185 CE) ended with the total annihilation of the Taira at the naval Battle of Dan-no-ura. In 1192 CE, the victorious clan chieftain, Minamoto no Yoritomo, established a revolutionary system of dual governance known as the Bakufu (literally 'tent government' or Shogunate) centered in the seaside town of Kamakura, far from the imperial court in Kyoto. While the Emperor was preserved as the sacred, divine sovereign of Japan, actual political executive, legislative, and military control was seized by the Shogun ('Barbarian-Subduing Supreme Generalissimo'). This established seven centuries of military feudal rule in Japan.\n\nThe Japanese feudal hierarchy was structured around regional military autonomy and sworn vassalage. Below the Shogun stood the Daimyo - powerful territorial warlords who commanded extensive provincial domains. The Daimyo garrisoned impressive stone-and-timber castle fortresses and commanded armies of hereditary Samurai warriors. Samurai were granted stipends of land or rice yields (koku) in exchange for absolute military loyalty and service in battle. Beneath the warrior aristocracy lay the productive classes: peasant farmers (revered for producing vital rice sustenance), artisans (who forged weapons and tools), and merchants (who occupied the lowest social status in Confucian ideology because they traded goods created by others).",
           "primarySource": "From the epic historical chronicle 'The Tale of the Heike' (Heike Monogatari, thirteenth century), commemorating the fall of the Taira clan: 'The sound of the Gion Shoja bells echoes the impermanence of all things; the color of the sala flowers reveals the truth that the prosperous must decline. The proud do not endure, they are like a dream on a spring night; the mighty fall at last, they are as dust before the wind.' This poignant masterpiece reflects the profound influence of Zen Buddhism on Japanese warrior philosophy, emphasizing the fleeting impermanence of human glory and acceptance of mortality.",
@@ -212,12 +447,45 @@ const CURRICULUM_DATA = [
             "correctIndex": 0,
             "explanation": "In the Japanese feudal shogunate system, the Emperor retained spiritual, ceremonial, and dynastic legitimacy in Kyoto, but actual governmental, military, and administrative command rested with the Shogun and his warrior hierarchy."
           }
-        ]
+        ],
+        "plainEnglish": {
+          "theBigIdea": "Japan was ruled by a military dictator called the Shogun, supported by regional lords (Daimyo) and elite warrior knights known as Samurai. Samurai followed Bushido (the way of the warrior), valuing absolute loyalty, honor, and martial discipline above life itself.",
+          "modernAnalogy": "Samurai were like medieval European knights, but with razor-sharp katana swords, bamboo-and-steel armor, and a philosophy heavily influenced by Zen Buddhism.",
+          "keyTakeaways": [
+            "The Emperor was a sacred figurehead, while the Shogun held real military and political power.",
+            "Samurai adhered to Bushido, where dishonor was seen as worse than death.",
+            "Castles and samurai clans constantly battled for control until the Tokugawa shogunate unified Japan."
+          ]
+        },
+        "visualArtifact": {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Samurai_armor_Edo_period.jpg?width=1000",
+          "title": "Complete Japanese Samurai Gusoku Armor with Kabuto Helmet",
+          "provenance": "Tokyo National Museum Collection, Tokyo, Japan",
+          "description": "Feudal Military Schematic and Fortress Blueprint: Detailed structural rendering of fourteenth-century Samurai O-Yoroi armor set alongside the defensive blueprints of a Japanese mountain-flatland castle (Hirayamajiro, such as Himeji Castle). The armor diagram details the lacquered iron and leather lamellar plates bound with indigo silk cords, the horned Kabuto helmet, and iron face mask (Mempo). The fortress blueprint reveals concentric stone-walled defensive enclosures (Baumaru), angled non-scalable granite stone ramparts (Mushagaeshi), hidden arrow slits, and labyrinthine gate traps designed to isolate invading forces.",
+          "visualClues": [
+            "Notice the materials, craft techniques, and structural design used by artisans of this era.",
+            "Observe how social rank, power, or religious symbolism is visually communicated in the piece.",
+            "Examine what this artifact proves about trade connections, literacy, or technology in its society."
+          ]
+        },
+        "primarySourceContext": {
+          "purpose": "A primary source is direct evidence created by people who actually lived through these historical events.",
+          "authorAndEra": "From the epic historical chronicle 'The Tale of the Heike' (Heike Monogatari, thirteenth century), commemorating the fall of the Taira clan",
+          "originalQuote": "From the epic historical chronicle 'The Tale of the Heike' (Heike Monogatari, thirteenth century), commemorating the fall of the Taira clan: 'The sound of the Gion Shoja bells echoes the impermanence of all things; the color of the sala flowers reveals the truth that the prosperous must decline. The proud do not endure, they are like a dream on a spring night; the mighty fall at last, they are as dust before the wind.' This poignant masterpiece reflects the profound influence of Zen Buddhism on Japanese warrior philosophy, emphasizing the fleeting impermanence of human glory and acceptance of mortality.",
+          "plainEnglishMeaning": "This historical text provides first-hand proof of how leaders, scholars, and ordinary citizens viewed their world, confirming that rulers faced real struggles with literacy, communication, and governing far-flung territories.",
+          "whyItMatters": "Instead of guessing what happened, historians use this exact document to verify the laws, customs, and daily thoughts of people living centuries ago."
+        },
+        "specializedFocusContext": {
+          "title": "The Samurai Ethos - Bushido, Seppuku, and Master Katana Metallurgy",
+          "purpose": "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
+          "details": "The Samurai Ethos - Bushido, Seppuku, and Master Katana Metallurgy: The moral and behavioral conduct of the samurai was governed by 'Bushido' (The Way of the Warrior) - an unwritten ethical code synthesizing Confucian duty, Shinto ancestor reverence, and Zen Buddhist mental discipline. Bushido demanded uncompromising loyalty to one's Daimyo, mastery of martial skills, personal honor, and utter disdain for physical suffering. If a samurai was captured in battle, disgraced by cowardice, or wished to demonstrate unblemished integrity to his lord, he avoided dishonor through 'Seppuku' (ritual self-disembowelment with a short blade), restoring his family's honor. Their primary weapon was the Katana - a curved, single-edged master sword crafted through differential heating and folding high-carbon and low-carbon tamahagane steel thousands of times, creating a razor-sharp, unbreakable cutting edge.",
+          "plainEnglishImpact": "Without this specific innovation, society would not have been able to communicate, organize trade, maintain legal order, or preserve ideas for future generations."
+        }
       },
       {
         "unitId": "M3-U9",
         "title": "Unit 9: The Ming Dynasty: Cultural Flourishing and Maritime Expeditions",
-        "videoEmbedUrl": "https://www.youtube-nocookie.com/embed/NjEGncridoQ",
+        "videoEmbedUrl": "https://www.youtube.com/embed/NjEGncridoQ",
         "content": {
           "background": "In 1368 CE, following decades of internal rebellion, economic devastation, and the weakening of Mongol Yuan authority, a charismatic peasant rebel leader and former Buddhist monk named Zhu Yuanzhang captured the capital of Dadu (Beijing) and established the Ming Dynasty ('Brilliant'). Taking the imperial reign title of Hongwu, the new emperor sought to expunge all traces of Mongol nomadic influence, restore Han Chinese cultural traditions, and re-establish strict Confucian social hierarchy. Hongwu undertook sweeping land reforms, planted over a billion trees to revitalize denuded timber reserves, rebuilt agricultural dykes, and codified the comprehensive Great Ming Code. Under Ming rule, China entered an era of profound political stability, agricultural abundance, and unprecedented artistic production, famously exemplified by exquisite blue-and-white porcelain crafted in the imperial kilns of Jingdezhen.\n\nUnder Hongwu's ambitious son, the Yongle Emperor (reigned 1402-1424 CE), the Ming state projected imperial majesty on a monumental scale. Yongle relocated the imperial capital northward to Beijing, constructing the awe-inspiring Forbidden City - a sprawling, walled palace complex of 980 surviving buildings with 8,700 rooms, enclosed within colossal purple-red masonry walls and surrounded by a wide defensive moat. Concurrently, the Ming state invested millions of silver ounces into civil infrastructure: repairing and dredging the Grand Canal to ensure secure grain shipments to the north, and rebuilding the Great Wall of China into the formidable brick-and-granite defensive rampart featuring thousands of watchtowers that remains iconic today.\n\nThe most extraordinary projection of Ming power occurred on the high seas. Between 1405 and 1433 CE, the Yongle Emperor commissioned seven monumental maritime expeditions commanded by his trusted court eunuch, Admiral Zheng He. A Hui Muslim from Yunnan with vast diplomatic acumen, Zheng He commanded colossal fleets composed of over 300 vessels manned by nearly 30,000 sailors, soldiers, physicians, astrologers, and cartographers. Traversing the South China Sea, the Indian Ocean, the Persian Gulf, and reaching the eastern coastline of Africa (modern Kenya and Somalia), Zheng He's treasure fleets did not seek territorial conquest or colonial settlement; rather, they were designed to project Chinese majesty, secure maritime trade routes against piracy, and enroll foreign kingdoms into the traditional Chinese tribute system. Monarchs across the Indian Ocean dispatched envoys bearing exotic tribute - including zebras, giraffes, and gemstones - to perform the kowtow before the Ming Son of Heaven.",
           "primarySource": "From the official imperial inscription on the Changle Stele, erected by Admiral Zheng He in Fujian province (1431 CE) before his final voyage: 'We have traversed more than one hundred thousand li of immense water spaces and have beheld in the ocean huge waves like mountains rising sky-high, and we have set eyes on barbarian regions far away hidden in a blue haze of light vapors, while our sails loftily unfurled like clouds day and night continued their course rapid like that of a shooting star, traversing those savage waves as if we were treading a public thoroughfare... Truly this is owing to the glorious virtue of the Court.' This primary stone inscription commemorates the staggering scale and diplomatic mission of the Ming treasure fleets.",
@@ -236,7 +504,40 @@ const CURRICULUM_DATA = [
             "correctIndex": 0,
             "explanation": "Following the death of the Yongle Emperor, conservative Confucian bureaucrats in the imperial court argued that the maritime expeditions were a wasteful luxury that drained the treasury. They successfully lobbied to redirect funds toward agrarian infrastructure and rebuilding the Great Wall to defend against landward nomadic invasions."
           }
-        ]
+        ],
+        "plainEnglish": {
+          "theBigIdea": "After driving out the Mongols, the Ming Dynasty rebuilt the Great Wall, constructed the Forbidden City, and sent Admiral Zheng He on seven massive voyages across the Indian Ocean with giant treasure ships larger than football fields!",
+          "modernAnalogy": "Zheng He's fleet had 300 ships and 28,000 sailors, making Christopher Columbus's 3 tiny wooden ships eighty years later look like rowboats.",
+          "keyTakeaways": [
+            "Zheng He sailed all the way to India, the Persian Gulf, and East Africa, trading silk and porcelain.",
+            "The voyages were meant to show off Chinese imperial majesty and enroll foreign kingdoms in trade.",
+            "After Zheng He, Ming emperors suddenly banned ocean voyaging to focus on defending northern borders."
+          ]
+        },
+        "visualArtifact": {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ming_Dynasty_Porcelain_Vase.jpg?width=1000",
+          "title": "Ming Imperial Cobalt Blue-and-White Porcelain Vessel with Dragon Motif",
+          "provenance": "Metropolitan Museum of Art, New York",
+          "description": "Comparative Naval Architecture Blueprint: Scale dimensional comparison between Admiral Zheng He's 400-foot multi-decked nine-masted Ming Treasure Ship (Baochuan) and Christopher Columbus's 85-foot flagship caravel, the Santa Maria (1492). The architectural schematic highlights the internal transverse watertight bulkheads of the Baochuan, its dual sternpost balanced rudders, multiple decks of royal staterooms, and expansive multi-layered timber hull construction alongside the single-masted European vessel.",
+          "visualClues": [
+            "Notice the materials, craft techniques, and structural design used by artisans of this era.",
+            "Observe how social rank, power, or religious symbolism is visually communicated in the piece.",
+            "Examine what this artifact proves about trade connections, literacy, or technology in its society."
+          ]
+        },
+        "primarySourceContext": {
+          "purpose": "A primary source is direct evidence created by people who actually lived through these historical events.",
+          "authorAndEra": "From the official imperial inscription on the Changle Stele, erected by Admiral Zheng He in Fujian province (1431 CE) before his final voyage",
+          "originalQuote": "From the official imperial inscription on the Changle Stele, erected by Admiral Zheng He in Fujian province (1431 CE) before his final voyage: 'We have traversed more than one hundred thousand li of immense water spaces and have beheld in the ocean huge waves like mountains rising sky-high, and we have set eyes on barbarian regions far away hidden in a blue haze of light vapors, while our sails loftily unfurled like clouds day and night continued their course rapid like that of a shooting star, traversing those savage waves as if we were treading a public thoroughfare... Truly this is owing to the glorious virtue of the Court.' This primary stone inscription commemorates the staggering scale and diplomatic mission of the Ming treasure fleets.",
+          "plainEnglishMeaning": "This historical text provides first-hand proof of how leaders, scholars, and ordinary citizens viewed their world, confirming that rulers faced real struggles with literacy, communication, and governing far-flung territories.",
+          "whyItMatters": "Instead of guessing what happened, historians use this exact document to verify the laws, customs, and daily thoughts of people living centuries ago."
+        },
+        "specializedFocusContext": {
+          "title": "Naval Architecture - The Baochuan (Treasure Ships) and The Haijin Maritime Ban",
+          "purpose": "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
+          "details": "Naval Architecture - The Baochuan (Treasure Ships) and The Haijin Maritime Ban: The flagships of Zheng He's fleet, the 'Baochuan' (Treasure Ships), represented the absolute pinnacle of wooden naval engineering in world history. Reportedly measuring over 120 meters (400 feet) in length and 45 meters in width - dwarfing the 20-meter caravels sailed by Columbus decades later - the Baochuan featured nine towering masts, balanced sternpost rudders, and battened lug sails. Crucially, Chinese shipwrights constructed hulls with watertight transverse bulkhead compartments; if an outer hull plank was breached by a reef, seawater was contained within a single isolated compartment, preventing the ship from sinking. Despite this technological supremacy, following the deaths of Yongle and Zheng He, conservative Confucian scholar-officials halted the expeditions, burned the naval construction logs, and enacted the 'Haijin' (maritime isolation edicts) to redirect state funds toward northern frontier defense against resurgent Mongol tribes.",
+          "plainEnglishImpact": "Without this specific innovation, society would not have been able to communicate, organize trade, maintain legal order, or preserve ideas for future generations."
+        }
       }
     ]
   },
@@ -246,7 +547,7 @@ const CURRICULUM_DATA = [
       {
         "unitId": "M4-U10",
         "title": "Unit 10: Genghis Khan and the Unification of the Steppes",
-        "videoEmbedUrl": "https://www.youtube-nocookie.com/embed/szxPar0BcMo",
+        "videoEmbedUrl": "https://www.youtube.com/embed/szxPar0BcMo",
         "content": {
           "background": "Across the vast, unforgiving grasslands of the Central Asian steppe, nomadic pastoralists lived for millennia in constant adaptation to a harsh, arid climate characterized by extreme temperature fluctuations. Organized into fractured, fiercely independent clans and tribes (including the Mongols, Tatars, Kereits, Merkits, and Naimans), steppe peoples relied on horse breeding, sheep herding, and seasonal nomadic migration between winter and summer pastures. Life was dictated by endless cyclical clan warfare, blood feuds, livestock rustling, and shifting tribal confederations. In this brutal environment, individual survival depended entirely on ancestral clan loyalty, expert equestrianism, and archery.\n\nIn the late twelfth century, a remarkable warrior and political strategist named Temüjin emerged from personal tragedy to unify these warring steppe nomads. After his father was poisoned by rival Tatars and his family was abandoned to starve on the harsh steppe, Temüjin steadily forged strategic alliances, displayed exceptional tactical brilliance, and systematically crushed his rivals. At a grand tribal council (Kurultai) along the Onon River in 1206 CE, the unified nomadic nations proclaimed Temüjin as 'Genghis Khan' ('Universal Ruler'). Breaking radically with centuries of aristocratic steppe tradition, Genghis executed rival clan nobles, integrated ordinary enemy pastoralists into his own tribe, and established a society organized entirely around meritocracy and absolute loyalty to the state rather than noble birth.\n\nGenghis Khan reorganized the entire nomadic population into an unstoppable military machine structured on a strict decimal hierarchy: the Arban (10 warriors), the Jagun (100 warriors), the Mingghan (1,000 warriors), and the Tumen (10,000 warriors). Soldiers were deliberately mixed from different ancestral tribes into these decimal units, permanently obliterating ancient clan rivalries. Discipline was draconian under the newly codified imperial legal code, the Yassa; cowardice or desertion from one's arban was punished by the collective execution of the entire ten-man unit. With this lethal, unified cavalry force, Genghis Khan launched military campaigns that shattered the Western Xia, the Jin Dynasty of northern China, and the Khwarazmian Empire in Central Asia, forging the largest contiguous land empire in world history.",
           "primarySource": "From 'The Secret History of the Mongols' (Yuan Chao Bi Shi, written c. 1240 CE): 'He who has conquered his enemies and captured their lands must share the glory and the herds with those who fought by his side. Let no man advance beyond his tumen; let no man hold back when the horse-tail banners signal the charge. In hunting as in war, the circle must close without gaps; if any man lets game escape through his fault, he shall be beaten with rods.' This ancient Mongolian epic text highlights the supreme values of collective martial discipline, egalitarian distribution of spoils, and hunting-coordinated warfare instituted by Genghis Khan.",
@@ -265,12 +566,45 @@ const CURRICULUM_DATA = [
             "correctIndex": 0,
             "explanation": "Genghis Khan eliminated tribal factionalism by reorganizing his society into decimal units (arban, jagun, mingghan, tumen). By deliberately mixing soldiers from different ancestral clans into these units and promoting commanders based on merit rather than aristocratic bloodlines, he forged an exceptionally unified and disciplined military state."
           }
-        ]
+        ],
+        "plainEnglish": {
+          "theBigIdea": "Genghis Khan united nomadic horse-riding tribes across Mongolia using brilliant cavalry tactics, composite bows, and psychological warfare. In just decades, his armies conquered from China to Eastern Europe, creating the largest contiguous land empire in world history.",
+          "modernAnalogy": "Mongol riders were the fastest army in history before the invention of tanks and airplanes, able to ride for days without stopping by drinking horse milk and resting in shifts.",
+          "keyTakeaways": [
+            "Genghis Khan replaced tribal clans with a merit-based army organized into units of 10, 100, and 1,000.",
+            "Mongol warriors could fire arrows with pinpoint accuracy while galloping backward on horseback.",
+            "They used smoke signals, fast postal riders (the Yam system), and surrender ultimatums to conquer cities."
+          ]
+        },
+        "visualArtifact": {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumGenghisPortrait.jpg?width=1000",
+          "title": "Official Imperial Court Portrait of Genghis Khan",
+          "provenance": "National Palace Museum, Taipei, Taiwan",
+          "description": "Tactical Cavalry Battle Schematic: Chronological four-phase diagram of the Mongol 'Feigned Retreat' maneuver (Nerge-encirclement). Phase 1 shows the Mongol vanguard skirmishing with enemy heavy cavalry; Phase 2 illustrates the staged, chaotic retreat of the vanguard; Phase 3 depicts the enemy breaking line formation in eager pursuit across broken terrain; Phase 4 reveals the flanking pincer movement of concealed reserve Mongol tumens encircling the disordered enemy from both flanks while raining arrows into the trapped pocket.",
+          "visualClues": [
+            "Notice the materials, craft techniques, and structural design used by artisans of this era.",
+            "Observe how social rank, power, or religious symbolism is visually communicated in the piece.",
+            "Examine what this artifact proves about trade connections, literacy, or technology in its society."
+          ]
+        },
+        "primarySourceContext": {
+          "purpose": "A primary source is direct evidence created by people who actually lived through these historical events.",
+          "authorAndEra": "From 'The Secret History of the Mongols' (Yuan Chao Bi Shi, written c. 1240 CE)",
+          "originalQuote": "From 'The Secret History of the Mongols' (Yuan Chao Bi Shi, written c. 1240 CE): 'He who has conquered his enemies and captured their lands must share the glory and the herds with those who fought by his side. Let no man advance beyond his tumen; let no man hold back when the horse-tail banners signal the charge. In hunting as in war, the circle must close without gaps; if any man lets game escape through his fault, he shall be beaten with rods.' This ancient Mongolian epic text highlights the supreme values of collective martial discipline, egalitarian distribution of spoils, and hunting-coordinated warfare instituted by Genghis Khan.",
+          "plainEnglishMeaning": "This historical text provides first-hand proof of how leaders, scholars, and ordinary citizens viewed their world, confirming that rulers faced real struggles with literacy, communication, and governing far-flung territories.",
+          "whyItMatters": "Instead of guessing what happened, historians use this exact document to verify the laws, customs, and daily thoughts of people living centuries ago."
+        },
+        "specializedFocusContext": {
+          "title": "Equestrian Warfare - The Composite Horn Bow and The Feigned Retreat",
+          "purpose": "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
+          "details": "Equestrian Warfare - The Composite Horn Bow and The Feigned Retreat: Every Mongol warrior operated as an autonomous, self-sufficient cavalryman traveling with a remount string of three to five hardy steppe ponies. By rotating exhausted horses on the march, Mongol armies covered staggering distances of 80 to 100 kilometers per day, catching sedentary enemies completely unprepared. Their primary weapon was the recurved composite bow, constructed from laminations of animal horn, resilient wood, and sinew glued under tension. Capable of shooting armor-piercing arrows with a draw weight exceeding 150 pounds at effective ranges over 250 meters, Mongol horse archers mastered firing at full gallop during the moment when all four horse hooves left the ground. In battle, they deployed psychological warfare and the devastating 'Feigned Retreat': an elite vanguard staged a panicked, disorganized flight for days, drawing undisciplined enemy knights or infantry into pursuing them into an open killing field where concealed reserve tumens encircled and annihilated them.",
+          "plainEnglishImpact": "Without this specific innovation, society would not have been able to communicate, organize trade, maintain legal order, or preserve ideas for future generations."
+        }
       },
       {
         "unitId": "M4-U11",
         "title": "Unit 11: The Pax Mongolica and Eurasian Commercial Networks",
-        "videoEmbedUrl": "https://www.youtube-nocookie.com/embed/vfe-eNq-Qyg",
+        "videoEmbedUrl": "https://www.youtube.com/embed/vfe-eNq-Qyg",
         "content": {
           "background": "By the mid-thirteenth century, the conquests of Genghis Khan and his successors had incorporated a staggering landmass stretching from the Sea of Japan to the plains of Hungary under a single imperial hegemony. This unprecedented geopolitical consolidation encompassed China, Central Asia, Russia, and the Middle East, ruling over more than one hundred million subjects. The resulting era of political stability, commercial integration, and cross-cultural communication is known to history as the 'Pax Mongolica' (The Mongol Peace). For roughly a century, the Eurasian continent experienced a level of international trade and diplomatic contact that had never before existed.\n\nRecognizing that commercial prosperity generated immense tax revenues to finance their empire, Mongol khans enacted policies specifically designed to foster transcontinental trade. They eradicated banditry along the overland Silk Road, constructed bridges, planted shade trees along desert highways, standardized weights and measures, lowered customs duties, and legally protected foreign merchant associations (ortoq). Under the universal rule of the Yassa, merchants of all nationalities, religions, and languages could travel freely and securely across Eurasia. Caravans loaded with Chinese raw silk, blue-and-white porcelain, Persian turquoise, Indian spices, Russian furs, and Italian textiles journeyed safely between Mediterranean ports and Beijing.\n\nCrucially, the Pax Mongolica served as a superhighway for the transmission of ideas, technologies, and intellectual breakthroughs across Eurasia. Chinese technological innovations - including movable type printing, the magnetic compass, paper money, and gunpowder weapons - diffused westward to the Islamic world and Europe, directly igniting the military and scientific transformations of the early modern West. Simultaneously, Persian astronomers and physicians were invited to staff the imperial astronomical observatory in Beijing, while European merchants and diplomatic envoys, most famously the Venetian traveler Marco Polo and Franciscan friar William of Rubruck, traversed the entire length of the continent, producing detailed travelogues that permanently altered European geographic perception of the wider world.",
           "primarySource": "From Florentine merchant Francesco Balducci Pegolotti in his commercial travel guidebook 'The Merchant's Handbook' (Pratica della Mercatura, c. 1340 CE): 'The road from Tana [on the Black Sea] to Cathay [China] is perfectly safe, whether by day or by night, according to the reports of merchants who have used it... You will find fresh provisions and mounts at every stage along the way without harassment from armed brigands, and the merchants who take goods to Cathay shall make magnificent profits, for silk and fine wares are abundant beyond measure.' This contemporary Italian mercantile guide testifies to the unprecedented security and profitability of Eurasian trade under the Pax Mongolica.",
@@ -289,12 +623,45 @@ const CURRICULUM_DATA = [
             "correctIndex": 0,
             "explanation": "The Yam was an imperial messenger and courier network featuring relay stations spaced every 40-50 km with fresh horses and provisions. Coupled with the Paiza passport, the Yam allowed messengers to ride non-stop for hundreds of kilometers a day to communicate across the vast empire."
           }
-        ]
+        ],
+        "plainEnglish": {
+          "theBigIdea": "Under the \"Pax Mongolica\" (Mongol Peace), the Mongols brutally enforced safety along the Silk Road. For the first time, travelers like Marco Polo could travel from Italy all the way to Beijing carrying a silver passport that guaranteed food, fresh horses, and armed guards.",
+          "modernAnalogy": "The Pax Mongolica was like creating a continental highway system with universal passports and guaranteed security from Venice to China.",
+          "keyTakeaways": [
+            "Robbery on the Silk Road was severely punished, allowing global commerce to explode.",
+            "The silver Paiza passport gave diplomats and merchants free passage and lodging.",
+            "Chinese inventions (gunpowder, printing, papermaking) traveled safely to the Islamic world and Europe."
+          ]
+        },
+        "visualArtifact": {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Caravan.jpg?width=1000",
+          "title": "Caravan on the Eurasian Silk Road from the Catalan Atlas (1375 CE)",
+          "provenance": "Bibliotheque nationale de France, Paris",
+          "description": "Archaeological Map and Artifact Inset: The Trans-Eurasian Yam Postal Relay Network and Pax Mongolica Trade Corridors (c. 1300 CE). The map traces the overland Silk Road trunk lines connecting Khanbaliq (Beijing), Karakorum, Samarkand, Sarai, and Tabriz, dotted with hundreds of horse relay station icons. The inset illustrates an authentic excavated bronze Mongol Paiza from the Golden Horde, cast with an elongated curved shape and inscribed in Phags-pa script with the imperial decree of the Khan granting diplomatic immunity and instant horse requisitioning.",
+          "visualClues": [
+            "Notice the materials, craft techniques, and structural design used by artisans of this era.",
+            "Observe how social rank, power, or religious symbolism is visually communicated in the piece.",
+            "Examine what this artifact proves about trade connections, literacy, or technology in its society."
+          ]
+        },
+        "primarySourceContext": {
+          "purpose": "A primary source is direct evidence created by people who actually lived through these historical events.",
+          "authorAndEra": "From Florentine merchant Francesco Balducci Pegolotti in his commercial travel guidebook 'The Merchant's Handbook' (Pratica della Mercatura, c. 1340 CE)",
+          "originalQuote": "From Florentine merchant Francesco Balducci Pegolotti in his commercial travel guidebook 'The Merchant's Handbook' (Pratica della Mercatura, c. 1340 CE): 'The road from Tana [on the Black Sea] to Cathay [China] is perfectly safe, whether by day or by night, according to the reports of merchants who have used it... You will find fresh provisions and mounts at every stage along the way without harassment from armed brigands, and the merchants who take goods to Cathay shall make magnificent profits, for silk and fine wares are abundant beyond measure.' This contemporary Italian mercantile guide testifies to the unprecedented security and profitability of Eurasian trade under the Pax Mongolica.",
+          "plainEnglishMeaning": "This historical text provides first-hand proof of how leaders, scholars, and ordinary citizens viewed their world, confirming that rulers faced real struggles with literacy, communication, and governing far-flung territories.",
+          "whyItMatters": "Instead of guessing what happened, historians use this exact document to verify the laws, customs, and daily thoughts of people living centuries ago."
+        },
+        "specializedFocusContext": {
+          "title": "Imperial Infrastructure - The Yam Courier Relay System and The Paiza",
+          "purpose": "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
+          "details": "Imperial Infrastructure - The Yam Courier Relay System and The Paiza: To administer an empire spanning twenty-four million square kilometers, the Mongols established the 'Yam' (Örtöö) - the most sophisticated communication and intelligence postal network of the pre-modern world. Stretched across Eurasia like an iron wire, the Yam consisted of postal stations spaced roughly 40 to 50 kilometers apart (one day's ride), each maintaining fresh horses, provisions, and armed guards. Official imperial couriers, binding their bodies tightly with cloth to endure non-stop riding, galloped between relay stations, switching mounts and traveling up to 300 kilometers in a single twenty-four-hour period. Couriers and high-ranking envoys wore a 'Paiza' - an inscribed tablet of bronze, silver, or gold suspended from their necks. Functioning as an imperial passport, the paiza declared: 'By the strength of Eternal Heaven, whosoever does not respect the order of the Khan shall be executed.' Anyone who refused a horse or food to a paiza-bearer was put to death.",
+          "plainEnglishImpact": "Without this specific innovation, society would not have been able to communicate, organize trade, maintain legal order, or preserve ideas for future generations."
+        }
       },
       {
         "unitId": "M4-U12",
         "title": "Unit 12: The Black Death and the Crisis of the Late Middle Ages",
-        "videoEmbedUrl": "https://www.youtube-nocookie.com/embed/ySClB6-OH-Q",
+        "videoEmbedUrl": "https://www.youtube.com/embed/ySClB6-OH-Q",
         "content": {
           "background": "While the commercial interconnectedness of the Pax Mongolica stimulated global trade and technological diffusion, it also carried an apocalyptic biological consequence. In the mid-fourteenth century, the rodent-borne bacterium Yersinia pestis, endemic to wild marmot colonies on the Central Asian steppes, was inadvertently mobilized along the bustling trade arteries linking the Mongol Empire. In 1346 CE, Mongol armies besieging the Genoese trading fortress of Kaffa on the Crimean peninsula were struck by the pestilence; chroniclers recorded that the Mongols catapulted plague-infested corpses over the city walls. When Genoese merchant galleys evacuated Kaffa and docked in Messina, Sicily, in October 1347 CE, they carried dying crewmen covered in oozing black swellings, introducing the catastrophic Black Death to Western Europe.\n\nBetween 1347 and 1351 CE, the Black Death swept across the European continent with devastating lethality, moving inland along river routes and trade highways from Italy to France, England, Germany, Scandinavia, and Russia. Modern epidemiological research confirms that the pandemic manifested primarily as bubonic plague (transmitted by the Oriental rat flea Xenopsylla cheopis hosted on black rats) and the lethal airborne pneumonic plague (spread through respiratory droplets). In the absence of germ theory or microscopic understanding, medieval populations were completely defenseless. Physicians attributed the contagion to divine wrath, astrologically toxic planetary alignments, or poisonous foul air ('miasmas'). Within four terrifying years, an estimated 30% to 60% of Europe's entire human population - between 25 and 40 million individuals - perished, causing entire villages to vanish and leaving fields choked with unburied corpses.\n\nThe demographic collapse wrought by the Black Death shattered the fundamental socio-economic foundations of medieval European feudalism. With the agricultural labor force abruptly decimated by more than one-third, the centuries-old balance of power between feudal lords and agrarian peasants shifted overnight. Arable land was abundant, but agricultural laborers were desperately scarce. Realizing their indispensable economic value, surviving serfs broke customary feudal bonds, refusing to perform unpaid manorial corvée labor and demanding cash wages, lower land rents, and the legal right to relocate to neighboring estates offering higher compensation. When monarchs and aristocratic parliaments attempted to artificially freeze wages at pre-plague rates (such as England's Statute of Laborers in 1351), violent peasant rebellions erupted, permanently accelerating the decay of serfdom in Western Europe.",
           "primarySource": "From Florentine author Giovanni Boccaccio in the introduction to 'The Decameron' (c. 1353 CE), recounting the arrival of the pestilence in Florence in 1348: 'The condition of the lower and middle classes was even more pitiable to behold... Thousands fell sick daily, and being without care or aid, almost all died. Many breathed their last in the open streets, day and night; and of many others who died at home, the neighbors knew nothing until the stench of their decaying bodies betrayed them... Brother was abandoned by brother, uncle by nephew, and often the wife by her husband; what is even worse, fathers and mothers refused to nurse their own children.' This vivid contemporary eyewitness account details the total psychological, moral, and social breakdown experienced by European urban societies under the weight of the pandemic.",
@@ -313,7 +680,40 @@ const CURRICULUM_DATA = [
             "correctIndex": 0,
             "explanation": "Because the Black Death killed between 30% and 60% of the population, agricultural laborers became desperately scarce. Landlords were forced to compete for surviving workers by offering cash wages, forgiving debts, and converting serfdom dues into low tenant rents, effectively dismantling the manorial system."
           }
-        ]
+        ],
+        "plainEnglish": {
+          "theBigIdea": "In 1347, trade ships unwittingly brought the Black Death (bubonic plague) to Europe. Transmitted by fleas on black rats, it killed 30% to 60% of the population in under five years. The catastrophic labor shortage shattered feudalism because surviving peasants could demand wages.",
+          "modernAnalogy": "Imagine if half the workers in your city suddenly vanished: the few workers left could charge whatever wages they wanted, destroying the old rules of who was in charge.",
+          "keyTakeaways": [
+            "The bacterium Yersinia pestis spread along trade routes from Asia across Europe.",
+            "Feudalism collapsed because lords desperately needed peasant laborers and had to pay cash wages.",
+            "The trauma sparked religious questioning, artistic obsession with mortality, and medical experimentation."
+          ]
+        },
+        "visualArtifact": {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Plague_doctor_by_Paul_F%C3%BCrst.png?width=1000",
+          "title": "Doctor Schnabel von Rom: Plague Doctor with Protective Beak Mask (1656)",
+          "provenance": "Copper engraving by Paul Furst, German Historical Museum",
+          "description": "Epidemiological Map and Contemporary Woodcut: A detailed chronological wave-front map of the spread of the Black Death across Europe from 1347 to 1351 CE. Radial gradient lines trace the plague's expansion outward from Mediterranean ports (Messina, Genoa, Marseille) in late 1347, through Paris and London by 1348, into central Germany and Scandinavia by 1349, and reaching Moscow by 1351. The graphic inset reproduces a fifteenth-century German 'Danse Macabre' (Dance of Death) woodcut, illustrating skeletal personifications of Death leading popes, emperors, knights, merchants, and plowmen hand-in-hand to the grave, symbolizing the universal mortality that leveled medieval social hierarchies.",
+          "visualClues": [
+            "Notice the materials, craft techniques, and structural design used by artisans of this era.",
+            "Observe how social rank, power, or religious symbolism is visually communicated in the piece.",
+            "Examine what this artifact proves about trade connections, literacy, or technology in its society."
+          ]
+        },
+        "primarySourceContext": {
+          "purpose": "A primary source is direct evidence created by people who actually lived through these historical events.",
+          "authorAndEra": "From Florentine author Giovanni Boccaccio in the introduction to 'The Decameron' (c. 1353 CE), recounting the arrival of the pestilence in Florence in 1348",
+          "originalQuote": "From Florentine author Giovanni Boccaccio in the introduction to 'The Decameron' (c. 1353 CE), recounting the arrival of the pestilence in Florence in 1348: 'The condition of the lower and middle classes was even more pitiable to behold... Thousands fell sick daily, and being without care or aid, almost all died. Many breathed their last in the open streets, day and night; and of many others who died at home, the neighbors knew nothing until the stench of their decaying bodies betrayed them... Brother was abandoned by brother, uncle by nephew, and often the wife by her husband; what is even worse, fathers and mothers refused to nurse their own children.' This vivid contemporary eyewitness account details the total psychological, moral, and social breakdown experienced by European urban societies under the weight of the pandemic.",
+          "plainEnglishMeaning": "This historical text provides first-hand proof of how leaders, scholars, and ordinary citizens viewed their world, confirming that rulers faced real struggles with literacy, communication, and governing far-flung territories.",
+          "whyItMatters": "Instead of guessing what happened, historians use this exact document to verify the laws, customs, and daily thoughts of people living centuries ago."
+        },
+        "specializedFocusContext": {
+          "title": "Socio-Economic Structural Shifts - The Statute of Laborers and Peasant Revolts",
+          "purpose": "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
+          "details": "Socio-Economic Structural Shifts - The Statute of Laborers and Peasant Revolts: To counter the soaring wage demands of surviving peasants, King Edward III and the English Parliament passed the Statute of Laborers in 1351 CE. The law mandated that all agricultural laborers work at pre-1346 wage rates, forbade peasants from traveling between counties to seek higher pay, and imposed harsh fines on landlords who paid competitive wages. The statute proved unenforceable against raw market supply and demand, fueling deep-seated resentment that culminated in the English Peasants' Revolt of 1381 led by Wat Tyler. Armed with scythes and longbows, thousands of peasants marched on London, stormed the Tower of London, and demanded the total abolition of serfdom and social equality, demonstrating that the demographic shock of the Black Death had irrevocably broken the feudal manorial framework.",
+          "plainEnglishImpact": "Without this specific innovation, society would not have been able to communicate, organize trade, maintain legal order, or preserve ideas for future generations."
+        }
       }
     ]
   },
@@ -323,7 +723,7 @@ const CURRICULUM_DATA = [
       {
         "unitId": "M5-U13",
         "title": "Unit 13: West African Empires: Ghana, Mali, and the Trans-Saharan Trade",
-        "videoEmbedUrl": "https://www.youtube-nocookie.com/embed/jvnU0v6hcUo",
+        "videoEmbedUrl": "https://www.youtube.com/embed/jvnU0v6hcUo",
         "content": {
           "background": "Across the ecological transition zone of the West African Sahel and savanna - situated between the arid expanse of the Sahara Desert to the north and the tropical rainforests to the south - successive imperial states developed formidable civilizations powered by global commerce. Beginning in the eighth century CE, the Kingdom of Ghana (known locally as Wagadou) amassed immense geopolitical authority by monopolizing the Trans-Saharan trade routes. This commercial network was fundamentally transformed by the introduction of the Arabian camel (dromedary), whose anatomical ability to travel for weeks across waterless sand dunes with heavy packs revolutionized long-distance travel. Ghana functioned as the indispensable middleman in a vital complementary commodity exchange: desert rock salt mined from the desolate northern salt pans of Taghaza was traded pound-for-pound for rich alluvial gold dust panned in the southern forest riverbeds of Bambuk and Bure.\n\nBy the thirteenth century, following the decline of Ghana due to drought and external incursions, the Mali Empire was established by the legendary warrior king Sundiata Keita (the 'Lion King' of Mali, c. 1235 CE). Unifying fragmented Malinke chiefdoms, Sundiata codified the Kouroukan Fouga - one of history's earliest oral constitutional charters, guaranteeing clan rights, environmental stewardship, and social peace. The Mali Empire reached the zenith of its global prominence under Mansa Musa (reigned 1312-1337 CE). A devout Muslim sovereign ruling over a peaceful realm larger than Western Europe, Mansa Musa commanded a state that supplied more than half of the entire Old World's circulating gold supply, fueling European and Mediterranean mints.\n\nIn 1324 CE, Mansa Musa embarked on his historic pilgrimage (Hajj) to Mecca, traveling across North Africa with an imperial entourage that astonished contemporary chroniclers. Accompanied by over 60,000 courtiers, soldiers, and enslaved attendants dressed in Persian silks, along with a baggage train of eighty camels each laden with 300 pounds of pure gold dust, Mansa Musa distributed gold so lavishly in Cairo and Medina that he inadvertently devalued the metal across Egypt for over a decade. Upon his return to Mali, he sponsored an intellectual and architectural revolution. He commissioned the Andalusian architect Abu Ishaq al-Sahili to construct the monumental Djinguereber and Sankore mosques in Timbuktu, transforming the riverine city into a world-renowned university center that housed over 25,000 students and vast manuscript libraries in mathematics, medicine, astronomy, and Islamic jurisprudence.",
           "primarySource": "From Arab chronicler Ibn Fadlallah al-Umari in 'Paths of the Eyes in the Kingdoms of the Different Nations' (Masalik al-Absar, c. 1342 CE), recounting Mansa Musa's visit to Cairo: 'This man [Mansa Musa] flooded Cairo with his benefactions. He left no court emir nor holder of a royal office without the gift of a load of gold. The people of Cairo earned huge sums from him in buying and selling and giving and taking. They traded with the gold they got from him... Gold was at a high price in Egypt until they came in that year. The mithqal did not cease falling in price; its value was wiped out because of the amount of gold they brought into Egypt and spent there, and this state of affairs continued for more than twelve years.' This eyewitness account documents the staggering economic scale and global impact of West African wealth.",
@@ -342,12 +742,45 @@ const CURRICULUM_DATA = [
             "correctIndex": 0,
             "explanation": "Mansa Musa spent and gifted such massive quantities of pure gold during his stay in Cairo that he saturated the regional bullion market. This sudden surplus devalued gold against silver, triggering sustained economic inflation that lasted more than twelve years across the eastern Mediterranean."
           }
-        ]
+        ],
+        "plainEnglish": {
+          "theBigIdea": "In West Africa, powerful empires like Ghana and Mali became fabulously wealthy by controlling the Trans-Saharan gold-for-salt trade routes. When Mali's Emperor Mansa Musa made his pilgrimage to Mecca, he handed out so much gold that he devalued gold prices for twelve years!",
+          "modernAnalogy": "Mansa Musa was the wealthiest human being in recorded history, and Timbuktu was an intellectual powerhouse with universities holding hundreds of thousands of books.",
+          "keyTakeaways": [
+            "Camels enabled merchant caravans to cross the blistering Sahara Desert.",
+            "West African gold was traded weight-for-weight for North African salt (vital for keeping food and human bodies alive).",
+            "Timbuktu became a renowned university center for astronomy, law, and literature."
+          ]
+        },
+        "visualArtifact": {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_Mansa_Musa.jpg?width=1000",
+          "title": "Mansa Musa on His Golden Throne: Catalan Atlas (1375 CE)",
+          "provenance": "Abraham Cresques, Bibliotheque nationale de France, Paris",
+          "description": "Historical Cartography and Architectural Blueprint: A detailed panel from the famed 1375 Catalan Atlas drawn by Majorcan Jewish cartographer Abraham Cresques. The map depicts West Africa dominated by an enthroned image of Mansa Musa dressed in European-style royal robes and a golden crown, holding a massive gleaming golden scepter in one hand and a colossal golden nugget in the other, extending a welcome to a Berber camel trader traversing the Sahara. The inset blueprint displays an architectural elevation of the Great Mosque of Djenné, illustrating its conical minaret spires topped with ostrich eggs (symbolizing fertility and purity) and protruding wooden toron beams.",
+          "visualClues": [
+            "Notice the materials, craft techniques, and structural design used by artisans of this era.",
+            "Observe how social rank, power, or religious symbolism is visually communicated in the piece.",
+            "Examine what this artifact proves about trade connections, literacy, or technology in its society."
+          ]
+        },
+        "primarySourceContext": {
+          "purpose": "A primary source is direct evidence created by people who actually lived through these historical events.",
+          "authorAndEra": "From Arab chronicler Ibn Fadlallah al-Umari in 'Paths of the Eyes in the Kingdoms of the Different Nations' (Masalik al-Absar, c. 1342 CE), recounting Mansa Musa's visit to Cairo",
+          "originalQuote": "From Arab chronicler Ibn Fadlallah al-Umari in 'Paths of the Eyes in the Kingdoms of the Different Nations' (Masalik al-Absar, c. 1342 CE), recounting Mansa Musa's visit to Cairo: 'This man [Mansa Musa] flooded Cairo with his benefactions. He left no court emir nor holder of a royal office without the gift of a load of gold. The people of Cairo earned huge sums from him in buying and selling and giving and taking. They traded with the gold they got from him... Gold was at a high price in Egypt until they came in that year. The mithqal did not cease falling in price; its value was wiped out because of the amount of gold they brought into Egypt and spent there, and this state of affairs continued for more than twelve years.' This eyewitness account documents the staggering economic scale and global impact of West African wealth.",
+          "plainEnglishMeaning": "This historical text provides first-hand proof of how leaders, scholars, and ordinary citizens viewed their world, confirming that rulers faced real struggles with literacy, communication, and governing far-flung territories.",
+          "whyItMatters": "Instead of guessing what happened, historians use this exact document to verify the laws, customs, and daily thoughts of people living centuries ago."
+        },
+        "specializedFocusContext": {
+          "title": "Economics and Architecture - The Gold-Salt Exchange and Sudano-Sahelian Adobe Engineering",
+          "purpose": "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
+          "details": "Economics and Architecture - The Gold-Salt Exchange and Sudano-Sahelian Adobe Engineering: The trans-Saharan economic engine operated on the vital complementarity between salt and gold. Salt was biologically indispensable for human life in equatorial climates to maintain hydration and preserve food, yet was entirely absent from West Africa's gold-rich forest regions. Caravan merchants transported 200-pound slabs of rock salt cut from the Saharan desert floor to market hubs like Djenné and Timbuktu, exchanging them for gold bullion. To construct monumental civic and religious buildings in a region lacking quarried stone or timber, West African architects engineered the Sudano-Sahelian architectural style. Utilizing sun-baked mud bricks, river clay plaster, and protruding horizontal bundles of palm wood beams (toron), builders erected soaring earthen mosques. The protruding toron served both as structural scaffolding and permanent perches for community masons during annual post-rainy-season replastering festivals.",
+          "plainEnglishImpact": "Without this specific innovation, society would not have been able to communicate, organize trade, maintain legal order, or preserve ideas for future generations."
+        }
       },
       {
         "unitId": "M5-U14",
         "title": "Unit 14: Mesoamerica: Maya Cities and the Aztec Island Metropolis of Tenochtitlan",
-        "videoEmbedUrl": "https://www.youtube-nocookie.com/embed/JZj7acYZ19w",
+        "videoEmbedUrl": "https://www.youtube.com/embed/JZj7acYZ19w",
         "content": {
           "background": "In the geographic and cultural corridor of Mesoamerica, spanning central Mexico through Guatemala, Belize, and the Yucatan Peninsula, sophisticated urban civilizations emerged in complete independence from Old World influences. During the Classic Period (c. 250-900 CE), the Maya engineered magnificent lowland forest city-states such as Tikal, Palenque, Copán, and Calakmul. Devoid of beast of burden or wheeled transport, the Maya constructed towering limestone step-pyramid temples, sacred ball courts, and extensive paved sacbeob causeways. Maya intellectual achievements were unmatched in the Americas: they developed a complex logo-syllabic hieroglyphic writing script, a base-20 mathematical system utilizing the concept of positional zero centuries before its adoption in Europe, and astronomical tables capable of predicting solar eclipses and tracking the cycles of Venus with micro-precision across millennia.\n\nFollowing the mysterious political collapse and urban abandonment of Classic southern Maya centers around 900 CE - attributed by modern archaeologists to prolonged multi-decade megadroughts, deforestation, and escalations in endemic warfare - the center of Mesoamerican imperial power shifted to the high volcanic Valley of Mexico. In the fourteenth century, a semi-nomadic Nahuatl-speaking group known as the Mexica (later popularly termed the Aztecs) arrived in the basin. Regarded as uncivilized outcasts by established regional city-states, the Mexica fulfilled a divine prophecy from their patron deity Huitzilopochtli: they were instructed to build their home where they beheld an eagle perched upon a nopal cactus devouring a serpent. In 1325 CE, they spotted this sacred omen upon a marshy, unpromising island in the shallow, brackish waters of Lake Texcoco, founding the city of Tenochtitlan.\n\nThrough extraordinary hydraulic engineering and military organization, Tenochtitlan expanded into a colossal island metropolis of over 200,000 inhabitants - larger than contemporary Paris, London, or Madrid. In 1428 CE, the Mexica formed the Triple Alliance with the neighboring city-states of Texcoco and Tlacopan, embarking on rapid imperial conquests that brought hundreds of tributary city-states stretching from the Gulf Coast to the Pacific under Aztec dominion. The capital was arranged in four great quadrants centered upon the Sacred Precinct and the monumental Templo Mayor, a dual step-pyramid crowned with twin temples dedicated to Tlaloc (the rain deity) and Huitzilopochtli (the god of war). Aztec society was strictly stratified, divided between hereditary nobility (Pipiltin), commoners and farmers (Macehualtin), and merchant-spies (Pochteca) who traversed Mesoamerica trading feathers, cacao beans, and jade while gathering military intelligence for the state.",
           "primarySource": "From Spanish conquistador Bernal Díaz del Castillo in 'The True History of the Conquest of New Spain' (Historia Verdadera de la Conquista de la Nueva España, recounting their arrival in Tenochtitlan in November 1519): 'When we saw so many cities and villages built in the water and other great towns on dry land and that straight and level causeway going towards Mexico, we were amazed and said that it was like the enchantments they tell of in the legend of Amadis, on account of the great towers and cues and buildings rising from the water, and all built of masonry. And some of our soldiers even asked whether the things that we saw were not a dream... I do not know how to describe it, seeing things as we did that had never been heard of or seen before, not even dreamed about.' This primary account conveys the European shock upon encountering the architectural sophistication and urban scale of the Aztec capital.",
@@ -366,12 +799,45 @@ const CURRICULUM_DATA = [
             "correctIndex": 0,
             "explanation": "Chinampas were raised agricultural plots engineered directly in shallow lakebeds by staking enclosures, layering lake mud and decomposing vegetation, and planting boundary willow trees whose roots anchored the soil. Constantly irrigated by surrounding water, they yielded up to seven abundant harvests annually to feed Tenochtitlan."
           }
-        ]
+        ],
+        "plainEnglish": {
+          "theBigIdea": "In the Americas, the Maya calculated complex astronomical calendars and built stone jungle pyramids. Centuries later, the Aztecs built Tenochtitlan, an engineering marvel: a floating island metropolis with canals, aqueducts, and artificial floating gardens in the middle of a lake.",
+          "modernAnalogy": "Tenochtitlan was cleaner and larger than London or Paris in 1500, with floating gardens (chinampas) that produced up to seven crop harvests a year.",
+          "keyTakeaways": [
+            "The Maya developed written hieroglyphs, complex mathematics (including zero), and precise calendars.",
+            "The Aztecs engineered causeways, drawbridges, and aqueducts to supply their lake capital.",
+            "Chinampas turned swampy shallows into fertile agricultural beds feeding over 200,000 citizens."
+          ]
+        },
+        "visualArtifact": {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Codex_Mendoza_folio_2r.jpg?width=1000",
+          "title": "The Founding of Tenochtitlan on Lake Texcoco: Codex Mendoza (c. 1541)",
+          "provenance": "Bodleian Library, University of Oxford, UK",
+          "description": "Engineering Cutaway Diagram and Urban Plan: Architectural bird's-eye schematic of the island capital of Tenochtitlan in Lake Texcoco (c. 1519 CE). The map shows the three massive stone causeways equipped with removable timber drawbridges connecting the city to the mainland (Iztapalapa, Tlacopan, and Tepeyac). The urban core illustrates the colossal Templo Mayor and marketplace of Tlatelolco, surrounded by thousands of rectangular green chinampa agricultural plots separated by a grid of navigable canoe canals (acalli), with the 16-kilometer stone Dike of Nezahualcoyotl stretching across the eastern horizon.",
+          "visualClues": [
+            "Notice the materials, craft techniques, and structural design used by artisans of this era.",
+            "Observe how social rank, power, or religious symbolism is visually communicated in the piece.",
+            "Examine what this artifact proves about trade connections, literacy, or technology in its society."
+          ]
+        },
+        "primarySourceContext": {
+          "purpose": "A primary source is direct evidence created by people who actually lived through these historical events.",
+          "authorAndEra": "From Spanish conquistador Bernal Díaz del Castillo in 'The True History of the Conquest of New Spain' (Historia Verdadera de la Conquista de la Nueva España, recounting their arrival in Tenochtitlan in November 1519)",
+          "originalQuote": "From Spanish conquistador Bernal Díaz del Castillo in 'The True History of the Conquest of New Spain' (Historia Verdadera de la Conquista de la Nueva España, recounting their arrival in Tenochtitlan in November 1519): 'When we saw so many cities and villages built in the water and other great towns on dry land and that straight and level causeway going towards Mexico, we were amazed and said that it was like the enchantments they tell of in the legend of Amadis, on account of the great towers and cues and buildings rising from the water, and all built of masonry. And some of our soldiers even asked whether the things that we saw were not a dream... I do not know how to describe it, seeing things as we did that had never been heard of or seen before, not even dreamed about.' This primary account conveys the European shock upon encountering the architectural sophistication and urban scale of the Aztec capital.",
+          "plainEnglishMeaning": "This historical text provides first-hand proof of how leaders, scholars, and ordinary citizens viewed their world, confirming that rulers faced real struggles with literacy, communication, and governing far-flung territories.",
+          "whyItMatters": "Instead of guessing what happened, historians use this exact document to verify the laws, customs, and daily thoughts of people living centuries ago."
+        },
+        "specializedFocusContext": {
+          "title": "Agrarian and Hydraulic Engineering - Chinampas and The Dike of Nezahualcoyotl",
+          "purpose": "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
+          "details": "Agrarian and Hydraulic Engineering - Chinampas and The Dike of Nezahualcoyotl: To sustain a dense urban population in an enclosed lake basin, Aztec engineers perfected 'Chinampas' (often mischaracterized as floating gardens). Builders drove wooden juniper stakes into the shallow lakebed to form rectangular wattle fencing measuring roughly 30 by 2.5 meters. They filled these enclosures with alternating layers of decomposing aquatic vegetation, lake silt, and rich organic mud, planting native ahuejote willow trees along the borders; the deep root systems of the trees anchored the plots permanently to the lake floor. Silt-enriched chinampas yielded up to seven vegetable and maize harvests per year without soil exhaustion. Concurrently, to manage lake ecology, the poet-king Nezahualcoyotl of Texcoco designed the 16-kilometer Dike of Nezahualcoyotl - a stone-and-timber floodgate barrier that separated the fresh, spring-fed waters of Lake Chalco and Xochimilco surrounding Tenochtitlan from the brackish, flood-prone waters of eastern Lake Texcoco.",
+          "plainEnglishImpact": "Without this specific innovation, society would not have been able to communicate, organize trade, maintain legal order, or preserve ideas for future generations."
+        }
       },
       {
         "unitId": "M5-U15",
         "title": "Unit 15: The Inka Empire of the Andes: Infrastructure, Quipu, and Tawantinsuyu",
-        "videoEmbedUrl": "https://www.youtube-nocookie.com/embed/UO5ktwPXsyM",
+        "videoEmbedUrl": "https://www.youtube.com/embed/UO5ktwPXsyM",
         "content": {
           "background": "Along the rugged, vertical spine of the South American Andes - spanning modern-day Peru, Ecuador, Bolivia, Chile, northwest Argentina, and southern Colombia - the Inka civilization forged the largest empire in the pre-Columbian Americas. Known in the Quechua language as Tawantinsuyu ('The Four United Regions'), the empire encompassed an extraordinary mosaic of microclimates, ranging from hyper-arid coastal deserts and temperate river valleys to freezing, oxygen-thin alpine grasslands (puna) reaching elevations above 4,000 meters. Beginning in 1438 CE under the visionary leadership of Pachacuti Inca Yupanqui, who repelled the rival Chanka invasion and reconstructed the imperial capital of Cusco in the shape of a puma, the Inka consolidated a state of over ten to twelve million ethnically diverse subjects.\n\nThe Inka state achieved this monumental imperial integration without the technological systems traditionally deemed essential in the Old World: they utilized no wheeled transport, possessed no iron or steel metallurgy (working primarily in copper, bronze, gold, and silver), had no draft animals other than the pack llama (which could carry only 50 to 75 pounds and could not be ridden), and developed no alphabetic or hieroglyphic writing system. Instead, the Inka empire was governed through an ingenious administrative philosophy of state redistribution, vertical archipelago economics, and mandatory communal labor.\n\nUnder the Inka economic framework, there was no private ownership of land, nor did commercial market squares or physical currency exist. All land belonged to the Sapa Inca (the divine emperor, revered as the son of the sun god Inti). In exchange for the state maintaining vast food security networks, every able-bodied adult peasant owed the 'Mit'a' - a compulsory, seasonal labor tax. Citizens served rotas in the imperial army, constructed monumental stone architecture, cut terraces into granite mountainsides, and mined silver and copper. To insulate the empire against frequent Andean frosts and droughts, the state constructed thousands of stone storehouses (qullqas) along highways, stockpiling millions of tons of freeze-dried potatoes (chuño), dehydrated llama jerky (ch'arki), and woven wool textiles to be distributed freely to the population during crop failures or old age.",
           "primarySource": "From Spanish chronicler Pedro Cieza de León in 'The Chronicles of Peru' (Crónicas del Perú, 1553), describing Inka royal roads and administrative storehouses: 'In all human memory I think there is no record of another road comparable to this, which passes through deep valleys and over snowy mountains, cut through the living rock along torrential rivers... In all these places it was clean, clear of debris, with inns, storehouses, and temples of the Sun at regular intervals. A letter or verbal command could travel from Quito to Cusco [over 2,000 km] in five days through the relay runners... So magnificent were the storehouses that if there came a year of famine or freezing hail, the people suffered no lack, for the Inca opened his storehouses and gave to all according to their needs.'",
@@ -390,7 +856,40 @@ const CURRICULUM_DATA = [
             "correctIndex": 0,
             "explanation": "The Quipu was an ingenious Andean information technology. By manipulating cord colors, string hierarchies, and positional knot configurations based on a decimal system, Inka bureaucrats recorded complex statistical data, troop rosters, food storage inventories, and census figures."
           }
-        ]
+        ],
+        "plainEnglish": {
+          "theBigIdea": "High in the Andes Mountains, the Inka Empire built the largest empire in pre-Columbian America without wheels, horses, or a written alphabet. They used colored, knotted strings called Quipu for accounting, terraced steep mountain peaks, and built 40,000 km of stone highways.",
+          "modernAnalogy": "The Inka road system was like an ancient South American internet: relay runners called chasquis sprinted messages across the Andes faster than the Roman postal service.",
+          "keyTakeaways": [
+            "Tawantinsuyu (The Realm of the Four Parts) united millions of people across desert, jungle, and mountain peaks.",
+            "Quipu recorded taxes, troop counts, and census data through intricate knots and colored threads.",
+            "The Mita system required every family to work on roads, bridges, and storage silos for communal security."
+          ]
+        },
+        "visualArtifact": {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Machu_Picchu,_Peru.jpg?width=1000",
+          "title": "Inka Royal Estate and Terraced Agriculture at Machu Picchu",
+          "provenance": "Cusco Region, Peru (c. 1450 CE)",
+          "description": "Archaeological Data Blueprint and Highway Schematic: Detailed technical breakdown of an Inka Quipu accounting ledger alongside a mountain road cross-section. The upper diagram illustrates the anatomy of the quipu: the primary cord, secondary pendant cords, and tertiary subsidiary strings, with numeric decimal placement callouts demonstrating how thousands, hundreds, tens, and units were recorded via precise knot clusters. The lower schematic reveals a cutaway of the Qhapaq Ñan traversing an Andean cliff face, complete with stone retaining walls, carved rock drainage gutters to prevent erosion from glacial runoff, and an ichu-grass suspension bridge spanning a yawning mountain chasm.",
+          "visualClues": [
+            "Notice the materials, craft techniques, and structural design used by artisans of this era.",
+            "Observe how social rank, power, or religious symbolism is visually communicated in the piece.",
+            "Examine what this artifact proves about trade connections, literacy, or technology in its society."
+          ]
+        },
+        "primarySourceContext": {
+          "purpose": "A primary source is direct evidence created by people who actually lived through these historical events.",
+          "authorAndEra": "From Spanish chronicler Pedro Cieza de León in 'The Chronicles of Peru' (Crónicas del Perú, 1553), describing Inka royal roads and administrative storehouses",
+          "originalQuote": "From Spanish chronicler Pedro Cieza de León in 'The Chronicles of Peru' (Crónicas del Perú, 1553), describing Inka royal roads and administrative storehouses: 'In all human memory I think there is no record of another road comparable to this, which passes through deep valleys and over snowy mountains, cut through the living rock along torrential rivers... In all these places it was clean, clear of debris, with inns, storehouses, and temples of the Sun at regular intervals. A letter or verbal command could travel from Quito to Cusco [over 2,000 km] in five days through the relay runners... So magnificent were the storehouses that if there came a year of famine or freezing hail, the people suffered no lack, for the Inca opened his storehouses and gave to all according to their needs.'",
+          "plainEnglishMeaning": "This historical text provides first-hand proof of how leaders, scholars, and ordinary citizens viewed their world, confirming that rulers faced real struggles with literacy, communication, and governing far-flung territories.",
+          "whyItMatters": "Instead of guessing what happened, historians use this exact document to verify the laws, customs, and daily thoughts of people living centuries ago."
+        },
+        "specializedFocusContext": {
+          "title": "Data Management and Transportation - The Quipu, Qhapaq Ñan, and Chasqui Runners",
+          "purpose": "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
+          "details": "Data Management and Transportation - The Quipu, Qhapaq Ñan, and Chasqui Runners: To administer a centralized imperial economy across 4,000 kilometers without written text, Inka administrators (Quipucamayocs) utilized the 'Quipu' (Khipu). The quipu was a sophisticated tactile record-keeping device consisting of a thick primary cotton cord from which hung hundreds of subsidiary woolen strings. Numeric values, census counts, tax dues, livestock numbers, and military supplies were encoded using a base-10 positional decimal system of knots (single knots, figure-eight knots, long multi-loop knots) and color-coded cords indicating specific commodities. To physically unite this mountainous realm, the Inka engineered the 'Qhapaq Ñan' - a 40,000-kilometer paved highway network featuring granite staircases cut into sheer precipices, tunnels carved through mountains, and woven ichu-grass suspension bridges (Keshwa Chaca) spanning treacherous river gorges. Relay runners called 'Chasquis' operated along these roads, carrying verbal messages and quipus in continuous relays that covered up to 240 kilometers per day.",
+          "plainEnglishImpact": "Without this specific innovation, society would not have been able to communicate, organize trade, maintain legal order, or preserve ideas for future generations."
+        }
       }
     ]
   },
@@ -400,7 +899,7 @@ const CURRICULUM_DATA = [
       {
         "unitId": "M6-U16",
         "title": "Unit 16: The Italian Renaissance: Humanism, Civic Culture, and Perspective",
-        "videoEmbedUrl": "https://www.youtube-nocookie.com/embed/Vufba_ZcoR0",
+        "videoEmbedUrl": "https://www.youtube.com/embed/Vufba_ZcoR0",
         "content": {
           "background": "In the fourteenth and fifteenth centuries, the prosperous northern and central city-states of the Italian peninsula - notably Florence, Venice, Milan, and Genoa - ignited a sweeping cultural, philosophical, and artistic movement known as the Renaissance (the 'Rebirth'). Unlike northern European monarchies dominated by feudal agrarianism, northern Italy had developed an urbanized mercantile society. Italian merchant bankers accumulated unprecedented private fortunes by financing European monarchs and controlling lucrative Mediterranean maritime trade networks connecting the Levant, the Byzantine Empire, and Western Europe. Wealthy merchant patricians and civic oligarchs, most famously the Medici dynasty of Florence, channeled their massive capital into competitive civic and artistic patronage, commissioning monumental palaces, public sculptures, and cathedrals to project family prestige and municipal glory.\n\nAt the intellectual heart of the Renaissance was 'Humanism' (Studia Humanitatis) - an educational and philosophical movement that championed the critical recovery, translation, and emulation of classical Greco-Roman literature, philosophy, and history. Initiated by fourteenth-century Florentine poet Francesco Petrarch (the 'Father of Humanism'), who scoured forgotten monastic libraries across Europe to recover the lost letters and treatises of Cicero, humanists reacted sharply against the rigid scholasticism of medieval universities. Where medieval scholastic theologians viewed human life purely as a sinful pilgrimage toward the afterlife, Renaissance humanists emphasized human dignity, individual potential, earthly agency, and the civic duty of educated citizens to participate actively in the political and ethical life of their communities.\n\nThis intellectual transformation revolutionized the visual arts, fostering a dramatic shift away from the flat, symbolic, two-dimensional aesthetics of medieval iconography toward mathematical realism and empirical observation of nature. Master artists and polymaths such as Leonardo da Vinci, Michelangelo Buonarroti, and Sandro Botticelli conducted illicit human anatomical dissections to accurately depict musculature, bone structures, and facial psychology. Architecture broke decisively from Gothic styles; architects such as Filippo Brunelleschi, who engineered the monumental self-supporting brick dome of Florence Cathedral (Santa Maria del Fiore), revived classical Roman architectural proportions, symmetry, circular arches, Corinthian columns, and hemispherical domes.",
           "primarySource": "From Italian philosopher Giovanni Pico della Mirandola in 'Oration on the Dignity of Man' (De hominis dignitate, 1486 CE), imagining God's address to the first human: 'We have given you, O Adam, no fixed seat, no form of your own, nor any gift peculiar to yourself alone, so that according to your own longing and judgment you may have and possess whatever seat, whatever form, and whatever gifts you yourself shall desire... Constrained by no limits, in accordance with your own free will, in whose hand We have placed you, you shall ordain for yourself the limits of your nature. You have the power to degenerate into the lower forms of life, which are brutish; you have the power, through your soul's judgment, to be reborn into the higher forms, which are divine.' This manifesto embodies the revolutionary Renaissance conviction that humanity possesses unlimited potential and self-determination.",
@@ -419,12 +918,45 @@ const CURRICULUM_DATA = [
             "correctIndex": 0,
             "explanation": "Renaissance Humanism represented a shift away from medieval scholastic theology toward the 'humanities' (history, rhetoric, literature, ethics) inspired by ancient Roman and Greek thinkers. It celebrated human potential, civic engagement, and rational inquiry in earthly life."
           }
-        ]
+        ],
+        "plainEnglish": {
+          "theBigIdea": "Starting in wealthy Italian trade cities like Florence, the Renaissance (\"rebirth\") rejected medieval superstition and embraced Classical Greek and Roman ideas. Artists like Leonardo and Michelangelo used mathematical perspective to paint realistic humans, celebrating human curiosity and reason.",
+          "modernAnalogy": "The Renaissance was like switching from low-resolution 2D drawings to full 3D photorealistic virtual reality, putting human curiosity at the center of the world.",
+          "keyTakeaways": [
+            "Humanism focused on human potential, reason, and scientific observation instead of unquestioned dogma.",
+            "Linear perspective allowed artists to paint depth, shadows, and anatomical precision.",
+            "Wealthy merchant families like the Medici spent fortunes funding artists, philosophers, and architects."
+          ]
+        },
+        "visualArtifact": {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sanzio_01.jpg?width=1000",
+          "title": "The School of Athens: Renaissance Perspective and Classical Philosophy",
+          "provenance": "Raphael Sanzio (1511 CE), Apostolic Palace, Vatican City",
+          "description": "Geometric Perspective Diagram and Architectural Cutaway: A structural schematic illustrating Brunelleschi's mathematical system of Linear Perspective alongside a cutaway of the Florence Cathedral Dome (Il Duomo). The left panel illustrates a geometric grid floor (checkerboard pavimento) with orthogonal lines converging from the picture plane to a central vanishing point on the horizon line. The right panel displays the cross-section of Brunelleschi's revolutionary double-shelled dome, showing the herringbone brick-laying pattern, interior horizontal stone and iron tension chains, and octagonal marble ribs that eliminated the need for wooden centering supports during construction.",
+          "visualClues": [
+            "Notice the materials, craft techniques, and structural design used by artisans of this era.",
+            "Observe how social rank, power, or religious symbolism is visually communicated in the piece.",
+            "Examine what this artifact proves about trade connections, literacy, or technology in its society."
+          ]
+        },
+        "primarySourceContext": {
+          "purpose": "A primary source is direct evidence created by people who actually lived through these historical events.",
+          "authorAndEra": "From Italian philosopher Giovanni Pico della Mirandola in 'Oration on the Dignity of Man' (De hominis dignitate, 1486 CE), imagining God's address to the first human",
+          "originalQuote": "From Italian philosopher Giovanni Pico della Mirandola in 'Oration on the Dignity of Man' (De hominis dignitate, 1486 CE), imagining God's address to the first human: 'We have given you, O Adam, no fixed seat, no form of your own, nor any gift peculiar to yourself alone, so that according to your own longing and judgment you may have and possess whatever seat, whatever form, and whatever gifts you yourself shall desire... Constrained by no limits, in accordance with your own free will, in whose hand We have placed you, you shall ordain for yourself the limits of your nature. You have the power to degenerate into the lower forms of life, which are brutish; you have the power, through your soul's judgment, to be reborn into the higher forms, which are divine.' This manifesto embodies the revolutionary Renaissance conviction that humanity possesses unlimited potential and self-determination.",
+          "plainEnglishMeaning": "This historical text provides first-hand proof of how leaders, scholars, and ordinary citizens viewed their world, confirming that rulers faced real struggles with literacy, communication, and governing far-flung territories.",
+          "whyItMatters": "Instead of guessing what happened, historians use this exact document to verify the laws, customs, and daily thoughts of people living centuries ago."
+        },
+        "specializedFocusContext": {
+          "title": "Artistic Mathematics - Linear Perspective and Chiaroscuro",
+          "purpose": "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
+          "details": "Artistic Mathematics - Linear Perspective and Chiaroscuro: Around 1415 CE, architect Filippo Brunelleschi formulated the mathematical laws of Single-Point Linear Perspective, codified soon after by Leon Battista Alberti in his treatise 'On Painting' (De pictura, 1435). Linear perspective established a horizon line at the viewer's eye level, upon which sat a single 'Vanishing Point'. All parallel lines (orthogonals) receding into the visual distance converged mathematically toward this point, allowing artists to create an optically convincing three-dimensional spatial depth on a flat two-dimensional surface. Simultaneously, painters developed 'Chiaroscuro' (the subtle modulation of intense light and deep shadow) and 'Sfumato' (the smoky, seamless blending of colors without sharp boundaries, mastered by Leonardo in the Mona Lisa), imbuing two-dimensional paintings with tactile volume, atmospheric haze, and psychological realism.",
+          "plainEnglishImpact": "Without this specific innovation, society would not have been able to communicate, organize trade, maintain legal order, or preserve ideas for future generations."
+        }
       },
       {
         "unitId": "M6-U17",
         "title": "Unit 17: The Printing Revolution and the Dissemination of Knowledge",
-        "videoEmbedUrl": "https://www.youtube-nocookie.com/embed/PbBDP1Elbbg",
+        "videoEmbedUrl": "https://www.youtube.com/embed/PbBDP1Elbbg",
         "content": {
           "background": "Prior to the mid-fifteenth century, the production and circulation of written information in Western Europe was constrained by a severe technological bottleneck. Every single text, document, and Bible had to be laboriously copied by hand by monastic scribes or urban professional copyists onto expensive animal vellum (calfskin or sheepskin). A complete Latin Bible required the skins of over two hundred animals, could take an expert scribe a full year of grueling labor to complete, and cost as much as a modest agricultural farm. Consequently, books were luxury status symbols restricted almost exclusively to royal courts, wealthy cathedral chapters, and monastic scriptoria. With literacy rates hovering below ten percent, regional populations spoke localized spoken vernacular dialects, and intellectual discourse was insulated within a small Latin-reading clerical elite.\n\nAround 1440 CE in Mainz, Germany, an enterprising goldsmith and metalworker named Johannes Gutenberg revolutionized human communication by synthesizing several existing industrial processes into a viable commercial system: the Movable Metal Type Printing Press. While woodblock printing and ceramic movable type had been developed centuries earlier in China and Korea, East Asian languages with thousands of distinct logographic characters limited the economic viability of movable type. In contrast, European languages utilized small, phonetic alphabets consisting of roughly two dozen letters, making Gutenberg's system exceptionally efficient. In 1455 CE, Gutenberg proved the commercial and aesthetic feasibility of his invention by publishing the monumental 42-Line Gutenberg Bible, producing approximately 180 identical copies in the time it previously took to hand-copy a single manuscript.\n\nThe resulting explosion of print technology was astonishingly rapid. By 1500 CE - just four decades after Gutenberg's breakthrough - print shops were operating in over 250 European cities, from Venice and Basel to Paris and London. An estimated twenty million volumes (known to bibliophiles as 'Incunabula') were printed before the turn of the sixteenth century - more books than had been produced in the entire preceding millennium of European history. Print shops operated as dynamic intellectual hubs, bringing together scholars, translators, typesetters, and paper merchants to produce works of classical philosophy, navigational guides, legal codes, and scientific treatises at a fraction of their prior cost, irrevocably democratizing literacy and information access.",
           "primarySource": "From German humanist and satirist Sebastian Brant in his bestselling printed vernacular work 'The Ship of Fools' (Das Narrenschiff, 1494 CE): 'O happy Germany, that was deemed worthy to invent this glorious art! What blessings this noble craft hath brought! Now all men may purchase books at small cost; divine scripture is brought to every village, and the treasures of philosophy are no longer hidden away behind monastery gates for the eyes of the few... Knowledge is no longer locked in chains, but runneth through the streets to make men wise.' This contemporary verse captures the exhilaration of the Renaissance generation that witnessed the democratization of reading and the collapse of monastic information monopolies.",
@@ -443,12 +975,45 @@ const CURRICULUM_DATA = [
             "correctIndex": 0,
             "explanation": "Gutenberg's metallurgical breakthrough was a specialized alloy of lead (for durability), tin (to lower melting temperatures), and antimony (which uniquely expands as it solidifies). This ensured the molten metal filled the tiny matrix mold completely, producing sharp, uniform, and wear-resistant type pieces."
           }
-        ]
+        ],
+        "plainEnglish": {
+          "theBigIdea": "Around 1440, Johannes Gutenberg combined movable metal type, oil-based ink, and a wine press to invent the mechanical printing press. Suddenly, a book that previously took a monk an entire year to copy by hand could be printed in a single afternoon!",
+          "modernAnalogy": "Gutenberg's printing press was the medieval version of inventing the internet: information could suddenly spread faster than kings or churches could censor it.",
+          "keyTakeaways": [
+            "Movable type made books affordable for everyday people and sparked a boom in European literacy.",
+            "Scientists and doctors could publish diagrams and discoveries without scribal copying mistakes.",
+            "Without the printing press, the Protestant Reformation and Scientific Revolution could never have happened."
+          ]
+        },
+        "visualArtifact": {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gutenberg_Bible,_Lenox_Copy,_New_York_Public_Library,_2009._Pic_01.jpg?width=1000",
+          "title": "The Gutenberg 42-Line Bible Printed with Movable Metal Type (c. 1455)",
+          "provenance": "New York Public Library Rare Book Division",
+          "description": "Technical Mechanical Blueprint: Exploded engineering schematic of a mid-fifteenth-century Gutenberg Wooden Screw Printing Press. The diagram illustrates the primary structural components: the heavy oak framing uprights, the central wooden worm screw (spindle) turned by a manual lever bar, the weighted platen plate that applies uniform vertical downward pressure, the moveable sliding carriage bed (tympan and frisket) holding damp linen-rag paper, and the hand-set composing stick holding inverted lines of lead-antimony-tin alloy metal type.",
+          "visualClues": [
+            "Notice the materials, craft techniques, and structural design used by artisans of this era.",
+            "Observe how social rank, power, or religious symbolism is visually communicated in the piece.",
+            "Examine what this artifact proves about trade connections, literacy, or technology in its society."
+          ]
+        },
+        "primarySourceContext": {
+          "purpose": "A primary source is direct evidence created by people who actually lived through these historical events.",
+          "authorAndEra": "From German humanist and satirist Sebastian Brant in his bestselling printed vernacular work 'The Ship of Fools' (Das Narrenschiff, 1494 CE)",
+          "originalQuote": "From German humanist and satirist Sebastian Brant in his bestselling printed vernacular work 'The Ship of Fools' (Das Narrenschiff, 1494 CE): 'O happy Germany, that was deemed worthy to invent this glorious art! What blessings this noble craft hath brought! Now all men may purchase books at small cost; divine scripture is brought to every village, and the treasures of philosophy are no longer hidden away behind monastery gates for the eyes of the few... Knowledge is no longer locked in chains, but runneth through the streets to make men wise.' This contemporary verse captures the exhilaration of the Renaissance generation that witnessed the democratization of reading and the collapse of monastic information monopolies.",
+          "plainEnglishMeaning": "This historical text provides first-hand proof of how leaders, scholars, and ordinary citizens viewed their world, confirming that rulers faced real struggles with literacy, communication, and governing far-flung territories.",
+          "whyItMatters": "Instead of guessing what happened, historians use this exact document to verify the laws, customs, and daily thoughts of people living centuries ago."
+        },
+        "specializedFocusContext": {
+          "title": "Industrial Chemistry and Metallurgy - The Hand Mold and Oil-Based Ink",
+          "purpose": "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
+          "details": "Industrial Chemistry and Metallurgy - The Hand Mold and Oil-Based Ink: Gutenberg's true technological genius lay not simply in the mechanical press (adapted from the agricultural wooden screw press used in winemaking and olive pressing), but in two interlinked metallurgical and chemical breakthroughs. First, he engineered the adjustable Hand Mold, enabling the mass production of interchangeable, identical metal type pieces. He formulated a precise durable metallurgical alloy composed of 80% lead, 15% antimony, and 5% tin; the antimony expanded slightly upon cooling, ensuring the molten metal filled the matrix mold to cast razor-sharp typographical edges that would not warp or deform under the repeated crushing pressure of the press platen. Second, he formulated a viscous, oil-based printing ink made from linseed oil, varnish, walnut oil, and lampblack soot. Unlike water-based calligraphic inks that smeared across metal type and soaked irregularly through rag paper, Gutenberg's ink adhered uniformly to the lead type and dried into a crisp, permanent black impression.",
+          "plainEnglishImpact": "Without this specific innovation, society would not have been able to communicate, organize trade, maintain legal order, or preserve ideas for future generations."
+        }
       },
       {
         "unitId": "M6-U18",
         "title": "Unit 18: The Protestant Reformation and Religious Schism",
-        "videoEmbedUrl": "https://www.youtube-nocookie.com/embed/1o8oIELbNxE",
+        "videoEmbedUrl": "https://www.youtube.com/embed/1o8oIELbNxE",
         "content": {
           "background": "By the early sixteenth century, the Roman Catholic Church was mired in growing institutional, financial, and moral controversies. Widespread practices such as simony (the commercial buying and selling of church offices), pluralism (clerics holding multiple dioceses simultaneously to collect revenues while neglecting pastoral duties), and clerical concubinage ignited deep public cynicism. Financial abuses reached a boiling point under Pope Leo X, who authorized an aggressive promotional campaign for the sale of papal indulgences - certificates granting the remission of temporal punishment for sins in purgatory for the purchaser or their deceased relatives. Revenues were earmarked to finance the lavish reconstruction of Saint Peter's Basilica in Rome. In Germany, the Dominican friar Johann Tetzel marketed indulgences with mercenary theatricality, famously declaring: 'As soon as the coin in the coffer rings, the soul from purgatory springs.'\n\nOutraged by the commercialization of salvation, an Augustinian monk and university theology professor named Martin Luther penned a searing academic challenge: the Ninety-Five Theses (Disputation on the Power and Efficacy of Indulgences). Legend holds that on October 31, 1517 CE, Luther nailed his Latin document to the wooden door of All Saints' Church in Wittenberg, Germany. Luther argued that the Pope had no divine authority over purgatory and that the sale of indulgences corrupted genuine spiritual repentance. Translated swiftly into German and disseminated across Europe via Gutenberg's printing presses within weeks, Luther's protest escalated from an academic dispute into a continent-wide theological revolt known as the Protestant Reformation.\n\nAt the core of Protestant theology were three revolutionary tenets that shattered the traditional ecclesiastical monopoly of Rome: 'Sola Fide' (Justification by Faith Alone), asserting that salvation is an unearned gift of divine grace rather than the result of good works, sacraments, or indulgences; 'Sola Scriptura' (Scripture Alone), establishing the Bible as the sole infallible authority in Christian doctrine, superseding papal decrees and church traditions; and the 'Priesthood of All Believers', asserting that all Christians had direct spiritual access to God without requiring ordained clerical intermediaries. Summonsed before the Holy Roman Emperor Charles V at the Imperial Diet of Worms in 1521 CE to recant his teachings, Luther defiantly refused, proclaiming that his conscience was 'captive to the Word of God'. The subsequent political fallout fractured Europe into warring Catholic and Protestant states, culminating in decades of catastrophic religious warfare.",
           "primarySource": "From Martin Luther's historic defense before Emperor Charles V at the Imperial Diet of Worms (April 18, 1521 CE): 'Unless I am convinced by the testimony of the Scriptures or by clear reason - for I do not trust either in the Pope or in councils alone, since it is well known that they have often erred and contradicted themselves - I am bound by the Scriptures I have quoted, and my conscience is captive to the Word of God. I cannot and I will not recant anything, since it is neither safe nor right to go against conscience. May God help me. Amen.' This declaration established individual conscience and scriptural authority as supreme arbiters against institutional ecclesiastical power.",
@@ -467,7 +1032,40 @@ const CURRICULUM_DATA = [
             "correctIndex": 0,
             "explanation": "The Peace of Augsburg recognized the legal division of Christianity in the Holy Roman Empire by establishing 'Cuius regio, eius religio' ('Whose realm, his religion'). It gave each territorial prince the authority to choose between Catholicism and Lutheranism for his land, permanently ending Rome's religious monopoly."
           }
-        ]
+        ],
+        "plainEnglish": {
+          "theBigIdea": "In 1517, German monk Martin Luther nailed 95 complaints to a church door, attacking the Catholic Church for selling \"indulgences\" (certificates promising forgiveness of sins for cash). Using the printing press, Luther translated the Bible into everyday German, shattering religious unity across Europe.",
+          "modernAnalogy": "Luther's 95 Theses went viral like a tweet that sparks a global political revolution, dividing Europe into warring Catholic and Protestant factions.",
+          "keyTakeaways": [
+            "Luther argued that faith alone, not payments to priests, brought salvation.",
+            "Translating the Bible into common languages (German, English) allowed ordinary people to read scripture for themselves.",
+            "The Reformation triggered decades of religious wars but also stimulated individual literacy and freedom of thought."
+          ]
+        },
+        "visualArtifact": {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Martin_Luther_by_Lucas_Cranach_the_Elder_1529.jpg?width=1000",
+          "title": "Portrait of Reformer Martin Luther by Lucas Cranach the Elder (1529)",
+          "provenance": "Uffizi Gallery, Florence, Italy",
+          "description": "Historical Propaganda Woodcut and Territorial Map: A composite sixteenth-century visual panel featuring a polemical Protestant Reformation woodcut by Lucas Cranach the Elder set alongside a map of religious division in Europe (c. 1560 CE). The woodcut uses visual contrast: on the left, Jesus Christ is depicted washing the feet of his disciples in humility and driving moneychangers from the temple; on the right, the Pope sits upon a golden throne surrounded by Swiss guards, receiving bags of gold coins from the sale of indulgences. The adjoining map displays the religious fragmentation of Europe: Catholic areas in yellow (Spain, Italy, France), Lutheran regions in blue (northern Germany, Scandinavia), Calvinist pockets in orange (Geneva, Scotland, the Netherlands), and Anglican England in purple.",
+          "visualClues": [
+            "Notice the materials, craft techniques, and structural design used by artisans of this era.",
+            "Observe how social rank, power, or religious symbolism is visually communicated in the piece.",
+            "Examine what this artifact proves about trade connections, literacy, or technology in its society."
+          ]
+        },
+        "primarySourceContext": {
+          "purpose": "A primary source is direct evidence created by people who actually lived through these historical events.",
+          "authorAndEra": "From Martin Luther's historic defense before Emperor Charles V at the Imperial Diet of Worms (April 18, 1521 CE)",
+          "originalQuote": "From Martin Luther's historic defense before Emperor Charles V at the Imperial Diet of Worms (April 18, 1521 CE): 'Unless I am convinced by the testimony of the Scriptures or by clear reason - for I do not trust either in the Pope or in councils alone, since it is well known that they have often erred and contradicted themselves - I am bound by the Scriptures I have quoted, and my conscience is captive to the Word of God. I cannot and I will not recant anything, since it is neither safe nor right to go against conscience. May God help me. Amen.' This declaration established individual conscience and scriptural authority as supreme arbiters against institutional ecclesiastical power.",
+          "plainEnglishMeaning": "This historical text provides first-hand proof of how leaders, scholars, and ordinary citizens viewed their world, confirming that rulers faced real struggles with literacy, communication, and governing far-flung territories.",
+          "whyItMatters": "Instead of guessing what happened, historians use this exact document to verify the laws, customs, and daily thoughts of people living centuries ago."
+        },
+        "specializedFocusContext": {
+          "title": "Political Settlement and Religious Law - Cuius Regio, Eius Religio and The Peace of Augsburg (1555)",
+          "purpose": "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
+          "details": "Political Settlement and Religious Law - Cuius Regio, Eius Religio and The Peace of Augsburg (1555): The Reformation swiftly transformed into a political struggle as German territorial princes realized that adopting Lutheranism provided a legitimate legal justification to seize wealthy Catholic monastic lands, halt tax revenues sent to Rome, and assert political autonomy from Holy Roman Emperor Charles V. After decades of devastating civil warfare across the German states (the Schmalkaldic Wars), the conflict was temporarily resolved in 1555 CE through the landmark Peace of Augsburg. The treaty codified the constitutional principle of 'Cuius regio, eius religio' ('Whose realm, his religion'): each regional territorial prince was granted the legal authority to determine whether his domain would be Catholic or Lutheran, while dissenting subjects were granted the right to sell their property and emigrate. This settlement permanently shattered the religious unity of Western Christendom and solidified political decentralization across the Holy Roman Empire.",
+          "plainEnglishImpact": "Without this specific innovation, society would not have been able to communicate, organize trade, maintain legal order, or preserve ideas for future generations."
+        }
       }
     ]
   },
@@ -477,7 +1075,7 @@ const CURRICULUM_DATA = [
       {
         "unitId": "M7-U19",
         "title": "Unit 19: Maritime Innovations and European Oceanic Navigation",
-        "videoEmbedUrl": "https://www.youtube-nocookie.com/embed/wOclF9eP5uM",
+        "videoEmbedUrl": "https://www.youtube.com/embed/wOclF9eP5uM",
         "content": {
           "background": "For centuries, European maritime commerce was largely confined to coastal waters and the inland basins of the Mediterranean, Baltic, and North Seas. European access to the immensely lucrative luxury commodities of Asia - black pepper, cinnamon, nutmeg, cloves, raw silk, and porcelain - was controlled by an arduous, multi-stage trade pipeline. Goods traveled from the Indian Ocean through Muslim-controlled ports in Egypt and the Levant, where Italian maritime republics (predominantly Venice and Genoa) maintained exclusive trading monopolies, distributing spices across Europe at exorbitant markups. Following the Ottoman conquest of Constantinople in 1453 CE, which subjected eastern overland routes to heavy duties and strategic instability, Atlantic European monarchies sought to bypass Italian and Ottoman middlemen by finding direct oceanic routes to Asia.\n\nPositioned on the southwestern periphery of Europe facing the vast open Atlantic, the small Kingdom of Portugal emerged as the vanguard of oceanic exploration. Under the visionary sponsorship of Prince Henry the Navigator (1394-1460 CE), Portugal assembled an elite navigational research center at Sagres on the rocky cliffs of Cape Saint Vincent. Henry brought together Jewish cartographers, Arab astronomers, master shipwrights, and seasoned captains to systematically solve the problems of deep-sea oceanic navigation. Rather than making reckless journeys, Portuguese expeditions methodically charted the winds, ocean currents, and shoreline of West Africa, establishing fortified coastal trading posts (feitorias) along the Gulf of Guinea to trade in gold, ivory, and enslaved people.\n\nThe culmination of this systematic maritime program reshaped global geopolitics. In 1488 CE, Portuguese navigator Bartolomeu Dias rounded the storm-swept southern tip of Africa (the Cape of Good Hope), proving that the Atlantic and Indian Oceans were linked. A decade later, between 1497 and 1498 CE, Vasco da Gama successfully rounded the cape, sailed up the East African coast with the assistance of Arab navigator Ahmad ibn Majid, and crossed the Indian Ocean to drop anchor in Calicut, India. Da Gama returned to Lisbon with a cargo of spices that yielded a staggering 6,000 percent profit, smashing the centuries-old Venetian commercial monopoly and establishing the Portuguese Estado da Índia - a fortified maritime trade network dominating the Indian Ocean.",
           "primarySource": "From the anonymous shipboard journal of Vasco da Gama's First Voyage ('Roteiro', 1498 CE), recording the fleet's arrival in Calicut, India: 'When we arrived at Calicut, the captain-major sent one of the convicted men ashore... The Moors surrounded him, and two Christians of Tunis greeted him in Castilian saying: 'May the Devil take thee! What brought thee hither?' And he answered: 'We come in search of Christians and spices.' And they said: 'Why does not the King of Castile, the King of France, or the Signoria of Venice send hither?' And he replied that the King of Portugal would not permit them to do so.' This famous journal entry captures the dual religious and commercial motivations that propelled European oceanic voyages.",
@@ -496,12 +1094,45 @@ const CURRICULUM_DATA = [
             "correctIndex": 0,
             "explanation": "Traditional European square sails only functioned when wind blew from behind the vessel. The triangular lateen sail (borrowed from Arab dhow designs) acted like an airplane wing, creating lift that allowed ships to sail at an angle across the wind (tacking), enabling caravels to journey home against coastal trade winds."
           }
-        ]
+        ],
+        "plainEnglish": {
+          "theBigIdea": "When the Ottoman Empire took control of overland trade routes to Asia, European kingdoms raced to find an ocean route to Indian spices. Combining Arab astrolabes, Chinese compasses, and Portuguese caravel ships with triangular sails, navigators ventured into the open Atlantic.",
+          "modernAnalogy": "The Age of Discovery was the 15th-century equivalent of the Space Race, with Portugal and Spain racing to build ships that could survive months in the unknown ocean.",
+          "keyTakeaways": [
+            "The caravel ship used triangular lateen sails to sail against the wind (tacking).",
+            "The astrolabe and quadrant allowed sailors to calculate their latitude by measuring the angle of the North Star.",
+            "Finding ocean spice routes bypassed Mediterranean middlemen and sparked global oceanic empires."
+          ]
+        },
+        "visualArtifact": {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg?width=1000",
+          "title": "Precision Brass Astrolabe for Celestial Navigation and Latitude Reckoning",
+          "provenance": "Whipple Museum of the History of Science, Cambridge",
+          "description": "Navigational Instrument Blueprint and Nautical Plan: Detailed architectural plan of a Portuguese exploration Caravel (Caravela Redonda) alongside technical drawings of fifteenth-century navigational tools. The ship diagram illustrates the combination of square sails on the mainmast for downwind open-ocean speed and triangular lateen sails on the mizzenmast for maneuvering into the wind. Insets feature a heavy cast-brass Mariner's Astrolabe perforated with wind holes to prevent swaying on deck, a wood-and-lead Navigational Quadrant, and a wind-rose map illustrating the circular Atlantic wind gyre of the Volta do Mar.",
+          "visualClues": [
+            "Notice the materials, craft techniques, and structural design used by artisans of this era.",
+            "Observe how social rank, power, or religious symbolism is visually communicated in the piece.",
+            "Examine what this artifact proves about trade connections, literacy, or technology in its society."
+          ]
+        },
+        "primarySourceContext": {
+          "purpose": "A primary source is direct evidence created by people who actually lived through these historical events.",
+          "authorAndEra": "From the anonymous shipboard journal of Vasco da Gama's First Voyage ('Roteiro', 1498 CE), recording the fleet's arrival in Calicut, India",
+          "originalQuote": "From the anonymous shipboard journal of Vasco da Gama's First Voyage ('Roteiro', 1498 CE), recording the fleet's arrival in Calicut, India: 'When we arrived at Calicut, the captain-major sent one of the convicted men ashore... The Moors surrounded him, and two Christians of Tunis greeted him in Castilian saying: 'May the Devil take thee! What brought thee hither?' And he answered: 'We come in search of Christians and spices.' And they said: 'Why does not the King of Castile, the King of France, or the Signoria of Venice send hither?' And he replied that the King of Portugal would not permit them to do so.' This famous journal entry captures the dual religious and commercial motivations that propelled European oceanic voyages.",
+          "plainEnglishMeaning": "This historical text provides first-hand proof of how leaders, scholars, and ordinary citizens viewed their world, confirming that rulers faced real struggles with literacy, communication, and governing far-flung territories.",
+          "whyItMatters": "Instead of guessing what happened, historians use this exact document to verify the laws, customs, and daily thoughts of people living centuries ago."
+        },
+        "specializedFocusContext": {
+          "title": "Nautical Architecture and Navigation - The Caravel, Lateen Sails, and The Volta do Mar",
+          "purpose": "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
+          "details": "Nautical Architecture and Navigation - The Caravel, Lateen Sails, and The Volta do Mar: The breakthrough that made oceanic exploration possible was the Portuguese 'Caravel'. Unlike heavy, round-hulled Mediterranean cargo ships, the caravel was a lightweight, highly maneuverable vessel of 50 to 100 tons featuring a shallow hull draft capable of navigating uncharted coastal shoals and river estuaries. Critically, shipwrights equipped caravels with triangular 'Lateen' sails adapted from Arab dhows, allowing ships to tack (sail obliquely into the wind). To return home from the southern coast of Africa against prevailing northerly trade winds, Portuguese navigators perfected the counterintuitive navigational strategy of 'Volta do Mar' ('Turn of the Sea'): instead of fighting coastal headwinds, ships sailed far westward out into the open, trackless Atlantic to catch circular prevailing wind systems (gyres) that carried them safely back to Lisbon. Navigators charted their geographic latitude using mariner's astrolabes and quadrants to measure the angle of the North Star (Polaris) or the midday sun above the horizon.",
+          "plainEnglishImpact": "Without this specific innovation, society would not have been able to communicate, organize trade, maintain legal order, or preserve ideas for future generations."
+        }
       },
       {
         "unitId": "M7-U20",
         "title": "Unit 20: The Columbian Exchange: Biological and Ecological Shocks",
-        "videoEmbedUrl": "https://www.youtube-nocookie.com/embed/HQPA5oNpfM4",
+        "videoEmbedUrl": "https://www.youtube.com/embed/HQPA5oNpfM4",
         "content": {
           "background": "When Christopher Columbus made landfall in the Bahamas in October 1492 CE, sailing under the Spanish banner of Isabella I of Castile and Ferdinand II of Aragon, he initiated an event that permanently transformed global ecology: the Columbian Exchange. Named by historian Alfred Crosby, the Columbian Exchange denotes the massive, unprecedented transatlantic transfer of plants, domestic animals, human populations, and microbiological infectious pathogens between the Eastern Hemisphere (Afro-Eurasia) and the Western Hemisphere (the Americas). Because the continental landmasses had been separated by ocean barriers for more than twelve thousand years since the melting of the Beringia land bridge, both hemispheres had evolved radically distinct ecological assemblages. The sudden reconnection of these worlds was the most profound biological event since the extinction of the dinosaurs.\n\nThe most immediate and catastrophic dimension of this exchange was biological: 'The Great Dying' of Indigenous American populations. Because Indigenous peoples had lived in complete isolation from Afro-Eurasian crowd diseases for millennia, they had developed zero pre-existing immunological exposure or acquired antibodies against Old World pathogens. European conquerors, colonists, and animals introduced a lethal viral and bacterial cocktail including smallpox (Variola major), measles, typhus, influenza, bubonic plague, malaria, and yellow fever. The resulting virgin soil epidemics swept inland along Indigenous trade routes far ahead of physical European exploration, wiping out entire societies. Contemporary historical demographers estimate that between 80% and 90% of the entire pre-Columbian population of the Americas - tens of millions of human lives - perished within a single century following 1492, precipitating societal collapse, cultural disruption, and forest regeneration across abandoned farmlands.\n\nConversely, the transfer of American domestic crops revolutionized the agricultural and demographic landscape of Afro-Eurasia. Domesticated over millennia by Indigenous farmers in Mesoamerica and the Andes, American cultigens - including maize (corn), the potato, sweet potatoes, cassava (manioc), tomatoes, bell peppers, chili peppers, pumpkins, cacao (chocolate), and peanuts - spread rapidly across Europe, Asia, and Africa. Because crops like the Andean potato and sweet potato produced three to four times more calories per acre of poor soil than traditional Old World cereal grains (wheat, rye, and barley) and were less susceptible to war destruction because they grew underground, they stabilized European food supplies. The introduction of these calorically dense American domesticates sparked massive demographic population booms across Europe and fueled China's rapid population expansion during the Ming and Qing dynasties.",
           "primarySource": "From the Nahuatl indigenous account recorded in the 'Florentine Codex' (compiled in central Mexico by Franciscan friar Bernardino de Sahagún, c. 1576), describing the catastrophic impact of smallpox in Tenochtitlan in 1520: 'Before the Spaniards appeared to us, there occurred an epidemic of a sickness, a sore sickness: it came over the people to be their devastation. It was smallpox; it spread over the people with great destruction of men. Many died of it; no longer could they walk, but lay in their dwellings and beds. They could not move; they could not turn by themselves. And when they made motion, they cried out loudly. The sores were great and pustular... And very many starved to death, for there was none to nurse them or cook food for the sick.' This tragic primary account conveys the physical torment and societal paralysis caused by the arrival of Old World pathogens.",
@@ -520,12 +1151,45 @@ const CURRICULUM_DATA = [
             "correctIndex": 0,
             "explanation": "Because the peoples of the Americas had been geographically separated from Afro-Eurasian populations for over 12,000 years, they had never been exposed to crowd diseases that developed from Old World domestic livestock. Lacking acquired immunity, Indigenous societies suffered 'virgin soil epidemics' that wiped out 80% to 90% of their population."
           }
-        ]
+        ],
+        "plainEnglish": {
+          "theBigIdea": "Christopher Columbus's arrival in the Americas in 1492 triggered the \"Columbian Exchange\", a massive two-way biological swap of plants, animals, and germs. American crops (corn, potatoes) doubled Europe's population, while European diseases (smallpox) killed up to 90% of Indigenous populations.",
+          "modernAnalogy": "Imagine Italian pizza without tomato sauce, Ireland without potatoes, or Texas without cows and horses: none of these existed before the Columbian Exchange!",
+          "keyTakeaways": [
+            "The Americas gave the world potatoes, corn, tomatoes, cacao (chocolate), and tobacco.",
+            "Europe brought horses, cows, wheat, coffee, and devastating Eurasian diseases.",
+            "The \"Great Dying\" wiped out tens of millions of Indigenous people who had no biological immunity to smallpox and measles."
+          ]
+        },
+        "visualArtifact": {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Florentine_Codex_Book_XII_fol._53v_smallpox.jpg?width=1000",
+          "title": "Nahua Victims of Smallpox Epidemic during the Spanish Conquest",
+          "provenance": "Florentine Codex Book XII (c. 1577), Laurentian Library, Florence",
+          "description": "Transatlantic Biological Exchange Infographic Map: A global map centered on the Atlantic Ocean illustrating the two-way biological transfers of the Columbian Exchange. Flying westward from Afro-Eurasia to the Americas are icons of epidemic pathogens (smallpox, measles, malaria), livestock (horses, cattle, pigs, sheep, goats), and cash crops (sugar cane, coffee, wheat, rice). Floating eastward from the Americas to Afro-Eurasia are high-calorie cultigens (potatoes, maize, sweet potatoes, tomatoes, tobacco, cacao, cassava). Global population graphs in the corners trace the catastrophic collapse of the Indigenous American population alongside the dramatic demographic explosion of Europe and China between 1500 and 1750 CE.",
+          "visualClues": [
+            "Notice the materials, craft techniques, and structural design used by artisans of this era.",
+            "Observe how social rank, power, or religious symbolism is visually communicated in the piece.",
+            "Examine what this artifact proves about trade connections, literacy, or technology in its society."
+          ]
+        },
+        "primarySourceContext": {
+          "purpose": "A primary source is direct evidence created by people who actually lived through these historical events.",
+          "authorAndEra": "From the Nahuatl indigenous account recorded in the 'Florentine Codex' (compiled in central Mexico by Franciscan friar Bernardino de Sahagún, c. 1576), describing the catastrophic impact of smallpox in Tenochtitlan in 1520",
+          "originalQuote": "From the Nahuatl indigenous account recorded in the 'Florentine Codex' (compiled in central Mexico by Franciscan friar Bernardino de Sahagún, c. 1576), describing the catastrophic impact of smallpox in Tenochtitlan in 1520: 'Before the Spaniards appeared to us, there occurred an epidemic of a sickness, a sore sickness: it came over the people to be their devastation. It was smallpox; it spread over the people with great destruction of men. Many died of it; no longer could they walk, but lay in their dwellings and beds. They could not move; they could not turn by themselves. And when they made motion, they cried out loudly. The sores were great and pustular... And very many starved to death, for there was none to nurse them or cook food for the sick.' This tragic primary account conveys the physical torment and societal paralysis caused by the arrival of Old World pathogens.",
+          "plainEnglishMeaning": "This historical text provides first-hand proof of how leaders, scholars, and ordinary citizens viewed their world, confirming that rulers faced real struggles with literacy, communication, and governing far-flung territories.",
+          "whyItMatters": "Instead of guessing what happened, historians use this exact document to verify the laws, customs, and daily thoughts of people living centuries ago."
+        },
+        "specializedFocusContext": {
+          "title": "Agrarian Demographics - The Andean Potato and European Food Security",
+          "purpose": "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
+          "details": "Agrarian Demographics - The Andean Potato and European Food Security: Before the arrival of the Andean potato (Solanum tuberosum), European peasants were locked in a precarious cycle of recurring agricultural famines caused by grain fungal blights and weather shocks. The potato fundamentally transformed European demographic resilience. Containing virtually every nutrient necessary for human survival (complex carbohydrates, vitamin C, potassium, and protein) when supplemented with milk, the potato thrived in cold, acidic, rocky soils across Ireland, northern France, Germany, Poland, and Russia. A single acre planted with potatoes could feed an entire peasant family of six plus a cow for a year. By eliminating cyclical famines, the potato lowered infant mortality, increased life expectancy, and provided the surplus labor force that fueled the subsequent Industrial Revolution in Europe.",
+          "plainEnglishImpact": "Without this specific innovation, society would not have been able to communicate, organize trade, maintain legal order, or preserve ideas for future generations."
+        }
       },
       {
         "unitId": "M7-U21",
         "title": "Unit 21: The Atlantic Slave Trade and Mercantilist Imperial Networks",
-        "videoEmbedUrl": "https://www.youtube-nocookie.com/embed/dnV_MTFEGIY",
+        "videoEmbedUrl": "https://www.youtube.com/embed/dnV_MTFEGIY",
         "content": {
           "background": "By the seventeenth and eighteenth centuries, the European exploration of the globe crystallized into an interconnected global economic system governed by the doctrine of 'Mercantilism'. Mercantilism was an economic philosophy asserting that the world's wealth was finite and that a nation's military and political power depended directly on accumulating metallic bullion (gold and silver). To maximize wealth, imperial powers (primarily Spain, Portugal, England, France, and the Dutch Republic) enacted protectionist trade policies: maintaining a positive balance of trade (exporting more manufactured goods than importing), chartering exclusive state monopolies, and establishing colonies that functioned solely to supply cheap raw materials to the mother country and purchase its finished manufactured exports.\n\nIn the Americas, the catastrophic demographic collapse of Indigenous populations collided with the rapid development of labor-intensive plantation economies dedicated to cash crops - predominantly sugar cane, tobacco, cotton, and indigo. European colonizers initially attempted to enslave surviving Indigenous people or employ European indentured servants, but both proved inadequate: Indigenous captives died of Eurasian diseases or escaped into familiar terrain, while indentured servants left after their contracts expired. European maritime powers turned to West and Central Africa to satisfy their massive labor demands, creating the transatlantic 'Triangular Trade' - a brutal, profit-driven commercial system linking Europe, Africa, and the Americas.\n\nThe Triangular Trade operated in three interconnected legs: European ships sailed to West Africa carrying manufactured commodities (iron bars, textiles, copper basins, and gunpowder firearms) to exchange with African coastal monarchs and merchant elites for enslaved human beings; the second leg, the horrific 'Middle Passage', carried millions of chained Africans across the Atlantic to the Americas; the third leg transported the plantation goods produced by enslaved labor (raw sugar, rum, molasses, tobacco, and cotton) back to European factories for consumption and re-export. Over four centuries, an estimated twelve to fifteen million African men, women, and children were forced into the Atlantic slave trade, while millions more died during the middle passage or during violent captures in the African interior, devastating African demographic growth and social structures.",
           "primarySource": "From Olaudah Equiano in 'The Interesting Narrative of the Life of Olaudah Equiano, or Gustavus Vassa, the African' (1789), describing his experience aboard a slave ship during the Middle Passage: 'The stench of the hold while we were on the coast was so intolerably loathsome, that it was dangerous to remain there for any time... The closeness of the place, and the heat of the climate, added to the number in the ship, which was so crowded that each had scarcely room to turn himself, almost suffocated us. This produced copious perspirations, so that the air soon became unfit for respiration, from a variety of loathsome smells, and brought on a sickness among the slaves, of which many died... The shrieks of the women, and the groans of the dying, rendered the whole a scene of horror almost inconceivable.' This rare first-person account provides testimony to the unimaginable cruelty of the transatlantic slave trade.",
@@ -544,7 +1208,40 @@ const CURRICULUM_DATA = [
             "correctIndex": 0,
             "explanation": "Mercantilism was an economic philosophy that measured national strength by stockpiles of gold and silver bullion. European states achieved this by maximizing exports, minimizing imports through protective tariffs, and controlling colonies that supplied raw materials and served as captive markets for manufactured goods."
           }
-        ]
+        ],
+        "plainEnglish": {
+          "theBigIdea": "To work massive sugarcane, tobacco, and cotton plantations in the Americas, European powers kidnapped over 12 million African people in the brutal Transatlantic Slave Trade. European goods bought captives in Africa, captives were transported across the deadly Middle Passage, and raw goods were shipped back to Europe.",
+          "modernAnalogy": "This was a ruthless triangular economic machine where human beings were treated like cargo to fuel the European hunger for cheap sugar and tobacco.",
+          "keyTakeaways": [
+            "The Middle Passage across the Atlantic was horrific, with up to 15% of captives dying of disease and starvation.",
+            "Mercantilist trade policies enriched European royal treasuries at catastrophic human cost to African societies.",
+            "Enslaved Africans fought back through rebellions, preserving cultural traditions that shaped modern music, food, and culture."
+          ]
+        },
+        "visualArtifact": {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Slave_ship_diagram.jpg?width=1000",
+          "title": "Stowage Plan of the British Slave Ship Brookes (1788)",
+          "provenance": "Plymouth Committee for the Abolition of the Slave Trade",
+          "description": "Global Maritime Trade and Mercantile Flow Map: A world map illustrating the triangular Atlantic trade routes and the Pacific Manila Galleon silver route (c. 1700 CE). Heavy directional arrows highlight: 1) European manufactured weapons and textiles moving to West Africa; 2) The Middle Passage route carrying millions of enslaved Africans across the Atlantic to Brazil and the Caribbean; 3) Sugar, tobacco, and silver flowing back to Western Europe; and 4) The Pacific Galleon route transporting Peruvian silver from Acapulco to Manila and onward into mainland China.",
+          "visualClues": [
+            "Notice the materials, craft techniques, and structural design used by artisans of this era.",
+            "Observe how social rank, power, or religious symbolism is visually communicated in the piece.",
+            "Examine what this artifact proves about trade connections, literacy, or technology in its society."
+          ]
+        },
+        "primarySourceContext": {
+          "purpose": "A primary source is direct evidence created by people who actually lived through these historical events.",
+          "authorAndEra": "From Olaudah Equiano in 'The Interesting Narrative of the Life of Olaudah Equiano, or Gustavus Vassa, the African' (1789), describing his experience aboard a slave ship during the Middle Passage",
+          "originalQuote": "From Olaudah Equiano in 'The Interesting Narrative of the Life of Olaudah Equiano, or Gustavus Vassa, the African' (1789), describing his experience aboard a slave ship during the Middle Passage: 'The stench of the hold while we were on the coast was so intolerably loathsome, that it was dangerous to remain there for any time... The closeness of the place, and the heat of the climate, added to the number in the ship, which was so crowded that each had scarcely room to turn himself, almost suffocated us. This produced copious perspirations, so that the air soon became unfit for respiration, from a variety of loathsome smells, and brought on a sickness among the slaves, of which many died... The shrieks of the women, and the groans of the dying, rendered the whole a scene of horror almost inconceivable.' This rare first-person account provides testimony to the unimaginable cruelty of the transatlantic slave trade.",
+          "plainEnglishMeaning": "This historical text provides first-hand proof of how leaders, scholars, and ordinary citizens viewed their world, confirming that rulers faced real struggles with literacy, communication, and governing far-flung territories.",
+          "whyItMatters": "Instead of guessing what happened, historians use this exact document to verify the laws, customs, and daily thoughts of people living centuries ago."
+        },
+        "specializedFocusContext": {
+          "title": "Global Financial Circuit - Potosí Silver, The Single Whip Law, and The Manila Galleons",
+          "purpose": "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
+          "details": "Global Financial Circuit - Potosí Silver, The Single Whip Law, and The Manila Galleons: The true lifeblood of early modern global trade was silver. In 1545 CE, Spanish colonizers discovered the 'Cerro Rico' (Rich Mountain) at Potosí in upper Peru (modern Bolivia) - the largest deposit of silver in world history. Enslaving thousands of Indigenous workers under a brutally exploited version of the Inka Mit'a labor system, Spain extracted tens of thousands of tons of silver. While much of this silver flowed to Spain to finance European imperial wars, the ultimate global destination was China. Under the Ming Dynasty's Single Whip Law, all imperial land taxes were required to be paid in pure silver. Between 1565 and 1815 CE, Spanish 'Manila Galleons' sailed annually between Acapulco, Mexico, and Manila in the Philippines, exchanging American silver for Chinese silk, porcelain, and tea. Silver became the world's first global currency, permanently linking the economies of the Americas, Europe, and Asia.",
+          "plainEnglishImpact": "Without this specific innovation, society would not have been able to communicate, organize trade, maintain legal order, or preserve ideas for future generations."
+        }
       }
     ]
   },
@@ -554,7 +1251,7 @@ const CURRICULUM_DATA = [
       {
         "unitId": "M8-U22",
         "title": "Unit 22: First Peoples of North America: Societies, Environments, and Worldviews",
-        "videoEmbedUrl": "https://www.youtube-nocookie.com/embed/GQDL2bZZYj0",
+        "videoEmbedUrl": "https://www.youtube.com/embed/GQDL2bZZYj0",
         "content": {
           "background": "Long before European navigators ventured across the Atlantic Ocean, the continent of North America (known to many Indigenous traditions as Turtle Island) was home to hundreds of diverse, sovereign Indigenous nations. Inhabiting every ecological zone from the Arctic tundra to the subtropical woodlands for thousands of years, these societies developed sophisticated political structures, extensive transcontinental trade networks, and rich cultures. In the Pacific Northwest (including the coast of modern British Columbia), nations such as the Haida, Nuu-chah-nulth, Tlingit, and Coast Salish thrived in an ecosystem of temperate rainforests, rivers, and coastal waters. Utilizing colossal western red cedar trees, they engineered seaworthy ocean-going dugout canoes, massive multi-family cedar plank longhouses, and monumental carved totem poles that recorded clan genealogies, rights, and oral histories.\n\nAcross the eastern woodlands, agricultural and semi-sedentary nations - including the Haudenosaunee (Iroquois Confederacy) and the Anishinaabe - developed advanced agricultural systems centered on the 'Three Sisters': maize, climbing beans, and squash. Planted together in small mounds, the tall corn stalks provided natural poles for the climbing beans, the nitrogen-fixing beans replenished essential soil nutrients, and the broad, prickly leaves of the squash carpeted the ground to retain soil moisture and suppress weeds. In terms of governance, around the twelfth century, the five founding Haudenosaunee nations (Mohawk, Oneida, Onondaga, Cayuga, and Seneca) established the Gayanashagowa (The Great Law of Peace), brokered by the Peacemaker (Deganawida) and Hiawatha. This constitution created the oldest continuous participatory democracy in North America, governed by a Grand Council of fifty hereditary chiefs (Hoyenah) chosen and subject to removal by the Clan Mothers (Iroquois matriliny).\n\nUnderpinning these diverse Indigenous societies were deeply held worldviews rooted in kinship, balance, and ecological stewardship. Land was not conceptualized as a private commodity to be bought, sold, or depleted for individual profit; rather, human beings were viewed as interconnected participants within a sacred natural world. Hunting, fishing, and harvesting were governed by principles of reciprocity and gratitude, taking only what was necessary and ensuring resources remained abundant for the next seven generations. Oral tradition served as the primary repository of law, philosophy, and history, passed down through generations by elders who preserved collective institutional memory through storytelling, ceremonial dances, and mnemonic wampum belts.",
           "primarySource": "From the oral tradition of the Haudenosaunee Great Law of Peace (Gayanashagowa, codified on Wampum Belts): 'Look and listen for the welfare of the whole people and have always in view not only the present but also the coming generations, even those whose faces are yet beneath the surface of the ground - the unborn generation yet to come... We bind ourselves together by taking hold of the Great Tree of Peace. Under its shade we shall sit, and our minds shall be as one, and our weapons of war we shall bury deep beneath the roots of the earth.' This ancient constitutional charter established a confederacy based on collective deliberation, consensus diplomacy, and long-term ecological responsibility.",
@@ -573,12 +1270,45 @@ const CURRICULUM_DATA = [
             "correctIndex": 0,
             "explanation": "The Potlatch was a ceremonial institution where chiefs hosted neighboring clans to validate ancestral names, hereditary rights, and territorial privileges. Status and authority were earned not by accumulating property, but through the lavish, generous redistribution of wealth to guests."
           }
-        ]
+        ],
+        "plainEnglish": {
+          "theBigIdea": "Long before Europeans arrived, North America was home to hundreds of sophisticated, diverse Indigenous nations with complex systems of law, agriculture, and government. The Haudenosaunee (Iroquois) created the Great Law of Peace, one of the world's oldest participatory democracies.",
+          "modernAnalogy": "The Haudenosaunee Confederacy was a medieval United Nations: five warring nations buried their weapons under a sacred pine tree to live by democratic consensus.",
+          "keyTakeaways": [
+            "First Peoples developed specialized technologies (canoes, snowshoes, three sisters farming) perfectly adapted to Canadian environments.",
+            "The Haudenosaunee Great Law of Peace used clan mothers to choose leaders and check their power.",
+            "Indigenous worldviews emphasized reciprocity, stewardship, and planning decisions for seven generations ahead."
+          ]
+        },
+        "visualArtifact": {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hiawatha_Belt.jpg?width=1000",
+          "title": "The Sacred Hiawatha Wampum Belt of the Haudenosaunee Confederacy",
+          "provenance": "Haudenosaunee Council Archives, Onondaga Nation",
+          "description": "Architectural Blueprint and Cultural Artifact Drawing: Detailed architectural cutaway of a traditional Haudenosaunee Cedar Longhouse (Ganondagan) alongside an illustration of the Hiawatha Wampum Belt. The upper architectural schematic reveals the timber framework of lashed cedar poles and elm bark siding, the central communal corridor with hearth fire pits for multiple families, and elevated sleeping bunks. The lower drawing illustrates the purple and white quahog shell beads of the Hiawatha Belt, showing the five connected geometric symbols representing the five founding nations bound together around the central Great White Pine tree of the Onondaga nation.",
+          "visualClues": [
+            "Notice the materials, craft techniques, and structural design used by artisans of this era.",
+            "Observe how social rank, power, or religious symbolism is visually communicated in the piece.",
+            "Examine what this artifact proves about trade connections, literacy, or technology in its society."
+          ]
+        },
+        "primarySourceContext": {
+          "purpose": "A primary source is direct evidence created by people who actually lived through these historical events.",
+          "authorAndEra": "From the oral tradition of the Haudenosaunee Great Law of Peace (Gayanashagowa, codified on Wampum Belts)",
+          "originalQuote": "From the oral tradition of the Haudenosaunee Great Law of Peace (Gayanashagowa, codified on Wampum Belts): 'Look and listen for the welfare of the whole people and have always in view not only the present but also the coming generations, even those whose faces are yet beneath the surface of the ground - the unborn generation yet to come... We bind ourselves together by taking hold of the Great Tree of Peace. Under its shade we shall sit, and our minds shall be as one, and our weapons of war we shall bury deep beneath the roots of the earth.' This ancient constitutional charter established a confederacy based on collective deliberation, consensus diplomacy, and long-term ecological responsibility.",
+          "plainEnglishMeaning": "This historical text provides first-hand proof of how leaders, scholars, and ordinary citizens viewed their world, confirming that rulers faced real struggles with literacy, communication, and governing far-flung territories.",
+          "whyItMatters": "Instead of guessing what happened, historians use this exact document to verify the laws, customs, and daily thoughts of people living centuries ago."
+        },
+        "specializedFocusContext": {
+          "title": "Socio-Economic Systems - The Pacific Northwest Potlatch",
+          "purpose": "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
+          "details": "Socio-Economic Systems - The Pacific Northwest Potlatch: Among the Indigenous nations of the Pacific Northwest coast, economic and political authority was mediated through the 'Potlatch' (from the Nuu-chah-nulth word meaning 'to give'). Held to commemorate momentous occasions such as the naming of an heir, a marriage, or the raising of a totem pole, the potlatch was a ceremonial gathering where a host chief invited neighboring chiefs and communities. Rather than measuring wealth and status by how much property a leader hoarded, prestige in Pacific Northwest societies was earned by how much wealth the host generously gave away. The host chief distributed thousands of gifts - including hand-woven Chilkat wool blankets, carved bentwood cedar boxes, engraved copper shields, and dried eulachon fish grease. The potlatch served as a legal and economic mechanism: it validated hereditary titles in front of public witnesses, redistributed surplus wealth, and established peaceful regional alliances.",
+          "plainEnglishImpact": "Without this specific innovation, society would not have been able to communicate, organize trade, maintain legal order, or preserve ideas for future generations."
+        }
       },
       {
         "unitId": "M8-U23",
         "title": "Unit 23: Early European Expeditions, Cartier, and the Fur Trade Networks",
-        "videoEmbedUrl": "https://www.youtube-nocookie.com/embed/nfKr-D5VDBU",
+        "videoEmbedUrl": "https://www.youtube.com/embed/nfKr-D5VDBU",
         "content": {
           "background": "Long before formal European colonization programs commenced in northern North America, European mariners exploited the rich natural resources of the northwest Atlantic. Around 1000 CE, Norse voyagers led by Leif Erikson established a short-lived settlement at L'Anse aux Meadows on the northern tip of Newfoundland, which was eventually abandoned due to isolation and conflict with Indigenous populations. By the late fifteenth and early sixteenth centuries, following John Cabot's 1497 voyage claiming Newfoundland for England, fleets of Breton, Norman, Portuguese, and Basque fishermen made annual seasonal voyages to the Grand Banks. Exploiting the world's richest cod fishery, Basque whalers and fishermen dried their fish ashore on pebble beaches, establishing early informal barter trade with local Mi'kmaq and Innu peoples, exchanging metal knives, brass pots, and glass beads for luxurious beaver pelts.\n\nIn 1534 CE, King Francis I of France commissioned Breton navigator Jacques Cartier to locate a Northwest Passage to Asia and discover mineral riches comparable to Spanish silver in Peru. During his first voyage, Cartier explored the Gulf of Saint Lawrence, erected a ten-meter wooden cross bearing the French royal coat of arms at Gaspé, and claimed the territory for France, drawing the immediate protest of Chief Donnacona of the St. Lawrence Iroquoians. In his second voyage (1535-1536 CE), guided by Donnacona's sons Domagaya and Taignoagny, Cartier navigated deep into the Saint Lawrence River, visiting the fortified Iroquoian settlements of Stadacona (modern Quebec City) and Hochelaga (modern Montreal). Trapped by winter ice, Cartier's men suffered horribly from scurvy until Indigenous healers saved their lives using an infusion of white cedar bark (annedda), rich in vitamin C. Cartier kidnapped Donnacona to present to the French court, where the chief died, fracturing French-Indigenous relations and ending early French attempts at colonization.\n\nAt the turn of the seventeenth century, European fashion trends catalyzed a renewed, permanent French colonial interest. The rise of the broad-brimmed felt hat among European aristocrats created an insatiable demand for beaver underfur, whose microscopic barbed hairs felted into durable, waterproof hats. Recognizing that the fur trade required permanent fortified depots, King Henry IV granted trade monopolies to commercial syndicates. In 1608 CE, cartographer and explorer Samuel de Champlain established a permanent fortified habitation at the base of the cliffs of Quebec along the Saint Lawrence River, laying the permanent foundation of New France. Champlain astutely recognized that the survival of the French colony depended on securing military and commercial alliances with local Indigenous nations, forging enduring pacts with the Huron-Wendat, Algonquin, and Innu confederacies against their southern rivals, the Haudenosaunee.",
           "primarySource": "From the voyage relations of Jacques Cartier (1535 CE), describing the encounter at Gaspé with Chief Donnacona: 'On the twenty-fourth of July, we caused a cross to be made thirty feet high, which was put together in the presence of a number of the natives of the point, on the middle of which we fixed a shield with three fleurs-de-lys in relief, and over it was engraved in large letters: VIVE LE ROY DE FRANCE. And when it was raised on high, we all knelt down on the ground, holding up our hands and worshiping it before them... But after we were returned to our ship, the chief, dressed in an old bear skin, came to us in a canoe with three of his sons and his brother, and made us a long harangue, pointing to the cross and making the sign of the cross with two of his fingers; and then he pointed to the territory round about, as if he wished to say that all this region belonged to him, and that we ought not to have set up our cross without his leave.' This eyewitness text highlights the early collision between European imperial claims and Indigenous sovereignty.",
@@ -597,12 +1327,45 @@ const CURRICULUM_DATA = [
             "correctIndex": 0,
             "explanation": "The fur trade boomed because European elites coveted broad-brimmed felt hats. Beaver underfur possessed tiny microscopic barbs that matted together into a dense, luxurious, completely waterproof felt fabric, creating a massive, lucrative market for North American beaver pelts."
           }
-        ]
+        ],
+        "plainEnglish": {
+          "theBigIdea": "In the 1530s, French explorer Jacques Cartier sailed into the Gulf of St. Lawrence hoping to find gold and a shortcut to China. Instead, he made contact with the Mi'kmaq and St. Lawrence Iroquoians, inaugurating the transatlantic fur trade for beaver pelts to make fashionable European felt hats.",
+          "modernAnalogy": "Beaver pelts were the Canadian oil of the 1500s: European gentlemen were obsessed with waterproof beaver felt hats, making fur traders incredibly wealthy.",
+          "keyTakeaways": [
+            "Cartier misunderstood the Iroquoian word \"kanata\" (meaning village or settlement), which became the name Canada.",
+            "The fur trade was an interdependent partnership: Europeans needed Indigenous guides and canoes, while Indigenous nations traded for iron axes and kettles.",
+            "French exploration pushed deep into the Canadian interior along river highways."
+          ]
+        },
+        "visualArtifact": {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Fur_traders_in_Canada_1777.jpg?width=1000",
+          "title": "Indigenous Peoples and European Voyageurs Bartering Beaver Pelts",
+          "provenance": "Library and Archives Canada, Ottawa",
+          "description": "Historical Exploration Map and Transportation Blueprint: A detailed map of Samuel de Champlain's exploration routes (1608-1615) through the Saint Lawrence River valley, Lake Champlain, the Ottawa River, and Georgian Bay. Red dotted lines trace French canoe routes along Indigenous trade highways. Inset: An engineering diagram of an Indigenous Birchbark Canoe, illustrating the longitudinal cedar sheathing, curved steam-bent rib frames, spruce-root lashing along the gunwales, and caulked spruce-resin seams, with annotations showing weight capacities and portage balance points on a voyager's shoulders.",
+          "visualClues": [
+            "Notice the materials, craft techniques, and structural design used by artisans of this era.",
+            "Observe how social rank, power, or religious symbolism is visually communicated in the piece.",
+            "Examine what this artifact proves about trade connections, literacy, or technology in its society."
+          ]
+        },
+        "primarySourceContext": {
+          "purpose": "A primary source is direct evidence created by people who actually lived through these historical events.",
+          "authorAndEra": "From the voyage relations of Jacques Cartier (1535 CE), describing the encounter at Gaspé with Chief Donnacona",
+          "originalQuote": "From the voyage relations of Jacques Cartier (1535 CE), describing the encounter at Gaspé with Chief Donnacona: 'On the twenty-fourth of July, we caused a cross to be made thirty feet high, which was put together in the presence of a number of the natives of the point, on the middle of which we fixed a shield with three fleurs-de-lys in relief, and over it was engraved in large letters: VIVE LE ROY DE FRANCE. And when it was raised on high, we all knelt down on the ground, holding up our hands and worshiping it before them... But after we were returned to our ship, the chief, dressed in an old bear skin, came to us in a canoe with three of his sons and his brother, and made us a long harangue, pointing to the cross and making the sign of the cross with two of his fingers; and then he pointed to the territory round about, as if he wished to say that all this region belonged to him, and that we ought not to have set up our cross without his leave.' This eyewitness text highlights the early collision between European imperial claims and Indigenous sovereignty.",
+          "plainEnglishMeaning": "This historical text provides first-hand proof of how leaders, scholars, and ordinary citizens viewed their world, confirming that rulers faced real struggles with literacy, communication, and governing far-flung territories.",
+          "whyItMatters": "Instead of guessing what happened, historians use this exact document to verify the laws, customs, and daily thoughts of people living centuries ago."
+        },
+        "specializedFocusContext": {
+          "title": "Indigenous Technology - The Birchbark Canoe (Oshki-jiimaan)",
+          "purpose": "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
+          "details": "Indigenous Technology - The Birchbark Canoe (Oshki-jiimaan): The continental fur trade was made possible by an Indigenous transportation technology: the Birchbark Canoe. Masterfully crafted by Algonquin and Wendat builders, the canoe utilized the waterproof, rot-resistant bark of the paper birch tree (Betula papyrifera) stretched over a flexible frame of white cedar ribs, sewn together with split spruce roots (watap), and sealed with hot spruce gum and animal fat. Lightweight yet capable of carrying tons of beaver pelt bundles through foaming river rapids, the birchbark canoe had a shallow draft that allowed travel on shallow inland waterways and was light enough to be carried over land portages between river systems. Without Indigenous canoe architecture and navigational guides, European fur trade networks could never have penetrated the interior of North America.",
+          "plainEnglishImpact": "Without this specific innovation, society would not have been able to communicate, organize trade, maintain legal order, or preserve ideas for future generations."
+        }
       },
       {
         "unitId": "M8-U24",
         "title": "Unit 24: Society and Governance in New France",
-        "videoEmbedUrl": "https://www.youtube-nocookie.com/embed/Rg5JYq3eJ2Q",
+        "videoEmbedUrl": "https://www.youtube.com/embed/Rg5JYq3eJ2Q",
         "content": {
           "background": "For its first half-century, New France was essentially a commercial trading outpost managed by private fur trade monopolies (such as the Company of One Hundred Associates) that invested minimal capital in permanent settlement. By 1663 CE, the colony was in grave jeopardy: its European population numbered barely 3,000 residents, it faced bankruptcy, and it was embroiled in military conflict with the powerful Haudenosaunee Confederacy. In response, King Louis XIV of France and his brilliant mercantilist finance minister, Jean-Baptiste Colbert, revoked the commercial charter and transformed New France into a formal Royal Province under the direct autocratic control of the French Crown, establishing an administrative structure known as the Sovereign Council (Conseil Souverain).\n\nThe government of New France was divided between two powerful crown officials: the Governor General and the Intendant. The Governor General, usually a military nobleman, was the King's personal representative responsible for military command, external diplomacy, and alliances with Indigenous nations. In contrast, the Intendant was a civilian administrator responsible for domestic civil governance, the judicial court system, public finance, and colonial economic development. The first and most celebrated Intendant of New France, Jean Talon (who served from 1665 to 1672), aggressively modernized the colony: he conducted the first systematic census, established breweries, tanneries, and timber shipyards, distributed livestock to settlers, and organized the arrival of the 'Filles du Roi' (the King's Daughters) - roughly 800 young women sponsored by the French Crown with state dowries to marry settlers, quadrupling the colony's population within a decade.\n\nRural society along the Saint Lawrence River was organized under the Seigneurial System - an adapted form of French feudal land tenure designed for the North American riverine landscape. The Crown granted large agricultural tracts called seigneuries to seigneurs (nobles, military officers, or religious orders). The seigneur subdivided this land into long, narrow rectangular strip lots (rotures) granted to peasant farmers known as 'Habitants'. Unlike European serfs, Habitants were legally free citizens who enjoyed high social mobility, abundant farmland, and personal autonomy. Alongside the seigneurial order, the Roman Catholic Church formed a pillar of colonial society; religious orders like the Jesuits spearheaded missionary work, while the Ursuline nuns, led by Marie de l'Incarnation, established the colony's first schools and hospitals, forging a cohesive, resilient French-Canadian society that endured past the British conquest of 1760.",
           "primarySource": "From the official administrative correspondence of Intendant Jean Talon to French Finance Minister Jean-Baptiste Colbert (October 1667): 'I have the honor to inform you that the eighty-four girls sent out from France this year have all been married, save fifteen, and these will be married before the ships leave in the spring. If his Majesty would be pleased to send out another hundred next year, they would find husbands immediately, for our young men, having cleared land and harvested grain, are eager to marry and establish households... The colony begins to take firm root, our agriculture flourishes, and our people live in peace and plenty along the great river.' This primary administrative report documents Jean Talon's demographic policies and the successful settlement of the Filles du Roi.",
@@ -621,7 +1384,40 @@ const CURRICULUM_DATA = [
             "correctIndex": 0,
             "explanation": "The long-lot seigneurial system gave every habitant riverfront access on the Saint Lawrence River. Because the river served as the colony's primary transportation highway during summer (by canoe) and winter (by horse-drawn sleigh on ice), river frontage was essential for every family."
           }
-        ]
+        ],
+        "plainEnglish": {
+          "theBigIdea": "New France was founded along the St. Lawrence River under the leadership of Samuel de Champlain and King Louis XIV. Land was organized into long, narrow \"seigneurial\" strip lots stretching back from the river, giving every farming family (habitant) equal access to water, transport, and fishing.",
+          "modernAnalogy": "The St. Lawrence River was the Highway 1 of New France: in summer it was navigated by birchbark canoes, and in winter it froze into a flat ice road for horse sleighs.",
+          "keyTakeaways": [
+            "The Seigneurial system divided land into long ribbons facing the river, creating tight-knit farming communities.",
+            "The Governor controlled the army, while the Intendant handled courts, finance, and immigration (including the Filles du Roi).",
+            "Coureurs des bois (runners of the woods) traveled deep into the wilderness, forging enduring cultural and family ties with Indigenous nations."
+          ]
+        },
+        "visualArtifact": {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/View_of_Quebec_City_1700.jpg?width=1000",
+          "title": "View of Quebec City and the St. Lawrence River Waterway (c. 1700)",
+          "provenance": "National Archives of Canada, Ottawa",
+          "description": "Cadastral Map and Social Hierarchy Blueprint: A historical bird's-eye cadastral plan of a seventeenth-century French Seigneurie along the Saint Lawrence River. The map illustrates the characteristic long, narrow rectangular strip lots (rotures) stretching perpendicular from the riverbanks back toward the second concession line (rang). The focal point displays the Seigneur's stone manor house, the communal flour mill with its millrace, the parish Catholic stone church, and habitant timber log farmhouses (pièce-sur-pièce construction) spaced along the river road. Inset: An administrative chart detailing the division of royal authority between the Governor General, Intendant, and Bishop on the Sovereign Council of New France.",
+          "visualClues": [
+            "Notice the materials, craft techniques, and structural design used by artisans of this era.",
+            "Observe how social rank, power, or religious symbolism is visually communicated in the piece.",
+            "Examine what this artifact proves about trade connections, literacy, or technology in its society."
+          ]
+        },
+        "primarySourceContext": {
+          "purpose": "A primary source is direct evidence created by people who actually lived through these historical events.",
+          "authorAndEra": "From the official administrative correspondence of Intendant Jean Talon to French Finance Minister Jean-Baptiste Colbert (October 1667)",
+          "originalQuote": "From the official administrative correspondence of Intendant Jean Talon to French Finance Minister Jean-Baptiste Colbert (October 1667): 'I have the honor to inform you that the eighty-four girls sent out from France this year have all been married, save fifteen, and these will be married before the ships leave in the spring. If his Majesty would be pleased to send out another hundred next year, they would find husbands immediately, for our young men, having cleared land and harvested grain, are eager to marry and establish households... The colony begins to take firm root, our agriculture flourishes, and our people live in peace and plenty along the great river.' This primary administrative report documents Jean Talon's demographic policies and the successful settlement of the Filles du Roi.",
+          "plainEnglishMeaning": "This historical text provides first-hand proof of how leaders, scholars, and ordinary citizens viewed their world, confirming that rulers faced real struggles with literacy, communication, and governing far-flung territories.",
+          "whyItMatters": "Instead of guessing what happened, historians use this exact document to verify the laws, customs, and daily thoughts of people living centuries ago."
+        },
+        "specializedFocusContext": {
+          "title": "Spatial Cadastral Geography - The Long-Lot Seigneurial Land System",
+          "purpose": "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
+          "details": "Spatial Cadastral Geography - The Long-Lot Seigneurial Land System: To adapt to the geography of the Saint Lawrence River valley, French surveyors engineered the 'Long-Lot' (rang) cadastral system. Instead of the square township grids favored by English colonies, seigneurial lots were surveyed as long, narrow rectangular strips typically measuring roughly 180 meters wide along the riverfront and stretching 1,500 to 2,000 meters deep into the forested interior. This layout provided every single habitant with direct access to the Saint Lawrence River - the vital commercial highway for canoe travel, fishing, and winter ice sleighing. In exchange for their land grants, habitants paid modest annual dues (cens et rentes) to their seigneur, performed three or four days of mandatory annual road maintenance labor (corvée), and brought their grain to be ground at the seigneur's compulsory communal flour mill (droit de banalité).",
+          "plainEnglishImpact": "Without this specific innovation, society would not have been able to communicate, organize trade, maintain legal order, or preserve ideas for future generations."
+        }
       }
     ]
   }

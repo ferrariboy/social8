@@ -1,7 +1,7 @@
 /**
  * BC Grade 8 Social Studies Discovery Portal - Core Application Logic
  * File: app.js
- * Responsive Desktop & Mobile Single Page Application (SPA) Engine
+ * 100% Full Width Responsive Desktop & Mobile Single Page Application (SPA) Engine
  * Aligned with the British Columbia Social Studies 8 Curriculum (c. 600 CE - 1750 CE)
  */
 
@@ -33,9 +33,6 @@ const STORAGE_KEY = "BC_Socials8_Session";
 // 2. Session Continuity & LocalStorage
 // ==========================================
 
-/**
- * Hydrates application state from localStorage on startup.
- */
 function hydrateAppState() {
   try {
     if (typeof localStorage === "undefined") return;
@@ -64,9 +61,6 @@ function hydrateAppState() {
   }
 }
 
-/**
- * Serializes current appState to localStorage.
- */
 function saveAppState() {
   try {
     if (typeof localStorage === "undefined") return;
@@ -76,9 +70,6 @@ function saveAppState() {
   }
 }
 
-/**
- * Marks a unit complete and saves state.
- */
 function markUnitComplete(unitId, scorePercent) {
   if (!appState.appSessionState.completedUnits.includes(unitId)) {
     appState.appSessionState.completedUnits.push(unitId);
@@ -94,9 +85,6 @@ function markUnitComplete(unitId, scorePercent) {
   }
 }
 
-/**
- * Toggles completion status manually.
- */
 function toggleUnitCompletion(unitId) {
   const list = appState.appSessionState.completedUnits;
   const idx = list.indexOf(unitId);
@@ -108,16 +96,15 @@ function toggleUnitCompletion(unitId) {
   saveAppState();
   updateGlobalHeaderProgress();
   renderCurrentView();
-  renderDrawerModulesList();
+  if (typeof document !== "undefined") {
+    renderDrawerModulesList();
+  }
 }
 
 // ==========================================
 // 3. Routing & State Shift Handler
 // ==========================================
 
-/**
- * Navigates to a new view and triggers dynamic rendering.
- */
 function navigateTo(viewName, modIdx, unitIdx) {
   appState.activeView = viewName;
 
@@ -130,7 +117,6 @@ function navigateTo(viewName, modIdx, unitIdx) {
     appState.currentUnitIndex = Math.max(0, Math.min(unitIdx, maxUnits));
   }
 
-  // Reset quiz progress when entering quiz
   if (viewName === "quiz") {
     appState.activeQuizQuestionIndex = 0;
     appState.quizCorrectAnswersCount = 0;
@@ -147,9 +133,6 @@ function navigateTo(viewName, modIdx, unitIdx) {
   }
 }
 
-/**
- * Master dispatcher rendering the view designated by appState.activeView.
- */
 function renderCurrentView() {
   if (typeof document === "undefined") return;
   const container = document.getElementById("viewDisplayEngine");
@@ -198,9 +181,6 @@ function renderCurrentView() {
   }
 }
 
-/**
- * Updates the header progress badge percentage.
- */
 function updateGlobalHeaderProgress() {
   if (typeof document === "undefined") return;
   const progressText = document.getElementById("globalProgressText");
@@ -260,7 +240,8 @@ function renderDrawerModulesList(filterText = "") {
         u.title.toLowerCase().includes(query) ||
         u.unitId.toLowerCase().includes(query) ||
         mod.moduleTitle.toLowerCase().includes(query) ||
-        u.content.background.toLowerCase().includes(query)
+        (u.plainEnglish && u.plainEnglish.theBigIdea.toLowerCase().includes(query)) ||
+        (u.content && u.content.background && u.content.background.toLowerCase().includes(query))
       );
     });
 
@@ -270,12 +251,12 @@ function renderDrawerModulesList(filterText = "") {
     const isModComplete = completedInMod === modUnits.length && modUnits.length > 0;
 
     html += `
-      <div class="bg-slate-800/80 rounded-2xl border border-slate-700/80 p-3.5">
+      <div class="bg-slate-800/90 rounded-2xl border border-slate-700/80 p-4">
         <div class="flex items-center justify-between gap-2 mb-2">
           <div class="text-xs font-black uppercase tracking-wider text-indigo-400">
             Module ${modIdx + 1}
           </div>
-          <span class="text-[11px] font-bold px-2 py-0.5 rounded-full ${
+          <span class="text-[11px] font-bold px-2.5 py-0.5 rounded-full ${
             isModComplete ? 'bg-emerald-950 text-emerald-300 border border-emerald-700' : 'bg-slate-700 text-slate-300'
           }">
             ${completedInMod}/${modUnits.length} Done
@@ -297,23 +278,23 @@ function renderDrawerModulesList(filterText = "") {
         <button 
           data-mod-idx="${modIdx}" 
           data-unit-idx="${realUnitIdx}"
-          class="drawer-unit-jump-btn w-full text-left p-2.5 rounded-xl text-xs flex items-center justify-between gap-2 transition-all active-scale ${
+          class="drawer-unit-jump-btn w-full text-left p-3 rounded-xl text-xs flex items-center justify-between gap-2 transition-all active-scale ${
             isCurrent 
               ? 'bg-indigo-600 text-white font-bold shadow-md' 
               : isComplete 
-                ? 'bg-slate-800/50 hover:bg-slate-700/80 text-emerald-300' 
+                ? 'bg-slate-800 hover:bg-slate-700 text-emerald-300' 
                 : 'hover:bg-slate-700/60 text-slate-300'
           }">
-          <div class="flex items-center gap-2 truncate">
-            <span class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-black shrink-0 ${
+          <div class="flex items-center gap-2.5 truncate">
+            <span class="w-6 h-6 rounded-lg flex items-center justify-center text-[11px] font-black shrink-0 ${
               isComplete ? 'bg-emerald-500 text-slate-950' : 'bg-slate-700 text-slate-400'
             }">
               ${isComplete ? '✓' : (realUnitIdx + 1)}
             </span>
-            <span class="truncate">${unit.title}</span>
+            <span class="truncate font-medium">${unit.title}</span>
           </div>
           ${typeof score === "number" ? `
-            <span class="shrink-0 text-[10px] font-black px-1.5 py-0.5 rounded ${
+            <span class="shrink-0 text-[10px] font-black px-2 py-0.5 rounded ${
               score >= 80 ? 'bg-emerald-900 text-emerald-200' : 'bg-slate-700 text-indigo-300'
             }">${score}%</span>
           ` : ''}
@@ -329,7 +310,7 @@ function renderDrawerModulesList(filterText = "") {
 
   if (!html) {
     html = `
-      <div class="text-center py-8 text-slate-400 text-sm">
+      <div class="text-center py-10 text-slate-400 text-sm">
         No units match your search query.
       </div>
     `;
@@ -347,7 +328,7 @@ function renderDrawerModulesList(filterText = "") {
 }
 
 // ==========================================
-// 5. Dashboard View Rendering (Desktop & Mobile)
+// 5. Dashboard View (100% Width Responsive Grid)
 // ==========================================
 
 function getModuleCategory(modIdx) {
@@ -357,9 +338,6 @@ function getModuleCategory(modIdx) {
   return "contact";
 }
 
-/**
- * Renders the responsive desktop & mobile Dashboard Hub.
- */
 function renderDashboard() {
   const container = document.getElementById("viewDisplayEngine");
   if (!container) return;
@@ -367,7 +345,6 @@ function renderDashboard() {
   const curriculum = window.CURRICULUM_DATA || [];
   const completedList = appState.appSessionState.completedUnits || [];
 
-  // Resume target calculation
   const resumeModIdx = Math.max(0, Math.min(appState.currentModuleIndex, curriculum.length - 1));
   const resumeMod = curriculum[resumeModIdx];
   const resumeUnitIdx = Math.max(0, Math.min(appState.currentUnitIndex, (resumeMod && resumeMod.units ? resumeMod.units.length - 1 : 0)));
@@ -386,119 +363,111 @@ function renderDashboard() {
   const percent = totalUnits > 0 ? Math.round((completedList.length / totalUnits) * 100) : 0;
 
   let html = `
-    <!-- Top Hero Section: Multi-Column on Desktop (8 cols + 4 cols) -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-8">
-      
-      <!-- Left Hero Card: Overview & Metrics (8 cols) -->
-      <div class="lg:col-span-8 bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-800 flex flex-col justify-between">
-        <div>
+    <!-- Top Hero Banner: 100% Full Width across screen -->
+    <div class="w-full bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-800 mb-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Left: Overview & Scope (7 cols on desktop) -->
+        <div class="lg:col-span-7">
           <div class="flex flex-wrap items-center gap-2 mb-3">
             <span class="text-xs font-black uppercase tracking-wider text-indigo-300 bg-indigo-950/90 px-3 py-1 rounded-full border border-indigo-700/60">
-              BC Curriculum • Grade 8 Social Studies
+              BC Ministry of Education • Social Studies 8
             </span>
             <span class="text-xs font-semibold text-slate-300">
               c. 600 CE - 1750 CE
             </span>
           </div>
-          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight leading-tight mb-2">
-            World Civilizations & Transformations
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight mb-3">
+            World Civilizations & Global Encounters
           </h2>
-          <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl mb-6">
-            Investigate contact, conflict, cultural exchange, and technological revolution across Europe, Asia, Africa, and the Americas leading to the modern era.
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-3xl mb-6">
+            Explore 1,150 years of human history: the fall of empires, the Silk Road, Islamic scholarship, feudal societies, the Renaissance, and First Peoples encounters leading to New France.
           </p>
+
+          <!-- Overall Course Progress Bar -->
+          <div class="pt-4 border-t border-slate-800/80">
+            <div class="flex items-center justify-between text-xs font-bold text-slate-300 mb-2">
+              <span>Curriculum Mastery Progress</span>
+              <span class="text-emerald-400 font-black text-sm">${percent}% Completed (${completedList.length} / ${totalUnits} Units)</span>
+            </div>
+            <div class="w-full bg-slate-800 rounded-full h-3 p-0.5 border border-slate-700">
+              <div class="bg-gradient-to-r from-indigo-500 via-indigo-400 to-emerald-400 h-2 rounded-full transition-all duration-500 ease-out" style="width: ${percent}%;"></div>
+            </div>
+          </div>
         </div>
 
-        <!-- Curriculum Progress Bar -->
-        <div class="pt-4 border-t border-slate-800">
-          <div class="flex items-center justify-between text-xs font-bold text-slate-300 mb-2">
-            <span>Overall Course Completion</span>
-            <span class="text-emerald-400 font-black">${percent}% (${completedList.length} of ${totalUnits} Units)</span>
-          </div>
-          <div class="w-full bg-slate-800 rounded-full h-3 p-0.5 border border-slate-700 mb-4">
-            <div class="bg-gradient-to-r from-indigo-500 via-indigo-400 to-emerald-400 h-2 rounded-full transition-all duration-500 ease-out" style="width: ${percent}%;"></div>
-          </div>
-
+        <!-- Right: 3 Stats Cards & Resume CTA (5 cols on desktop) -->
+        <div class="lg:col-span-5 bg-slate-800/80 rounded-2xl p-6 border border-slate-700/80 flex flex-col justify-between space-y-6">
+          
           <!-- 3 Stats Tiles -->
-          <div class="grid grid-cols-3 gap-3">
-            <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-3 text-center">
-              <div class="text-xl sm:text-2xl font-black text-white">${completedList.length}</div>
+          <div class="grid grid-cols-3 gap-3 text-center">
+            <div class="bg-slate-900/80 border border-slate-700/60 rounded-xl p-3">
+              <div class="text-2xl font-black text-white">${completedList.length}</div>
               <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Units Done</div>
             </div>
-            <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-3 text-center">
-              <div class="text-xl sm:text-2xl font-black text-emerald-400">${masteredCount}</div>
-              <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Mastered (80%+)</div>
+            <div class="bg-slate-900/80 border border-slate-700/60 rounded-xl p-3">
+              <div class="text-2xl font-black text-emerald-400">${masteredCount}</div>
+              <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Mastered</div>
             </div>
-            <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-3 text-center">
-              <div class="text-xl sm:text-2xl font-black text-indigo-300">8</div>
+            <div class="bg-slate-900/80 border border-slate-700/60 rounded-xl p-3">
+              <div class="text-2xl font-black text-indigo-300">8</div>
               <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Modules</div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <!-- Right Hero Card: Resume Learning CTA (4 cols) -->
-      <div class="lg:col-span-4 bg-white rounded-3xl p-6 sm:p-7 shadow-md border border-slate-200 flex flex-col justify-between">
-        <div>
-          <div class="flex items-center justify-between mb-3">
-            <span class="text-xs font-black uppercase tracking-wider text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full border border-indigo-100">
-              ⚡ Active Study Session
-            </span>
-            <span class="text-xs font-semibold text-slate-400">
-              ${resumeUnit ? resumeUnit.unitId : "M1-U1"}
-            </span>
+          <!-- Resume Active Lesson Card -->
+          <div class="bg-white text-slate-900 rounded-xl p-4 shadow-sm border border-slate-200">
+            <div class="flex items-center justify-between mb-1.5">
+              <span class="text-[11px] font-black uppercase tracking-wider text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded">
+                ⚡ Active Lesson
+              </span>
+              <span class="text-xs font-bold text-slate-500">
+                ${resumeUnit ? resumeUnit.unitId : "M1-U1"}
+              </span>
+            </div>
+            <h4 class="font-black text-base tracking-tight truncate mb-1">
+              ${resumeUnit ? resumeUnit.title : "Unit 1: The Fragmentation of Western Europe"}
+            </h4>
+            <p class="text-xs text-slate-600 truncate mb-4">
+              ${resumeMod ? resumeMod.moduleTitle : "Module 1"}
+            </p>
+
+            <button 
+              id="resumeLearningCtaBtn"
+              class="w-full min-h-[48px] px-5 py-3 bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white font-black text-sm rounded-xl shadow transition-all flex items-center justify-center gap-2 active-scale">
+              <span>Continue Lesson</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+              </svg>
+            </button>
           </div>
-
-          <h3 class="text-xl font-black text-slate-900 tracking-tight mt-1 mb-2 leading-snug">
-            ${resumeUnit ? resumeUnit.title : "Unit 1: The Fragmentation of Western Europe"}
-          </h3>
-          <p class="text-xs sm:text-sm text-slate-600 line-clamp-2 mb-6">
-            ${resumeMod ? resumeMod.moduleTitle : "Module 1"}
-          </p>
-        </div>
-
-        <div class="space-y-3 pt-4 border-t border-slate-100">
-          <button 
-            id="resumeLearningCtaBtn"
-            class="w-full min-h-[52px] px-5 py-3.5 bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white font-black text-base rounded-2xl shadow-md transition-all flex items-center justify-center gap-2 active-scale">
-            <span>Continue Lesson</span>
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-            </svg>
-          </button>
-
-          <button 
-            id="openDrawerFromHeroBtn"
-            class="w-full min-h-[44px] px-4 py-2 border-2 border-slate-200 hover:border-slate-300 hover:bg-slate-50 text-slate-700 font-bold text-xs rounded-xl transition-all flex items-center justify-center gap-1.5 active-scale">
-            <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
-            </svg>
-            <span>Browse Full Curriculum Index</span>
-          </button>
         </div>
       </div>
     </div>
 
-    <!-- Category Filter Bar on Desktop & Mobile -->
-    <div class="flex items-center justify-between gap-4 mb-6 flex-wrap">
-      <div class="flex items-center gap-2">
-        <h3 class="text-xl font-black text-slate-900 tracking-tight">
+    <!-- Category Filter Bar (100% width) -->
+    <div class="w-full flex items-center justify-between gap-4 mb-6 flex-wrap">
+      <div class="flex items-center gap-2.5">
+        <h3 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
           Curriculum Modules
         </h3>
-        <span class="text-xs font-bold text-slate-500 bg-slate-200/80 px-2.5 py-0.5 rounded-full">8 Modules</span>
+        <span class="text-xs font-bold text-slate-600 bg-slate-200/90 px-3 py-1 rounded-full">
+          All 8 Modules & 24 Units
+        </span>
       </div>
 
       <!-- Quick Filter Pills -->
-      <div class="flex items-center gap-1.5 overflow-x-auto pb-1 max-w-full text-xs font-bold" id="moduleFilterPills">
-        <button data-filter="all" class="filter-pill px-3.5 py-1.5 rounded-full transition-all ${appState.activeModuleFilter === 'all' ? 'bg-slate-900 text-white shadow-sm' : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-100'}">All (8)</button>
-        <button data-filter="europe" class="filter-pill px-3.5 py-1.5 rounded-full transition-all ${appState.activeModuleFilter === 'europe' ? 'bg-slate-900 text-white shadow-sm' : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-100'}">Europe</button>
-        <button data-filter="asia" class="filter-pill px-3.5 py-1.5 rounded-full transition-all ${appState.activeModuleFilter === 'asia' ? 'bg-slate-900 text-white shadow-sm' : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-100'}">Asia & Islam</button>
-        <button data-filter="americas" class="filter-pill px-3.5 py-1.5 rounded-full transition-all ${appState.activeModuleFilter === 'americas' ? 'bg-slate-900 text-white shadow-sm' : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-100'}">Americas & Africa</button>
-        <button data-filter="contact" class="filter-pill px-3.5 py-1.5 rounded-full transition-all ${appState.activeModuleFilter === 'contact' ? 'bg-slate-900 text-white shadow-sm' : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-100'}">Contact & Canada</button>
+      <div class="flex items-center gap-2 overflow-x-auto pb-1 max-w-full text-xs font-bold" id="moduleFilterPills">
+        <button data-filter="all" class="filter-pill px-4 py-2 rounded-xl transition-all ${appState.activeModuleFilter === 'all' ? 'bg-slate-900 text-white shadow-sm' : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-100'}">All Modules (8)</button>
+        <button data-filter="europe" class="filter-pill px-4 py-2 rounded-xl transition-all ${appState.activeModuleFilter === 'europe' ? 'bg-slate-900 text-white shadow-sm' : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-100'}">Europe & Middle Ages</button>
+        <button data-filter="asia" class="filter-pill px-4 py-2 rounded-xl transition-all ${appState.activeModuleFilter === 'asia' ? 'bg-slate-900 text-white shadow-sm' : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-100'}">Asia & Islamic World</button>
+        <button data-filter="americas" class="filter-pill px-4 py-2 rounded-xl transition-all ${appState.activeModuleFilter === 'americas' ? 'bg-slate-900 text-white shadow-sm' : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-100'}">Africa & Americas</button>
+        <button data-filter="contact" class="filter-pill px-4 py-2 rounded-xl transition-all ${appState.activeModuleFilter === 'contact' ? 'bg-slate-900 text-white shadow-sm' : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-100'}">Contact & New France</button>
       </div>
     </div>
 
-    <!-- Responsive Multi-Column Module Grid: 2 columns on desktop, wide view -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="modulesCardsContainer">
+    <!-- 100% Width Responsive Multi-Column Grid: 4 columns on large screens! -->
+    <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="modulesCardsContainer">
   `;
 
   curriculum.forEach((module, modIdx) => {
@@ -519,7 +488,7 @@ function renderDashboard() {
               <span class="text-xs font-black uppercase tracking-wider text-indigo-600 bg-indigo-50 px-2.5 py-0.5 rounded-md">
                 Module ${modIdx + 1}
               </span>
-              <h4 class="text-lg font-black text-slate-900 tracking-tight mt-1 leading-snug">
+              <h4 class="text-base font-black text-slate-900 tracking-tight mt-1 leading-snug">
                 ${module.moduleTitle.replace(/^Module \d+:\s*/, '')}
               </h4>
             </div>
@@ -528,7 +497,7 @@ function renderDashboard() {
                 ? 'bg-emerald-100 text-emerald-800' 
                 : 'bg-slate-100 text-slate-600'
             }">
-              ${completedCountInMod}/${modUnits.length} Done
+              ${completedCountInMod}/${modUnits.length}
             </span>
           </div>
 
@@ -544,13 +513,13 @@ function renderDashboard() {
         <button 
           data-module-index="${modIdx}" 
           data-unit-index="${unitIdx}"
-          class="unit-navigation-btn w-full min-h-[52px] text-left p-3 rounded-2xl border transition-all flex items-center justify-between gap-3 active-scale ${
+          class="unit-navigation-btn w-full min-h-[50px] text-left p-3 rounded-2xl border transition-all flex items-center justify-between gap-2.5 active-scale ${
             isComplete 
               ? 'bg-emerald-50/70 border-emerald-200 text-emerald-950 hover:bg-emerald-100/70' 
               : 'bg-white border-slate-200 text-slate-800 hover:border-indigo-300 hover:bg-indigo-50/30'
           }">
-          <div class="flex items-center gap-3 truncate">
-            <span class="w-8 h-8 rounded-xl flex items-center justify-center font-black text-xs shrink-0 ${
+          <div class="flex items-center gap-2.5 truncate">
+            <span class="w-7 h-7 rounded-xl flex items-center justify-center font-black text-xs shrink-0 ${
               isComplete 
                 ? 'bg-emerald-600 text-white' 
                 : 'bg-slate-100 text-slate-600 border border-slate-200'
@@ -558,18 +527,18 @@ function renderDashboard() {
               ${isComplete ? '✓' : (unitIdx + 1)}
             </span>
             <div class="truncate">
-              <div class="font-bold text-sm tracking-tight truncate">
+              <div class="font-bold text-xs sm:text-sm tracking-tight truncate">
                 ${unit.title}
               </div>
               <div class="text-[11px] text-slate-500 font-medium">
-                ${unit.unitId} • 20-30 min study
+                ${unit.unitId} • 20-30 min
               </div>
             </div>
           </div>
 
-          <div class="shrink-0 flex items-center gap-2">
+          <div class="shrink-0 flex items-center gap-1.5">
             ${typeof score === "number" ? `
-              <span class="text-xs font-black px-2 py-0.5 rounded-md ${
+              <span class="text-[11px] font-black px-2 py-0.5 rounded-md ${
                 score >= 80 ? 'bg-emerald-200 text-emerald-900' : 'bg-indigo-100 text-indigo-900'
               }">
                 ${score}%
@@ -596,7 +565,6 @@ function renderDashboard() {
 
   container.innerHTML = html;
 
-  // Event: Resume button
   const resumeBtn = document.getElementById("resumeLearningCtaBtn");
   if (resumeBtn) {
     resumeBtn.addEventListener("click", () => {
@@ -604,22 +572,13 @@ function renderDashboard() {
     });
   }
 
-  // Event: Open Drawer from Hero
-  const openDrawerBtn = document.getElementById("openDrawerFromHeroBtn");
-  if (openDrawerBtn) {
-    openDrawerBtn.addEventListener("click", openCurriculumDrawer);
-  }
-
-  // Event: Filter Pills
   container.querySelectorAll(".filter-pill").forEach(pill => {
     pill.addEventListener("click", () => {
-      const filter = pill.getAttribute("data-filter");
-      appState.activeModuleFilter = filter;
+      appState.activeModuleFilter = pill.getAttribute("data-filter");
       renderDashboard();
     });
   });
 
-  // Event: Unit navigation buttons
   container.querySelectorAll(".unit-navigation-btn").forEach(btn => {
     btn.addEventListener("click", () => {
       const mIdx = parseInt(btn.getAttribute("data-module-index"), 10);
@@ -630,12 +589,9 @@ function renderDashboard() {
 }
 
 // ==========================================
-// 6. Unit Core View Rendering (Desktop & Mobile)
+// 6. Unit Core View (100% Width 2-Column Responsive)
 // ==========================================
 
-/**
- * Renders the responsive 2-column Unit View with sticky video & quiz sidebar.
- */
 function renderUnitView() {
   const container = document.getElementById("viewDisplayEngine");
   if (!container) return;
@@ -655,160 +611,333 @@ function renderUnitView() {
 
   const isCompleted = appState.appSessionState.completedUnits.includes(unit.unitId);
   const score = appState.appSessionState.quizHighScores[unit.unitId];
-  const bgParagraphs = (unit.content.background || "").split(/\n\n+/).filter(p => p.trim().length > 0);
+  const bgParagraphs = (unit.content && unit.content.background ? unit.content.background : "").split(/\n\n+/).filter(p => p.trim().length > 0);
+
+  // Fallback defaults for enhanced data fields
+  const plainEng = unit.plainEnglish || {
+    theBigIdea: "Explore the systemic shifts and technological breakthroughs of this era.",
+    modernAnalogy: "Connecting historical breakthroughs to modern day mechanics.",
+    keyTakeaways: ["Key historical transitions shaped laws, culture, and trade."]
+  };
+
+  const psContext = unit.primarySourceContext || {
+    purpose: "A primary source is direct evidence created by people who actually lived through these historical events.",
+    authorAndEra: "Historical Document",
+    originalQuote: unit.content ? unit.content.primarySource : "",
+    plainEnglishMeaning: "This document proves how historical actors communicated and governed during this period.",
+    whyItMatters: "Historians study original texts to verify historical reality rather than relying on later assumptions."
+  };
+
+  const focusContext = unit.specializedFocusContext || {
+    title: "Technological & Cultural Breakthrough",
+    purpose: "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
+    details: unit.content ? unit.content.focus : "",
+    plainEnglishImpact: "Without this breakthrough, communication, government administration, and trade would have remained localized."
+  };
+
+  const artifact = unit.visualArtifact || {
+    imageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Machu_Picchu,_Peru.jpg?width=1000",
+    title: "Historical Cartographic or Archaeological Primary Artifact",
+    provenance: "Museum Archive Collection",
+    description: unit.content ? unit.content.graphicDescription : "Historical artifact.",
+    visualClues: ["Observe the craft materials and techniques used by artisans of this era."]
+  };
 
   let html = `
-    <!-- Breadcrumb Trail Navigation -->
-    <nav aria-label="Breadcrumb" class="mb-4 text-xs font-bold text-slate-500 flex items-center gap-2 flex-wrap">
-      <button id="breadcrumbHomeBtn" class="hover:text-indigo-600 transition-colors">
-        Dashboard
+    <!-- Top Breadcrumb Trail Navigation -->
+    <nav aria-label="Breadcrumb" class="w-full mb-6 text-xs sm:text-sm font-bold text-slate-500 flex items-center gap-2 flex-wrap">
+      <button id="breadcrumbHomeBtn" class="hover:text-indigo-600 transition-colors flex items-center gap-1">
+        <span>Dashboard</span>
       </button>
       <span>/</span>
-      <span class="text-slate-600">Module ${appState.currentModuleIndex + 1}</span>
+      <span class="text-slate-600">${module.moduleTitle.replace(/^Module \d+:\s*/, '')}</span>
       <span>/</span>
-      <span class="text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded">${unit.unitId}</span>
+      <span class="text-indigo-700 bg-indigo-50 px-2.5 py-0.5 rounded font-black">${unit.unitId}</span>
     </nav>
 
-    <!-- Responsive Layout: 12 Columns on Desktop (8 cols main reading + 4 cols sticky sidebar) -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+    <!-- 100% Width Two-Column Layout (Spacious 8 cols reading pane + 4 cols sticky sidebar) -->
+    <div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-8 xl:gap-12 items-start">
       
-      <!-- MAIN READING COLUMN (8 cols on desktop) -->
-      <div class="lg:col-span-8 space-y-6">
+      <!-- ============================================== -->
+      <!-- MAIN READING PANE (8 cols on desktop) -->
+      <!-- ============================================== -->
+      <div class="lg:col-span-8 space-y-8">
         
-        <!-- Unit Title Header Card -->
-        <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200">
-          <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-            <div class="flex items-center gap-2">
+        <!-- Unit Title Block -->
+        <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-slate-200">
+          <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+            <div class="flex items-center gap-2 flex-wrap">
               <span class="text-xs font-black uppercase tracking-wider text-indigo-700 bg-indigo-100 px-3 py-1 rounded-full">
                 ${unit.unitId} • Module ${appState.currentModuleIndex + 1}
               </span>
-              <span class="text-xs font-bold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-full">
-                20-30 min study
+              <span class="text-xs font-bold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">
+                ⏱️ 20-30 min study
               </span>
             </div>
 
             ${isCompleted ? `
-              <span class="inline-flex items-center gap-1.5 text-xs font-black bg-emerald-100 text-emerald-900 px-3 py-1 rounded-full">
+              <span class="inline-flex items-center gap-1.5 text-xs font-black bg-emerald-100 text-emerald-900 px-3.5 py-1.5 rounded-full border border-emerald-300">
                 <span>✓ Completed</span>
-                ${typeof score === "number" ? `<span>(${score}%)</span>` : ""}
+                ${typeof score === "number" ? `<span>(${score}% Mastery)</span>` : ""}
               </span>
             ` : `
-              <span class="text-xs font-bold text-amber-700 bg-amber-50 border border-amber-200 px-2.5 py-1 rounded-full">
-                In Progress
+              <span class="text-xs font-bold text-amber-800 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full">
+                📖 In Progress
               </span>
             `}
           </div>
 
-          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight leading-tight mb-2">
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight mb-3">
             ${unit.title}
           </h2>
-          <p class="text-sm font-semibold text-slate-500">
+          <p class="text-base font-semibold text-slate-500">
             ${module.moduleTitle}
           </p>
         </div>
 
-        <!-- Video Embed (Visible in main flow on mobile/tablet, hidden on desktop if shown in sidebar) -->
-        <div class="block lg:hidden aspect-video rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-slate-950">
-          <iframe 
-            class="w-full h-full"
-            src="${unit.videoEmbedUrl}" 
-            title="${unit.title}" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
-          </iframe>
-        </div>
-
-        <!-- Sub-header 1: Historical Context -->
-        <article id="sectionContext" class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200">
-          <div class="flex items-center justify-between gap-3 mb-5 border-b border-slate-100 pb-4">
-            <h3 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight flex items-center gap-2.5">
-              <span class="w-8 h-8 rounded-xl bg-indigo-50 text-indigo-700 flex items-center justify-center text-base">🏛️</span>
-              <span>1. Historical Context</span>
-            </h3>
-            <span class="text-xs font-bold text-slate-400">Systemic Analysis</span>
+        <!-- ============================================== -->
+        <!-- SECTION 1: PLAIN ENGLISH: THE BIG IDEA -->
+        <!-- ============================================== -->
+        <section id="sectionPlainEnglish" class="bg-gradient-to-br from-indigo-50 via-white to-sky-50 rounded-3xl p-6 sm:p-10 shadow-sm border-2 border-indigo-200">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="w-10 h-10 rounded-2xl bg-indigo-600 text-white flex items-center justify-center text-xl shadow">💡</span>
+            <div>
+              <span class="text-xs font-black uppercase tracking-wider text-indigo-700">Student Guide</span>
+              <h3 class="text-2xl font-black text-slate-900 tracking-tight leading-tight">
+                Plain English: The Big Idea (For Grade 8s)
+              </h3>
+            </div>
           </div>
 
-          <div class="text-lg text-slate-800 leading-relaxed font-normal space-y-4 max-w-[70ch]">
+          <div class="space-y-4 text-slate-800">
+            <!-- 30-Second Summary -->
+            <div class="bg-white/90 p-5 rounded-2xl border border-indigo-100 shadow-sm">
+              <div class="font-black text-xs uppercase tracking-wider text-indigo-800 mb-1">
+                The 30-Second Summary
+              </div>
+              <p class="text-base sm:text-lg leading-relaxed font-medium">
+                ${plainEng.theBigIdea}
+              </p>
+            </div>
+
+            <!-- Modern Analogy -->
+            <div class="bg-white/90 p-5 rounded-2xl border border-sky-100 shadow-sm">
+              <div class="font-black text-xs uppercase tracking-wider text-sky-800 mb-1">
+                Why It Matters To You Today (Modern Connection)
+              </div>
+              <p class="text-base sm:text-lg leading-relaxed text-slate-700">
+                ${plainEng.modernAnalogy}
+              </p>
+            </div>
+
+            <!-- 3 Key Takeaways -->
+            <div class="bg-white/90 p-5 rounded-2xl border border-slate-200 shadow-sm">
+              <div class="font-black text-xs uppercase tracking-wider text-slate-700 mb-2">
+                3 Key Concepts to Remember
+              </div>
+              <ul class="space-y-2 text-sm sm:text-base">
+                ${plainEng.keyTakeaways.map(t => `
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-indigo-600 font-black mt-0.5">•</span>
+                    <span>${t}</span>
+                  </li>
+                `).join("")}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- SECTION 2: HISTORICAL CONTEXT (FULL DEPTH) -->
+        <!-- ============================================== -->
+        <article id="sectionContext" class="bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-slate-200">
+          <div class="flex items-center justify-between gap-3 mb-6 border-b border-slate-100 pb-4">
+            <div class="flex items-center gap-3">
+              <span class="w-10 h-10 rounded-2xl bg-indigo-50 text-indigo-700 flex items-center justify-center text-xl">🏛️</span>
+              <div>
+                <span class="text-xs font-black uppercase tracking-wider text-indigo-600">Core Curriculum</span>
+                <h3 class="text-2xl font-black text-slate-900 tracking-tight">
+                  1. Historical Context (Full Depth Breakdown)
+                </h3>
+              </div>
+            </div>
+            <span class="text-xs font-bold text-slate-400 hidden sm:block">Systemic Historical Analysis</span>
+          </div>
+
+          <div class="text-lg text-slate-800 leading-relaxed font-normal space-y-5">
             ${bgParagraphs.map(p => `<p>${p.trim()}</p>`).join("")}
           </div>
         </article>
 
-        <!-- Sub-header 2: Primary Source Deep Dive -->
-        <article id="sectionPrimarySource" class="bg-amber-50/80 border-l-4 border-amber-600 rounded-r-3xl p-6 sm:p-8 shadow-sm border-y border-r border-amber-200/90">
+        <!-- ============================================== -->
+        <!-- SECTION 3: PRIMARY SOURCE DEEP DIVE -->
+        <!-- ============================================== -->
+        <article id="sectionPrimarySource" class="bg-amber-50/90 border-l-4 border-amber-600 rounded-r-3xl p-6 sm:p-10 shadow-sm border-y border-r border-amber-200/90">
           <div class="flex items-center justify-between gap-3 mb-4">
-            <h3 class="text-xl sm:text-2xl font-black text-amber-950 tracking-tight flex items-center gap-2.5">
-              <span class="w-8 h-8 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center text-base">📜</span>
-              <span>2. Primary Source Deep Dive</span>
-            </h3>
-            <span class="text-xs font-black uppercase tracking-wider text-amber-800 bg-amber-200/70 px-2.5 py-1 rounded-md">
-              Historical Evidence
-            </span>
+            <div class="flex items-center gap-3">
+              <span class="w-10 h-10 rounded-2xl bg-amber-200/80 text-amber-900 flex items-center justify-center text-xl">📜</span>
+              <div>
+                <span class="text-xs font-black uppercase tracking-wider text-amber-800">Historical Evidence</span>
+                <h3 class="text-2xl font-black text-amber-950 tracking-tight">
+                  2. Primary Source Deep Dive
+                </h3>
+              </div>
+            </div>
           </div>
 
-          <blockquote class="italic text-slate-800 text-lg leading-relaxed font-serif bg-white/80 p-5 rounded-2xl shadow-inner border border-amber-200/60 my-2">
-            "${unit.content.primarySource}"
-          </blockquote>
+          <div class="space-y-4">
+            <!-- Context Callout -->
+            <div class="bg-white/80 p-4 rounded-xl border border-amber-200/80 text-xs sm:text-sm text-amber-950 font-medium leading-relaxed">
+              <span class="font-black uppercase tracking-wider text-amber-800 block mb-1">What is this document?</span>
+              ${psContext.purpose} <strong>Context:</strong> ${psContext.authorAndEra}.
+            </div>
+
+            <!-- Original Archival Quote -->
+            <blockquote class="italic text-slate-900 text-lg sm:text-xl leading-relaxed font-serif bg-white p-6 rounded-2xl shadow-inner border border-amber-300 my-3">
+              "${psContext.originalQuote}"
+            </blockquote>
+
+            <!-- Plain English Translation -->
+            <div class="bg-white/90 p-5 rounded-2xl border border-amber-200 shadow-sm">
+              <span class="font-black text-xs uppercase tracking-wider text-amber-900 block mb-1">
+                🗣️ Plain English Translation (What this actually means)
+              </span>
+              <p class="text-base text-slate-800 leading-relaxed">
+                ${psContext.plainEnglishMeaning}
+              </p>
+            </div>
+
+            <!-- Why Historians Care -->
+            <div class="bg-amber-100/70 p-4 rounded-xl border border-amber-300/80 text-xs sm:text-sm text-amber-950">
+              <strong>Why this matters to historians:</strong> ${psContext.whyItMatters}
+            </div>
+          </div>
         </article>
 
-        <!-- Sub-header 3: Specialized Focus -->
-        <article id="sectionSpecializedFocus" class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200">
-          <div class="flex items-center justify-between gap-3 mb-4 border-b border-slate-100 pb-4">
-            <h3 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight flex items-center gap-2.5">
-              <span class="w-8 h-8 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-base">⚙️</span>
-              <span>3. Specialized Focus</span>
-            </h3>
-            <span class="text-xs font-bold text-slate-400">Technological & Cultural Mechanic</span>
+        <!-- ============================================== -->
+        <!-- SECTION 4: SPECIALIZED FOCUS -->
+        <!-- ============================================== -->
+        <article id="sectionSpecializedFocus" class="bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-slate-200">
+          <div class="flex items-center gap-3 mb-5 border-b border-slate-100 pb-4">
+            <span class="w-10 h-10 rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-xl">⚙️</span>
+            <div>
+              <span class="text-xs font-black uppercase tracking-wider text-emerald-700">Inventions, Laws & Customs</span>
+              <h3 class="text-2xl font-black text-slate-900 tracking-tight">
+                3. Specialized Focus: ${focusContext.title}
+              </h3>
+            </div>
           </div>
 
-          <div class="text-lg text-slate-800 leading-relaxed font-normal bg-slate-50 p-5 rounded-2xl border border-slate-200">
-            <p>${unit.content.focus}</p>
+          <div class="space-y-4">
+            <!-- Context Header -->
+            <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs sm:text-sm text-slate-700 font-medium">
+              <span class="font-black text-slate-900 block mb-1">Why are we looking at this?</span>
+              ${focusContext.purpose}
+            </div>
+
+            <!-- Detailed Mechanism -->
+            <div class="text-lg text-slate-800 leading-relaxed font-normal bg-emerald-50/30 p-6 rounded-2xl border border-emerald-100">
+              <p>${focusContext.details}</p>
+            </div>
+
+            <!-- Plain English Real-World Impact -->
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+              <span class="font-black text-xs uppercase tracking-wider text-emerald-800 block mb-1">
+                ⚡ Real-World Impact (In Plain English)
+              </span>
+              <p class="text-base text-slate-800 leading-relaxed">
+                ${focusContext.plainEnglishImpact}
+              </p>
+            </div>
           </div>
         </article>
 
-        <!-- Sub-header 4: Artifact & Map Reference Index -->
-        <article id="sectionArtifactMap" class="bg-slate-900 text-slate-100 rounded-3xl p-6 sm:p-8 shadow-md border border-slate-800">
-          <div class="flex items-center justify-between gap-3 mb-4 border-b border-slate-800 pb-4">
-            <h3 class="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2.5">
-              <span class="w-8 h-8 rounded-xl bg-slate-800 text-indigo-400 flex items-center justify-center text-base">🗺️</span>
-              <span>4. Artifact & Map Reference Index</span>
-            </h3>
-            <span class="text-xs font-mono text-indigo-400 uppercase tracking-wider">Visual Anchor</span>
+        <!-- ============================================== -->
+        <!-- SECTION 5: VISUAL HISTORY GALLERY & REAL IMAGES -->
+        <!-- ============================================== -->
+        <article id="sectionArtifactMap" class="bg-slate-900 text-slate-100 rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-800">
+          <div class="flex items-center justify-between gap-3 mb-6 border-b border-slate-800 pb-4 flex-wrap">
+            <div class="flex items-center gap-3">
+              <span class="w-10 h-10 rounded-2xl bg-slate-800 text-indigo-400 flex items-center justify-center text-xl">🗺️</span>
+              <div>
+                <span class="text-xs font-mono uppercase tracking-wider text-indigo-400">Primary Visual Record</span>
+                <h3 class="text-2xl font-black text-white tracking-tight">
+                  4. Visual History Gallery: Artifacts & Cartography
+                </h3>
+              </div>
+            </div>
+            <span class="text-xs font-mono text-slate-400">${artifact.provenance}</span>
           </div>
 
-          <div class="text-sm sm:text-base text-slate-200 leading-relaxed font-mono bg-slate-950 p-5 rounded-2xl border border-slate-800">
-            ${unit.content.graphicDescription}
+          <!-- Embedded Real Image -->
+          <div class="mb-6 rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 flex flex-col items-center">
+            <img 
+              src="${artifact.imageUrl}" 
+              alt="${artifact.title}" 
+              loading="lazy"
+              class="w-full max-h-[520px] object-contain bg-slate-950 p-2 rounded-2xl transition-transform hover:scale-[1.01]"
+              onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Machu_Picchu%2C_Peru.jpg/800px-Machu_Picchu%2C_Peru.jpg';"
+            />
+            <div class="w-full p-4 bg-slate-950/90 border-t border-slate-800 text-center text-xs text-slate-300 font-mono">
+              <strong>Figure:</strong> ${artifact.title}
+            </div>
+          </div>
+
+          <!-- Artifact Description & Analysis -->
+          <div class="space-y-4">
+            <div class="text-sm sm:text-base text-slate-200 leading-relaxed font-mono bg-slate-950 p-5 rounded-2xl border border-slate-800">
+              <span class="text-xs font-bold uppercase tracking-wider text-indigo-400 block mb-2 font-sans">
+                Archaeological & Cartographic Record:
+              </span>
+              ${artifact.description}
+            </div>
+
+            <!-- Visual Clues Guide -->
+            <div class="bg-slate-800/80 p-5 rounded-2xl border border-slate-700">
+              <span class="text-xs font-black uppercase tracking-wider text-emerald-400 block mb-2 font-sans">
+                🔍 Visual Investigation Guide (What to Look For):
+              </span>
+              <ul class="space-y-2 text-xs sm:text-sm text-slate-300 font-sans">
+                ${artifact.visualClues.map(c => `
+                  <li class="flex items-start gap-2">
+                    <span class="text-indigo-400 font-black">•</span>
+                    <span>${c}</span>
+                  </li>
+                `).join("")}
+              </ul>
+            </div>
           </div>
         </article>
 
         <!-- Bottom Pagination Controls -->
-        <div class="flex items-center justify-between gap-3 pt-4 pb-8">
+        <div class="w-full flex items-center justify-between gap-4 pt-4 pb-12">
           <button 
             id="unitNavPrevBtn" 
-            class="min-h-[48px] px-4 py-2.5 border-2 border-slate-200 rounded-2xl text-slate-700 hover:bg-slate-50 font-bold text-sm active-scale transition-all flex items-center gap-1.5">
+            class="min-h-[50px] px-5 py-3 border-2 border-slate-300 bg-white hover:bg-slate-50 text-slate-800 font-black text-sm rounded-2xl active-scale transition-all flex items-center gap-2 shadow-sm">
             <span>← Previous Unit</span>
           </button>
 
           <button 
             id="unitNavHubBtn" 
-            class="min-h-[48px] px-5 py-2.5 bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold text-sm rounded-2xl active-scale transition-all">
+            class="min-h-[50px] px-6 py-3 bg-slate-800 hover:bg-slate-700 text-white font-black text-sm rounded-2xl active-scale transition-all shadow-sm">
             Dashboard Hub
           </button>
 
           <button 
             id="unitNavNextBtn" 
-            class="min-h-[48px] px-4 py-2.5 border-2 border-slate-200 rounded-2xl text-slate-700 hover:bg-slate-50 font-bold text-sm active-scale transition-all flex items-center gap-1.5">
+            class="min-h-[50px] px-5 py-3 border-2 border-slate-300 bg-white hover:bg-slate-50 text-slate-800 font-black text-sm rounded-2xl active-scale transition-all flex items-center gap-2 shadow-sm">
             <span>Next Unit →</span>
           </button>
         </div>
       </div>
 
-      <!-- DESKTOP STICKY SIDEBAR (4 cols on desktop) -->
-      <div class="lg:col-span-4 space-y-6 lg:sticky lg:top-20 self-start">
+      <!-- ============================================== -->
+      <!-- STICKY SIDEBAR COMPANION (4 cols on desktop) -->
+      <!-- ============================================== -->
+      <div class="lg:col-span-4 space-y-6 lg:sticky lg:top-24 self-start">
         
-        <!-- Video Companion Player (Desktop view) -->
-        <div class="hidden lg:block bg-white rounded-3xl p-5 shadow-sm border border-slate-200">
+        <!-- Video Companion Player Card -->
+        <div class="bg-white rounded-3xl p-5 shadow-sm border border-slate-200">
           <div class="flex items-center justify-between gap-2 mb-3">
             <span class="text-xs font-black uppercase tracking-wider text-indigo-700 bg-indigo-50 px-2.5 py-1 rounded-md">
               Video Companion
@@ -817,15 +946,13 @@ function renderUnitView() {
               href="${unit.videoEmbedUrl.replace('/embed/', '/watch?v=')}" 
               target="_blank" 
               rel="noopener noreferrer" 
-              class="text-xs text-slate-400 hover:text-indigo-600 font-semibold flex items-center gap-1">
-              <span>Open in YT</span>
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
-              </svg>
+              class="text-xs text-indigo-600 hover:text-indigo-800 font-bold flex items-center gap-1">
+              <span>Watch on YouTube ↗</span>
             </a>
           </div>
 
-          <div class="aspect-video rounded-2xl overflow-hidden shadow border border-slate-200 bg-slate-950 mb-3">
+          <!-- Video Embed Frame -->
+          <div class="aspect-video rounded-2xl overflow-hidden shadow border border-slate-200 bg-slate-950 mb-3 relative">
             <iframe 
               class="w-full h-full"
               src="${unit.videoEmbedUrl}" 
@@ -836,22 +963,36 @@ function renderUnitView() {
               allowfullscreen>
             </iframe>
           </div>
-          <p class="text-[11px] text-slate-500 leading-tight">
-            Curriculum video companion selected for ${unit.title}.
-          </p>
+
+          <!-- Video Fallback Banner -->
+          <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 text-center">
+            <p class="text-[11px] text-slate-600 mb-2">
+              If your browser or school network restricts embedded video playback:
+            </p>
+            <a 
+              href="${unit.videoEmbedUrl.replace('/embed/', '/watch?v=')}" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-1.5 w-full py-2 px-3 bg-red-600 hover:bg-red-700 text-white font-bold text-xs rounded-lg shadow-sm transition-colors">
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+              </svg>
+              <span>Open Directly on YouTube</span>
+            </a>
+          </div>
         </div>
 
         <!-- Practice Quiz Action Card -->
         <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200">
           <div class="flex items-center justify-between mb-3">
             <span class="text-xs font-black uppercase tracking-wider text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-md">
-              Evaluation
+              Knowledge Check
             </span>
             ${typeof score === "number" ? `
               <span class="text-xs font-black px-2.5 py-0.5 rounded-full ${
                 score >= 80 ? 'bg-emerald-100 text-emerald-800' : 'bg-indigo-100 text-indigo-900'
               }">
-                High Score: ${score}%
+                Best Score: ${score}%
               </span>
             ` : ''}
           </div>
@@ -860,18 +1001,18 @@ function renderUnitView() {
             Unit Practice Quiz
           </h4>
           <p class="text-xs text-slate-600 mb-5">
-            Test your understanding of historical shifts, primary sources, and specialized concepts.
+            Test your understanding of the historical concepts, primary sources, and breakthroughs.
           </p>
 
           <button 
             id="launchUnitPracticeQuizBtn"
-            class="w-full min-h-[50px] bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white font-black py-3.5 px-5 rounded-2xl shadow-md active-scale transition-all flex items-center justify-center gap-2 text-sm sm:text-base mb-3">
+            class="w-full min-h-[52px] bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white font-black py-3.5 px-5 rounded-2xl shadow-md active-scale transition-all flex items-center justify-center gap-2 text-sm sm:text-base mb-3">
             <span>Launch Practice Quiz →</span>
           </button>
 
           <button 
             id="toggleCompleteStatusBtn"
-            class="w-full min-h-[44px] px-4 py-2 border-2 ${
+            class="w-full min-h-[46px] px-4 py-2 border-2 ${
               isCompleted 
                 ? 'border-emerald-500 bg-emerald-50 text-emerald-900 hover:bg-emerald-100' 
                 : 'border-slate-200 hover:border-slate-300 text-slate-700 hover:bg-slate-50'
@@ -880,12 +1021,18 @@ function renderUnitView() {
           </button>
         </div>
 
-        <!-- In This Unit: Table of Contents Anchor Links -->
+        <!-- Table of Contents: Quick Anchor Scroll Links -->
         <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200 hidden lg:block">
           <h4 class="text-xs font-black uppercase tracking-wider text-slate-400 mb-3">
-            On This Page
+            In This Lesson
           </h4>
           <ul class="space-y-2 text-sm font-bold text-slate-600">
+            <li>
+              <a href="#sectionPlainEnglish" class="hover:text-indigo-600 transition-colors flex items-center gap-2 py-1">
+                <span>💡</span>
+                <span>Plain English Breakdown</span>
+              </a>
+            </li>
             <li>
               <a href="#sectionContext" class="hover:text-indigo-600 transition-colors flex items-center gap-2 py-1">
                 <span>🏛️</span>
@@ -907,7 +1054,7 @@ function renderUnitView() {
             <li>
               <a href="#sectionArtifactMap" class="hover:text-indigo-600 transition-colors flex items-center gap-2 py-1">
                 <span>🗺️</span>
-                <span>Artifact & Map Index</span>
+                <span>Visual History Gallery</span>
               </a>
             </li>
           </ul>
@@ -918,13 +1065,11 @@ function renderUnitView() {
 
   container.innerHTML = html;
 
-  // Event: Breadcrumb Home
   const breadcrumbHome = document.getElementById("breadcrumbHomeBtn");
   if (breadcrumbHome) {
     breadcrumbHome.addEventListener("click", () => navigateTo("dashboard"));
   }
 
-  // Event: Quiz CTA button
   const quizBtn = document.getElementById("launchUnitPracticeQuizBtn");
   if (quizBtn) {
     quizBtn.addEventListener("click", () => {
@@ -932,7 +1077,6 @@ function renderUnitView() {
     });
   }
 
-  // Event: Toggle Complete Status button
   const toggleBtn = document.getElementById("toggleCompleteStatusBtn");
   if (toggleBtn) {
     toggleBtn.addEventListener("click", () => {
@@ -940,13 +1084,11 @@ function renderUnitView() {
     });
   }
 
-  // Event: Hub button
   const hubBtn = document.getElementById("unitNavHubBtn");
   if (hubBtn) {
     hubBtn.addEventListener("click", () => navigateTo("dashboard"));
   }
 
-  // Event: Prev Unit
   const prevBtn = document.getElementById("unitNavPrevBtn");
   if (prevBtn) {
     if (appState.currentUnitIndex > 0) {
@@ -960,7 +1102,6 @@ function renderUnitView() {
     }
   }
 
-  // Event: Next Unit
   const nextBtn = document.getElementById("unitNavNextBtn");
   if (nextBtn) {
     if (appState.currentUnitIndex < (module.units || []).length - 1) {
@@ -975,12 +1116,9 @@ function renderUnitView() {
 }
 
 // ==========================================
-// 7. Practice Quiz View Rendering
+// 7. Practice Quiz View (Distraction-Free)
 // ==========================================
 
-/**
- * Renders the distraction-free interactive Practice Quiz view.
- */
 function renderQuizView() {
   const container = document.getElementById("viewDisplayEngine");
   if (!container) return;
@@ -1010,10 +1148,10 @@ function renderQuizView() {
 
   let html = `
     <!-- Distraction-Free Evaluation Container -->
-    <div class="max-w-3xl mx-auto bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-200">
+    <div class="max-w-4xl mx-auto bg-white rounded-3xl p-6 sm:p-12 shadow-xl border border-slate-200">
       
       <!-- Progress Bar & Indicator -->
-      <div class="flex items-center justify-between mb-3">
+      <div class="flex items-center justify-between mb-4">
         <span class="text-xs font-black uppercase tracking-wider text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full border border-indigo-100">
           Question ${qIdx + 1} of ${totalQ}
         </span>
@@ -1022,17 +1160,17 @@ function renderQuizView() {
         </span>
       </div>
 
-      <div class="w-full bg-slate-100 rounded-full h-2.5 mb-6">
-        <div class="bg-indigo-600 h-2.5 rounded-full transition-all duration-300" style="width: ${((qIdx + (isAnswered ? 1 : 0.5)) / totalQ) * 100}%;"></div>
+      <div class="w-full bg-slate-100 rounded-full h-3 mb-8">
+        <div class="bg-indigo-600 h-3 rounded-full transition-all duration-300" style="width: ${((qIdx + (isAnswered ? 1 : 0.5)) / totalQ) * 100}%;"></div>
       </div>
 
-      <!-- Question Statement inside bold, large typography -->
-      <h3 class="text-xl sm:text-2xl font-black text-slate-900 leading-snug tracking-tight mb-6">
+      <!-- Question Statement inside bold typography -->
+      <h3 class="text-xl sm:text-2xl font-black text-slate-900 leading-snug tracking-tight mb-8">
         ${currentQ.questionText}
       </h3>
 
-      <!-- Four large, full-width touch blocks -->
-      <div class="space-y-3 mb-6" id="quizChoicesList">
+      <!-- 4 Multiple Choice Touch Blocks -->
+      <div class="space-y-3.5 mb-8" id="quizChoicesList">
   `;
 
   currentQ.options.forEach((optText, optIdx) => {
@@ -1055,9 +1193,9 @@ function renderQuizView() {
       <button 
         data-option-index="${optIdx}"
         ${isAnswered ? "disabled" : ""}
-        class="quiz-choice-btn w-full p-4 border-2 rounded-2xl text-left font-medium min-h-[52px] flex items-center gap-3 transition-all active-scale ${styles}">
+        class="quiz-choice-btn w-full p-4 sm:p-5 border-2 rounded-2xl text-left font-medium min-h-[52px] flex items-center gap-3.5 transition-all active-scale ${styles}">
         ${icon}
-        <span class="text-base leading-snug flex-1">${optText}</span>
+        <span class="text-base sm:text-lg leading-snug flex-1">${optText}</span>
       </button>
     `;
   });
@@ -1066,11 +1204,11 @@ function renderQuizView() {
       </div>
   `;
 
-  // Analytical Explanation Box
   if (isAnswered) {
     const isCorrect = selectedIdx === currentQ.correctIndex;
     html += `
-      <div class="p-6 rounded-2xl mb-6 transition-all border ${
+      <!-- Analytical Explanation -->
+      <div class="p-6 rounded-2xl mb-8 transition-all border ${
         isCorrect 
           ? 'bg-emerald-50 border-emerald-200 text-emerald-950' 
           : 'bg-amber-50 border-amber-200 text-amber-950'
@@ -1078,13 +1216,13 @@ function renderQuizView() {
         <div class="flex items-center gap-2 font-black text-sm mb-2">
           <span>${isCorrect ? '🌟 Correct! Analytical Explanation:' : '📖 Analytical Explanation:'}</span>
         </div>
-        <p class="text-sm sm:text-base leading-relaxed">${currentQ.explanation}</p>
+        <p class="text-base leading-relaxed">${currentQ.explanation}</p>
       </div>
 
-      <!-- Large Next or Complete button -->
+      <!-- Advance CTA button -->
       <button 
         id="quizAdvanceActionBtn" 
-        class="w-full min-h-[52px] px-5 py-4 bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white font-black text-base rounded-2xl shadow-md transition-all flex items-center justify-center gap-2 active-scale">
+        class="w-full min-h-[54px] px-6 py-4 bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white font-black text-base rounded-2xl shadow-md transition-all flex items-center justify-center gap-2 active-scale">
         <span>${isLastQuestion ? 'Complete Quiz 🏆' : 'Next Question →'}</span>
       </button>
     `;
@@ -1096,7 +1234,6 @@ function renderQuizView() {
 
   container.innerHTML = html;
 
-  // Choice Selection Listener
   if (!isAnswered) {
     container.querySelectorAll(".quiz-choice-btn").forEach(btn => {
       btn.addEventListener("click", () => {
@@ -1131,9 +1268,6 @@ function renderQuizView() {
   }
 }
 
-/**
- * Renders the Quiz completion results card.
- */
 function renderQuizResults(container, unit, questions) {
   const total = questions.length;
   const correct = appState.quizCorrectAnswersCount;
@@ -1149,19 +1283,19 @@ function renderQuizResults(container, unit, questions) {
   let feedbackMessage = "Outstanding mastery of the curriculum material and historical analysis!";
   if (scorePercent < 70) {
     feedbackBadge = "📚 Review Suggested";
-    feedbackMessage = "Good attempt! Review the primary source and technical focus sections to reinforce key concepts.";
+    feedbackMessage = "Good attempt! Review the plain English and primary source sections to reinforce key concepts.";
   } else if (scorePercent < 100) {
     feedbackBadge = "🎯 Proficient";
     feedbackMessage = "Solid understanding of the historical events and structural mechanisms!";
   }
 
   container.innerHTML = `
-    <div class="max-w-xl mx-auto bg-white rounded-3xl p-8 sm:p-10 shadow-xl border border-slate-200 text-center">
+    <div class="max-w-2xl mx-auto bg-white rounded-3xl p-8 sm:p-12 shadow-xl border border-slate-200 text-center">
       <div class="w-20 h-20 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-4xl mx-auto mb-4">
         ✓
       </div>
 
-      <span class="inline-block text-xs font-black uppercase tracking-wider text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full mb-2">
+      <span class="inline-block text-xs font-black uppercase tracking-wider text-emerald-800 bg-emerald-100 px-3.5 py-1.5 rounded-full mb-2">
         ${feedbackBadge}
       </span>
 
@@ -1172,42 +1306,42 @@ function renderQuizResults(container, unit, questions) {
         ${unit.title}
       </p>
 
-      <div class="bg-slate-50 rounded-2xl p-6 mb-6 border border-slate-100">
-        <div class="text-4xl font-black text-indigo-600 mb-1">
+      <div class="bg-slate-50 rounded-2xl p-6 mb-8 border border-slate-100">
+        <div class="text-5xl font-black text-indigo-600 mb-1">
           ${scorePercent}%
         </div>
         <div class="text-xs font-bold text-slate-500 uppercase tracking-wider">
           ${correct} of ${total} Questions Correct
         </div>
-        <p class="text-xs text-slate-600 mt-3 pt-3 border-t border-slate-200 leading-relaxed">
+        <p class="text-sm text-slate-600 mt-3 pt-3 border-t border-slate-200 leading-relaxed">
           ${feedbackMessage}
         </p>
       </div>
 
-      <div class="space-y-3">
+      <div class="space-y-3.5">
         ${hasNextUnit ? `
           <button 
             id="quizProceedNextUnitBtn"
-            class="w-full min-h-[52px] px-5 py-3.5 bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white font-black text-base rounded-2xl shadow-md transition-all flex items-center justify-center gap-2 active-scale">
+            class="w-full min-h-[52px] px-6 py-4 bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white font-black text-base rounded-2xl shadow-md transition-all flex items-center justify-center gap-2 active-scale">
             <span>Proceed to Next Unit →</span>
           </button>
         ` : hasNextModule ? `
           <button 
             id="quizProceedNextModuleBtn"
-            class="w-full min-h-[52px] px-5 py-3.5 bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white font-black text-base rounded-2xl shadow-md transition-all flex items-center justify-center gap-2 active-scale">
+            class="w-full min-h-[52px] px-6 py-4 bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white font-black text-base rounded-2xl shadow-md transition-all flex items-center justify-center gap-2 active-scale">
             <span>Proceed to Next Module →</span>
           </button>
         ` : ''}
 
         <button 
           id="quizRetakeBtn" 
-          class="w-full min-h-[48px] px-4 py-2.5 border-2 border-slate-200 hover:bg-slate-50 text-slate-700 font-bold text-sm rounded-2xl transition-all active-scale">
+          class="w-full min-h-[48px] px-5 py-3 border-2 border-slate-200 hover:bg-slate-50 text-slate-700 font-bold text-sm rounded-2xl transition-all active-scale">
           Retake Practice Quiz
         </button>
 
         <button 
           id="quizReturnHubBtn" 
-          class="w-full min-h-[48px] px-4 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-sm rounded-2xl transition-all active-scale">
+          class="w-full min-h-[48px] px-5 py-3 bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-sm rounded-2xl transition-all active-scale">
           Return to Dashboard Hub
         </button>
       </div>
@@ -1250,19 +1384,16 @@ function renderQuizResults(container, unit, questions) {
 function initApp() {
   hydrateAppState();
 
-  // Header Brand Logo click
   const logoBtn = document.getElementById("headerHomeLogo");
   if (logoBtn) {
     logoBtn.addEventListener("click", () => navigateTo("dashboard"));
   }
 
-  // Header Menu Drawer toggle button
   const menuToggleBtn = document.getElementById("navMenuToggleBtn");
   if (menuToggleBtn) {
     menuToggleBtn.addEventListener("click", openCurriculumDrawer);
   }
 
-  // Drawer Close Button & Backdrop
   const drawerCloseBtn = document.getElementById("drawerCloseBtn");
   if (drawerCloseBtn) {
     drawerCloseBtn.addEventListener("click", closeCurriculumDrawer);
@@ -1273,7 +1404,6 @@ function initApp() {
     drawerBackdrop.addEventListener("click", closeCurriculumDrawer);
   }
 
-  // Drawer Search / Filter
   const drawerFilter = document.getElementById("drawerFilterInput");
   if (drawerFilter) {
     drawerFilter.addEventListener("input", (e) => {
@@ -1281,7 +1411,6 @@ function initApp() {
     });
   }
 
-  // Drawer Dashboard Jump
   const drawerDashJump = document.getElementById("drawerDashboardJumpBtn");
   if (drawerDashJump) {
     drawerDashJump.addEventListener("click", () => {
@@ -1289,14 +1418,12 @@ function initApp() {
     });
   }
 
-  // Escape key closes drawer
   window.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
       closeCurriculumDrawer();
     }
   });
 
-  // Footer Reset Progress button
   const footerResetBtn = document.getElementById("footerResetBtn");
   if (footerResetBtn) {
     footerResetBtn.addEventListener("click", () => {
@@ -1318,7 +1445,6 @@ function initApp() {
   renderDrawerModulesList();
 }
 
-// Boot up once DOM is loaded
 if (typeof document !== "undefined") {
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", initApp);
@@ -1327,7 +1453,6 @@ if (typeof document !== "undefined") {
   }
 }
 
-// Export for Node/CommonJS testing
 if (typeof module !== "undefined" && module.exports) {
   module.exports = {
     appState,
