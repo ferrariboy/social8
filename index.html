@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <title>BC Grade 8 Social Studies Discovery Portal</title>
     
     <!-- Tailwind CSS v3 CDN -->
@@ -213,15 +216,15 @@
 
         <!-- Drawer Footer -->
         <div class="p-4 sm:p-5 border-t border-slate-800 bg-slate-950 flex items-center justify-between text-xs text-slate-400">
-            <span id="drawerProgressSummary">0 of 24 Units Completed</span>
+            <span id="drawerProgressSummary">0 of 64 Units Completed</span>
             <button id="drawerDashboardJumpBtn" class="text-indigo-400 hover:text-indigo-300 font-bold underline">
                 Go to Dashboard Hub
             </button>
         </div>
     </aside>
 
-    <!-- Master Curriculum Data & Application Scripts -->
-    <script src="courseData.js"></script>
-    <script src="app.js"></script>
+    <!-- Master Curriculum Data & Application Scripts (Cache Busted v4.0) -->
+    <script src="courseData.js?v=4.0"></script>
+    <script src="app.js?v=4.0"></script>
 </body>
 </html>
