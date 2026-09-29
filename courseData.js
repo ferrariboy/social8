@@ -40,7 +40,8 @@ const CURRICULUM_DATA = [
           "purpose": "A primary source is direct evidence recorded by an eyewitness who lived through the historical event.",
           "authorAndEra": "Bishop Gregory of Tours, writing around 590 CE during the early Merovingian Frankish dynasty.",
           "plainEnglishMeaning": "Gregory is lamenting that schools and reading have completely vanished across Gaul (modern France), so almost nobody can read or write about what is happening.",
-          "whyItMatters": "This excerpt gives historians direct evidence of how drastically classical Greco-Roman education and administrative literacy collapsed in early medieval Europe."
+          "whyItMatters": "This excerpt gives historians direct evidence of how drastically classical Greco-Roman education and administrative literacy collapsed in early medieval Europe.",
+          "originalQuote": "From the chronicler Gregory of Tours in 'History of the Franks' (Historia Francorum, c. 590 CE): 'In these times when the cultivation of letters was perishing, or rather had totally ceased in the cities of Gaul, many things were done both good and bad, and the people raged fiercely... Not a single man could be found who was skilled in grammar or capable of describing these events in prose or verse.'"
         },
         "specializedFocusContext": {
           "title": "Wergild & The Mechanics of Germanic Customary Law",
@@ -49,14 +50,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Wergild substituted financial compensation for violent revenge, keeping fragile early medieval communities from destroying themselves through continuous clan warfare."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Coronation_of_Charlemagne_by_Friedrich_Kaulbach.jpg?width=1000",
+          "imageUrl": "images/M1-U1.jpg",
           "title": "Coronation of Charlemagne as Holy Roman Emperor (800 CE)",
           "provenance": "Maximilianeum Historical Collection, Munich",
           "visualClues": [
             "Notice the papal crown being placed on Charlemagne's head, symbolizing the Church's authority over secular kings.",
             "Observe the blend of Roman imperial regalia (robes, sceptre) with Frankish warrior cloaks.",
             "Look at the gathered clergy and noble counts witnessing the political unification."
-          ]
+          ],
+          "description": "Cartographic Reconstruction: The Territorial Fragmentation of Post-Roman Western Europe (c. 600 CE). The map highlights the partitioned realms: the Frankish Kingdom in northern Gaul, the Visigothic Kingdom across the Iberian Peninsula, the Lombard territories throughout northern Italy, and Anglo-Saxon petty kingdoms in Britain."
         },
         "quiz": [
           {
@@ -128,7 +130,8 @@ const CURRICULUM_DATA = [
           "purpose": "A royal biography chronicling the daily habits, education, and governing style of an emperor.",
           "authorAndEra": "Einhard, a Frankish scholar and courtier who lived directly in Charlemagne's household (c. 830 CE).",
           "plainEnglishMeaning": "Charlemagne spoke Latin fluently and promoted learning, but even though he kept writing tablets under his pillow, he struggled to learn how to write letters because he started as an adult.",
-          "whyItMatters": "It humanizes Charlemagne and demonstrates that even the most powerful ruler in Europe had difficulty mastering physical writing, proving how specialized scribal literacy was."
+          "whyItMatters": "It humanizes Charlemagne and demonstrates that even the most powerful ruler in Europe had difficulty mastering physical writing, proving how specialized scribal literacy was.",
+          "originalQuote": "From Einhard's 'Life of Charlemagne' (Vita Karoli Magni, c. 830 CE): 'He was not satisfied with speech in his mother tongue alone, but took the trouble to learn foreign languages, of which he learned Latin so well that he could speak it as easily as his native language... He also tried to write, and used to keep tablets and blank sheets under his pillow, that in his spare hours he might accustom his hand to form letters; but he began late in life and made poor success.'"
         },
         "specializedFocusContext": {
           "title": "Carolingian Minuscule & Administrative Inspection (Missi Dominici)",
@@ -137,14 +140,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Without Carolingian Minuscule, ancient Greek and Roman philosophy would have been lost to transcription errors, and modern books would not have lowercase letters or spaces."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Charlemagne_denier_Mayence_812_814.jpg?width=1000",
+          "imageUrl": "images/M1-U2.jpg",
           "title": "Silver Denier Coin of Charlemagne (Minted at Mainz, 812-814 CE)",
           "provenance": "Cabinet des Medailles, Bibliotheque nationale de France, Paris",
           "visualClues": [
             "Notice Charlemagne depicted in profile wearing a Roman imperial laurel wreath.",
             "Observe the Latin inscription 'KAROLUS IMP AUG' (Charles, Emperor Augustus), borrowing Roman titles.",
             "Look at the standardized weight and fine silver composition, showing restored economic confidence."
-          ]
+          ],
+          "description": "Manuscript Illumination: Carolingian Gospel Book with Carolingian Minuscule Script (c. 800 CE). The page shows disciplined, elegant lowercase lettering with red-ink illuminated initial capitals, demonstrating the scribal reform that preserved ancient Latin literature."
         },
         "quiz": [
           {
@@ -216,7 +220,8 @@ const CURRICULUM_DATA = [
           "purpose": "An eyewitness legal record detailing exactly how noblemen swore eternal military loyalty to one another.",
           "authorAndEra": "Galbert of Bruges, a Flemish notary and cleric writing in Flanders in 1127 CE.",
           "plainEnglishMeaning": "The passage describes the physical ceremony of becoming a vassal: joining hands, swearing unconditional loyalty, and sealing the pact with a symbolic kiss of peace.",
-          "whyItMatters": "It proves that in an era without digital contracts or government IDs, sacred physical rituals and religious oaths held society together."
+          "whyItMatters": "It proves that in an era without digital contracts or government IDs, sacred physical rituals and religious oaths held society together.",
+          "originalQuote": "From the chronicler Galbert of Bruges in 'The Murder of Charles the Good' (c. 1127 CE): 'First they did homage in this way: the Count asked the future vassal if he wished to become his man without reserve, and the latter answered, 'I wish it.' Then, with his hands joined between those of the Count, they confirmed the alliance by a kiss. Next, the one who had done homage swore fealty in these words: 'I promise by my faith to be faithful to Count William and to preserve my homage to him completely against all men in good faith.''"
         },
         "specializedFocusContext": {
           "title": "Subinfeudation & The Feudal Military Contract",
@@ -225,14 +230,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This decentralized power across thousands of fortified local castles, making it nearly impossible for one king to tyrannize the entire country without noble consent."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_mars.jpg?width=1000",
+          "imageUrl": "images/M1-U3.jpg",
           "title": "Peasants Plowing Manorial Strip Fields Below the Feudal Castle (March, c. 1412)",
           "provenance": "Les Tres Riches Heures du Duc de Berry, Musee Conde, Chantilly",
           "visualClues": [
             "Observe the towering stone feudal castle in the background, representing the lord's military protection and power.",
             "Notice the peasant in the foreground driving a wheeled plow with two oxen along long, narrow strip fields.",
             "Look at the vineyard pruning in the middle ground, showing seasonal division of agricultural labor."
-          ]
+          ],
+          "description": "Medieval Woodcut: The Ceremony of Homage and Investiture (13th Century). A kneeling vassal in knightly tunic places his clasped hands within the hands of his enthroned feudal lord, while a church clerk records the grant of land with a quill scroll."
         },
         "quiz": [
           {
@@ -304,7 +310,8 @@ const CURRICULUM_DATA = [
           "purpose": "A legal ledger (manorial custumal) listing the exact obligations, labor days, and taxes owed by every peasant on an estate.",
           "authorAndEra": "Manorial bailiff and legal steward at Durnford Manor, England (13th Century).",
           "plainEnglishMeaning": "This document lists John's rent: he must do unpaid manual labor 3 days a week for the lord, plow an acre of land, give hens and eggs on holidays, and pay a fine if his daughter gets married.",
-          "whyItMatters": "It reveals the exhaustive legal grip the feudal lord had over the daily lives, family choices, and food supply of medieval farming families."
+          "whyItMatters": "It reveals the exhaustive legal grip the feudal lord had over the daily lives, family choices, and food supply of medieval farming families.",
+          "originalQuote": "From a 13th-century English Manorial Custumal (Customs of the Manor of Durnford): 'John of Durnford holds one virgate of land. He shall work for the lord three days a week from Michaelmas to Lammas with one man, at whatever work he is commanded... He shall plow half an acre of fallow and half an acre of winter seed. At Christmas he shall give the lord three hens and one cock, and at Easter thirty eggs. He cannot give his daughter in marriage without the lord's license.'"
         },
         "specializedFocusContext": {
           "title": "The Carruca Heavy Plow & Three-Field Crop Rotation",
@@ -313,14 +320,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This farming revolution doubled food output across northern Europe, sparking population growth and freeing up people to become blacksmiths, stonemasons, and scholars."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ploughing_Luttrell_Psalter.jpg?width=1000",
+          "imageUrl": "images/M1-U4.jpg",
           "title": "Peasants Plowing with Heavy Wheeled Carruca from the Luttrell Psalter (c. 1330)",
           "provenance": "British Library, London (Add MS 42130)",
           "visualClues": [
             "Observe the iron-bladed moldboard cutting into the dark soil and turning it over.",
             "Notice the team of four oxen linked by wooden yokes straining against the heavy clay.",
             "Look at the peasant whip driver coordinating the team's forward momentum."
-          ]
+          ],
+          "description": "Diagram: The Layout of a Medieval Manor and Three-Field System. The diagram displays the central manor house and church, flanked by the Autumn Field (wheat), Spring Field (nitrogen-fixing beans), and Fallow Field, crisscrossed by long peasant farming strips."
         },
         "quiz": [
           {
@@ -392,7 +400,8 @@ const CURRICULUM_DATA = [
           "purpose": "A radical statement of supreme papal supremacy claiming that the Pope ranks higher than all earthly kings and emperors.",
           "authorAndEra": "Pope Gregory VII, issued in Rome in 1075 CE during the Investiture Controversy.",
           "plainEnglishMeaning": "The Pope is declaring that only he has the power to appoint and fire kings, that all world leaders must kiss his feet, and that no human court on Earth has the right to put the Pope on trial.",
-          "whyItMatters": "It illustrates how the medieval Papacy claimed absolute political sovereignty over all of European civilization, challenging the power of kings."
+          "whyItMatters": "It illustrates how the medieval Papacy claimed absolute political sovereignty over all of European civilization, challenging the power of kings.",
+          "originalQuote": "From Pope Gregory VII in the 'Dictatus Papae' (Dictates of the Pope, 1075 CE): 'That the Roman pontiff alone can with right be called universal... That he alone may use the imperial insignia... That of the pope alone all princes shall kiss the feet... That it may be permitted to him to depose emperors... That he himself may be judged by no one... That he may absolve subjects from their fealty to wicked men.'"
         },
         "specializedFocusContext": {
           "title": "Canon Law, Lay Investiture & The Concordat of Worms",
@@ -401,14 +410,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This established the fundamental Western concept that the power of governments has legal limits and cannot dictate religious or spiritual conscience."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pope_Innocent_III.jpg?width=1000",
+          "imageUrl": "images/M1-U5.jpg",
           "title": "Fresco of Pope Innocent III at the Sacro Speco, Subiaco (c. 1219 CE)",
           "provenance": "Monastery of San Benedetto, Subiaco, Italy",
           "visualClues": [
             "Observe Pope Innocent III depicted in papal vestments holding the papal bull decree.",
             "Notice the Latin inscription identifying him as the Vicar of Christ on Earth.",
             "Innocent III represented the height of medieval papal power, declaring that the papacy was the sun and secular kings were merely the moon reflecting its light."
-          ]
+          ],
+          "description": "Historical Fresco: Emperor Henry IV at the Castle of Canossa (1077 CE). The German emperor kneels barefoot in the snow outside the fortress gates, pleading for papal absolution before Countess Matilda of Tuscany and Abbot Hugh of Cluny."
         },
         "quiz": [
           {
@@ -480,7 +490,8 @@ const CURRICULUM_DATA = [
           "purpose": "A personal note (colophon) scribbled by a tired monk at the bottom of a 300-page hand-copied manuscript.",
           "authorAndEra": "An anonymous Benedictine scribe writing in a European scriptorium around 1100 CE.",
           "plainEnglishMeaning": "The monk is telling readers to be gentle with the book because copying it was brutal physical work that destroyed his eyesight, cramped his fingers, and made his entire body ache for months.",
-          "whyItMatters": "It reveals the physical reality and human sacrifice required to produce and preserve books before the invention of printing presses."
+          "whyItMatters": "It reveals the physical reality and human sacrifice required to produce and preserve books before the invention of printing presses.",
+          "originalQuote": "From a medieval monastic scribe's colophon (scribal note at the end of a manuscript, c. 1100 CE): 'O reader, turn the pages gently and keep your fingers from the lettering. For as the sweet haven is welcome to the mariner, so is the last line welcome to the scribe. Three fingers write, but the whole body suffers. Writing is excessive drudgery; it crooks your back, dims your eyes, squeezes your ribs and your stomach, and makes the whole body ache.'"
         },
         "specializedFocusContext": {
           "title": "Parchment, Iron Gall Ink & The Art of Illumination",
@@ -489,14 +500,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Because parchment was so durable, these manuscripts have survived over 1,000 years in pristine condition, preserving ancient human history into the modern era."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Scriptorium-monk_at_work.jpg?width=1000",
+          "imageUrl": "images/M1-U6.jpg",
           "title": "Benedictine Monk Copying Manuscripts in a Medieval Scriptorium",
           "provenance": "Royal Library of Belgium, Brussels (MS 9015)",
           "visualClues": [
             "Notice the quill knife held in the scribe's left hand, used to scrape away ink errors and sharpen the goose feather.",
             "Observe the sloping desk designed to prevent ink from pooling and running down the parchment.",
             "Look at the heavy leather-bound volume being copied, secured by metal clasps to prevent humidity damage."
-          ]
+          ],
+          "description": "Manuscript Miniature: A Benedictine Monk Working at an Inclined Desk in a Scriptorium (c. 1200 CE). The monk holds an inkhorn in his left hand and a trimmed goose quill in his right, carefully tracing black letter script onto stretched vellum sheets."
         },
         "quiz": [
           {
@@ -568,7 +580,8 @@ const CURRICULUM_DATA = [
           "purpose": "A medieval heroic chivalric poem celebrating noble courage, loyalty to the lord, and refusal to surrender.",
           "authorAndEra": "An anonymous French trouvere poet, composed around 1100 CE at the time of the First Crusade.",
           "plainEnglishMeaning": "Roland is the ultimate chivalric warrior: brave, unstoppable, and loyal to Charlemagne. Even when his skull is literally bursting from blowing his war horn, he refuses to retreat.",
-          "whyItMatters": "It illustrates the romantic ideal of Chivalry that inspired generations of medieval European knights to seek glory on the battlefield."
+          "whyItMatters": "It illustrates the romantic ideal of Chivalry that inspired generations of medieval European knights to seek glory on the battlefield.",
+          "originalQuote": "From the French epic 'The Song of Roland' (La Chanson de Roland, c. 1100 CE): 'Roland is valiant and Oliver is wise; both are marvelous warriors. Once they are mounted and have taken up their arms, never will they avoid battle through fear of death... Count Roland sounds his olifant horn with great pain and torment; the blood springs from his mouth, and the temple of his brain is broken, but high is the sound of his horn, and the King Charlemagne hears it across the mountain pass.'"
         },
         "specializedFocusContext": {
           "title": "Concentric Castle Architecture & The Physics of the Trebuchet",
@@ -577,14 +590,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "These stone strongholds made local defense supreme, until gunpowder cannons in the 1400s made stone walls vulnerable to artillery bombardment."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Krak_des_Chevaliers_crusader_castle.jpg?width=1000",
+          "imageUrl": "images/M1-U7.jpg",
           "title": "Krak des Chevaliers: Concentric Crusader Castle in Syria (12th Century)",
           "provenance": "UNESCO World Heritage Site, Homs Governorate, Syria",
           "visualClues": [
             "Observe the elevated inner curtain wall towering over the outer defensive perimeter wall.",
             "Notice the massive sloped stone base (talus) engineered to withstand earthquakes and prevent sappers from tunneling under walls.",
             "Look at the round corner towers eliminating blind spots for defensive archers."
-          ]
+          ],
+          "description": "Architectural Cutaway: A Concentric Stone Castle under Siege (13th Century). The illustration depicts an outer moat with drawbridge, murder holes in the gatehouse barbican, and a counterweight trebuchet hurling boulders against stone battlements."
         },
         "quiz": [
           {
@@ -656,7 +670,8 @@ const CURRICULUM_DATA = [
           "purpose": "A constitutional treaty limiting the monarch's power and guaranteeing legal rights to free subjects.",
           "authorAndEra": "Agreed upon by King John of England and his rebel barons at Runnymede meadow in June 1215.",
           "plainEnglishMeaning": "No government can arrest you, lock you up, or take your property unless you have been found guilty under the law by a fair trial of your peers. Justice can never be sold for a bribe or delayed.",
-          "whyItMatters": "Clause 39 is considered the single most influential sentence in the history of human law, directly inspiring the US Bill of Rights and the Canadian Charter of Rights and Freedoms."
+          "whyItMatters": "Clause 39 is considered the single most influential sentence in the history of human law, directly inspiring the US Bill of Rights and the Canadian Charter of Rights and Freedoms.",
+          "originalQuote": "From the Magna Carta (Clause 39 & 40, June 1215): 'No free man shall be seized or imprisoned, or stripped of his rights or possessions, or outlawed or exiled, or deprived of his standing in any way... except by the lawful judgment of his equals or by the law of the land. To no one will we sell, to no one deny or delay right or justice.'"
         },
         "specializedFocusContext": {
           "title": "Clause 39, Due Process & The Enforcement Council of 25 Barons",
@@ -665,14 +680,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "It ended the idea of absolute divine right, proving that leaders are public servants who are accountable to the law just like everyday citizens."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Magna_Carta_(British_Library_Cotton_MS_Augustus_II.106).jpg?width=1000",
+          "imageUrl": "images/M1-U8.jpg",
           "title": "The Magna Carta Exemplar (June 1215, British Library, London)",
           "provenance": "British Library Cotton Collection, London (Cotton MS Augustus II.106)",
           "visualClues": [
             "Observe the dense, abbreviated Latin script inscribed with quill pen on sheepskin parchment.",
             "Notice the charred bottom corners caused by a library fire in 1731, from which this precious artifact was saved.",
             "Look at the tag where King John's Great Seal in beeswax was affixed to certify royal assent."
-          ]
+          ],
+          "description": "Historical Document: The Cotton MS Augustus II.106 Exemplar of the Magna Carta (1215 CE). Written in dense Latin iron gall ink on a single sheepskin parchment with King John's beeswax Great Seal attached by braided silk cords."
         },
         "quiz": [
           {
@@ -749,7 +765,8 @@ const CURRICULUM_DATA = [
           "purpose": "A primary source is direct evidence recorded by an eyewitness who lived through the historical event.",
           "authorAndEra": "Procopius of Caesarea, court historian during the reign of Emperor Justinian I (c. 561 CE).",
           "plainEnglishMeaning": "Procopius is awestruck by the Hagia Sophia cathedral, saying its massive unsupported dome is so magnificent and bright that it looks like it is dangling from heaven on a golden chain.",
-          "whyItMatters": "Procopius provides first-hand architectural documentation of the Hagia Sophia, proving the incredible structural engineering and visual impact of Byzantine builders."
+          "whyItMatters": "Procopius provides first-hand architectural documentation of the Hagia Sophia, proving the incredible structural engineering and visual impact of Byzantine builders.",
+          "originalQuote": "From the Byzantine historian Procopius of Caesarea in 'Buildings' (De Aedificiis, c. 561 CE), describing the Hagia Sophia: 'The church produces a marvelous spectacle, utterly incomprehensible to such as see it, and altogether incredible to those who hear of it... Its huge spherical dome seems not to rest upon solid masonry, but to cover the space suspended by a golden chain from heaven. All these details, fitted together with incredible art in mid-air, create a single harmonious work.'"
         },
         "specializedFocusContext": {
           "title": "The Theodosian Walls & Greek Fire (Secret Incendiary Weapon)",
@@ -758,14 +775,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "These two innovations allowed Constantinople to withstand dozens of massive foreign sieges, protecting Eastern Roman knowledge, law, and wealth for 1,100 years."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hagia_Sophia_Mars_2013.jpg?width=1000",
+          "imageUrl": "images/M2-U9.jpg",
           "title": "The Hagia Sophia (Church of Holy Wisdom), Istanbul, Turkey",
           "provenance": "Constructed 532-537 CE under Emperor Justinian I, Istanbul",
           "visualClues": [
             "Observe the revolutionary pendentive dome architecture, allowing a round dome to sit upon a square base.",
             "Notice the forty windows around the base of the dome, which flood the interior with natural sunlight.",
             "Look at the colossal scale: it remained the largest cathedral in Christendom for nearly a thousand years."
-          ]
+          ],
+          "description": "Architectural Cross-Section: The Tripartite Theodosian Land Walls of Constantinople (c. 450 CE). The diagram illustrates the deep external moat, the outer rampart with archer crenellations, and the imposing 40-foot-high inner fortress walls with polygonal watchtowers."
         },
         "quiz": [
           {
@@ -837,7 +855,8 @@ const CURRICULUM_DATA = [
           "purpose": "An eyewitness historical account of a crisis that determined the survival of an imperial dynasty.",
           "authorAndEra": "Procopius of Caesarea, writing around 550 CE about the Nika Riots of 532 CE.",
           "plainEnglishMeaning": "Theodora tells Justinian that running away like a coward is shameful, and that she would rather die bravely wearing her royal purple imperial robes than live in exile as a nobody.",
-          "whyItMatters": "Theodora's courage directly prevented Justinian from abandoning Constantinople, allowing him to stay in power, build the Hagia Sophia, and complete the Corpus Juris Civilis."
+          "whyItMatters": "Theodora's courage directly prevented Justinian from abandoning Constantinople, allowing him to stay in power, build the Hagia Sophia, and complete the Corpus Juris Civilis.",
+          "originalQuote": "From the Byzantine historian Procopius in 'History of the Wars' (c. 550 CE), recording Empress Theodora's speech during the Nika Riots: 'Even if flight were the only means of safety, I would not flee. Those who have worn the crown should never survive its loss. May I never see the day when those who meet me do not greet me as Empress... If you wish to save yourself, my Emperor, there is no difficulty. We have plenty of money, the sea is right there, and the ships are ready. But watch out that once you have saved yourself, you do not prefer death to safety. For my part, I embrace the ancient saying: Royal purple makes a fine burial shroud.'"
         },
         "specializedFocusContext": {
           "title": "The Corpus Juris Civilis (The Justinian Code)",
@@ -846,14 +865,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This legal code forms the foundation of modern civil law systems in Quebec, France, Germany, Latin America, and Japan, establishing the principle that the accused is innocent until proven guilty."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Meister_von_San_Vitale_in_Ravenna.jpg?width=1000",
+          "imageUrl": "images/M2-U10.jpg",
           "title": "Mosaic of Emperor Justinian and His Imperial Court (San Vitale, Ravenna)",
           "provenance": "Completed c. 547 CE, Basilica of San Vitale, Ravenna, Italy",
           "visualClues": [
             "Notice Justinian centered wearing an imperial halo and tyrian purple robes, symbolizing his dual role as political ruler and protector of the Church.",
             "Observe General Belisarius standing to the emperor's right, representing Byzantine military power.",
             "Look at the gold chalice and paten, highlighting religious ceremony and divine legitimacy."
-          ]
+          ],
+          "description": "Mosaic Composition: Emperor Justinian I and Empress Theodora with Their Retinue (c. 547 CE), Basilica of San Vitale, Ravenna. Justinian holds a gold paten bread bowl, flanked by General Belisarius and Bishop Maximian, while opposite him, Theodora wears an imperial jewel-encrusted crown and purple robe, holding a gold chalice."
         },
         "quiz": [
           {
@@ -925,7 +945,8 @@ const CURRICULUM_DATA = [
           "purpose": "A legal treaty governing interfaith relations between Muslim rulers and non-Muslim subjects.",
           "authorAndEra": "Attributed to Caliph Umar I or early Umayyad legal scholars, 7th-8th century CE.",
           "plainEnglishMeaning": "Non-Muslims (Christians and Jews) agreed to pay a tax called the jizya and obey civil laws in exchange for the Muslim government protecting their lives, churches, and freedom to worship.",
-          "whyItMatters": "This document shows that Islamic empires were remarkably tolerant for their time, allowing Christians and Jews to keep their religion, courts, and property rather than forcing conversions."
+          "whyItMatters": "This document shows that Islamic empires were remarkably tolerant for their time, allowing Christians and Jews to keep their religion, courts, and property rather than forcing conversions.",
+          "originalQuote": "From the Pact of Umar (c. 7th-8th century CE), a historical treaty between the Muslim authorities and the Christian and Jewish communities of the Levant: 'We requested of you protection for ourselves, our families, our possessions, and our co-religionists; and we made this covenant with you: that we shall pay the poll-tax (jizya) with our own hands, humbly; that we shall not build new monasteries, churches, or hermitages in our cities; but that you shall keep our churches open and guarantee our safety and liberty of worship.'"
         },
         "specializedFocusContext": {
           "title": "The Five Pillars & The Dhimmi Legal Framework",
@@ -934,14 +955,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "By protecting non-Muslim minorities through the Dhimmi system, early Islamic rulers maintained social stability and incorporated skilled Christian, Jewish, and Persian scholars into imperial governance."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Koran_c._1300.jpg?width=1000",
+          "imageUrl": "images/M2-U11.jpg",
           "title": "Illuminated Quranic Manuscript Page with Gold Leaf and Calligraphy",
           "provenance": "Islamic Calligraphic Collection, c. 1300 CE",
           "visualClues": [
             "Notice the intricate gold leaf illumination surrounding the text, showing the immense reverence for sacred scripture.",
             "Observe the flowing Arabic calligraphy, which became the supreme visual art form in Islamic civilization because representational images of sacred figures were avoided.",
             "Look at the red vowel markers aiding precise recitation."
-          ]
+          ],
+          "description": "Manuscript Page: Early Kufic Calligraphy from a Ninth-Century Quran. The parchment features bold, horizontal geometric script in dark carbon ink, with gilded floral verse markers and red diacritical dots indicating Arabic vowel sounds."
         },
         "quiz": [
           {
@@ -1013,7 +1035,8 @@ const CURRICULUM_DATA = [
           "purpose": "An introduction to the foundational textbook of algebra.",
           "authorAndEra": "Muhammad ibn Musa al-Khwarizmi, Persian mathematician working at the House of Wisdom in Baghdad (c. 820 CE).",
           "plainEnglishMeaning": "Al-Khwarizmi explains that he invented algebra to solve practical everyday problems, such as calculating trade profits, dividing family inheritances fairly, and surveying farm boundaries.",
-          "whyItMatters": "Al-Khwarizmi's work created the entire branch of algebra and introduced the number zero and decimal digits to Europe, without which modern science and computer programming could not exist."
+          "whyItMatters": "Al-Khwarizmi's work created the entire branch of algebra and introduced the number zero and decimal digits to Europe, without which modern science and computer programming could not exist.",
+          "originalQuote": "From the mathematician Muhammad ibn Musa al-Khwarizmi in 'The Compendious Book on Calculation by Completion and Balancing' (Al-Kitab al-mukhtasar fi hisab al-jabr wa'l-muqabala, c. 820 CE): 'When I considered what people generally want in calculating, I found that it is always a number. I also observed that numbers are required in matters of inheritance, legacies, partitions, lawsuits, and trade, and in all their dealings with one another, or where the measuring of land, the digging of canals, and geometrical computations are concerned... I therefore composed this short work on calculation by al-jabr and al-muqabala.'"
         },
         "specializedFocusContext": {
           "title": "Algebra ('Al-Jabr') & Ibn Sina's Medical Encyclopedia",
@@ -1022,14 +1045,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "These breakthroughs replaced superstition with empirical testing: algebra made modern engineering possible, while Ibn Sina proved that diseases spread through contagious microbes and contaminated water."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Al-Biruni_astrolabe.jpg?width=1000",
+          "imageUrl": "images/M2-U12.jpg",
           "title": "Brass Astrolabe Designed by Islamic Astronomer Al-Biruni",
           "provenance": "Astronomical Scientific Instrument, Islamic Golden Age, c. 1000-1200 CE",
           "visualClues": [
             "Observe the finely engraved circular plates, calibrated for specific latitudes to measure the position of the sun and stars.",
             "Notice the elegant Arabic inscriptions labeling celestial constellations.",
             "Understand its multi-purpose function: it was used for sea navigation, timekeeping, surveying land, and determining the exact direction of Mecca for prayer."
-          ]
+          ],
+          "description": "Scientific Diagram: Anatomical Eye Diagram and Optical Mechanics from Ibn al-Haytham's Book of Optics (Kitab al-Manazir, c. 1021 CE). The manuscript shows cross-sections of the cornea, lens, and optic nerve, disproving ancient Greek theories and proving that light reflects off objects into the eye."
         },
         "quiz": [
           {
@@ -1101,7 +1125,8 @@ const CURRICULUM_DATA = [
           "purpose": "A formal ecclesiastical decree of excommunication that severed church unity.",
           "authorAndEra": "Cardinal Humbert of Silva Candida, papal envoy representing Pope Leo IX (July 16, 1054).",
           "plainEnglishMeaning": "Cardinal Humbert curses the Patriarch of Constantinople, banishing him from the Church and telling him he will burn with the devil unless he bows to the Pope's authority.",
-          "whyItMatters": "This dramatic act shattered the unity of the Christian Church, cementing a thousand-year division between Eastern and Western European cultures."
+          "whyItMatters": "This dramatic act shattered the unity of the Christian Church, cementing a thousand-year division between Eastern and Western European cultures.",
+          "originalQuote": "From the Papal Bull of Excommunication placed upon the altar of the Hagia Sophia by Cardinal Humbert (July 16, 1054): 'Let Michael the patriarch, who has abused the title of bishop, and all who adhere to him, be anathema maranatha... with all heretics, indeed with the devil and his angels, unless they repent. Amen, Amen, Amen.' Followed by Patriarch Michael Cerularius's Synod response: 'Certain men, coming from the darkness of the West... entered this pious and imperial city like a thunderstorm or wild boar, to overthrow the truth.'"
         },
         "specializedFocusContext": {
           "title": "The Filioque Dispute & Competing Concepts of Religious Authority",
@@ -1110,14 +1135,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This split not only divided religious doctrine but also determined whether future nations (like Russia, Greece, and Serbia) looked east toward Constantinople or west toward Rome and Western Europe."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Christ_Pantocrator_mosaic_from_Hagia_Sophia_2.jpg?width=1000",
+          "imageUrl": "images/M2-U13.jpg",
           "title": "Byzantine Mosaic of Christ Pantocrator (Deësis Mosaic, Hagia Sophia)",
           "provenance": "South Gallery of Hagia Sophia, Constantinople, c. 1261 CE",
           "visualClues": [
             "Observe the gold glass tesserae tiles angled specifically to catch and reflect candlelight, creating an ethereal glow.",
             "Notice the classic Eastern Orthodox iconographic style: solemn, dignified facial expression and hand raised in blessing.",
             "Look at the Greek lettering IC XC (Jesus Christ), contrasting with Latin inscriptions in Western European cathedrals."
-          ]
+          ],
+          "description": "Comparative Liturgical Icon: Christ Pantocrator Mosaic in the Apse of Hagia Sophia. Christ is depicted in traditional Byzantine Orthodox iconography with fingers raised in a teaching blessing, holding the Gospel book, emphasizing divine majesty and liturgical solemnity."
         },
         "quiz": [
           {
@@ -1189,7 +1215,8 @@ const CURRICULUM_DATA = [
           "purpose": "A travelogue recording firsthand observations of economic activity and consumer protections in medieval Cairo.",
           "authorAndEra": "Nasir Khusraw, Persian scholar, traveler, and poet writing in 1050 CE.",
           "plainEnglishMeaning": "Nasir Khusraw describes how enormous and wealthy the markets of Cairo were, noting that shopkeepers were punished with public humiliation if they cheated customers or lied about product quality.",
-          "whyItMatters": "This demonstrates that Islamic cities had strict consumer protection laws, honest commercial courts, and thriving consumer economies when Western European trade was still extremely primitive."
+          "whyItMatters": "This demonstrates that Islamic cities had strict consumer protection laws, honest commercial courts, and thriving consumer economies when Western European trade was still extremely primitive.",
+          "originalQuote": "From the Persian traveler and philosopher Nasir Khusraw in 'Safarnama' (Book of Travels, c. 1050 CE), describing the bazaars of Cairo: 'In the center of the city are markets so vast and rich that they beggar description. In the jewelers' bazaar I saw goods beyond calculation... Every shopkeeper sells at a fixed price, and if any man tells an untruth or cheats a customer, he is mounted upon a camel with a bell rung before him, crying out: I have lied and cheated, and this is my punishment.'"
         },
         "specializedFocusContext": {
           "title": "Suftaja (Bills of Exchange) & Caravanserai Trade Networks",
@@ -1198,14 +1225,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "These commercial inventions allowed goods, books, and ideas to move safely across thousands of kilometers from Spain to China, knitting Afro-Eurasia into a single interconnected economy."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_of_Cordoba_Spain.jpg?width=1000",
+          "imageUrl": "images/M2-U14.jpg",
           "title": "The Hypostyle Prayer Hall of the Great Mosque of Cordoba (Mezquita)",
           "provenance": "Constructed 785-987 CE under the Umayyad Caliphate of Cordoba, Spain",
           "visualClues": [
             "Observe the double-tiered horseshoe arches with alternating red brick and white limestone voussoirs.",
             "Notice the 856 columns repurposed from earlier Roman and Visigothic ruins, creating an endless 'forest of stone'.",
             "Look at how the open hypostyle layout creates a tranquil, egalitarian space where worshippers pray side by side without social hierarchy."
-          ]
+          ],
+          "description": "Architectural Elevation: The Hypostyle Prayer Hall of the Great Mosque of Cordoba (Mezquita, Spain). The image shows the infinite forest of 856 jasper, onyx, and marble columns supporting two-tiered alternating red brick and white stone horseshoe arches."
         },
         "quiz": [
           {
@@ -1277,7 +1305,8 @@ const CURRICULUM_DATA = [
           "purpose": "A description of Muslim Cordoba written by a Christian European observer.",
           "authorAndEra": "Hrotsvitha of Gandersheim, a German Christian canoness and poet writing around 965 CE.",
           "plainEnglishMeaning": "Hrotsvitha praises Cordoba as the 'jewel of the world', in awe of its sparkling fountains, luxurious palaces, immense wealth, and world-class universities.",
-          "whyItMatters": "Her words prove that even distant Christian Europeans in Germany recognized Cordoba as the most sophisticated and cultured city in the Western world."
+          "whyItMatters": "Her words prove that even distant Christian Europeans in Germany recognized Cordoba as the most sophisticated and cultured city in the Western world.",
+          "originalQuote": "From the German Saxon nun and chronicler Hrotsvitha of Gandersheim (c. 965 CE), writing about Cordoba from afar in Central Europe: 'Cordoba, the bright jewel of the world, a new, magnificent city proud of its prowess, glorious for its wealth, celebrated for its gardens and fountains, famous for all things, and possessing seven streams of wisdom, unmatched in its learning across the lands.'"
         },
         "specializedFocusContext": {
           "title": "Ibn Rushd (Averroës) & The Translation Movement in Spain",
@@ -1286,14 +1315,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Averroës proved that scientific logic and religious faith could coexist peacefully, changing European university education and enabling modern philosophical inquiry."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Court_of_the_Lions,_Alhambra,_Granada,_Spain,_1899.jpg?width=1000",
+          "imageUrl": "images/M2-U15.jpg",
           "title": "The Court of the Lions at the Alhambra Fortress, Granada, Spain",
           "provenance": "Nasrid Dynasty, constructed c. 1362-1391 CE, Granada, Spain",
           "visualClues": [
             "Observe the central fountain carved from white marble, resting upon twelve carved stone lions that function as a water clock.",
             "Notice the delicate lace-like plasterwork (yeso) decorating the surrounding colonnades, carved with poetic verses and praises of God.",
             "Look at the four water channels bisecting the courtyard, symbolizing the four rivers of Paradise."
-          ]
+          ],
+          "description": "Architectural View: The Court of the Lions (Patio de los Leones) at the Alhambra Palace, Granada. Slender white marble columns support delicately carved stucco stalactite arches enclosing a central fountain supported by twelve sculpted marble lions, with water channels cooling the stone courtyard."
         },
         "quiz": [
           {
@@ -1365,7 +1395,8 @@ const CURRICULUM_DATA = [
           "purpose": "A daily eyewitness diary recording the final siege and fall of Constantinople.",
           "authorAndEra": "Niccolo Barbaro, a Venetian surgeon who survived the siege on May 29, 1453.",
           "plainEnglishMeaning": "Barbaro writes with immense grief that the Byzantine emperor died fighting heroically on the broken walls, and that after 1,100 years, the great Christian imperial capital had fallen to the Ottomans.",
-          "whyItMatters": "Barbaro provides an authentic, harrowing day-by-day record of how the final Ottoman assault broke through the city's legendary walls."
+          "whyItMatters": "Barbaro provides an authentic, harrowing day-by-day record of how the final Ottoman assault broke through the city's legendary walls.",
+          "originalQuote": "From the eyewitness chronicler Niccolo Barbaro, a Venetian physician in Constantinople, recorded in his 'Diary of the Siege of Constantinople' (May 29, 1453): 'On this day, the twenty-ninth of May, 1453, our Lord God decided to deliver this city into the hands of the pagan Sultan... The Turk entered the city through the breach in the wall of Saint Romanus, and their soldiers advanced shouting with great noise. The Emperor died fighting bravely in the breach, and our men could resist no longer. The sun rose on a city that had stood for over eleven hundred years, now fallen forever.'"
         },
         "specializedFocusContext": {
           "title": "Urban's Super-Bombard & Gunpowder Siege Warfare",
@@ -1374,14 +1405,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This siege proved that high stone walls were no longer safe against gunpowder artillery, transforming world military tactics and forcing nations to build modern star-shaped earthwork fortresses."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Siege_of_Constantinople_1453.jpg?width=1000",
+          "imageUrl": "images/M2-U16.jpg",
           "title": "Contemporary Depiction of the Siege of Constantinople (1453)",
           "provenance": "Bibliotheque nationale de France, illuminated manuscript, c. 1455 CE",
           "visualClues": [
             "Observe the Ottoman camp outside the walls with large cannons firing granite boulders at the towers.",
             "Notice the Byzantine defenders on the ramparts using crossbows and stones to repel scaling ladders.",
             "Look at the ships inside the Golden Horn harbor, showing how the city was surrounded on all sides by land and sea."
-          ]
+          ],
+          "description": "Historical Painting: The Ottoman Entry into Constantinople by Jean-Joseph Benjamin-Constant (1876). Sultan Mehmed II rides a white stallion through the breached rubble of the Theodosian Walls, surrounded by Janissaries with matchlock rifles and standards, looking toward the distant dome of Hagia Sophia."
         },
         "quiz": [
           {
@@ -1458,7 +1490,8 @@ const CURRICULUM_DATA = [
           "purpose": "A poem capturing the cosmopolitan nightlife and foreign merchant culture of imperial Chang'an.",
           "authorAndEra": "Li Bai, one of China's most celebrated Daoist poets, writing during the height of the Tang Dynasty (c. 740 CE).",
           "plainEnglishMeaning": "Li Bai describes wealthy young Chinese men hanging out in Chang'an's international taverns, drinking imported western wine served by foreign Sogdian waitresses, listening to Central Asian music.",
-          "whyItMatters": "This poem provides direct literary evidence of how welcoming and diverse Tang China was, embracing foreign goods, languages, and entertainment without fear or xenophobia."
+          "whyItMatters": "This poem provides direct literary evidence of how welcoming and diverse Tang China was, embracing foreign goods, languages, and entertainment without fear or xenophobia.",
+          "originalQuote": "From the Tang poet Li Bai (701 - 762 CE), in 'A Song of the West Market': 'The young men of Chang'an roam through the spring breeze, their horses trotting to the sound of silver bells. Where shall we go to drink sweet wine? To the tavern where the blue-eyed foreign maidens serve flagons of cool grape wine, singing tunes from the western sands... Laughing, we plunge our gold into the wine jars until the morning sun touches the city gates.'"
         },
         "specializedFocusContext": {
           "title": "Tang Sancai Ceramic Glazes & Urban Grid Planning",
@@ -1467,14 +1500,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Chang'an's symmetrical grid planning became the blueprint for ancient East Asian capital cities, including Nara and Kyoto in Japan."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tang_Dynasty_Camel_Terracotta.jpg?width=1000",
+          "imageUrl": "images/M3-U17.jpg",
           "title": "Tang Dynasty Sancai Glazed Terracotta Bactrian Camel (8th Century CE)",
           "provenance": "Shaanxi History Museum, Xi'an, China",
           "visualClues": [
             "Observe the three-color lead glaze technique featuring amber, green, and cream colors running together smoothly.",
             "Notice the heavy pack loaded between the two camel humps, filled with bolts of Chinese silk and water gourds.",
             "Look at the expressive, roaring head of the camel, demonstrating the realism and technical skill of Tang ceramic sculptors."
-          ]
+          ],
+          "description": "Ceramic Sculpture: Tang Dynasty Sancai Glazed Terracotta Camel with Foreign Caravan Musicians (c. 720 CE). The Bactrian camel carries two saddle packs and five bearded Central Asian musicians playing lutes and reed pipes, illustrating Silk Road artistic exchange."
         },
         "quiz": [
           {
@@ -1546,7 +1580,8 @@ const CURRICULUM_DATA = [
           "purpose": "A nostalgic memoir describing daily urban life, culinary culture, and commerce in the Song capital of Kaifeng.",
           "authorAndEra": "Meng Yuanlao, a civilian scholar writing in 1147 CE after the fall of Kaifeng to Jurchen invaders.",
           "plainEnglishMeaning": "Meng recalls that Kaifeng was an exciting 24-hour city where night markets never closed, restaurants served hot snacks and ice drinks all night, and streets were lit with glowing red lanterns.",
-          "whyItMatters": "This source proves that Song China experienced modern consumer culture - with nightlife, restaurants, and leisure entertainment - long before any other society on Earth."
+          "whyItMatters": "This source proves that Song China experienced modern consumer culture - with nightlife, restaurants, and leisure entertainment - long before any other society on Earth.",
+          "originalQuote": "From the Song writer Meng Yuanlao in 'The Eastern Capital: A Dream of Splendors' (Dongjing Meng Hua Lu, c. 1147 CE), describing Kaifeng: 'The night markets are bustling until the third watch, and in the morning, dawn markets open at the fifth watch... Tea houses, brothels, restaurants, and entertainment quarters stay open late into the night, lit by red silk lanterns. Vendors sell boiled dumplings, dried fruits, iced water, spiced meats, and medicinal herbs. Regardless of whether it is freezing winter or hot summer, the night markets never close.'"
         },
         "specializedFocusContext": {
           "title": "Jiaozi (Paper Money) & Massive Coal-Fired Iron Smelting",
@@ -1555,14 +1590,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Paper money made long-distance commerce vastly easier, while cheap iron tools enabled farmers to build irrigation canals and soldiers to wear hardened steel armor."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alongtheriver_detail1.jpg?width=1000",
+          "imageUrl": "images/M3-U18.jpg",
           "title": "Along the River During the Qingming Festival (Detail: Rainbow Bridge)",
           "provenance": "Zhang Zeduan, handscroll, ink and color on silk, Palace Museum, Beijing, c. 1100 CE",
           "visualClues": [
             "Observe the arched wooden Rainbow Bridge packed with pedestrians, sedan chairs, and food stalls.",
             "Notice the canal boat underneath with its mast lowered to squeeze under the bridge, showing precision river transport.",
             "Look at the storefront signs advertising wine, doctor services, and silk merchants along the bustling riverbanks."
-          ]
+          ],
+          "description": "Panoramic Scroll Detail: Along the River During the Qingming Festival (Qingming Shanghe Tu) by Zhang Zeduan (c. 1100 CE). The scroll depicts hundreds of citizens crossing the Rainbow Bridge in Kaifeng, canal barges lowering their masts, cargo camels exiting city gates, and bustling dockside markets."
         },
         "quiz": [
           {
@@ -1634,7 +1670,8 @@ const CURRICULUM_DATA = [
           "purpose": "A governmental reform proposal arguing for practical governance testing in civil service exams.",
           "authorAndEra": "Wang Anshi, famed Song Dynasty reformer, economist, and Grand Councilor (c. 1058 CE).",
           "plainEnglishMeaning": "Wang Anshi argues that making students memorize fancy poetry is useless if they don't know how to stop river floods, feed hungry people during famines, or fix broken tax systems.",
-          "whyItMatters": "This excerpt shows the lively internal debates within the Chinese bureaucracy over how to make standardized testing fair, practical, and effective for running a massive nation."
+          "whyItMatters": "This excerpt shows the lively internal debates within the Chinese bureaucracy over how to make standardized testing fair, practical, and effective for running a massive nation.",
+          "originalQuote": "From the Song scholar and prime minister Wang Anshi in his 'Memorial on the System of Examinations' (c. 1058 CE): 'The purpose of examinations is to select men of talent to manage the affairs of the state. If we test men only on memorization of ancient phrases and elegant poetry, how can we expect them to resolve practical problems of flood control, famine relief, or tax reform? The examinations must test a scholar's ability to apply moral principles to the real governance of our empire.'"
         },
         "specializedFocusContext": {
           "title": "The Keju Examination Security System & Blind Grading",
@@ -1643,14 +1680,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This system broke the monopoly of the warrior nobility, giving commoners a path to power and inspiring modern Western civil service exams in Britain, Canada, and the United States."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Imperial_Examination_civil_service_China.jpg?width=1000",
+          "imageUrl": "images/M3-U19.jpg",
           "title": "Imperial Civil Service Examination Candidates in Beijing (Historical Illustration)",
           "provenance": "National Library of China Historical Collection, Beijing",
           "visualClues": [
             "Observe the individual testing cells where candidates were locked in isolation to write their essays.",
             "Notice the armed guards patrolling the raised boardwalks to enforce absolute silence and prevent cheating.",
             "Look at the banners inscribed with Confucian virtues of integrity, diligence, and scholarship."
-          ]
+          ],
+          "description": "Historical Woodblock Illustration: The Imperial Palace Examination (Keju) in the Forbidden City. Hundreds of candidate scholars kneel at individual writing desks before the imperial throne, writing their eight-legged essays under the watchful eyes of palace proctors."
         },
         "quiz": [
           {
@@ -1722,7 +1760,8 @@ const CURRICULUM_DATA = [
           "purpose": "A scientific and encyclopedic record documenting contemporary technological and scientific inventions.",
           "authorAndEra": "Shen Kuo, brilliant Song Dynasty scientist, astronomer, and government minister (1088 CE).",
           "plainEnglishMeaning": "Shen Kuo describes how magnetic needles point toward magnetic south (discovering magnetic declination) and explains how Bi Sheng invented reusable clay movable type to print books quickly.",
-          "whyItMatters": "Shen Kuo provides definitive proof that China understood magnetic navigation and movable-type printing centuries before these technologies appeared in Europe."
+          "whyItMatters": "Shen Kuo provides definitive proof that China understood magnetic navigation and movable-type printing centuries before these technologies appeared in Europe.",
+          "originalQuote": "From the Song polymath scholar Shen Kuo in his scientific compendium 'Dream Pool Essays' (Mengxi Bitan, 1088 CE): 'Magicians rub the point of a needle with lodestone, then it points south, but it constantly wobbles slightly east, not pointing due south... Some suspend it by a single silk fiber pasted with wax to the middle of the needle, which is the most sensitive method. Also, during the Qingli era, Bi Sheng, a commoner, invented movable type... He baked clay characters hard in fire, arranged them on an iron plate covered with pine resin and wax, and could print hundreds of copies with astonishing rapidity.'"
         },
         "specializedFocusContext": {
           "title": "The Fire Lance (Huo Qiang) & Navigational Compass",
@@ -1731,14 +1770,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Without the magnetic compass, Columbus and Da Gama could not have crossed oceans; without gunpowder, feudal castles would still dominate warfare."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Diamond_Sutra_woodblock_print.jpg?width=1000",
+          "imageUrl": "images/M3-U20.jpg",
           "title": "The Diamond Sutra - Earliest Dated Woodblock Printed Book (868 CE)",
           "provenance": "Discovered in the Mogao Caves, Dunhuang, China; British Library, London",
           "visualClues": [
             "Observe the frontispiece illustration of the Buddha preaching, rendered with sharp, delicate woodcut lines.",
             "Notice the crisp, uniform Chinese characters printed from carved pearwood blocks.",
             "Look at the colophon date at the end of the scroll: 'Printed on the 15th of the 4th month of the 9th year of the Xiantong reign' (May 11, 868 CE)."
-          ]
+          ],
+          "description": "Artifact Illustration: The Diamond Sutra (868 CE, British Library). The woodblock print features a frontispiece showing the Buddha seated on a lotus throne surrounded by monks and disciples, accompanied by exquisite Chinese characters cut into wood blocks with microscopic precision."
         },
         "quiz": [
           {
@@ -1810,7 +1850,8 @@ const CURRICULUM_DATA = [
           "purpose": "A philosophical and literary reflection on human emotion and impermanence from the world's first novel.",
           "authorAndEra": "Lady Murasaki Shikibu, Heian court lady-in-waiting and novelist (c. 1008 CE).",
           "plainEnglishMeaning": "Murasaki explains that cherry blossoms are beautiful precisely because they do not last forever, and that a truly wise person feels deep empathy and gentle sadness for the fleeting nature of all life.",
-          "whyItMatters": "This passage captures 'Mono no Aware', the foundational emotional and aesthetic principle of traditional Japanese culture, philosophy, and art."
+          "whyItMatters": "This passage captures 'Mono no Aware', the foundational emotional and aesthetic principle of traditional Japanese culture, philosophy, and art.",
+          "originalQuote": "From Lady Murasaki Shikibu in 'The Tale of Genji' (c. 1008 CE): 'The cherry blossoms of spring are delightful, but as the wind scatters their petals upon the moss, the heart aches with the beauty of their fleeting life. In this floating world, nothing remains unchanged. To understand the sorrow of things (mono no aware) is to understand the soul of a true courtier.'"
         },
         "specializedFocusContext": {
           "title": "The Hiragana Phonetic Script & Junihitoe Silk Aesthetics",
@@ -1819,14 +1860,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Without the invention of Hiragana by Heian women, Japanese literature would have remained trapped in borrowed Chinese characters, and masterpieces like Genji would never have been written."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tosa_Mitsuoki_-_The_Tale_of_Genji.jpg?width=1000",
+          "imageUrl": "images/M3-U21.jpg",
           "title": "Heian Aristocratic Nobles from The Tale of Genji (Painting by Tosa Mitsuoki)",
           "provenance": "Edo Period tribute to Heian Court Culture, Kyoto National Museum",
           "visualClues": [
             "Observe the elaborate Junihitoe multi-layered silk robes spilling across the tatami mats.",
             "Notice the floor-length black hair worn by the noblewomen, considered the peak of female beauty in Heian society.",
             "Look at the painted folding screens (byobu) that separated male and female spaces in palace residences."
-          ]
+          ],
+          "description": "Handscroll Illustration: The Tale of Genji Emaki (12th Century). The painting utilizes the 'fukinuki yatai' (blown-off roof) perspective, allowing the viewer to look down into an aristocratic bedchamber where noblewomen in flowing multi-layered silk robes read scrolls behind silk privacy screens."
         },
         "quiz": [
           {
@@ -1898,7 +1940,8 @@ const CURRICULUM_DATA = [
           "purpose": "A classical war chronicle recited by blind lute-playing monks (biwa hoshi) celebrating martial honor.",
           "authorAndEra": "Oral tradition compiled around 1240 CE, recounting the Genpei War between the Taira and Minamoto clans.",
           "plainEnglishMeaning": "The chronicle warns that even the proudest warlords will fall like dust in the wind, and reminds warriors that their only duty in life is absolute loyalty to their master until death.",
-          "whyItMatters": "The Tale of the Heike defined the romantic warrior ideals of the samurai, shaping Japanese martial ethics for nearly eight hundred years."
+          "whyItMatters": "The Tale of the Heike defined the romantic warrior ideals of the samurai, shaping Japanese martial ethics for nearly eight hundred years.",
+          "originalQuote": "From the Japanese military epic 'The Tale of the Heike' (Heike Monogatari, c. 1240 CE): 'The sound of the Gion Shoja temple bells echoes the impermanence of all things; the color of the sala flowers reveals the truth that the prosperous must fall. The proud do not endure, like a dream on a spring night; the mighty fall at last, like dust before the wind... A true warrior knows neither father nor son when the war drum sounds, serving his lord unto death.'"
         },
         "specializedFocusContext": {
           "title": "Folded Tamahagane Katana & The Ritual of Seppuku",
@@ -1907,14 +1950,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This intense warrior code created an elite military class that successfully repelled two massive Mongol invasions in 1274 and 1281 CE."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Samurai_armor_Edo_period.jpg?width=1000",
+          "imageUrl": "images/M3-U22.jpg",
           "title": "Complete Samurai Lacquered Plate Armor and Kabuto Helmet",
           "provenance": "Tokyo National Museum Historical Armor Collection",
           "visualClues": [
             "Observe the heavy iron helmet (kabuto) crowned with dramatic crests designed to intimidate enemies on the battlefield.",
             "Notice the lacquered iron plates laced with silk ribbons, allowing the warrior to draw a bow and swing a sword freely.",
             "Look at the menacing iron face mask (menpo) designed to protect the jaw while displaying a terrifying snarling expression."
-          ]
+          ],
+          "description": "Museum Artifact Display: Complete Kamakura-Period Samurai O-Yoroi Armor with Kabuto Helmet (Tokyo National Museum). The armor features laced black lacquered iron scales, horned crest (kuwagata) on the iron helmet, a fierce iron face mask (menpo), and twin daisho swords."
         },
         "quiz": [
           {
@@ -1986,7 +2030,8 @@ const CURRICULUM_DATA = [
           "purpose": "Military tactical orders directing the deployment of rotating firearm volley fire in battle.",
           "authorAndEra": "Oda Nobunaga, the revolutionary Sengoku daimyo who began the unification of Japan (1575).",
           "plainEnglishMeaning": "Nobunaga orders his peasant gunners to hide behind wooden fences and take turns firing in three continuous waves so the charging samurai cavalry face a non-stop wall of bullets.",
-          "whyItMatters": "Nobunaga's battle plan demonstrated the first recorded use of rotating volley fire in world history, revolutionizing battlefield tactics decades before European armies adopted the practice."
+          "whyItMatters": "Nobunaga's battle plan demonstrated the first recorded use of rotating volley fire in world history, revolutionizing battlefield tactics decades before European armies adopted the practice.",
+          "originalQuote": "From the warlord Oda Nobunaga in his tactical instructions before the Battle of Nagashino (1575): 'Form three lines of arquebusiers behind the wooden palisade. When the enemy Takeda cavalry charges across the muddy stream, do not fire all at once! The first rank shall fire on command, then drop down to reload while the second rank fires, and then the third. Maintain a continuous rolling volley so the enemy horses never find a gap in our lead bullets.'"
         },
         "specializedFocusContext": {
           "title": "The Battle of Nagashino & Rotating Matchlock Volley Fire",
@@ -1995,14 +2040,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This victory accelerated the unification of Japan, proving that military discipline, technology, and logistics mattered far more than ancient noble bloodlines."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Himeji_Castle_Keep_2016.jpg?width=1000",
+          "imageUrl": "images/M3-U23.jpg",
           "title": "Himeji Castle ('The White Heron'), UNESCO World Heritage Site",
           "provenance": "Constructed 1581-1609 by Toyotomi Hideyoshi and Ikeda Terumasa, Hyogo, Japan",
           "visualClues": [
             "Observe the brilliant white plaster covering the wooden walls, specifically formulated to resist fire from fire-arrows and bullets.",
             "Notice the massive curved stone base (mushagaeshi) built without mortar, engineered to withstand powerful earthquakes and prevent ninjas from climbing.",
             "Look at the triangular, circular, and rectangular openings (sama) in the walls, designed for archers and matchlock gunners to fire downward."
-          ]
+          ],
+          "description": "Architectural Photograph: Himeji Castle ('White Heron Castle', Hyogo Prefecture). The colossal stone fortress rises on an imposing curved stone foundation, featuring five multi-tiered white-plastered wooden keeps, sweeping curved gables, and arrow slits, showing Sengoku defensive engineering."
         },
         "quiz": [
           {
@@ -2074,7 +2120,8 @@ const CURRICULUM_DATA = [
           "purpose": "A philosophical teaching defining the essence of the Japanese tea ceremony and Wabi-Sabi minimalism.",
           "authorAndEra": "Sen no Rikyu, the supreme tea master of the Sengoku period, serving Oda Nobunaga and Toyotomi Hideyoshi (c. 1580 CE).",
           "plainEnglishMeaning": "Sen no Rikyu says making tea is not about showing off expensive gold cups; it is about boiling water, being humble, and finding deep peaceful joy in a simple cup of tea and a single flower.",
-          "whyItMatters": "Rikyu revolutionized Japanese design, replacing wealthy ostentation with the humble, earthy minimalism that still characterizes modern Japanese architecture and art."
+          "whyItMatters": "Rikyu revolutionized Japanese design, replacing wealthy ostentation with the humble, earthy minimalism that still characterizes modern Japanese architecture and art.",
+          "originalQuote": "From the great Tea Master Sen no Rikyu (1522 - 1591 CE), in 'The Teachings of Rikyu': 'The art of tea is simply this: boil water, make tea, and drink it. Nothing more. Do not seek precious Chinese porcelain or show off golden bowls. A humble iron kettle, an earthen bowl cracked and mended with gold lacquer (kintsugi), and a single wildflower in a bamboo vase - if you understand the peace found in such simple things, you understand the universe.'"
         },
         "specializedFocusContext": {
           "title": "Kintsugi (Golden Joinery) & The Architecture of the Tea Room",
@@ -2083,14 +2130,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "These traditions provided a peaceful sanctuary where bitter warrior rivals could meet unarmed, defusing conflict and creating a shared cultural foundation for a peaceful Japan."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ryoan-ji_Garden.jpg?width=1000",
+          "imageUrl": "images/M3-U24.jpg",
           "title": "The Karesansui Zen Dry Rock Garden at Ryoan-ji Temple, Kyoto",
           "provenance": "UNESCO World Heritage Site, constructed c. 1499 CE, Kyoto, Japan",
           "visualClues": [
             "Observe the raked white quartz gravel, carefully combed into linear wave patterns to represent the ripples of the sea.",
             "Notice the fifteen natural boulders arranged in five distinct clusters surrounded by green moss.",
             "Observe that from any angle on the wooden viewing veranda, at least one boulder is always hidden from sight, reminding the meditator that mortal humans cannot grasp all of reality at once."
-          ]
+          ],
+          "description": "Landscape Photograph: The Dry Zen Rock Garden (Karesansui) at Ryoan-ji Temple, Kyoto (c. 1499 CE). Fifteen moss-ringed boulders are arranged amidst raked white gravel so that from any vantage point on the wooden veranda, only fourteen stones can be seen at once, symbolizing the imperfection of human perception."
         },
         "quiz": [
           {
@@ -2167,7 +2215,8 @@ const CURRICULUM_DATA = [
           "purpose": "A celebratory eyewitness account of the Crusaders' violent capture of Jerusalem.",
           "authorAndEra": "Raymond of Aguilers, a Catholic priest and personal chaplain to Count Raymond of Toulouse (c. 1100 CE).",
           "plainEnglishMeaning": "Raymond of Aguilers describes with intense pride the horrific slaughter inside Jerusalem, claiming that Crusaders rode through streets knee-deep in blood and believing this cruelty was God's righteous will.",
-          "whyItMatters": "This harrowing passage reveals the extreme religious fanaticism of the Crusaders, explaining why the First Crusade created deep historical wounds between the Christian West and the Islamic world."
+          "whyItMatters": "This harrowing passage reveals the extreme religious fanaticism of the Crusaders, explaining why the First Crusade created deep historical wounds between the Christian West and the Islamic world.",
+          "originalQuote": "From the Latin chronicler Raymond of Aguilers in 'Historia Francorum qui ceperunt Iherusalem' (c. 1100 CE), describing the capture of Jerusalem: 'Some of our men cut off the heads of their enemies; others shot them with arrows, so that they fell from the towers; others tortured them longer by casting them into the flames. Piles of heads, hands, and feet were to be seen in the streets of the city... In the Temple and the Porch of Solomon, men rode in blood up to their knees and bridle reins. It was a just and splendid judgment of God, that this place should be filled with the blood of the unbelievers.'"
         },
         "specializedFocusContext": {
           "title": "Mobile Wooden Siege Towers (Belfries) & Judean Siege Logistics",
@@ -2176,14 +2225,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Without Genoese naval supply ships bringing timber, carpenters, and iron, the Crusaders would have died of thirst and starvation outside Jerusalem's stone walls."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Council_of_Clermont_by_Jean_Colombe.jpg?width=1000",
+          "imageUrl": "images/M4-U25.jpg",
           "title": "Pope Urban II Preaching the First Crusade at the Council of Clermont",
           "provenance": "Jean Colombe, illumination from 'Passages d'outremer', c. 1474 CE; Bibliotheque nationale de France",
           "visualClues": [
             "Observe Pope Urban II seated in the center beneath a canopy, raising his hand to address the assembled crowd.",
             "Notice the knights and lords kneeling to receive cloth crosses pinned to their chests, symbolizing their sacred vow.",
             "Look at the Gothic cathedral architecture framing the assembly, emphasizing Church authority over secular princes."
-          ]
+          ],
+          "description": "Manuscript Illumination: Pope Urban II Preaching the First Crusade at the Council of Clermont (1095 CE). The Pope stands on an elevated wooden platform before a sea of armored French knights, bishops holding cross banners, and kneeling pilgrims receiving red fabric crosses sewn onto their tunics."
         },
         "quiz": [
           {
@@ -2255,7 +2305,8 @@ const CURRICULUM_DATA = [
           "purpose": "A royal court biography chronicling the chivalrous character and military campaigns of Saladin.",
           "authorAndEra": "Baha ad-Din ibn Shaddad, jurist, scholar, and trusted personal advisor to Sultan Saladin (c. 1200 CE).",
           "plainEnglishMeaning": "Baha ad-Din explains that when Saladin recaptured Jerusalem, he showed immense kindness and mercy, paying ransoms for poor widows and allowing Christians to leave peacefully without bloodshed.",
-          "whyItMatters": "Saladin's legendary mercy stood in stark contrast to the brutal massacre committed by European Crusaders in 1099, earning him international respect as a chivalrous leader even in Christian Europe."
+          "whyItMatters": "Saladin's legendary mercy stood in stark contrast to the brutal massacre committed by European Crusaders in 1099, earning him international respect as a chivalrous leader even in Christian Europe.",
+          "originalQuote": "From the Kurdish historian Baha ad-Din ibn Shaddad in 'The Rare and Excellent History of Saladin' (al-Nawadir al-Sultaniyya, c. 1200 CE): 'The Sultan Saladin was gentle of heart, noble in character, and filled with compassion. When Jerusalem surrendered to him, he forbade his warriors from harming any Christian soul. He paid from his own treasury the ransom of thousands of impoverished widows and orphans, and allowed the Christian Patriarch to depart the city safely with wagons piled high with church gold. Even his enemies marveled at his justice and generosity.'"
         },
         "specializedFocusContext": {
           "title": "Concentric Castle Architecture & The Knights Hospitaller",
@@ -2264,14 +2315,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "When European knights returned from the Crusades, they copied these concentric stone designs to build King Edward I's famous Welsh castles (like Caernarfon and Conwy)."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Saladin_rex_aegypti.jpg?width=1000",
+          "imageUrl": "images/M4-U26.jpg",
           "title": "Medieval Manuscript Depiction of Sultan Saladin",
           "provenance": "Illuminated manuscript, National Library of France, c. 1250 CE",
           "visualClues": [
             "Observe Saladin depicted with royal dignity holding a sword of justice.",
             "Notice the Islamic calligraphy adorning the border of the illumination.",
             "Look at the European artistic rendering, demonstrating how medieval Christian artists recognized Saladin as a legitimate and noble sovereign."
-          ]
+          ],
+          "description": "Historical Woodcut: King Richard the Lionheart and Sultan Saladin at the Battle of Arsuf (1191). Richard rides in plate armor on a heavy European warhorse wielding a broadsword, while Saladin leads fluid cavalry maneuvers on an agile Arabian steed."
         },
         "quiz": [
           {
@@ -2343,7 +2395,8 @@ const CURRICULUM_DATA = [
           "purpose": "The earliest surviving literary work and royal chronicle written in the Mongolian language.",
           "authorAndEra": "An anonymous Mongol court scribe, written shortly after Genghis Khan's death (c. 1240 CE).",
           "plainEnglishMeaning": "Genghis Khan orders his soldiers never to stop to loot during battle, promising that captured treasure will be shared equally among everyone, and declaring that men will be promoted based on skill and bravery rather than noble birth.",
-          "whyItMatters": "This excerpt proves that Genghis Khan built a genuine meritocracy where common herders could rise to become supreme field generals based purely on ability."
+          "whyItMatters": "This excerpt proves that Genghis Khan built a genuine meritocracy where common herders could rise to become supreme field generals based purely on ability.",
+          "originalQuote": "From the anonymous Mongol chronicle 'The Secret History of the Mongols' (Mongghol-un Niuwcha Tobchiyan, c. 1240 CE): 'Then Temujin gave orders to his army: When we go on the hunt, let no man break the line. When we engage the enemy in battle, let no man stop to seize plunder. If we defeat the enemy, let all pursuit be pressed to the end; then the plunder shall be divided equally among all warriors... He promoted men not by their noble birth or fathers' names, but by the bravery in their hearts and their loyalty to the Khan.'"
         },
         "specializedFocusContext": {
           "title": "The Composite Recurve Bow & The Nerge Encirclement Tactic",
@@ -2352,14 +2405,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "These tactics allowed Mongol armies to conquer more territory in 25 years than the Roman Empire conquered in 400 years."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumGenghisPortrait.jpg?width=1000",
+          "imageUrl": "images/M4-U27.jpg",
           "title": "Official Imperial Portrait of Genghis Khan (Universal Ruler)",
           "provenance": "National Palace Museum, Taipei, Yuan Dynasty Imperial Collection",
           "visualClues": [
             "Notice the calm, contemplative expression, reflecting a shrewd statesman and strategist rather than a wild barbarian.",
             "Observe the simple white woolen/silk tunic without flashy gold embroidery, showing steppe modesty.",
             "Look at the fur-trimmed steppe headgear, functional for surviving harsh Siberian winters."
-          ]
+          ],
+          "description": "Imperial Portrait: Court Portrait of Genghis Khan (Yuan Dynasty Album, National Palace Museum, Taipei). The aged Khan is depicted with calm, penetrating eyes, wearing a simple white silk robe and a brown fur-trimmed hat, radiating quiet authority rather than ostentatious luxury."
         },
         "quiz": [
           {
@@ -2431,7 +2485,8 @@ const CURRICULUM_DATA = [
           "purpose": "A travel memoir documenting the administrative efficiency and communication systems of the Mongol Empire.",
           "authorAndEra": "Marco Polo, a Venetian merchant who served at the court of Kublai Khan in China for 17 years (c. 1300 CE).",
           "plainEnglishMeaning": "Marco Polo is stunned by the Yam postal system, describing how couriers change fresh horses at relay stations every 25 miles, allowing messages to fly across the empire in three days instead of a month.",
-          "whyItMatters": "Marco Polo's firsthand description proved to skeptical Europeans that Mongol governance was among the most organized and technologically advanced administrative networks in human history."
+          "whyItMatters": "Marco Polo's firsthand description proved to skeptical Europeans that Mongol governance was among the most organized and technologically advanced administrative networks in human history.",
+          "originalQuote": "From the Venetian merchant Marco Polo in 'The Travels of Marco Polo' (c. 1300 CE), describing the Yam postal network: 'From the city of Kanbalu there are many roads leading to the provinces, and upon every road, at distances of twenty-five miles, there are post-stations called Yambs... At each station there are posted four hundred good horses kept constantly ready. When the Great Khan's messenger arrives, his bells ring from afar, and another rider mounts a fresh horse and dashes off like a bird upon the wing. In this way, messages that would take an ordinary traveler a month to deliver reach the Emperor in three days.'"
         },
         "specializedFocusContext": {
           "title": "The Yam Postal Network & The Paiza Diplomatic Passport",
@@ -2440,14 +2495,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This network enabled ideas, inventions (like printing and gunpowder), and trade goods to travel between China, Persia, and Europe in weeks rather than years."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Caravan.jpg?width=1000",
+          "imageUrl": "images/M4-U28.jpg",
           "title": "Catalan Atlas (1375) - Silk Road Caravan Crossing Asia under the Pax Mongolica",
           "provenance": "Abraham Cresques, Majorcan cartographer; Bibliotheque nationale de France, Paris",
           "visualClues": [
             "Observe the long line of two-humped Bactrian camels loaded with trade packs traveling along the road to Cathay (China).",
             "Notice the merchants riding horses and wearing varied European, Persian, and Asian clothing, showing cultural diversity.",
             "Look at the tent pavilions of the Mongol khans depicted along the mountain passes."
-          ]
+          ],
+          "description": "Cartographic Document: Detail of the Catalan Atlas (1375 CE, BNF Paris). The map depicts a Silk Road merchant caravan of laden camels and mounted escorts traversing the mountains of Central Asia under the flags of the Golden Horde and Yuan China."
         },
         "quiz": [
           {
@@ -2519,7 +2575,8 @@ const CURRICULUM_DATA = [
           "purpose": "An international historical chronicle commissioned by the Mongol Ilkhans of Persia.",
           "authorAndEra": "Rashid al-Din Hamadani, Persian physician, historian, and Prime Minister to the Mongol Ilkhans (c. 1307 CE).",
           "plainEnglishMeaning": "Rashid al-Din praises Kublai Khan as an enlightened and wise emperor who loved learning, welcomed foreign scientists, and built the magnificent, gold-filled capital of Beijing.",
-          "whyItMatters": "Written by a Persian historian, this source proves that Kublai Khan's fame as a wealthy, sophisticated, and culturally curious monarch reached across all of Asia and the Middle East."
+          "whyItMatters": "Written by a Persian historian, this source proves that Kublai Khan's fame as a wealthy, sophisticated, and culturally curious monarch reached across all of Asia and the Middle East.",
+          "originalQuote": "From the Persian chronicler and Yuan vizier Rashid al-Din in 'Compendium of Chronicles' (Jami al-Tawarikh, c. 1307 CE): 'Kublai Khan was a sovereign of great wisdom and intellect, loving justice and doing good to all. He showed immense favor to scholars, astrologers, physicians, and engineers from all lands. He built a city called Dadu of surpassing beauty, and gathered therein the treasures of the whole world. In his palace, the walls are covered with gold and silver, and dragon carvings of pure jade adorn the throne.'"
         },
         "specializedFocusContext": {
           "title": "Guo Shoujing's Solar Observatory & The Shoushi Calendar (1281 CE)",
@@ -2528,14 +2585,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This cross-cultural collaboration created the most accurate calendar in world history prior to modern satellites, guiding Chinese agriculture for 400 years."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumKublaiPortrait.jpg?width=1000",
+          "imageUrl": "images/M4-U29.jpg",
           "title": "Official Imperial Court Portrait of Kublai Khan (Yuan Dynasty Album)",
           "provenance": "Araniko (Anige), Nepalese court artist to Kublai Khan; National Palace Museum, Taipei",
           "visualClues": [
             "Observe Kublai Khan wearing the traditional white robe of a Mongol Khagan, combined with Chinese silk craftsmanship.",
             "Notice his braided hair wrapped behind his ears in traditional steppe style.",
             "Look at the dignified, mature facial features painted with realistic portraiture by the master Nepalese artist Araniko."
-          ]
+          ],
+          "description": "Museum Artifact Display: The Gaocheng Astronomical Observatory Tower (Henan Province, 1276 CE). The imposing brick and stone trapezoidal tower features a central vertical groove and horizontal measurement stone table used by Yuan astronomers to measure the solar solstice shadows."
         },
         "quiz": [
           {
@@ -2607,7 +2665,8 @@ const CURRICULUM_DATA = [
           "purpose": "A royal travelogue commissioned by the Sultan of Morocco to record thirty years of global exploration.",
           "authorAndEra": "Ibn Battuta, Moroccan Islamic jurist, scholar, and world traveler (dictated c. 1355 CE).",
           "plainEnglishMeaning": "Ibn Battuta marvels that China is the safest and most well-policed nation on Earth, where a wealthy traveler can journey alone for nine months without ever being robbed because of strict government registration.",
-          "whyItMatters": "Ibn Battuta's firsthand account provides irreplaceable evidence of Chinese administrative efficiency, public safety, and advanced economic systems during the 14th century."
+          "whyItMatters": "Ibn Battuta's firsthand account provides irreplaceable evidence of Chinese administrative efficiency, public safety, and advanced economic systems during the 14th century.",
+          "originalQuote": "From Ibn Battuta in 'A Gift to Those Who Contemplate the Wonders of Cities and the Marvels of Travelling' (The Rihla, c. 1355 CE), describing China: 'China is the safest and best regulated country for a traveler on Earth. A man may travel alone across the realm for nine months, with great wealth, without fear of being robbed. In every inn, the innkeeper writes down the traveler's name, companions, and baggage, and sends word ahead to the next town... The Chinese make porcelain of unsurpassed beauty, and their paper money is accepted everywhere.'"
         },
         "specializedFocusContext": {
           "title": "Indian Ocean Monsoon Dhows & The Islamic Qadi Network",
@@ -2616,14 +2675,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "These interconnected networks proved that centuries before European colonization, Asia and Africa possessed the richest and most peaceful trade networks on Earth."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Marco_Polo_portrait.jpg?width=1000",
+          "imageUrl": "images/M4-U30.jpg",
           "title": "Portrait of Venetian Merchant and World Traveler Marco Polo",
           "provenance": "Galleria dei Ritratti, Florence, Italy",
           "visualClues": [
             "Observe Marco Polo depicted wearing wealthy Venetian merchant velvet and a fur-trimmed cap.",
             "Notice his dignified expression holding an Asian travel scroll.",
             "Look at the globe and sea chart instruments in the background, honoring his lifetime of overland and oceanic travel."
-          ]
+          ],
+          "description": "Historical Engraving: Marco Polo Departing Venice for the Orient (1271 CE, Bodleian Library). Galleys with furled sails prepare to cast off from the Piazzetta of San Marco, with the Doge's Palace and St. Mark's basilica in the background, surrounded by crates of trade goods."
         },
         "quiz": [
           {
@@ -2695,7 +2755,8 @@ const CURRICULUM_DATA = [
           "purpose": "A literary and historical testimony describing the collapse of society in Florence during the plague.",
           "authorAndEra": "Giovanni Boccaccio, Italian author and humanist writing in Florence directly after the 1348 epidemic.",
           "plainEnglishMeaning": "Boccaccio writes with deep sorrow that so many people died every single day that cemeteries ran out of room, forcing city workers to dig massive open trenches and stack corpses on top of each other like cargo in a ship.",
-          "whyItMatters": "Boccaccio's vivid eyewitness description gives historians irreplaceable insight into the emotional horror and total breakdown of civil order during the Black Death."
+          "whyItMatters": "Boccaccio's vivid eyewitness description gives historians irreplaceable insight into the emotional horror and total breakdown of civil order during the Black Death.",
+          "originalQuote": "From the Florentine writer Giovanni Boccaccio in the introduction to 'The Decameron' (c. 1353 CE): 'The condition of the people was pitiable to behold... Many breathed their last in the open streets, day and night; and many others, dying in their houses, only gave notice thereof to their neighbors by the stench of their rotting corpses. The consecrated ground of church cemeteries did not suffice to bury the multitude of bodies; huge trenches were opened in which hundreds of the newly arrived dead were laid, stowed tier upon tier like cargo in a ship, packed down with a little dirt until the trench was full to the brim.'"
         },
         "specializedFocusContext": {
           "title": "The Pathology of Yersinia Pestis & The Plague Doctor Beak Mask",
@@ -2704,14 +2765,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Although doctors did not yet understand bacteria, practices invented during this crisis - such as Venice's 40-day ship isolation ('quarantine') - form the basis of modern public health disease control."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Plague_doctor_by_Paul_F%C3%BCrst.png?width=1000",
+          "imageUrl": "images/M4-U31.jpg",
           "title": "Doctor Schnabel von Rom (Medieval Plague Doctor Beak Mask)",
           "provenance": "Paul Furst, copper engraving, Nuremberg, Germany, 1656",
           "visualClues": [
             "Observe the long bird-like beak mask filled with dried flowers and spices, believed to purify plague-infested miasma air.",
             "Notice the full-length heavy waxed leather coat and leather gloves, which accidentally protected doctors from flea bites.",
             "Look at the wooden pointer cane in the doctor's hand, used to take a patient's pulse and examine buboes without touching skin."
-          ]
+          ],
+          "description": "Historical Woodcut Engraving: Doctor Schnabel von Rom (The Plague Doctor) by Paul Furst (1656). The physician stands in full protective gear: a long leather coat, leather gloves, wide-brimmed doctor's hat, spectacles, a wooden cane to examine patients without physical contact, and a prominent bird-like beak mask."
         },
         "quiz": [
           {
@@ -2783,7 +2845,8 @@ const CURRICULUM_DATA = [
           "purpose": "A sermon challenging the divine right of aristocracy and demanding social equality.",
           "authorAndEra": "John Ball, a radical egalitarian English priest, speaking during the Peasants' Revolt of 1381.",
           "plainEnglishMeaning": "John Ball asks: When Adam dug the soil and Eve spun wool, who was the nobleman? He argues that God created all humans equal, and that society will never be fair until serfdom is abolished and goods are shared.",
-          "whyItMatters": "John Ball's sermon is one of the earliest recorded political declarations of universal human equality in Western history, directly challenging the feudal caste system."
+          "whyItMatters": "John Ball's sermon is one of the earliest recorded political declarations of universal human equality in Western history, directly challenging the feudal caste system.",
+          "originalQuote": "From the radical English priest John Ball, recorded by chronicler Jean Froissart in 'Chronicles of England, France, and Spain' (c. 1381 CE): 'My good friends, things cannot go well in England, nor ever shall, until all goods be held in common, and there be neither serf nor noble, but that we all be equal! Why do they hold us in bondage? Are we not all descended from the same parents, Adam and Eve? When Adam delved and Eve span, who was then the gentleman? They are clothed in velvet and warm furs, while we go in rags. They have wines and fine spices and white bread, while we have rye and the refuse of the straw, and if we drink, it must be water.'"
         },
         "specializedFocusContext": {
           "title": "The Statute of Laborers (1351) & The Flat Poll Tax",
@@ -2792,14 +2855,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Although Wat Tyler was killed, the revolt terrified the monarchy; the poll tax was abandoned, wage freezes collapsed, and serfdom permanently dissolved across England."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Wat_tyler_death.jpg?width=1000",
+          "imageUrl": "images/M4-U32.jpg",
           "title": "The Death of Wat Tyler in the English Peasants' Revolt of 1381",
           "provenance": "Jean Froissart, Chronicles (MS Fr. 2644), Royal Library of Brussels, c. 1470 CE",
           "visualClues": [
             "Observe the clash at Smithfield: Mayor Walworth drawing his sword against peasant leader Wat Tyler.",
             "Notice the young 14-year-old King Richard II on horseback calming the angry peasant army.",
             "Look at the peasant banners and farming tools converted into makeshift spears, pitchforks, and longbows."
-          ]
+          ],
+          "description": "Manuscript Illumination: The Murder of Wat Tyler by Mayor William Walworth at Smithfield (1381 CE, Froissart's Chronicles). King Richard II on horseback watches as the Mayor of London strikes the rebel leader Wat Tyler from his horse, while rebel archers in the background hold drawn longbows."
         },
         "quiz": [
           {
@@ -2876,7 +2940,8 @@ const CURRICULUM_DATA = [
           "purpose": "A geographic and ethnographic survey of West African kingdoms and commercial networks.",
           "authorAndEra": "Abu Ubayd al-Bakri, an Arab scholar writing in Cordoba, Spain (1068 CE), using eyewitness accounts from caravan merchants.",
           "plainEnglishMeaning": "Al-Bakri describes the incredible royal wealth of the King of Ghana, whose princes wore gold braided into their hair, whose bodyguards carried solid gold swords, and whose royal guard dogs wore gold and silver collars.",
-          "whyItMatters": "Al-Bakri's detailed account provided the Mediterranean world with its first detailed documentation of the immense wealth and organized royal courts of medieval West Africa."
+          "whyItMatters": "Al-Bakri's detailed account provided the Mediterranean world with its first detailed documentation of the immense wealth and organized royal courts of medieval West Africa.",
+          "originalQuote": "From the Arab Andalusian geographer Abu Ubayd al-Bakri in 'The Book of Roads and Kingdoms' (Kitab al-Masalik wa'l-Mamalik, 1068 CE), describing the King of Ghana: 'The King adorns himself like a woman, wearing necklaces round his neck and bracelets on his forearms, and he puts on a high cap decorated with gold and wrapped in a turban of fine cotton... Behind the king stand ten pages holding shields and swords mounted in gold, and on his right are the sons of the vassal princes of his empire, wearing splendid garments with gold plaited into their hair. The governor of the city sits upon the ground before the king, with ministers seated around him. At the door of the royal pavilion are dogs of excellent pedigree who never leave the king, wearing collars of gold and silver studded with bells.'"
         },
         "specializedFocusContext": {
           "title": "The Silent Barter System & The Royal Gold Nugget Monopoly",
@@ -2885,14 +2950,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This sophisticated customs and monetary system funded West Africa's first great empire and supplied medieval European and Islamic mints with their gold coins."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Djenne_Great_Mosque_1.jpg?width=1000",
+          "imageUrl": "images/M5-U33.jpg",
           "title": "Sudano-Sahelian Adobe Architecture (Great Mosque of Djenne)",
           "provenance": "UNESCO World Heritage Site, architectural tradition originating in the medieval Sahel, Mali",
           "visualClues": [
             "Observe the sun-baked mud brick (adobe) construction plastered with smooth clay, engineered for the arid Sahel climate.",
             "Notice the protruding palm wood timbers (toron), which act as built-in permanent scaffolding for the annual community replastering festival.",
             "Look at the majestic minaret towers topped with ostrich eggs, symbolizing fertility and purity in West African tradition."
-          ]
+          ],
+          "description": "Cartographic Reconstruction: The Trans-Saharan Caravan Routes (c. 1000 CE). The map shows the network of desert trails connecting Sijilmasa in Morocco through the salt mines of Taghaza to the capital of Koumbi Saleh, continuing south to the Bambuk goldfields along the Niger River."
         },
         "quiz": [
           {
@@ -2964,7 +3030,8 @@ const CURRICULUM_DATA = [
           "purpose": "An administrative and economic record documenting the long-term inflationary impact of Mansa Musa's visit to Cairo.",
           "authorAndEra": "Shihab al-Umari, an Arab court administrator and historian writing in Cairo in 1340 CE.",
           "plainEnglishMeaning": "Al-Umari records that Mansa Musa gave away so much gold in Cairo that he completely crashed the gold market, and that even twelve years later, gold had not recovered its original value.",
-          "whyItMatters": "This is independent economic evidence proving that Mansa Musa's personal wealth was so massive that his personal gift-giving single-handedly altered the currency valuation of a foreign empire."
+          "whyItMatters": "This is independent economic evidence proving that Mansa Musa's personal wealth was so massive that his personal gift-giving single-handedly altered the currency valuation of a foreign empire.",
+          "originalQuote": "From the Arab historian Shihab al-Umari in 'Pathways of Vision in the Realms of the Metropolises' (Masalik al-Absar, c. 1340 CE), recording testimonies in Cairo: 'This man Mansa Musa spread upon Cairo the flood of his generosity. There was no person, officer of the Sultan's court, or holder of any office who did not receive a sum of gold from him. The people of Cairo earned incalculable profits from him and his caravan in buying and selling... Gold was at a high price in Egypt until they came in that year. Its value fell and it was cheapened in price and has remained cheap even to this day. This has been the condition of things for about twelve years on account of the vast quantity of gold which they brought into Egypt.'"
         },
         "specializedFocusContext": {
           "title": "The Catalan Atlas (1375) & The Kouroukan Fouga Constitution",
@@ -2973,14 +3040,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "The image of Mansa Musa holding a golden nugget obsessed European kings, directly motivating Portuguese exploratory voyages down the African coast in the 1400s."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_Mansa_Musa.jpg?width=1000",
+          "imageUrl": "images/M5-U34.jpg",
           "title": "Mansa Musa of Mali Holding a Golden Nugget (Catalan Atlas, 1375)",
           "provenance": "Abraham Cresques, Majorcan World Map, Bibliotheque nationale de France, Paris",
           "visualClues": [
             "Observe Mansa Musa crowned like a European monarch, holding a gleaming sphere of pure gold and a golden sceptre.",
             "Notice the camel caravan and Tuareg merchant with a facial veil (tagelmust) approaching from the desert.",
             "Look at the text describing Mali as the wealthiest kingdom on Earth, reflecting global recognition of West African power."
-          ]
+          ],
+          "description": "Manuscript Detail: Mansa Musa depicted in the Catalan Atlas (1375 CE, BNF Paris). The King of Mali is illustrated in magnificent robes, holding an orb of pure gold, seated upon a throne in the Sahel, while a Berber trader on a camel approaches."
         },
         "quiz": [
           {
@@ -3052,7 +3120,8 @@ const CURRICULUM_DATA = [
           "purpose": "A diplomatic and geographic account of West African civilizations published for European readers.",
           "authorAndEra": "Leo Africanus (al-Hasan al-Wazzan), an Andalusian traveler, diplomat, and author who visited Timbuktu twice (c. 1510 - 1526 CE).",
           "plainEnglishMeaning": "Leo Africanus reports that in Timbuktu, the book trade was more profitable than gold or salt, and that the King paid high salaries to university professors, judges, and doctors because education was respected above all else.",
-          "whyItMatters": "Leo Africanus provided undeniable proof to Renaissance Europe that medieval African cities were world-class centers of literacy, medicine, and higher university education."
+          "whyItMatters": "Leo Africanus provided undeniable proof to Renaissance Europe that medieval African cities were world-class centers of literacy, medicine, and higher university education.",
+          "originalQuote": "From the Andalusian Moroccan traveler and diplomat Leo Africanus in 'The History and Description of Africa' (Descrittione dell'Africa, c. 1526 CE), describing Timbuktu: 'In Timbuktu there are numerous judges, doctors, and clerics, all receiving good salaries from the King. He pays immense respect to men of learning. There is a great demand for books in manuscript imported from Barbary, and more profit is made from the book trade than from any other merchandise... Here are great stores of doctors, judges, and learned men who teach in magnificent schools. The inhabitants are very wealthy and generous with their goods.'"
         },
         "specializedFocusContext": {
           "title": "Sankore University Degrees & Timbuktu Manuscript Science",
@@ -3061,14 +3130,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Timbuktu's manuscripts preserved classical Greek philosophy, advanced trigonometry, and human rights treatises through centuries when European learning was still recovering from the Dark Ages."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Timbuktu_Manuscript_astronomy.jpg?width=1000",
+          "imageUrl": "images/M5-U35.jpg",
           "title": "Ancient Scientific and Astronomy Manuscript from Timbuktu, Mali",
           "provenance": "Ahmed Baba Institute of Higher Islamic Studies, Timbuktu, Mali",
           "visualClues": [
             "Observe the red ink circular diagrams depicting the orbits of celestial bodies and lunar phases.",
             "Notice the elegant West African Sudani calligraphic script filling the margins with commentary.",
             "Look at the rag paper manufactured centuries ago, preserved by the arid climate of the Sahara desert."
-          ]
+          ],
+          "description": "Manuscript Page: Timbuktu Astronomical and Mathematical Manuscript (Sankore University Collection, 14th Century). The parchment features Arabic script in sepia ink with red geometrical diagrams showing the orbits of planets, calculations of lunar eclipses, and trigonometric tables."
         },
         "quiz": [
           {
@@ -3140,7 +3210,8 @@ const CURRICULUM_DATA = [
           "purpose": "An eyewitness account from a global traveler documenting the architecture and society of East Africa.",
           "authorAndEra": "Ibn Battuta, Moroccan legal scholar visiting Kilwa Kisiwani in 1331 CE.",
           "plainEnglishMeaning": "Ibn Battuta praises Kilwa as one of the most gorgeous and well-built cities on Earth, admiring its stone architecture and the immense generosity of its Sultan.",
-          "whyItMatters": "Ibn Battuta's testimony provides undeniable historical evidence that the Swahili Coast was a civilized, wealthy, and architecturally stunning society centuries before European ships arrived."
+          "whyItMatters": "Ibn Battuta's testimony provides undeniable historical evidence that the Swahili Coast was a civilized, wealthy, and architecturally stunning society centuries before European ships arrived.",
+          "originalQuote": "From the Moroccan world traveler Ibn Battuta in 'The Rihla' (c. 1331 CE), describing his visit to Kilwa Kisiwani: 'Kilwa is one of the most beautiful and well-constructed towns in the world. The whole of it is elegantly built of stone and wood; the roofs are covered with reeds, and the rains are copious... Its Sultan, al-Hasan ibn Sulaiman, is celebrated for his vast generosity, humility, and piety. He frequently conducts expeditions against the pagan peoples, setting aside one-fifth of all plunder for the holy works, and gives gifts to poor visitors with royal grace.'"
         },
         "specializedFocusContext": {
           "title": "Coral Rag Masonry & The Husuni Kubwa Palace Complex",
@@ -3149,14 +3220,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This architecture housed a cosmopolitan civilization that connected African interior gold with Chinese imperial courts and Indian textile markets."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kilwa_Kisiwani_Great_Mosque.jpg?width=1000",
+          "imageUrl": "images/M5-U36.jpg",
           "title": "Ruins of the Great Mosque of Kilwa Kisiwani (Coral Limestone)",
           "provenance": "Constructed 11th - 14th Century CE, UNESCO World Heritage Site, Tanzania",
           "visualClues": [
             "Observe the carved coral rag arches and pillars designed to support sixteen domed vaults.",
             "Notice the fine white lime plaster made from crushed seashells covering the stone.",
             "Look at the direct view of the Indian Ocean in the background, showing the maritime nature of Swahili island cities."
-          ]
+          ],
+          "description": "Architectural Ruins: The Great Mosque and Palace Ruins of Kilwa Kisiwani (UNESCO World Heritage Site, Tanzania). The photograph shows ancient arches, fluted domes, and coral limestone columns overlooking the blue waters of the Indian Ocean."
         },
         "quiz": [
           {
@@ -3228,7 +3300,8 @@ const CURRICULUM_DATA = [
           "purpose": "A sacred cosmological and historical text recording the Maya creation myth and royal genealogies.",
           "authorAndEra": "K'iche' Maya council of elders, transcribed in the Guatemalan highlands (c. 1550s from ancient oral/hieroglyphic records).",
           "plainEnglishMeaning": "The Popol Vuh recounts how the gods tried to create humans from mud and wood, but failed until they molded human flesh and blood out of sacred maize (corn).",
-          "whyItMatters": "This text reveals the sacred connection between Maya religion and corn agriculture, explaining why maize was revered as the spiritual and physical source of human life."
+          "whyItMatters": "This text reveals the sacred connection between Maya religion and corn agriculture, explaining why maize was revered as the spiritual and physical source of human life.",
+          "originalQuote": "From the sacred K'iche' Maya mythological and historical epic 'Popol Vuh' (The Book of the Council, preserved oral tradition): 'Then the creators, Heart of Heaven, thought and counseled together in the darkness... They said: Let the waters withdraw and let the earth emerge, so that we may be praised and remembered! First were created the animals, the deer and birds, but they could make no speech, only screech and roar. Then they made humans from mud, but they dissolved in water. Then they made humans from wood, but they had no hearts and forgot their makers. Finally, the Creators took the yellow ears and white ears of sacred corn (maize), and from corn flour they shaped the flesh and blood of our first true ancestors.'"
         },
         "specializedFocusContext": {
           "title": "The Dresden Codex Venus Tables & The Base-20 Zero System",
@@ -3237,14 +3310,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "These mathematical calendars guided planting seasons, religious rituals, and diplomatic treaties, proving the Maya were among the greatest astronomers of antiquity."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/El_Castillo_Staircase_Chichen_Itza.jpg?width=1000",
+          "imageUrl": "images/M5-U37.jpg",
           "title": "El Castillo (Pyramid of Kukulcan) at Chichen Itza, Mexico",
           "provenance": "UNESCO World Heritage Site, Classic/Terminal Maya, Yucatan, Mexico",
           "visualClues": [
             "Observe the four staircases, each with 91 steps, which combined with the top platform equal exactly 365 steps - one for each day of the solar year.",
             "Notice the carved stone serpent head at the base of the staircase balustrade.",
             "Look at the precise alignment: on the spring and autumn equinox, sunlight creates an undulating serpent of light slithering down the pyramid."
-          ]
+          ],
+          "description": "Architectural Photograph: The Pyramid of Kukulcan (El Castillo) at Chichen Itza (Yucatan, Mexico). During the spring and autumn equinoxes, the setting sun casts a series of triangular shadows along the balustrade, creating the optical illusion of a giant feathered serpent slithering down the pyramid stairs to the stone serpent head at the base."
         },
         "quiz": [
           {
@@ -3316,7 +3390,8 @@ const CURRICULUM_DATA = [
           "purpose": "A soldier's eyewitness memoir recording the arrival of Europeans in the Aztec capital of Tenochtitlan.",
           "authorAndEra": "Bernal Diaz del Castillo, a Spanish foot soldier under Hernan Cortes, writing about his 1519 arrival.",
           "plainEnglishMeaning": "Diaz del Castillo recalls being utterly speechless when seeing Tenochtitlan rising out of the water with its white stone pyramids and causeways, saying it looked like a magical fairy-tale dream that no European had ever imagined.",
-          "whyItMatters": "This passage proves that even battle-hardened European soldiers acknowledged Tenochtitlan as one of the most stunning, orderly, and advanced metropolises they had ever seen."
+          "whyItMatters": "This passage proves that even battle-hardened European soldiers acknowledged Tenochtitlan as one of the most stunning, orderly, and advanced metropolises they had ever seen.",
+          "originalQuote": "From the Spanish conquistador Bernal Diaz del Castillo in 'The True History of the Conquest of New Spain' (Historia Verdadera, 1568 CE), describing the Spaniards' first view of Tenochtitlan in November 1519: 'When we saw so many cities and villages built in the water, and other great towns on dry land, and that straight and level causeway leading into Mexico, we were astounded! These great towers and temples and buildings rising from the water, all built of masonry, seemed to us like the enchantments told of in the legend of Amadis. Some of our soldiers even asked whether the things that we saw were not a dream... I do not know how to describe it, seeing things as we did that had never been heard of or seen before, nor even dreamed about.'"
         },
         "specializedFocusContext": {
           "title": "Chinampa Wetland Agriculture & The Great Dike of Nezahualcoyotl",
@@ -3325,14 +3400,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This sustainable, chemical-free farming system sustained one of the densest urban populations in antiquity without destroying the surrounding ecosystem."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Codex_Mendoza_folio_2r.jpg?width=1000",
+          "imageUrl": "images/M5-U38.jpg",
           "title": "The Founding of Tenochtitlan (Codex Mendoza, Folio 2r)",
           "provenance": "Commissioned by Viceroy Antonio de Mendoza, 1541; Bodleian Library, Oxford",
           "visualClues": [
             "Observe the central symbol: an eagle perched on a prickly pear cactus growing out of a rock in the lake.",
             "Notice the blue canals dividing the city into four quadrants, showing urban water management.",
             "Look at the bottom register showing Mexica warriors armed with obsidian-edged macuahuitl clubs conquering neighboring towns."
-          ]
+          ],
+          "description": "Manuscript Frontispiece: Codex Mendoza Folio 2r (Bodleian Library, Oxford). The pictorial page depicts the founding of Tenochtitlan: an eagle perched on a prickly pear cactus emerging from a blue lake shield, surrounded by ten founding chieftains seated on reed mats, with conquest scenes depicted along the lower margin."
         },
         "quiz": [
           {
@@ -3404,7 +3480,8 @@ const CURRICULUM_DATA = [
           "purpose": "An illustrated historical letter sent to the King of Spain documenting indigenous Inca governance and civilization.",
           "authorAndEra": "Felipe Guaman Poma de Ayala, a noble indigenous Quechua chronicler writing around 1615 CE.",
           "plainEnglishMeaning": "Guaman Poma explains that the Inca government kept giant mountain warehouses stocked with food, shoes, and clothing, guaranteeing that nobody went hungry or homeless, while royal relay runners delivered fresh ocean fish to the emperor in two days.",
-          "whyItMatters": "Guaman Poma provides precious indigenous testimony confirming that the Inca state successfully eliminated starvation and poverty through an organized, socialist-like system of public food distribution."
+          "whyItMatters": "Guaman Poma provides precious indigenous testimony confirming that the Inca state successfully eliminated starvation and poverty through an organized, socialist-like system of public food distribution.",
+          "originalQuote": "From the indigenous Andean chronicler Felipe Guaman Poma de Ayala in 'The First New Chronicle and Good Government' (El primer nueva coronica y buen gobierno, c. 1615 CE), describing the Inca administration: 'The Inca Emperor ordered that in every province there should be storehouses (qullqas) filled with maize, dried potatoes (chuño), wool, and sandals for the soldiers and the poor. In times of famine or frost, these stores were opened to feed the people, so that no one in all the realm ever begged for bread... The Chasqui messengers ran with such speed along the royal mountain roads that a fresh fish caught in the Pacific ocean arrived at the royal table in Cusco, over three hundred miles away, still fresh to be eaten within two days.'"
         },
         "specializedFocusContext": {
           "title": "Mortarless Ashlar Masonry & The Quipu Knotted String Calculator",
@@ -3413,14 +3490,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "When massive earthquakes in Peru destroyed Spanish colonial cathedrals, the underlying Inca stone foundations remained completely undamaged."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Machu_Picchu,_Peru.jpg?width=1000",
+          "imageUrl": "images/M5-U39.jpg",
           "title": "The Citadel and Agricultural Terraces of Machu Picchu, Peru",
           "provenance": "Constructed c. 1450 CE under Emperor Pachacuti; UNESCO World Heritage Site",
           "visualClues": [
             "Observe the green stone-walled agricultural terraces (andenes) contouring the steep mountainside.",
             "Notice the mortar-less granite buildings featuring trapezoidal doorways and windows engineered to resist seismic collapse.",
             "Look at the vertical mountain peaks and misty cloud forest of the Andes dropping dramatically into the valley below."
-          ]
+          ],
+          "description": "Architectural Photograph: The High-Altitude Citadel of Machu Picchu (Cusco Region, Peru). The stone city sits on a narrow mountain ridge between the peaks of Machu Picchu and Huayna Picchu, surrounded by green agricultural terraces dropping thousands of feet into the Urubamba River valley."
         },
         "quiz": [
           {
@@ -3492,7 +3570,8 @@ const CURRICULUM_DATA = [
           "purpose": "A missionary travel diary recording early European encounters with Mississippian mound centers and cultural practices.",
           "authorAndEra": "Father Jacques Marquette, French Jesuit missionary and explorer (1673).",
           "plainEnglishMeaning": "Father Marquette describes seeing massive earthen pyramid hills built by human hands along the river, observing that native chiefs lived in temples atop these mounds and held sacred harvest festivals.",
-          "whyItMatters": "Marquette's observations prove that indigenous mound-building traditions and chiefdoms were observed firsthand by early European explorers, connecting ancient Cahokia to historic First Nations."
+          "whyItMatters": "Marquette's observations prove that indigenous mound-building traditions and chiefdoms were observed firsthand by early European explorers, connecting ancient Cahokia to historic First Nations.",
+          "originalQuote": "From the French Jesuit missionary Father Jacques Marquette in his journal 'Travels and Discoveries in North America' (1673), describing Mississippian earthworks and indigenous traditions: 'As we descended the great Mississippi River, we saw along the banks vast fields of maize and great earthen hills raised by human hands, upon which their chiefs build their dwellings and temples... The chiefs possess absolute authority, and their people show them immense reverence. They preserve sacred fires that are never allowed to go out, and celebrate the Green Corn dance with solemn thanksgiving for the harvest.'"
         },
         "specializedFocusContext": {
           "title": "Monks Mound Soil Stratigraphy & The Woodhenge Sun Calendar",
@@ -3501,14 +3580,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Monks Mound proves that indigenous North Americans were master architects and city-builders capable of mobilizing thousands of workers for public infrastructure."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cahokia_Monks_Mound.jpg?width=1000",
+          "imageUrl": "images/M5-U40.jpg",
           "title": "Monks Mound - Largest Prehistoric Earthen Pyramid in the Americas",
           "provenance": "Cahokia Mounds State Historic Site, UNESCO World Heritage Site, Collinsville, Illinois",
           "visualClues": [
             "Observe the massive four-tiered earthen terraces rising 100 feet above the surrounding floodplain.",
             "Notice the vast footprint covering fourteen acres, larger than the Great Pyramid of Khufu at Giza.",
             "Look at the grand central plaza in the foreground, where thousands of citizens once gathered for Chunkey games and festivals."
-          ]
+          ],
+          "description": "Aerial Photograph: Monks Mound at Cahokia Mounds State Historic Site (Illinois). The colossal rectangular four-tiered earthen pyramid rises high above the surrounding flat floodplain, with a wooden staircase leading to the broad top platform where the Great Sun's palace once stood."
         },
         "quiz": [
           {
@@ -3585,7 +3665,8 @@ const CURRICULUM_DATA = [
           "purpose": "A philosophical manifesto celebrating human free will and the limitless potential of the human mind.",
           "authorAndEra": "Pico della Mirandola, Italian Renaissance nobleman and humanist philosopher (1486 CE).",
           "plainEnglishMeaning": "Pico writes that unlike animals which are trapped by instinct, God gave human beings free will to shape their own destiny, allowing anyone to rise through education and virtue to become something truly great.",
-          "whyItMatters": "Known as the 'Manifesto of the Renaissance', this speech captures the fundamental shift away from medieval fatalism toward celebrating individual human talent and freedom."
+          "whyItMatters": "Known as the 'Manifesto of the Renaissance', this speech captures the fundamental shift away from medieval fatalism toward celebrating individual human talent and freedom.",
+          "originalQuote": "From the Florentine humanist philosopher Pico della Mirandola in his celebrated oration 'On the Dignity of Man' (De hominis dignitate, 1486 CE): 'God said unto Adam: We have made thee neither of heaven nor of earth, neither mortal nor immortal, so that with freedom of choice and with honor, as thy own sculptor and maker, thou mayest fashion thyself into whatever form thou shalt prefer. Thou shalt have the power to degenerate into the lower forms of life, which are brutish; or thou shalt have the power, out of thy soul's judgment, to be reborn into the higher forms, which are divine. O supreme generosity of God the Father! O highest and most marvelous felicity of man!'"
         },
         "specializedFocusContext": {
           "title": "Petrarch's Humanism & Pacioli's Double-Entry Bookkeeping",
@@ -3594,14 +3675,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Without double-entry bookkeeping, global corporations and international trade could not function, while humanism created modern secular universities and liberal arts education."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Florence_Duomo_from_Michelangelo_Hill.jpg?width=1000",
+          "imageUrl": "images/M6-U41.jpg",
           "title": "The Duomo of Florence (Santa Maria del Fiore) by Filippo Brunelleschi",
           "provenance": "Completed 1436 CE, Florence, Italy; UNESCO World Heritage Site",
           "visualClues": [
             "Observe the revolutionary herringbone brickwork of the colossal octagonal dome, built without wooden support scaffolding.",
             "Notice the elegant marble lantern crowning the dome 114 meters in the air.",
             "Look at the polychrome marble facade in green, white, and pink stone, symbolizing the civic pride and wealth of the Republic of Florence."
-          ]
+          ],
+          "description": "Architectural Photograph: The Cathedral of Santa Maria del Fiore (The Duomo of Florence) designed by Filippo Brunelleschi (c. 1436 CE). The colossal red-tiled octagonal dome dominates the Tuscan skyline, supported by marble ribs without wooden centering scaffolding, resting on a white, green, and pink marble basilica."
         },
         "quiz": [
           {
@@ -3673,7 +3755,8 @@ const CURRICULUM_DATA = [
           "purpose": "The earliest comprehensive art history biography documenting the lives and techniques of Renaissance masters.",
           "authorAndEra": "Giorgio Vasari, Florentine painter, architect, and biographer writing in 1550 CE.",
           "plainEnglishMeaning": "Vasari writes with awe about Leonardo da Vinci, declaring that heaven blessed Leonardo with such superhuman beauty, grace, and intelligence that he could master and solve any problem in science or art with effortless ease.",
-          "whyItMatters": "Vasari's biography created the modern concept of the 'artistic genius' and preserved firsthand details of how Renaissance artists trained, experimented, and worked."
+          "whyItMatters": "Vasari's biography created the modern concept of the 'artistic genius' and preserved firsthand details of how Renaissance artists trained, experimented, and worked.",
+          "originalQuote": "From the Renaissance painter and biographer Giorgio Vasari in 'Lives of the Most Excellent Painters, Sculptors, and Architects' (Le Vite, 1550 CE), describing Leonardo da Vinci: 'The heavens often shower their richest gifts upon human beings, but sometimes with lavish abundance they bestow upon a single individual beauty, grace, and ability, so that whatever he does, every action is so divine that he surpasses all other men... This was seen in Leonardo da Vinci, in whom besides a beauty of body never sufficiently praised, there was an infinite grace in all his actions; and so great was his brilliance that to whatever difficult problems he turned his mind, he solved them with absolute ease.'"
         },
         "specializedFocusContext": {
           "title": "Brunelleschi's Linear Perspective & Leonardo's Sfumato Glazing",
@@ -3682,14 +3765,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Linear perspective transformed Western art, architectural blueprints, computer graphics, and virtual reality camera rendering."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sanzio_01.jpg?width=1000",
+          "imageUrl": "images/M6-U42.jpg",
           "title": "The School of Athens (Scuola di Atene) by Raphael Sanzio",
           "provenance": "Fresco in the Stanza della Segnatura, Apostolic Palace, Vatican City, c. 1509-1511 CE",
           "visualClues": [
             "Observe the flawless linear perspective: all architectural lines converge on the central vanishing point between Plato and Aristotle.",
             "Notice Plato on the left (resembling Leonardo da Vinci) pointing upward to the realm of ideal forms, while Aristotle holds his Ethics pointing down to physical reality.",
             "Look at the figures of Socrates, Pythagoras, Euclid, and Michelangelo (seated in the foreground brooding on a stone block)."
-          ]
+          ],
+          "description": "Renaissance Fresco: The School of Athens (Scuola di Atene) by Raphael (1509 - 1511 CE, Apostolic Palace, Vatican). The fresco depicts classical Greek philosophers gathered beneath soaring Roman barrel-vaulted arches in perfect linear perspective: Plato (modeled on Leonardo) points to heaven, while Aristotle gestures toward the earth."
         },
         "quiz": [
           {
@@ -3761,7 +3845,8 @@ const CURRICULUM_DATA = [
           "purpose": "A satirical essay mocking corruption, superstition, and greed in the late medieval Church.",
           "authorAndEra": "Desiderius Erasmus of Rotterdam, Dutch priest, classical scholar, and Christian humanist (1511 CE).",
           "plainEnglishMeaning": "Erasmus hilariously mocks lazy, illiterate monks who scream church songs they do not understand, beg for food while pretending to be holy, and act like arrogant hypocrites instead of following Jesus.",
-          "whyItMatters": "Erasmus's biting critiques of church corruption spread across Europe, prompting contemporaries to observe that 'Erasmus laid the egg that Martin Luther hatched', directly sparking the Protestant Reformation."
+          "whyItMatters": "Erasmus's biting critiques of church corruption spread across Europe, prompting contemporaries to observe that 'Erasmus laid the egg that Martin Luther hatched', directly sparking the Protestant Reformation.",
+          "originalQuote": "From Desiderius Erasmus in 'The Praise of Folly' (Moriae Encomium, 1511 CE), satirizing corrupt churchmen: 'Next to the theologians come those who commonly call themselves religious and monks, though both titles are quite false, for practically no people have less to do with religion than they... They believe it is the highest form of piety to be so illiterate that they cannot even read. When they bellow out their psalms in church, which they understand not in the least, they think they are charming the ears of God with exquisite music! Many of them make a lucrative trade of their dirt and begging, whining at doors for bread, cheese, and beer, crowding out real paupers. And yet, happy men, with all their filth, ignorance, and insolence, they think they represent the holy Apostles!'"
         },
         "specializedFocusContext": {
           "title": "Van Eyck's Linseed Oil Glazing & The Arnolfini Convex Mirror",
@@ -3770,14 +3855,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Oil painting completely replaced egg tempera, enabling the rich color palettes and realism of Rembrandt, Vermeer, and later modern painting."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Holbein_Erasmus.jpg?width=1000",
+          "imageUrl": "images/M6-U43.jpg",
           "title": "Portrait of Desiderius Erasmus of Rotterdam by Hans Holbein the Younger",
           "provenance": "1523 CE, Oil and tempera on wood; National Gallery, London",
           "visualClues": [
             "Observe the precise, realistic depiction of Erasmus's aged face, showing wrinkles and focused, intelligent eyes.",
             "Notice his quill pen poised over his Latin translation of the New Testament, emphasizing Christian scholarship.",
             "Look at the heavy fur trim on his black coat, rendered with microscopic brushstrokes showing northern textile realism."
-          ]
+          ],
+          "description": "Oil Painting Portrait: Portrait of Desiderius Erasmus of Rotterdam by Hans Holbein the Younger (1523 CE, National Gallery, London). The scholar sits in three-quarter profile wearing a fur-trimmed robe and scholar's cap, his hands resting on his Latin commentary on the Gospel of Luke, radiating intellectual dignity."
         },
         "quiz": [
           {
@@ -3849,7 +3935,8 @@ const CURRICULUM_DATA = [
           "purpose": "A private diplomatic letter verifying the extraordinary visual quality and market demand for Gutenberg's printed Bible.",
           "authorAndEra": "Aeneas Silvius Piccolomini (later Pope Pius II), Italian humanist scholar and papal diplomat (March 1455).",
           "plainEnglishMeaning": "Piccolomini writes excitedly that he examined sample pages of Gutenberg's printed Bible and found the text so clean, sharp, and error-free that an old man could read it without glasses, noting that every copy sold out before printing was even completed.",
-          "whyItMatters": "This letter is the earliest surviving independent historical document confirming the existence, quality, and commercial success of Gutenberg's revolutionary printing press."
+          "whyItMatters": "This letter is the earliest surviving independent historical document confirming the existence, quality, and commercial success of Gutenberg's revolutionary printing press.",
+          "originalQuote": "From the Italian humanist and future Pope Pius II (Aeneas Silvius Piccolomini) in a letter to Cardinal Carvajal (March 1455), describing seeing pages of Gutenberg's printed Bible at Frankfurt: 'All that was written to me about that marvelous man seen at Frankfurt is true. I did not see complete Bibles, but several gatherings of quires of various books of the Bible, with letters so exceedingly clean and correct, without a single mistake, that your Grace could read them without spectacles with the greatest of ease! Several witnesses confirmed to me that 158 copies had been finished, and others say 180. The buyers are so numerous that all copies were sold before the books were even finished!'"
         },
         "specializedFocusContext": {
           "title": "The Lead-Tin-Antimony Type Alloy & The Adjustable Hand Mold",
@@ -3858,14 +3945,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Movable metal type drove down book prices by over 85%, breaking the monopoly of the Church and sparking the scientific, political, and democratic revolutions of modern history."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gutenberg_Bible,_Lenox_Copy,_New_York_Public_Library,_2009._Pic_01.jpg?width=1000",
+          "imageUrl": "images/M6-U44.jpg",
           "title": "The Gutenberg 42-Line Bible (Lenox Copy, New York Public Library)",
           "provenance": "Johannes Gutenberg, Mainz, Germany, c. 1455 CE; New York Public Library",
           "visualClues": [
             "Observe the stunning uniformity and darkness of the Gothic blackletter type, aligned in two disciplined 42-line columns.",
             "Notice the colorful hand-painted rubrication (red and blue initial letters) added by scribes after printing to mimic traditional luxury manuscripts.",
             "Look at the rag paper, which remains remarkably bright and flexible after more than 570 years due to acid-free flax and hemp fibers."
-          ]
+          ],
+          "description": "Museum Artifact Display: The Gutenberg Bible (Lenox Copy, New York Public Library). The opened folio shows two balanced columns of 42 lines printed in rich, dark black Gothic Fraktur type, surrounded by hand-painted floral borders and illuminated red and blue initial capitals."
         },
         "quiz": [
           {
@@ -3937,7 +4025,8 @@ const CURRICULUM_DATA = [
           "purpose": "An academic disputation challenging papal indulgences and church commercialization.",
           "authorAndEra": "Martin Luther, German monk and professor of biblical theology at the University of Wittenberg (October 31, 1517).",
           "plainEnglishMeaning": "Luther challenges: If the Pope truly has the power to free souls from suffering in Purgatory, why doesn't he free them out of pure Christian love, rather than demanding poor peasants pay money to build a luxury church in Rome?",
-          "whyItMatters": "These 95 bullet points exposed the financial greed of the Church hierarchy and sparked the Protestant Reformation, permanently shattering the religious unity of Western Europe."
+          "whyItMatters": "These 95 bullet points exposed the financial greed of the Church hierarchy and sparked the Protestant Reformation, permanently shattering the religious unity of Western Europe.",
+          "originalQuote": "From Martin Luther's 'Ninety-Five Theses' (Disputatio pro declaratione virtutis indulgentiarum, October 31, 1517): 'Thesis 27: They preach only human doctrines who say that as soon as the money clinks into the money chest, the soul flies out of Purgatory. Thesis 28: It is certain that when money clinks in the money chest, greed and avarice can be increased; but when the church intercedes, the result is in the hands of God alone. Thesis 82: Why does not the Pope empty Purgatory for the sake of holy love and the dire need of the souls that are there, if he redeems an infinite number of souls for the sake of miserable money with which to build a church?'"
         },
         "specializedFocusContext": {
           "title": "The Three Solas & The Vernacular German Bible Translation",
@@ -3946,14 +4035,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This translation encouraged mass literacy so ordinary families could read at home, creating the public school systems and religious freedom debates of modern history."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Martin_Luther_by_Lucas_Cranach_the_Elder_1529.jpg?width=1000",
+          "imageUrl": "images/M6-U45.jpg",
           "title": "Portrait of Martin Luther by Lucas Cranach the Elder (1529)",
           "provenance": "Lucas Cranach the Elder, Uffizi Gallery, Florence, Italy",
           "visualClues": [
             "Observe Luther's serious, resolute expression, depicting a fearless reformer confronting imperial authority.",
             "Notice his simple black academic gown, contrasting with the extravagant gold and silk vestments of Catholic cardinals.",
             "Look at the direct, unadorned background focusing entirely on the character of the reformer."
-          ]
+          ],
+          "description": "Historical Portrait Painting: Martin Luther by Lucas Cranach the Elder (1529 CE, Uffizi Gallery, Florence). Luther is depicted in his black academic professor's robe, holding a leather-bound Bible, his gaze determined and uncompromising."
         },
         "quiz": [
           {
@@ -4025,7 +4115,8 @@ const CURRICULUM_DATA = [
           "purpose": "A constitutional statute establishing the English monarch as the supreme authority over the Church of England.",
           "authorAndEra": "The Reformation Parliament of England under King Henry VIII (November 1534).",
           "plainEnglishMeaning": "Parliament declares that King Henry VIII and his royal heirs are the sole supreme rulers of the Church of England on Earth, completely abolishing the Pope's authority and giving the King power to define religious doctrine.",
-          "whyItMatters": "This statute created the Church of England (Anglican Church) and established the royal supremacy of the English Crown over religious affairs, altering British and world history."
+          "whyItMatters": "This statute created the Church of England (Anglican Church) and established the royal supremacy of the English Crown over religious affairs, altering British and world history.",
+          "originalQuote": "From the English Parliament in 'The Act of Supremacy' (26 Hen. VIII c. 1, November 1534): 'Be it enacted by authority of this present Parliament, that the King our Sovereign Lord, his heirs and successors kings of this realm, shall be taken, accepted, and reputed the only Supreme Head in earth of the Church of England called Anglicana Ecclesia... and shall have full power and authority from time to time to visit, repress, redress, reform, order, correct, and restrain all such errors, heresies, abuses, offenses, and enormities whatsoever they be, which by any manner of spiritual authority or jurisdiction ought or may lawfully be reformed... Any foreign jurisdiction or authority of the Bishop of Rome is utterly abolished forever.'"
         },
         "specializedFocusContext": {
           "title": "The Act of Supremacy (1534) & Cromwell's Monastic Dissolution",
@@ -4034,14 +4125,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This redistribution created the wealthy British parliamentary gentry class that would eventually challenge the absolute power of kings in the English Civil War."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hans_Holbein,_the_Younger_-_Henry_VIII_-_Google_Art_Project.jpg?width=1000",
+          "imageUrl": "images/M6-U46.jpg",
           "title": "Portrait of King Henry VIII of England by Hans Holbein the Younger",
           "provenance": "Hans Holbein the Younger, royal court painter; Walker Art Gallery, Liverpool",
           "visualClues": [
             "Observe the imposing, square-shouldered stance of Henry VIII, painted to project absolute royal majesty and intimidating authority.",
             "Notice the lavish cloth-of-gold embroidery, slashed silk sleeves, and expensive ermine fur lining.",
             "Look at the jewels, gold chain, and jeweled dagger hilt, showcasing the immense confiscated wealth of the Tudor state."
-          ]
+          ],
+          "description": "Royal Portrait: Portrait of King Henry VIII of England by Hans Holbein the Younger (c. 1537 CE, Walker Art Gallery, Liverpool). Henry stands in a formidable, wide-legged stance, radiating absolute masculine power, dressed in a cloth-of-gold doublet, ermine-lined surcoat, holding a dagger, and adorned with massive rubies."
         },
         "quiz": [
           {
@@ -4113,7 +4205,8 @@ const CURRICULUM_DATA = [
           "purpose": "Official ecclesiastical decrees establishing reformed doctrine and discipline for the universal Catholic Church.",
           "authorAndEra": "The Council of Trent, convened under Popes Paul III, Julius III, and Pius IV (December 1563).",
           "plainEnglishMeaning": "The Council strictly bans all financial buying and selling of indulgences to eliminate greed and abuse, while ordering that paintings and statues of Christ and the saints must be kept in churches to inspire holy respect.",
-          "whyItMatters": "This decree officially corrected the very financial abuse (indulgences) that had sparked Martin Luther's protest 46 years earlier, while firmly defending Catholic art and ritual."
+          "whyItMatters": "This decree officially corrected the very financial abuse (indulgences) that had sparked Martin Luther's protest 46 years earlier, while firmly defending Catholic art and ritual.",
+          "originalQuote": "From the Decrees and Canons of the Council of Trent (Session XXV, December 1563), on the reform of Indulgences and Sacred Images: 'The holy Council teaches that the use of Indulgences is most salutary for Christian people, but decrees that all evil gains for obtaining them, whence a great cause of abuses has arisen, be utterly abolished... Moreover, images of Christ, of the Virgin Mother of God, and of other saints, are to be had and retained especially in churches, and due honor and veneration are to be given them; not that any divinity is believed to be in them, but because the honor which is shown them is referred to the prototypes which they represent.'"
         },
         "specializedFocusContext": {
           "title": "Ignatius of Loyola's Spiritual Exercises & The Baroque Visual Revolution",
@@ -4122,14 +4215,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Jesuit education produced many of Europe's top scientists and philosophers, while Baroque art and architecture transformed Rome, Vienna, and Latin America."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Council_of_Trent.jpg?width=1000",
+          "imageUrl": "images/M6-U47.jpg",
           "title": "The Assembly of the Council of Trent (Cathedral of San Vigilio, 1563)",
           "provenance": "Museo Diocesano Tridentino, Trento, Italy",
           "visualClues": [
             "Observe the tiered seating arrangement of hundreds of bishops, cardinals, and monastic abbots gathered from across Europe.",
             "Notice the open Gospel book on the elevated central table, symbolizing biblical guidance.",
             "Look at the disciplined, solemn atmosphere contrasting with Protestant pamphlets depicting the papacy as chaotic."
-          ]
+          ],
+          "description": "Historical Painting: The Council of Trent in Session (Museo Diocesano Tridentino, Trento). Cardinals in scarlet robes and bishops in white mitres sit in amphitheater tiers inside the Cathedral of San Vigilio, listening to theologians debating decrees surrounded by crucifixes and gospel manuscripts."
         },
         "quiz": [
           {
@@ -4201,7 +4295,8 @@ const CURRICULUM_DATA = [
           "purpose": "A published scientific report announcing the first telescopic astronomical discoveries in human history.",
           "authorAndEra": "Galileo Galilei, Italian professor of mathematics, astronomer, and physicist (March 1610).",
           "plainEnglishMeaning": "Galileo announces to the world that through his telescope, he discovered four moons orbiting Jupiter, proving definitively that Earth is not the only center of motion in the cosmos.",
-          "whyItMatters": "The Starry Messenger provided the first observational, physical evidence that dismantled the ancient Greek geocentric model and established the reality of the Copernican solar system."
+          "whyItMatters": "The Starry Messenger provided the first observational, physical evidence that dismantled the ancient Greek geocentric model and established the reality of the Copernican solar system.",
+          "originalQuote": "From Galileo Galilei in his astronomical treatise 'The Starry Messenger' (Sidereus Nuncius, 1610 CE): 'I have seen stars in myriads, which have never been seen before, and which exceed by more than ten times those which are visible to the naked eye... But the greatest marvel of all is the discovery of four wandering stars, known to no one before me, which revolve around Jupiter, as the Moon does around the Earth... Here we have a fine and elegant argument for quieting the doubts of those who cannot be persuaded that planets can move around the Sun while the Moon alone revolves around the Earth. For here we have our sight showing us four stars orbiting around Jupiter, while all together with Jupiter they travel around the Sun in an orbit of twelve years.'"
         },
         "specializedFocusContext": {
           "title": "Galileo's Refracting Optical Telescope & The Laws of Inertia",
@@ -4210,14 +4305,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Galileo's experimental method laid the direct groundwork for Sir Isaac Newton's Universal Law of Gravitation and modern physics."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Galileo_Galilei_by_Justus_Sustermans.jpg?width=1000",
+          "imageUrl": "images/M6-U48.jpg",
           "title": "Portrait of Galileo Galilei by Justus Sustermans (1636)",
           "provenance": "Justus Sustermans, Uffizi Gallery, Florence, Italy",
           "visualClues": [
             "Observe Galileo depicted in old age, his gaze turned upward toward the heavens he spent his life mapping.",
             "Notice his simple black scholar's tunic, painted while he was living under Church house arrest in Arcetri near Florence.",
             "Look at the realism of his facial expression, conveying deep intellectual determination and resilience."
-          ]
+          ],
+          "description": "Scientific Diagram: Galileo's Telescopic Sketches of the Lunar Surface and Jupiter's Moons (Sidereus Nuncius, 1610 CE). The page shows Galileo's ink drawings of jagged mountain peaks and craters on the Moon cast in sharp light and shadow, with diagrams showing four stars changing positions beside Jupiter on successive nights."
         },
         "quiz": [
           {
@@ -4294,7 +4390,8 @@ const CURRICULUM_DATA = [
           "purpose": "A royal court chronicle recording the maritime expeditions sent by Prince Henry the Navigator.",
           "authorAndEra": "Gomes Eanes de Zurara, royal Portuguese chronicler writing in Lisbon (c. 1453 CE).",
           "plainEnglishMeaning": "Zurara records that sailors were terrified of sailing past Cape Bojador, fearing boiling water and monsters, until Gil Eanes sailed past it and brought back wild roses to prove the new lands were normal and safe.",
-          "whyItMatters": "This source documents the exact moment European sailors shattered ancient superstitions and proved that the Atlantic Ocean was navigable, opening the door to global exploration."
+          "whyItMatters": "This source documents the exact moment European sailors shattered ancient superstitions and proved that the Atlantic Ocean was navigable, opening the door to global exploration.",
+          "originalQuote": "From the Portuguese chronicler Gomes Eanes de Zurara in 'The Chronicle of the Discovery and Conquest of Guinea' (Cronica dos Feitos de Guine, c. 1453 CE): 'Before the expeditions sent by our Prince Henry, no ship had ever dared to pass Cape Bojador, for sailors said: Beyond this Cape there is no race of men nor place of inhabitants; the sea is so shallow that a league from shore the water is barely a fathom deep; the currents are so terrible that no ship having once passed can ever return; and the heat of the Sun is so fierce that men are scorched black as coal... But the Prince sent his squire Gil Eanes, who, having crossed the Cape in 1434, found the sea as calm and easy to sail as our waters at home, bringing back a cup filled with flowering herbs called Saint Mary's roses to prove the land was fruitful.'"
         },
         "specializedFocusContext": {
           "title": "The Mariner's Cast-Brass Astrolabe & The Volta do Mar Gyre",
@@ -4303,14 +4400,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "The Volta do Mar principle allowed Columbus, Dias, and Da Gama to cross oceans and return home safely, creating modern global shipping lanes."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg?width=1000",
+          "imageUrl": "images/M7-U49.jpg",
           "title": "Navigational Brass Astrolabe and Celestial Calculation Plates",
           "provenance": "Maritime Navigational Collection, National Maritime Museum, Greenwich",
           "visualClues": [
             "Observe the heavy cast-brass construction, designed with cutouts to allow sea winds to pass through without blowing the instrument.",
             "Notice the rotating sighting alidade with dual pinholes used to measure the angle of the sun above the horizon.",
             "Look at the degree markings calibrated along the outer perimeter used to calculate latitude."
-          ]
+          ],
+          "description": "Museum Artifact Display: Brass Mariner's Astrolabe (16th Century, National Maritime Museum, Greenwich). The heavy, pierced circular brass disc features an engraved degree scale along its rim and a rotating sighting rule (alidade) with two pinhole sights used to sight the sun at solar noon."
         },
         "quiz": [
           {
@@ -4382,7 +4480,8 @@ const CURRICULUM_DATA = [
           "purpose": "A daily sailor's eyewitness log recording Vasco da Gama's historic arrival in India.",
           "authorAndEra": "An anonymous Portuguese sailor or clerk aboard Vasco da Gama's flagship Sao Gabriel (May 1498).",
           "plainEnglishMeaning": "When Portuguese sailors stepped ashore in India, local Arab traders were stunned and asked what on earth brought them so far from home, to which the Portuguese famously answered: 'We have come looking for Christians and spices.'",
-          "whyItMatters": "This famous quote encapsulates the twin motivations of European exploration: religious crusading (seeking Christian allies) and commercial greed (monopolizing the spice trade)."
+          "whyItMatters": "This famous quote encapsulates the twin motivations of European exploration: religious crusading (seeking Christian allies) and commercial greed (monopolizing the spice trade).",
+          "originalQuote": "From the anonymous eyewitness journal 'A Journal of the First Voyage of Vasco da Gama' (Roteiro da Primeira Viagem, May 20, 1498): 'On the following day, which was Monday, we anchored off the city of Calicut. The next morning, four boats came out to our ships, and we sent one of our men ashore with them... The natives took him to the house of two Moors from Tunis who could speak Castilian and Genoese. The first greeting he received from them was: May the devil take you! What brought you here? Our man answered: We have come in search of Christians and spices. The Moors said: Why does not the King of Castile, or the King of France, or the Seigniory of Venice send ships here? He replied: Because the King of Portugal will not allow them to do so.'"
         },
         "specializedFocusContext": {
           "title": "The Cartaz Maritime Taxation Pass & Afonso de Albuquerque's Fortresses",
@@ -4391,14 +4490,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Portugal broke Venice's monopoly, redirected the spice trade around Africa to Lisbon, and established Europe's first global maritime trading post empire."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Vasco_da_Gama_-_1838.png?width=1000",
+          "imageUrl": "images/M7-U50.jpg",
           "title": "Portrait of Portuguese Explorer Vasco da Gama (First Count of Vidigueira)",
           "provenance": "National Library of Portugal Historical Portrait Collection, Lisbon",
           "visualClues": [
             "Observe Vasco da Gama wearing steel plate armor under a velvet cloak, symbolizing the military violence of Portuguese expansion.",
             "Notice his hand resting on a terrestrial navigational sphere, highlighting oceanic mastery.",
             "Look at the Cross of the Order of Christ emblazoned on his chest, reflecting royal religious patronage."
-          ]
+          ],
+          "description": "Lithograph Portrait: Vasco da Gama, First Count of Vidigueira (c. 1838, National Library of Portugal). The bearded explorer stands in polished steel breastplate armor, holding an astronomical chart and spyglass, with three armed Portuguese galleons anchored behind him in Calicut harbor."
         },
         "quiz": [
           {
@@ -4470,7 +4570,8 @@ const CURRICULUM_DATA = [
           "purpose": "A daily nautical and diplomatic log recording the first recorded encounter between Europeans and indigenous Americans.",
           "authorAndEra": "Christopher Columbus, Italian explorer sailing under the flag of Spain (October 12, 1492).",
           "plainEnglishMeaning": "Columbus observes that the Taino people are peaceful, handsome, and carry no iron weapons, noting that when shown a sword, they cut themselves on the sharp blade, and immediately muses that they would make obedient servants and converts.",
-          "whyItMatters": "This journal entry reveals the fateful European mindset: admiring indigenous gentleness while simultaneously planning their military subjugation, enslavement, and forced conversion."
+          "whyItMatters": "This journal entry reveals the fateful European mindset: admiring indigenous gentleness while simultaneously planning their military subjugation, enslavement, and forced conversion.",
+          "originalQuote": "From Christopher Columbus in his personal journal (Diario de a Bordo, October 12, 1492): 'They go about naked as their mothers bore them, and the women also... They are very well-formed, with handsome bodies and good faces. They bear no arms, nor are they acquainted with them, for I showed them swords, and they grasped them by the blade and cut themselves through ignorance. They have no iron; their javelins are made of reed shafts with fish teeth on the points. They should make good servants and of quick intelligence, for I see that they very quickly repeat everything that is said to them. I believe that they would easily be made Christians, for they seemed to me to have no religion. Our Lord willing, I shall carry away six of them to your Highnesses at my departure, that they may learn to speak.'"
         },
         "specializedFocusContext": {
           "title": "The Treaty of Tordesillas (1494) & The Cantino World Map (1502)",
@@ -4479,14 +4580,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This treaty established the legal doctrine of colonial conquest, ignoring the rights and sovereignty of millions of indigenous inhabitants."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cantino_planisphere_(1502).jpg?width=1000",
+          "imageUrl": "images/M7-U51.jpg",
           "title": "The Cantino Planisphere World Map (1502) with the Tordesillas Line",
           "provenance": "Smuggled Portuguese state nautical chart; Biblioteca Estense Universitaria, Modena, Italy",
           "visualClues": [
             "Observe the bold vertical blue meridian line dividing the Atlantic Ocean, representing the 1494 Treaty of Tordesillas.",
             "Notice the detailed African and Indian coastlines mapped with Portuguese flags and trade factories.",
             "Look at the newly sketched coastline of Brazil on the left side of the line, showing why Portugal laid claim to South America."
-          ]
+          ],
+          "description": "Cartographic Masterwork: The Cantino Planisphere World Map (1502, Biblioteca Estense, Modena). The illuminated parchment depicts Europe, Africa, India, and the newly charted coasts of Brazil and the Caribbean, divided down the Atlantic by a bold vertical line representing the Treaty of Tordesillas."
         },
         "quiz": [
           {
@@ -4558,7 +4660,8 @@ const CURRICULUM_DATA = [
           "purpose": "An indigenous oral and pictorial history recording the trauma of the Spanish invasion and pandemic.",
           "authorAndEra": "Nahua elders and scribes of Tenochtitlan/Tlatelolco, recorded in Nahuatl in 1555 CE.",
           "plainEnglishMeaning": "Indigenous witnesses describe how smallpox wiped out entire families, causing agonizing sores over their bodies, leaving people paralyzed with pain and starving to death because nobody was healthy enough to cook food.",
-          "whyItMatters": "This firsthand indigenous account proves that biological disease, not Spanish military superiority alone, shattered Aztec resistance and made the conquest possible."
+          "whyItMatters": "This firsthand indigenous account proves that biological disease, not Spanish military superiority alone, shattered Aztec resistance and made the conquest possible.",
+          "originalQuote": "From the indigenous Nahua elders of Tlatelolco, recorded in the 'Florentine Codex' (compiled by Bernardino de Sahagun, c. 1555 CE), describing the smallpox epidemic during the siege of Tenochtitlan: 'While the Spaniards were still away, a great pestilence broke out among us, called the great eruptive sickness. Sores erupted on our faces, our breasts, our bellies; we were covered with agonizing pustules from head to foot. The disease was so dreadful that no one could walk or move; people could only lie in their beds like corpses. If they stirred, they cried out in terrible pain. Many died of hunger because there was no one left to prepare food; mothers died, leaving infants crying at their breasts... When the sores dried, they left deep scars and pockmarks upon our skin, and many lost their sight in one or both eyes.'"
         },
         "specializedFocusContext": {
           "title": "Toledo Steel Rapier Metallurgy & The Smallpox Epidemic Shock",
@@ -4567,14 +4670,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "The collapse of the Aztec and Inca empires enabled Spain to seize trillions of dollars in silver, funding the Spanish Golden Age and transforming world currencies."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Florentine_Codex_Book_XII_fol._53v_smallpox.jpg?width=1000",
+          "imageUrl": "images/M7-U52.jpg",
           "title": "Florentine Codex Folio 53v - The Devastating Smallpox Epidemic in Mexico",
           "provenance": "Fray Bernardino de Sahagun and Nahua artists, c. 1577; Laurentian Library, Florence",
           "visualClues": [
             "Observe the Aztec victims lying wrapped in blankets, covered from head to toe in painful eruptive smallpox sores.",
             "Notice the speech scroll issuing from the healer, showing prayers and futile herbal remedies.",
             "Look at the sparse domestic setting, showing how the disease destroyed entire households simultaneously."
-          ]
+          ],
+          "description": "Manuscript Illumination: Indigenous Victims of Smallpox (Florentine Codex, Book XII, Folio 53v). The Nahua painting shows indigenous Aztec patients lying on woven reed petate mats, their skin covered in red pockmarks and weeping sores, attended by a distraught female healer."
         },
         "quiz": [
           {
@@ -4647,7 +4751,8 @@ const CURRICULUM_DATA = [
           "purpose": "A passionate humanitarian plea presented to King Charles I of Spain demanding legal protection for indigenous peoples.",
           "authorAndEra": "Bartolome de las Casas, Spanish friar, historian, and former slave owner who became 'Protector of the Indians' (1552).",
           "plainEnglishMeaning": "Las Casas condemns Spanish cruelty, describing native peoples as peaceful sheep and conquistadors as ravenous wolves, recording that out of three million original inhabitants on Hispaniola, fewer than two hundred survived.",
-          "whyItMatters": "Las Casas's courageous eyewitness testimony forced the Spanish Crown to pass the New Laws of 1542 abolishing indigenous slavery, though enforcement was widely resisted."
+          "whyItMatters": "Las Casas's courageous eyewitness testimony forced the Spanish Crown to pass the New Laws of 1542 abolishing indigenous slavery, though enforcement was widely resisted.",
+          "originalQuote": "From the Spanish Dominican friar and indigenous rights advocate Bartolome de las Casas in 'A Short Account of the Destruction of the Indies' (Brevissima relacion de la destruycion de las Indias, 1552 CE): 'God made these diverse peoples the most simple, the most humble, the most patient, and the most peaceful beings on Earth... Yet into this sheepfold there came Spaniards who immediately behaved like ravening wild beasts, wolves, tigers, and lions that had been starved for many days. For forty years they have done nothing but tear them to pieces, kill them, cause them anguish, afflict them, and destroy them by strange and new kinds of cruelty... Of the three million souls that we once saw in Hispaniola, there are today not two hundred native people remaining alive.'"
         },
         "specializedFocusContext": {
           "title": "The Andean Potato Caloric Revolution & The Great Dying",
@@ -4656,14 +4761,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Without the Columbian Exchange, Italy would have no tomatoes, Ireland no potatoes, Switzerland no chocolate, and America no horses, wheat, or coffee."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Potato_plant_botanical_illustration.jpg?width=1000",
+          "imageUrl": "images/M7-U53.jpg",
           "title": "Early European Botanical Illustration of the Andean Potato Plant",
           "provenance": "Renaissance botanical herbal manuscript, Royal Botanic Gardens Archive, c. 1590",
           "visualClues": [
             "Observe the detailed root system showing potato tubers growing underground, a novel sight for European wheat farmers.",
             "Notice the delicate flowers and green leaves, which European peasants initially mistook as poisonous nightshade.",
             "Look at the botanical labels written in Latin, documenting the scientific classification of American flora."
-          ]
+          ],
+          "description": "Scientific Botanical Illustration: Potato Plant (Solanum tuberosum) from Leonhart Fuchs's Herbal (1542 CE). The colored woodcut illustrates the flowering Andean potato plant with underground tubers, showing the introduction of American botanical species to Renaissance European herbalists."
         },
         "quiz": [
           {
@@ -4735,7 +4841,8 @@ const CURRICULUM_DATA = [
           "purpose": "A published autobiography written by a formerly enslaved African to advocate for the global abolition of the slave trade.",
           "authorAndEra": "Olaudah Equiano (Gustavus Vassa), an Igbo African who was enslaved as a child, bought his freedom, and became a prominent abolitionist author in London (1789).",
           "plainEnglishMeaning": "Equiano describes the suffocating stench, extreme heat, and agonizing shrieks of terror inside the crowded hold of a slave ship, recording that the cruelty was so unbearable that he begged God for death to end his suffering.",
-          "whyItMatters": "Equiano's autobiography provided Europeans with an authentic, devastating firsthand account written by an African survivor, galvanizing the British abolitionist movement that eventually banned the slave trade in 1807."
+          "whyItMatters": "Equiano's autobiography provided Europeans with an authentic, devastating firsthand account written by an African survivor, galvanizing the British abolitionist movement that eventually banned the slave trade in 1807.",
+          "originalQuote": "From Olaudah Equiano in his autobiography 'The Interesting Narrative of the Life of Olaudah Equiano, or Gustavus Vassa, the African' (1789), describing the Middle Passage: 'The stench of the hold while we were on the coast was so intolerably loathsome that it was dangerous to remain there for any time... The closeness of the place and the heat of the climate, added to the number in the ship, which was so crowded that each had scarcely room to turn himself, almost suffocated us. This produced copious perspirations, so that the air soon became unfit for respiration from a variety of loathsome smells, and brought on a sickness among the slaves, of which many died... The shrieks of the women and the groans of the dying rendered the whole a scene of horror almost inconceivable. Falling down in despair, I wished for the last friend, death, to relieve me.'"
         },
         "specializedFocusContext": {
           "title": "The Brookes Slave Ship Cross-Section & The Triangular Trade System",
@@ -4744,14 +4851,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "The profits from the slave trade and slave-grown sugar financed European banks, insurance corporations (like Lloyd's of London), and early industrial factories."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Slave_ship_diagram.jpg?width=1000",
+          "imageUrl": "images/M7-U54.jpg",
           "title": "Stowage of the British Slave Ship Brookes under the Regulated Slave Trade Act (1788)",
           "provenance": "Society for Effecting the Abolition of the Slave Trade, London, 1788",
           "visualClues": [
             "Observe the clinical, geometric packing of hundreds of human bodies arranged side by side on wooden shelves.",
             "Notice the separate compartments dividing men, women, and children.",
             "Look at the measurements showing that each captive had less headroom than a burial coffin, visually exposing the barbaric cruelty of the Middle Passage."
-          ]
+          ],
+          "description": "Abolitionist Diagram: Plan and Sections of the Slave Ship Brookes of Liverpool (1788). The black-and-white architectural engraving shows hundreds of human bodies packed horizontally shoulder-to-shoulder on lower decks and tiered wooden platforms, exposing the calculated dehumanization of maritime slavery."
         },
         "quiz": [
           {
@@ -4823,7 +4931,8 @@ const CURRICULUM_DATA = [
           "purpose": "An administrative and geographic report sent to the Spanish Council of the Indies documenting imperial mineral revenues and human costs.",
           "authorAndEra": "Antonio Vazquez de Espinosa, Spanish friar and traveler who visited Potosi in the early 1600s.",
           "plainEnglishMeaning": "Vazquez de Espinosa writes that so much silver was extracted from Potosi that you could build a bridge of solid silver from Bolivia all the way to Madrid, but laments that this wealth cost the lives of thousands of indigenous miners dying from toxic mercury fumes.",
-          "whyItMatters": "This source captures both the staggering magnitude of South American silver wealth and the horrifying human exploitation required to mine it."
+          "whyItMatters": "This source captures both the staggering magnitude of South American silver wealth and the horrifying human exploitation required to mine it.",
+          "originalQuote": "From the Spanish Augustinian friar Antonio Vazquez de Espinosa in 'Compendium and Description of the West Indies' (Compendio y descripcion de las Indias Occidentales, c. 1628 CE), describing Potosi: 'According to the royal accounts of the mint, between the years 1545 and 1628, there have been extracted from this mountain of Potosi and paid in royal fifths (taxes) to His Majesty more than 326 million silver pesos... If all the silver taken from Potosi were to be piled together, it would build a bridge of solid silver spanning from the mountain of Potosi across the ocean all the way to the royal palace in Madrid! Yet inside that mountain, thousands of poor Indian laborers are buried alive, coughing blood from the noxious dust and mercury fumes, dying in the dark so that the world may have silver coins.'"
         },
         "specializedFocusContext": {
           "title": "The Patio Mercury Amalgamation Process & The Spanish Dollar",
@@ -4832,14 +4941,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "The Spanish Piece of Eight was so reliable that it served as legal tender in the United States until 1857, and its 'Pillars of Hercules' banner inspired the modern dollar sign ($)."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Spanish_Dollar_8_Reales_Potosi.jpg?width=1000",
+          "imageUrl": "images/M7-U55.jpg",
           "title": "Spanish Silver Real de a Ocho (Piece of Eight) Minted at Potosí",
           "provenance": "Minted at the Casa de la Moneda, Potosí, Bolivia, 17th Century",
           "visualClues": [
             "Observe the royal coat of arms of Spain stamped into 93% pure silver.",
             "Notice the twin Pillars of Hercules wrapped in scroll banners, representing the Strait of Gibraltar and the motto 'Plus Ultra'.",
             "Look at the mint mark 'P' indicating it was struck high in the Andes at Potosí."
-          ]
+          ],
+          "description": "Museum Artifact Display: Spanish Silver Real de a Ocho (Piece of Eight) Minted at Potosi (c. 1650 CE). The unevenly hammered silver coin features the Spanish Habsburg royal shield on the obverse and the Pillars of Hercules wrapped in banners representing 'Plus Ultra' (Further Beyond) on the reverse."
         },
         "quiz": [
           {
@@ -4911,7 +5021,8 @@ const CURRICULUM_DATA = [
           "purpose": "An economic treatise defining the foundational principles of mercantilist trade theory.",
           "authorAndEra": "Thomas Mun, director of the British East India Company and mercantilist economic theorist (c. 1628).",
           "plainEnglishMeaning": "Thomas Mun explains that the secret to national wealth is simple: always sell more goods to foreign countries than you buy from them, because the difference must be paid directly to your country in pure gold and silver.",
-          "whyItMatters": "Mun's book became the definitive textbook of European mercantilism, guiding British trade laws, high tariffs, and colonial exploitation throughout the 17th and 18th centuries."
+          "whyItMatters": "Mun's book became the definitive textbook of European mercantilism, guiding British trade laws, high tariffs, and colonial exploitation throughout the 17th and 18th centuries.",
+          "originalQuote": "From the English mercantilist economist and merchant Thomas Mun in 'England's Treasure by Forraign Trade' (written 1628, published 1664): 'The ordinary means therefore to increase our wealth and treasure is by Foreign Trade, wherein we must ever observe this rule: to sell more to strangers yearly than we consume of theirs in value. For so much of our commodities as we export beyond the sea, and so much of theirs as we bring in to spend at home, the remainder must of necessity be brought to us in money and silver... Let us therefore cherish our manufactures, build our own ships, and restrict foreign shipping, for trade is the great wheel that moveth the wealth of the Commonwealth.'"
         },
         "specializedFocusContext": {
           "title": "The Amsterdam Stock Exchange & The Joint-Stock Corporation",
@@ -4920,14 +5031,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This financial revolution allowed private corporations to become more powerful than sovereign nations, laying the groundwork for the modern global stock market."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/VOC_Batavia_Amsterdam_1665.jpg?width=1000",
+          "imageUrl": "images/M7-U56.jpg",
           "title": "The Dutch East India Company (VOC) Headquarters in Batavia, Java (1665)",
           "provenance": "Andries Beeckman, oil on canvas, Rijksmuseum, Amsterdam",
           "visualClues": [
             "Observe the Dutch armed merchant galleons flying the red, white, and blue tricolor flag of the Netherlands.",
             "Notice the massive stone fortress of Batavia in the background, showing armed corporate colonization.",
             "Look at the diverse crowd on the dockside, including Javanese, Chinese, Japanese, and Dutch merchants trading spices and textiles."
-          ]
+          ],
+          "description": "Historical Oil Painting: Ships of the Dutch East India Company (VOC) in the Harbor of Batavia by Andries Beeckman (c. 1665 CE, Rijksmuseum, Amsterdam). Dutch merchant galleons with striped flags ride at anchor before the stone water-fortress of Batavia in Java, while Javanese, Chinese, and Dutch traders exchange goods on the dockside."
         },
         "quiz": [
           {
@@ -5004,7 +5116,8 @@ const CURRICULUM_DATA = [
           "purpose": "An indigenous oral speech defending the spiritual, legal, and economic legitimacy of the Potlatch ceremony against colonial attempts to ban it.",
           "authorAndEra": "Chief O'waxalagalis, Kwakwaka'wakw hereditary chief of Vancouver Island, recorded in 1895.",
           "plainEnglishMeaning": "Chief O'waxalagalis explains that while white settlers hoard their money in banks to feel rich, indigenous chiefs prove their true nobility by giving their canoes, blankets, and treasures away to their people, like rain returning to the earth.",
-          "whyItMatters": "This eloquent speech directly challenged the Canadian government's racist 1884 Potlatch Ban, articulating the indigenous philosophy of generosity, wealth redistribution, and community solidarity."
+          "whyItMatters": "This eloquent speech directly challenged the Canadian government's racist 1884 Potlatch Ban, articulating the indigenous philosophy of generosity, wealth redistribution, and community solidarity.",
+          "originalQuote": "From Kwakwaka'wakw Chief O'waxalagalis of Fort Rupert, speaking to anthropologist Franz Boas (c. 1895), explaining the meaning of the Potlatch: 'Do not look upon us with anger because we celebrate the Potlatch, for we are doing what our ancestors did before us. The white man keeps his money in banks and hoards it to make himself feel rich; we give our blankets, our coppers, and our canoes away to our friends and guests! When I give a feast, I do not ask: What will you give me in return? I give to show the nobility of my ancestors and to make my name great. The water of the river flows to the sea and returns again in the clouds as rain. So does our wealth go out to our people and return again to our children.'"
         },
         "specializedFocusContext": {
           "title": "Steam-Bentwood Cedar Engineering & The Potlatch Legal System",
@@ -5013,14 +5126,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "The Potlatch prevented extreme poverty, bonded diverse coastal nations in peaceful alliances, and maintained ancestral oral law for thousands of years."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Haida_totem_poles_Skidegate_1878.jpg?width=1000",
+          "imageUrl": "images/M8-U57.jpg",
           "title": "Haida Totem Poles and Big Houses at Skidegate, Haida Gwaii (1878)",
           "provenance": "George Mercer Dawson photograph, Geological Survey of Canada; Library and Archives Canada",
           "visualClues": [
             "Observe the monumental frontal poles carved with ancestral animal crests: Raven, Eagle, Bear, and Killer Whale.",
             "Notice the massive post-and-beam construction of the cedar plank longhouses (Big Houses) in the background.",
             "Look at the ocean dugout canoes pulled up on the gravel beach, showcasing the maritime mastery of the Haida."
-          ]
+          ],
+          "description": "Archival Photograph: Haida Totem Poles and Cedar Longhouses at Skidegate, Haida Gwaii (photographed by George M. Dawson, 1878). Monumental carved mortuary and frontal crest poles stand before weathered cedar-plank clan houses facing the rocky beach, with dugout canoes pulled up onto the gravel shore."
         },
         "quiz": [
           {
@@ -5092,7 +5206,8 @@ const CURRICULUM_DATA = [
           "purpose": "An indigenous oral testimony preserving the ancient cultural, spiritual, and hunting traditions of the Blackfoot people.",
           "authorAndEra": "Many Guns, Peigan Blackfoot elder, recorded in the late nineteenth century.",
           "plainEnglishMeaning": "Many Guns explains that before horses existed, the buffalo provided everything the Blackfoot needed to survive, describing how communities worked together to guide herds over cliffs and sang songs of gratitude to the spirits of the animals.",
-          "whyItMatters": "This source emphasizes the spiritual reverence and gratitude indigenous hunters felt toward animals, contrasting sharply with later European commercial buffalo massacres."
+          "whyItMatters": "This source emphasizes the spiritual reverence and gratitude indigenous hunters felt toward animals, contrasting sharply with later European commercial buffalo massacres.",
+          "originalQuote": "From the Peigan Blackfoot elder and hunter Many Guns, recounting oral traditions of the Buffalo Jump to ethnographer George Bird Grinnell (c. 1890): 'In the old days, before our grandfathers had the horse, the buffalo was our life. The buffalo gave us our lodges, our clothing, our beds, our shields, our bows, and our food. Our Medicine Men would pray to the spirits and sing the sacred songs, and young runners dressed in wolf skins would lure the great herd toward the drive lanes. When the herd was running, the people rose up waving robes, shouting with loud cries! The buffalo stampeded over the cliff edge (Head-Smashed-In) into the rocks below... Afterward, the women sang thanksgiving songs to the spirits of the buffalo, thanking them for giving their bodies so our children might live through the freezing winter.'"
         },
         "specializedFocusContext": {
           "title": "Head-Smashed-In Buffalo Jump & The Birchbark Canoe (Wiigwaasi-Jiimaan)",
@@ -5101,14 +5216,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "The birchbark canoe made Canadian exploration and the historic fur trade possible; without it, Europeans could never have traveled through the Canadian interior."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Catlin_-_Buffalo_Bull_Hunt.jpg?width=1000",
+          "imageUrl": "images/M8-U58.jpg",
           "title": "Indigenous Plains Bison Hunt on Horseback (Painting by George Catlin)",
           "provenance": "George Catlin, Smithsonian American Art Museum, Washington, D.C.",
           "visualClues": [
             "Observe the indigenous hunter balancing bareback on a galloping horse, using a short wooden bow adapted for rapid horseback firing.",
             "Notice the vast, thundering herd of shaggy bison kicking up prairie dust.",
             "Look at the rolling, treeless landscape of the Great Plains, illustrating why mobility and portable tipis were essential for survival."
-          ]
+          ],
+          "description": "Historical Landscape Painting: Buffalo Bull Hunt (c. 1832) by George Catlin. Indigenous Plains hunters mounted on agile horses gallop alongside massive, shaggy bison bulls with long lances and short composite bows, kicking up dust clouds across the open prairie beneath wide western skies."
         },
         "quiz": [
           {
@@ -5180,7 +5296,8 @@ const CURRICULUM_DATA = [
           "purpose": "The founding constitutional charter of the Haudenosaunee Confederacy preserved in oral tradition and wampum belts.",
           "authorAndEra": "The Great Peacemaker (Deganawida), Hiawatha, and the founding Clan Mothers (c. 12th-15th century CE).",
           "plainEnglishMeaning": "The Peacemaker plants a White Pine tree, orders all leaders to bury their weapons of war into an underground river forever, and instructs chiefs to make decisions not for themselves, but for the welfare of the children of the Seventh Generation yet unborn.",
-          "whyItMatters": "The Great Law of Peace created a sophisticated democratic system based on peaceful consensus, environmental stewardship (the 7th Generation principle), and female political leadership centuries before European democracies existed."
+          "whyItMatters": "The Great Law of Peace created a sophisticated democratic system based on peaceful consensus, environmental stewardship (the 7th Generation principle), and female political leadership centuries before European democracies existed.",
+          "originalQuote": "From the traditional oral recitation of the 'Kayanerehkowa' (The Great Law of Peace, recorded in Wampum belts): 'I, Deganawida, and the Confederate Chiefs, now plant the Great Tree of Peace, a tall White Pine, whose branches shall reach to the sky, and whose roots shall spread to the four corners of the Earth... Beneath the shade of this tree we sit and hold our council. We now bury all our weapons of war deep beneath the earth, into the swift current of an underground river that flows into unknown deeps, so that our grandchildren shall never see a weapon raised against a brother... When a chief desires to speak in council, let his words be weighed with calm reason, looking not to his own advantage, but to the welfare of the generations yet unborn, even unto the Seventh Generation.'"
         },
         "specializedFocusContext": {
           "title": "The Hiawatha Wampum Belt & The Seventh Generation Principle",
@@ -5189,14 +5306,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Benjamin Franklin and the American Founders studied the Haudenosaunee federal system when drafting the US Constitution, while the 7th Generation rule inspires modern environmental conservation."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hiawatha_Belt.jpg?width=1000",
+          "imageUrl": "images/M8-U59.jpg",
           "title": "The Hiawatha Wampum Belt of the Haudenosaunee Confederacy",
           "provenance": "Onondaga Nation Keeper of the Wampum; New York State Museum Archive",
           "visualClues": [
             "Observe the deep purple background made of polished ocean quahog clam shells, representing peaceful sky and water.",
             "Notice the five white symbols linked by a continuous line, symbolizing the five original nations bound by the Great Law of Peace.",
             "Look at the central white pine tree symbol representing the Onondaga Council Fire where chiefs gathered to debate."
-          ]
+          ],
+          "description": "Museum Artifact Display: The Hiawatha Wampum Belt (Onondaga Nation, New York State Museum). The woven purple shell-bead belt shows thirty-eight rows of beads forming five white geometric symbols: two squares on the left (Seneca and Cayuga), a central stylized white pine tree (Onondaga), and two squares on the right (Oneida and Mohawk) linked by a continuous horizontal white line of peace."
         },
         "quiz": [
           {
@@ -5268,7 +5386,8 @@ const CURRICULUM_DATA = [
           "purpose": "A medieval Icelandic family saga preserving oral historical memories of trans-Atlantic exploration and colonization.",
           "authorAndEra": "Transcribed from oral tradition into Old Norse manuscripts in Iceland (c. 1200 - 1300 CE).",
           "plainEnglishMeaning": "The saga describes Leif Erikson finding fertile lands with wild grapes and timber, and recounts a later attempt by Thorfinn Karlsefni to build a permanent colony, describing early trade and fierce battles with indigenous people called 'Skraelings'.",
-          "whyItMatters": "This saga is the earliest European literary description of North America, accurately describing native peoples, skin boats (canoes/kayaks), and Canadian geographical features five hundred years before Columbus."
+          "whyItMatters": "This saga is the earliest European literary description of North America, accurately describing native peoples, skin boats (canoes/kayaks), and Canadian geographical features five hundred years before Columbus.",
+          "originalQuote": "From the medieval Icelandic text 'The Saga of Erik the Red' (Eiriks saga rauda, c. 1200 CE, recounting events of 1000 CE): 'Leif put out to sea and was tossed about for a long time on the ocean, and he came upon lands of which he had previously had no knowledge. There were self-sown fields of wild wheat, and grapevines growing there, and trees called masur, and of all these they took specimens... Later, Thorfinn Karlsefni sailed there with sixty men and five women to settle. One morning they saw a great multitude of skin boats coming around the headland, rowed by men brandishing wooden poles... They were short men, swarthy and ill-looking, with coarse hair upon their heads and great dark eyes. They traded grey pelts for strips of red cloth, but when Karlsefni's bull ran out of the woods and bellowed fiercely, the Skraelings were terrified and fled to their boats.'"
         },
         "specializedFocusContext": {
           "title": "Bog Iron Smelting at L'Anse aux Meadows & The Clinker Knarr Ship",
@@ -5277,14 +5396,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "L'Anse aux Meadows proved the Norse were the first Europeans to reach the Americas, though conflict with indigenous First Nations forced them to abandon the settlement within a few decades."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/L_Anse_aux_Meadows_sod_houses.jpg?width=1000",
+          "imageUrl": "images/M8-U60.jpg",
           "title": "Reconstructed Norse Turf Longhouses at L'Anse aux Meadows, Newfoundland",
           "provenance": "UNESCO World Heritage Site, Parks Canada, excavated 1960",
           "visualClues": [
             "Observe the thick sod turf walls and roof, an architectural insulation technique brought directly from Iceland and Greenland to resist arctic blizzards.",
             "Notice the timber door frames and smoke holes for interior hearth fires.",
             "Look at the rocky coastline of Epaves Bay in the background, where Norse sailors beached their clinker-built wooden knarr ships."
-          ]
+          ],
+          "description": "Archaeological Reconstruction: Reconstructed Norse Turf Longhouses at L'Anse aux Meadows National Historic Site (Newfoundland). The photograph shows turf-sod roofed timber longhouses blending into the windswept coastal tundra of Epaves Bay, with the cold North Atlantic ocean in the background."
         },
         "quiz": [
           {
@@ -5356,7 +5476,8 @@ const CURRICULUM_DATA = [
           "purpose": "An official exploratory log written for King Francis I documenting French territorial claims in North America.",
           "authorAndEra": "Jacques Cartier, Breton mariner and explorer representing the King of France (July 1534).",
           "plainEnglishMeaning": "Cartier describes raising a giant wooden cross claiming Canada for the French King, recording that Chief Donnacona boldly sailed out in a canoe to protest that the land belonged to his people, and admits that he lied to the chief by claiming the cross was merely a harmless sailing beacon.",
-          "whyItMatters": "This passage captures the very first recorded diplomatic territorial clash between the French Crown and Indigenous Canadian nations, illustrating European colonial deception and indigenous resistance."
+          "whyItMatters": "This passage captures the very first recorded diplomatic territorial clash between the French Crown and Indigenous Canadian nations, illustrating European colonial deception and indigenous resistance.",
+          "originalQuote": "From Jacques Cartier in his journal 'Brief Recit de la Navigation Faite en 1535 et 1536': 'Our Captain caused to be made a cross of thirty feet in height, on which was carved a shield with three fleurs-de-lis, and above it in large letters cut in the wood: VIVE LE ROI DE FRANCE. When we had returned to our ships, Chief Donnacona, accompanied by his brother and sons, came in their canoe... and he made us a long speech, pointing to the cross and making the sign of the cross with two fingers; and then he pointed to the land all around us, as if he would say that all the country belonged to him, and that we ought not to have set up that cross without his leave... Our Captain told him that the cross was set up only as a mark and beacon to find the harbor again, which was a cunning lie.'"
         },
         "specializedFocusContext": {
           "title": "The Annedda White Cedar Scurvy Remedy & The Origin of the Name 'Canada'",
@@ -5365,14 +5486,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Without indigenous medical intervention, Cartier's entire crew would have died in the winter of 1535, ending early French colonial exploration of Canada."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacques_Cartier_at_Hochelaga.jpg?width=1000",
+          "imageUrl": "images/M8-U61.jpg",
           "title": "Jacques Cartier Meeting the St. Lawrence Iroquoians at Hochelaga (1535)",
           "provenance": "Historical illustration of the visit to Mount Royal, National Archives of Canada",
           "visualClues": [
             "Observe the circular wooden palisade of Hochelaga built from tree trunks to defend against rival nations.",
             "Notice Cartier dressed in French Renaissance doublet surrounded by curious indigenous citizens.",
             "Look at the wooden longhouses inside the town and the background slopes of Mount Royal."
-          ]
+          ],
+          "description": "Historical Lithograph: Jacques Cartier Meeting the St. Lawrence Iroquoians at Hochelaga (October 1535). Cartier and his armed officers in Renaissance plumed hats and steel armor stand in the central plaza of the circular palisaded town, surrounded by bark longhouses and hundreds of welcoming Iroquoian men, women, and children."
         },
         "quiz": [
           {
@@ -5444,7 +5566,8 @@ const CURRICULUM_DATA = [
           "purpose": "A published memoir and report presented to the King of France documenting the founding of Quebec and military engagements.",
           "authorAndEra": "Samuel de Champlain, French navigator, cartographer, and Governor of New France (July 1609).",
           "plainEnglishMeaning": "Champlain describes stepping forward with his gun to defend his Wendat and Algonquin allies against an attacking force of Mohawk warriors, firing a single musket shot that killed two enemy chiefs and caused the terrified enemy to retreat.",
-          "whyItMatters": "This famous skirmish marked the introduction of European firearms into indigenous woodland warfare, cementing France's permanent partnership with the Wendat while creating a century of conflict with the Haudenosaunee."
+          "whyItMatters": "This famous skirmish marked the introduction of European firearms into indigenous woodland warfare, cementing France's permanent partnership with the Wendat while creating a century of conflict with the Haudenosaunee.",
+          "originalQuote": "From Samuel de Champlain in 'The Voyages of Samuel de Champlain' (Les Voyages du Sieur de Champlain, 1613), describing the Battle of Lake Champlain on July 29, 1609: 'When we were within some thirty yards of the enemy, who were the Iroquois, I marched forward until I was within twenty yards... When I saw them making a move to draw their bows upon us, I took aim with my arquebus and shot straight at one of the three chiefs. With this single shot, two fell dead to the ground, and one of their companions was wounded, who died soon after. I had put four balls into my gun. As our allies saw this shot so favorable for them, they began to yell with voices so loud that one could not have heard thunder... As the Iroquois saw their chiefs slain, they lost courage and took to flight, abandoning the field and their fortifications.'"
         },
         "specializedFocusContext": {
           "title": "Champlain's Coastal Cartography & The 1608 Quebec Habitation",
@@ -5453,14 +5576,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Quebec City became the political and military capital of New France, giving France strategic control over the gateway to the North American interior for 150 years."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/View_of_Quebec_City_1700.jpg?width=1000",
+          "imageUrl": "images/M8-U62.jpg",
           "title": "Historical View of Quebec City and the St. Lawrence River",
           "provenance": "National Archives of Canada, early settlement cartography collection",
           "visualClues": [
             "Observe the natural geographic fortress: high stone cliffs (Cap Diamant) towering over the narrow St. Lawrence River.",
             "Notice the Lower Town (commercial harbor docks) and Upper Town (governor's chateau and stone churches).",
             "Look at the sailing ships and canoes sharing the river, showing European and Indigenous trade partnership."
-          ]
+          ],
+          "description": "Engraving: The Habitation of Quebec (L'Habitation de Quebec) sketched by Samuel de Champlain (1608). The fortified wooden settlement features three two-story residences with pitched roofs, a sundial, a defensive moat, a drawbridge, a dovecote, and cannon bastions overlooking the St. Lawrence River."
         },
         "quiz": [
           {
@@ -5532,7 +5656,8 @@ const CURRICULUM_DATA = [
           "purpose": "A personal travel and trading journal written by a legendary coureur des bois and co-founder of the Hudson's Bay Company.",
           "authorAndEra": "Pierre-Esprit Radisson, French coureur des bois, explorer, and fur trader (c. 1665).",
           "plainEnglishMeaning": "Radisson writes boastfully that he and his fellow traders lived as free as Roman emperors in the Canadian wilderness, living with native families, hunting on snowshoes, running dangerous river rapids, and being treated with immense love and respect.",
-          "whyItMatters": "Radisson's memoirs provide an authentic, vibrant look into the adventurous life of the coureurs des bois and demonstrate that the fur trade succeeded through mutual cultural adaptation and deep friendship."
+          "whyItMatters": "Radisson's memoirs provide an authentic, vibrant look into the adventurous life of the coureurs des bois and demonstrate that the fur trade succeeded through mutual cultural adaptation and deep friendship.",
+          "originalQuote": "From the French fur trader and explorer Pierre-Esprit Radisson in his journal 'Voyages of Pierre Esprit Radisson' (c. 1665), describing life among the indigenous nations of the Upper Great Lakes: 'We were loved by the wild nations like their own children. We lived as they lived, eating when they ate, and fasting when they fasted. We hunted the moose, ran upon snowshoes through the deep snows, and paddled the swift canoes through rapids that would make a Frenchman's hair stand on end... We were Caesars, being nobody to contradict us. We went into the woods with our guns, powder, and iron axes, and returned with canoes sinking under the weight of rich beaver pelts, greeted with songs of joy by the women and feasts of venison by the chiefs.'"
         },
         "specializedFocusContext": {
           "title": "The 36-Foot Maitre Canot & The Voyageur 180-Pound Tumpline Portage",
@@ -5541,14 +5666,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This superhuman canoe logistics network connected Montreal to the Rocky Mountains, creating the geographical boundary lines that define modern Canada today."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Fur_traders_in_Canada_1777.jpg?width=1000",
+          "imageUrl": "images/M8-U63.jpg",
           "title": "Indigenous Traders and French Canadian Fur Traders Exchanging Goods (1777)",
           "provenance": "Library and Archives Canada, Historical Canadian Art Collection, Ottawa",
           "visualClues": [
             "Observe the exchange of beaver pelts for European manufactured brass kettles, wool blankets, and steel trade axes.",
             "Notice the large birchbark freight canoe on the riverbank, the essential logistics lifeline of the fur trade.",
             "Look at the clothing blending French woolen tuques and capotes with indigenous buckskin leggings and moccasins."
-          ]
+          ],
+          "description": "Historical Oil Painting: Fur Traders in Canada (1777). French Canadian voyageurs and indigenous hunters stand beside a large birchbark freight canoe pulled up on the shores of a northern river, examining beaver pelts and iron trade goods against a backdrop of spruce and pine forests."
         },
         "quiz": [
           {
@@ -5620,7 +5746,8 @@ const CURRICULUM_DATA = [
           "purpose": "A scientific and ethnographic travelogue recording daily agricultural, social, and economic life in New France.",
           "authorAndEra": "Pehr (Peter) Kalm, Swedish naturalist and student of Linnaeus who visited New France in 1749.",
           "plainEnglishMeaning": "Kalm marvels that the St. Lawrence River looks like one continuous cheerful village because homes are built close together along the water, noting that Canadian farm families are healthier, better fed, and more cheerful than European peasants.",
-          "whyItMatters": "Kalm's objective foreign observations prove that French Canadian habitants enjoyed a higher standard of living, better nutrition, and greater personal freedom than oppressed feudal peasants in France."
+          "whyItMatters": "Kalm's objective foreign observations prove that French Canadian habitants enjoyed a higher standard of living, better nutrition, and greater personal freedom than oppressed feudal peasants in France.",
+          "originalQuote": "From the Swedish botanist and traveler Pehr Kalm in 'Travels into North America' (1749), describing daily rural life in New France: 'The country on both sides of the St. Lawrence River between Quebec and Montreal is so densely settled with farm houses that it looks like a single continuous village! The farms are long, narrow strips reaching down to the water, so that every farmer has his own river frontage... The houses are built of stone or heavy timber, plastered with white lime, and warmed with iron stoves from the Forges du Saint-Maurice. The women are exceedingly industrious, spinning wool and weaving the homespun cloth (etoile du pays) they wear. They are devout Catholics, attending church every Sunday, singing French songs, and dancing at weddings. In all the world, I have never seen a common people who appear so healthy, cheerful, and well-fed as these Canadian habitants.'"
         },
         "specializedFocusContext": {
           "title": "The Rang Long-Lot Cadastral Survey & The Filles du Roi Program",
@@ -5629,14 +5756,15 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "The long-lot strip farm system remains visible today from airplanes flying over Quebec, while the Filles du Roi are the ancestral grandmothers of millions of modern French Canadians across North America."
         },
         "visualArtifact": {
-          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Seigneurial_system_strip_farms.jpg?width=1000",
+          "imageUrl": "images/M8-U64.jpg",
           "title": "Aerial View of the Historical Seigneurial Long-Lot Strip Farms along the St. Lawrence",
           "provenance": "Historical Geographic Cadastral Survey, National Archives of Quebec",
           "visualClues": [
             "Observe the long, parallel, narrow agricultural strips extending away from the St. Lawrence River.",
             "Notice how every farm has direct access to the water for fishing and transportation.",
             "Look at the line of farmhouses clustered close to the river road, creating a close-knit rural community."
-          ]
+          ],
+          "description": "Aerial Cartographic Diagram: The Seigneurial Long-Lot Cadastral System along the St. Lawrence River (18th Century, National Archives of Quebec). The map shows dozens of parallel, razor-thin rectangular strip farms stretching inland from the blue riverfront, with farmhouses aligned in an orderly row along the riverfront road (chemin du roi)."
         },
         "quiz": [
           {
@@ -5688,11 +5816,3 @@ const CURRICULUM_DATA = [
     ]
   }
 ];
-
-if (typeof window !== 'undefined') {
-  window.CURRICULUM_DATA = CURRICULUM_DATA;
-}
-
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { CURRICULUM_DATA };
-}

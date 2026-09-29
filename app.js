@@ -620,27 +620,29 @@ function renderUnitView() {
     keyTakeaways: ["Key historical transitions shaped laws, culture, and trade."]
   };
 
-  const psContext = unit.primarySourceContext || {
-    purpose: "A primary source is direct evidence created by people who actually lived through these historical events.",
-    authorAndEra: "Historical Document",
-    originalQuote: unit.content ? unit.content.primarySource : "",
-    plainEnglishMeaning: "This document proves how historical actors communicated and governed during this period.",
-    whyItMatters: "Historians study original texts to verify historical reality rather than relying on later assumptions."
+  const psContext = {
+    purpose: unit.primarySourceContext?.purpose || "A primary source is direct evidence created by people who actually lived through these historical events.",
+    authorAndEra: unit.primarySourceContext?.authorAndEra || "Historical Document",
+    originalQuote: unit.primarySourceContext?.originalQuote || (unit.content ? unit.content.primarySource : "") || "",
+    plainEnglishMeaning: unit.primarySourceContext?.plainEnglishMeaning || "This document proves how historical actors communicated and governed during this period.",
+    whyItMatters: unit.primarySourceContext?.whyItMatters || "Historians study original texts to verify historical reality rather than relying on later assumptions."
   };
 
-  const focusContext = unit.specializedFocusContext || {
-    title: "Technological & Cultural Breakthrough",
-    purpose: "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
-    details: unit.content ? unit.content.focus : "",
-    plainEnglishImpact: "Without this breakthrough, communication, government administration, and trade would have remained localized."
+  const focusContext = {
+    title: unit.specializedFocusContext?.title || "Technological & Cultural Breakthrough",
+    purpose: unit.specializedFocusContext?.purpose || "Why examine this? History is shaped not just by dates and wars, but by specific tools, inventions, and legal frameworks that changed everyday human life.",
+    details: unit.specializedFocusContext?.details || (unit.content ? unit.content.focus : "") || "",
+    plainEnglishImpact: unit.specializedFocusContext?.plainEnglishImpact || "Without this breakthrough, communication, government administration, and trade would have remained localized."
   };
 
-  const artifact = unit.visualArtifact || {
-    imageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Machu_Picchu,_Peru.jpg?width=1000",
-    title: "Historical Cartographic or Archaeological Primary Artifact",
-    provenance: "Museum Archive Collection",
-    description: unit.content ? unit.content.graphicDescription : "Historical artifact.",
-    visualClues: ["Observe the craft materials and techniques used by artisans of this era."]
+  const artifact = {
+    imageUrl: unit.visualArtifact?.imageUrl || `images/${unit.unitId}.jpg`,
+    title: unit.visualArtifact?.title || "Historical Cartographic or Archaeological Primary Artifact",
+    provenance: unit.visualArtifact?.provenance || "Museum Archive Collection",
+    description: unit.visualArtifact?.description || (unit.content ? unit.content.graphicDescription : "") || "Historical primary visual and archaeological record.",
+    visualClues: (unit.visualArtifact?.visualClues && unit.visualArtifact.visualClues.length > 0)
+      ? unit.visualArtifact.visualClues 
+      : ["Observe the craft materials and techniques used by artisans of this era."]
   };
 
   let html = `
@@ -764,6 +766,21 @@ function renderUnitView() {
             <span class="text-xs font-bold text-slate-400 hidden sm:block">Systemic Historical Analysis</span>
           </div>
 
+          <!-- Embedded Historical Figure in Context -->
+          <figure class="mb-8 rounded-2xl overflow-hidden border border-slate-200 bg-slate-900 shadow-md">
+            <img 
+              src="${artifact.imageUrl}" 
+              alt="${artifact.title}" 
+              loading="lazy"
+              class="w-full max-h-[460px] object-cover bg-slate-950 transition-transform duration-300 hover:scale-[1.01]"
+              onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'800\\' height=\\'450\\' viewBox=\\'0 0 800 450\\'%3E%3Crect width=\\'100%25\\' height=\\'100%25\\' fill=\\'%230f172a\\'/%3E%3Ctext x=\\'50%25\\' y=\\'50%25\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' fill=\\'%2394a3b8\\' font-family=\\'sans-serif\\' font-size=\\'20\\'%3E🏛️ Primary Historical Visual Record%3C/text%3E%3C/svg%3E';"
+            />
+            <figcaption class="p-3.5 bg-slate-900/95 border-t border-slate-800 text-xs text-slate-300 flex flex-wrap items-center justify-between gap-2">
+              <span class="font-bold text-white">Figure: ${artifact.title}</span>
+              <span class="text-slate-400 font-mono">${artifact.provenance}</span>
+            </figcaption>
+          </figure>
+
           <div class="text-lg text-slate-800 leading-relaxed font-normal space-y-5">
             ${bgParagraphs.map(p => `<p>${p.trim()}</p>`).join("")}
           </div>
@@ -876,7 +893,7 @@ function renderUnitView() {
               alt="${artifact.title}" 
               loading="lazy"
               class="w-full max-h-[520px] object-contain bg-slate-950 p-2 rounded-2xl transition-transform hover:scale-[1.01]"
-              onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Machu_Picchu%2C_Peru.jpg/800px-Machu_Picchu%2C_Peru.jpg';"
+              onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'800\\' height=\\'450\\' viewBox=\\'0 0 800 450\\'%3E%3Crect width=\\'100%25\\' height=\\'100%25\\' fill=\\'%23020617\\'/%3E%3Ctext x=\\'50%25\\' y=\\'50%25\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' fill=\\'%2364748b\\' font-family=\\'sans-serif\\' font-size=\\'18\\'%3E🗺️ Historical Artifact Record%3C/text%3E%3C/svg%3E';"
             />
             <div class="w-full p-4 bg-slate-950/90 border-t border-slate-800 text-center text-xs text-slate-300 font-mono">
               <strong>Figure:</strong> ${artifact.title}
