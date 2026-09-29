@@ -532,15 +532,17 @@
               <div class="w-8 h-8 rounded-xl shrink-0 flex items-center justify-center font-bold text-xs ${
                 isDone ? 'bg-emerald-600 text-white' : 'bg-slate-200 text-slate-700'
               }">
-                ${isDone ? '✓' : unit.unitNumber}
+                ${isDone ? '✓' : (unit.unitNumber || (modIdx * 3 + unitIdx + 1))}
               </div>
               <div class="min-w-0">
                 <div class="text-sm font-black text-slate-900 truncate">
                   ${unit.title}
                 </div>
-                <div class="text-xs text-slate-500 truncate">
-                  ${unit.subtitle}
-                </div>
+                ${unit.subtitle ? `
+                  <div class="text-xs text-slate-500 truncate">
+                    ${unit.subtitle}
+                  </div>
+                ` : ''}
               </div>
             </div>
 
@@ -653,7 +655,7 @@
       <div class="mb-4">
         <div class="flex items-center justify-between gap-2 mb-2">
           <span class="text-xs font-black tracking-wider uppercase bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">
-            ${module.moduleTitle.split(':')[0]} • Unit ${unit.unitNumber} of 24
+            ${module.moduleTitle.split(':')[0]} • Unit ${unit.unitNumber || (appState.currentModuleIndex * 3 + appState.currentUnitIndex + 1)} of 24
           </span>
           ${isCompleted ? `
             <span class="inline-flex items-center gap-1 text-xs font-black bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full">
@@ -669,9 +671,11 @@
         <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight leading-tight mb-1">
           ${unit.title}
         </h2>
-        <p class="text-base text-indigo-900 font-semibold mb-4">
-          ${unit.subtitle}
-        </p>
+        ${unit.subtitle ? `
+          <p class="text-base text-indigo-900 font-semibold mb-4">
+            ${unit.subtitle}
+          </p>
+        ` : '<div class="mb-4"></div>'}
       </div>
 
       <!-- Responsive YouTube Video Embed Frame -->
@@ -718,7 +722,7 @@
             </h3>
           </div>
           <div class="text-lg text-slate-800 leading-relaxed font-normal space-y-4">
-            <p>${unit.content.background}</p>
+            ${unit.content.background.split(/\n\n+/).map(p => `<p>${p.trim()}</p>`).join('')}
           </div>
         </article>
 
