@@ -607,6 +607,9 @@ function renderUnitView() {
  */
 function renderQuizView() {
   const container = document.getElementById("viewDisplayEngine");
+  const backBtn = document.getElementById("globalBackBtn");
+  const viewTitle = document.getElementById("headerViewTitle");
+
   if (!container) return;
 
   const curriculum = window.CURRICULUM_DATA || [];
@@ -618,25 +621,39 @@ function renderQuizView() {
     return;
   }
 
+  // 1. Distraction-free environment: sync header
+  if (viewTitle) viewTitle.innerText = "Practice Quiz";
+  if (backBtn) {
+    backBtn.style.visibility = "visible";
+    backBtn.removeAttribute("aria-hidden");
+    backBtn.innerText = "✕ Exit";
+    backBtn.onclick = () => navigateTo("unit", appState.currentModuleIndex, appState.currentUnitIndex);
+  }
+
   const questions = unit.quiz;
   const qIdx = appState.activeQuizQuestionIndex;
 
-  // Check if completed all questions
+  // 5. Check if all questions completed
   if (qIdx >= questions.length) {
     renderQuizResults(container, unit, questions);
     return;
   }
 
+  // 2. Targeted single-question item
   const currentQ = questions[qIdx];
   const isAnswered = appState.quizAnswerSubmitted;
   const selectedIdx = appState.quizSelectedAnswer;
+  const totalQ = questions.length;
+  const isLastQuestion = qIdx + 1 >= totalQ;
 
   let html = `
-    <div class="bg-white rounded-3xl p-6 shadow-xl border border-slate-200">
+    <!-- Distraction-Free Evaluation Container -->
+    <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-200">
+      
       <!-- Progress Bar & Indicator -->
       <div class="flex items-center justify-between mb-3">
-        <span class="text-xs font-black uppercase tracking-wider text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full">
-          Question ${qIdx + 1} of ${questions.length}
+        <span class="text-xs font-black uppercase tracking-wider text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full border border-indigo-100">
+          Question ${qIdx + 1} of ${totalQ}
         </span>
         <span class="text-xs font-bold text-slate-500">
           ${unit.unitId}
@@ -644,39 +661,41 @@ function renderQuizView() {
       </div>
 
       <div class="w-full bg-slate-100 rounded-full h-2 mb-6">
-        <div class="bg-indigo-600 h-2 rounded-full transition-all duration-300" style="width: ${((qIdx + (isAnswered ? 1 : 0.5)) / questions.length) * 100}%;"></div>
+        <div class="bg-indigo-600 h-2 rounded-full transition-all duration-300" style="width: ${((qIdx + (isAnswered ? 1 : 0.5)) / totalQ) * 100}%;"></div>
       </div>
 
-      <!-- Question Prompt -->
-      <h3 class="text-xl font-black text-slate-900 leading-snug mb-6">
+      <!-- Question Statement inside bold, large typography -->
+      <h3 class="text-xl sm:text-2xl font-black text-slate-900 leading-snug tracking-tight mb-6">
         ${currentQ.questionText}
       </h3>
 
-      <!-- 4 Option Buttons (Touch targets >= 48px with clear margins) -->
-      <div class="space-y-3 mb-6" id="quizOptionsContainer">
+      <!-- 3. Four large, full-width touch blocks (p-4 border-2 border-slate-200 rounded-2xl text-left font-medium min-h-[48px]) -->
+      <div class="space-y-3 mb-6" id="quizChoicesList">
   `;
 
   currentQ.options.forEach((optText, optIdx) => {
-    let styles = "bg-white border-2 border-slate-200 text-slate-800 hover:border-indigo-300";
-    let icon = `<span class="w-7 h-7 rounded-xl border border-slate-300 flex items-center justify-center font-bold text-xs text-slate-600 shrink-0">${String.fromCharCode(65 + optIdx)}</span>`;
+    let styles = "bg-white border-slate-200 text-slate-800 hover:border-indigo-300";
+    let icon = `<span class="w-8 h-8 rounded-xl border border-slate-300 flex items-center justify-center font-black text-xs text-slate-600 shrink-0">${String.fromCharCode(65 + optIdx)}</span>`;
 
     if (isAnswered) {
       if (optIdx === currentQ.correctIndex) {
-        styles = "bg-emerald-50 border-2 border-emerald-500 text-emerald-950 font-bold shadow-sm";
-        icon = `<span class="w-7 h-7 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-black text-xs shrink-0">✓</span>`;
+        // Correct option styled green (bg-emerald-100 border-emerald-500)
+        styles = "bg-emerald-100 border-emerald-500 text-emerald-950 font-bold shadow-sm";
+        icon = `<span class="w-8 h-8 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-black text-xs shrink-0">✓</span>`;
       } else if (optIdx === selectedIdx) {
-        styles = "bg-rose-50 border-2 border-rose-500 text-rose-950 font-bold shadow-sm";
-        icon = `<span class="w-7 h-7 rounded-xl bg-rose-600 text-white flex items-center justify-center font-black text-xs shrink-0">✕</span>`;
+        // Chosen incorrect option styled red (bg-rose-100 border-rose-500)
+        styles = "bg-rose-100 border-rose-500 text-rose-950 font-bold shadow-sm";
+        icon = `<span class="w-8 h-8 rounded-xl bg-rose-600 text-white flex items-center justify-center font-black text-xs shrink-0">✕</span>`;
       } else {
-        styles = "bg-slate-50 border border-slate-200 text-slate-400 opacity-60";
+        styles = "bg-slate-50 border-slate-200 text-slate-400 opacity-60";
       }
     }
 
     html += `
       <button 
-        data-option-index="${optIdx}" 
+        data-option-index="${optIdx}"
         ${isAnswered ? "disabled" : ""}
-        class="quiz-option-choice-btn w-full p-4 my-1.5 rounded-2xl text-left font-medium active:scale-98 transition-all min-h-[48px] flex items-center gap-3 ${styles}">
+        class="quiz-choice-btn w-full p-4 border-2 border-slate-200 rounded-2xl text-left font-medium min-h-[48px] my-1.5 flex items-center gap-3 transition-all active:scale-98 ${styles}">
         ${icon}
         <span class="text-base leading-snug flex-1">${optText}</span>
       </button>
@@ -687,23 +706,26 @@ function renderQuizView() {
       </div>
   `;
 
-  // Explanation and Next button revealed upon selection
+  // 4. Instantly unhide dedicated analytical explanation window directly beneath choices
   if (isAnswered) {
     const isCorrect = selectedIdx === currentQ.correctIndex;
     html += `
       <div class="p-5 rounded-2xl mb-6 transition-all border ${
-        isCorrect ? 'bg-emerald-50/90 border-emerald-200 text-emerald-900' : 'bg-amber-50/90 border-amber-200 text-amber-900'
+        isCorrect 
+          ? 'bg-emerald-50 border-emerald-200 text-emerald-950' 
+          : 'bg-amber-50 border-amber-200 text-amber-950'
       }">
         <div class="flex items-center gap-2 font-black text-sm mb-1.5">
-          <span>${isCorrect ? '🌟 Correct!' : '📖 Historical Explanation:'}</span>
+          <span>${isCorrect ? '🌟 Correct! Analytical Explanation:' : '📖 Analytical Explanation:'}</span>
         </div>
         <p class="text-sm leading-relaxed">${currentQ.explanation}</p>
       </div>
 
+      <!-- 5. Large "Next Question" or "Complete Quiz" button -->
       <button 
-        id="quizAdvanceQuestionBtn" 
-        class="w-full min-h-[52px] px-5 py-3.5 my-1 bg-indigo-600 hover:bg-indigo-700 active:scale-98 text-white font-black text-base rounded-2xl shadow-md transition-all flex items-center justify-center gap-2">
-        <span>${qIdx + 1 < questions.length ? 'Next Question →' : 'View Quiz Summary 🏆'}</span>
+        id="quizAdvanceActionBtn" 
+        class="w-full min-h-[52px] px-5 py-4 my-1 bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 active:scale-98 text-white font-black text-base rounded-2xl shadow-md transition-all flex items-center justify-center gap-2">
+        <span>${isLastQuestion ? 'Complete Quiz 🏆' : 'Next Question →'}</span>
       </button>
     `;
   }
@@ -714,9 +736,16 @@ function renderQuizView() {
 
   container.innerHTML = html;
 
+  // 4. Evaluation Function with immediate interaction lock
   if (!isAnswered) {
-    container.querySelectorAll(".quiz-option-choice-btn").forEach(btn => {
+    container.querySelectorAll(".quiz-choice-btn").forEach(btn => {
       btn.addEventListener("click", () => {
+        // Immediately lock screen interaction to prevent multi-clicking
+        container.querySelectorAll(".quiz-choice-btn").forEach(b => {
+          b.disabled = true;
+          b.classList.add("pointer-events-none");
+        });
+
         const picked = parseInt(btn.getAttribute("data-option-index"), 10);
         appState.quizSelectedAnswer = picked;
         appState.quizAnswerSubmitted = true;
@@ -730,9 +759,9 @@ function renderQuizView() {
       });
     });
   } else {
-    const advanceBtn = document.getElementById("quizAdvanceQuestionBtn");
-    if (advanceBtn) {
-      advanceBtn.addEventListener("click", () => {
+    const actionBtn = document.getElementById("quizAdvanceActionBtn");
+    if (actionBtn) {
+      actionBtn.addEventListener("click", () => {
         appState.activeQuizQuestionIndex++;
         appState.quizSelectedAnswer = null;
         appState.quizAnswerSubmitted = false;
@@ -745,15 +774,28 @@ function renderQuizView() {
 }
 
 /**
- * Renders the Quiz completion screen and commits the unit completion to state.
+ * Renders the Quiz completion screen, appends unitId to completedUnits,
+ * syncs to localStorage, updates global header progress, and routes back to hub.
  */
 function renderQuizResults(container, unit, questions) {
   const total = questions.length;
   const correct = appState.quizCorrectAnswersCount;
   const scorePercent = total > 0 ? Math.round((correct / total) * 100) : 0;
 
-  // Mark complete and update high score
-  markUnitComplete(unit.unitId, scorePercent);
+  // 5. Append current unit ID directly to completedUnits registry array
+  if (!appState.appSessionState.completedUnits.includes(unit.unitId)) {
+    appState.appSessionState.completedUnits.push(unit.unitId);
+  }
+
+  // Record high score
+  const currentHigh = appState.appSessionState.quizHighScores[unit.unitId] || 0;
+  appState.appSessionState.quizHighScores[unit.unitId] = Math.max(currentHigh, scorePercent);
+
+  // Sync updated dataset to localStorage
+  saveAppState();
+
+  // Update global dashboard progress meter calculation
+  updateGlobalHeaderProgress();
 
   let badge = "🌟 Master Historian!";
   let msg = "You demonstrated comprehensive mastery of this historical unit.";
@@ -765,16 +807,17 @@ function renderQuizResults(container, unit, questions) {
     msg = "Retake this quiz anytime to reinforce your learning and aim for 100%!";
   }
 
+  // Display completion message card before routing back to dashboard hub
   let html = `
-    <div class="bg-white rounded-3xl p-6 shadow-xl border border-slate-200 text-center">
+    <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-200 text-center">
       <div class="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center text-4xl shadow-inner ${
         scorePercent >= 80 ? 'bg-emerald-100 text-emerald-600' : 'bg-indigo-100 text-indigo-600'
       }">
         ${scorePercent === 100 ? '👑' : scorePercent >= 50 ? '🏅' : '📚'}
       </div>
 
-      <span class="text-xs font-black uppercase tracking-wider text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full">
-        Quiz Completed
+      <span class="text-xs font-black uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+        ✓ Unit Mastered & Saved
       </span>
 
       <h3 class="text-2xl font-black text-slate-900 mt-2 mb-1">
@@ -789,69 +832,51 @@ function renderQuizResults(container, unit, questions) {
           ${scorePercent}%
         </div>
         <div class="text-xs font-bold text-slate-500 mt-1 uppercase tracking-wider">
-          ${correct} of ${total} Correct
+          ${correct} of ${total} Questions Correct
         </div>
       </div>
 
+      <!-- Action buttons routing back to hub or next unit -->
       <div class="space-y-3">
         <button 
-          id="quizResultsNextUnitBtn" 
-          class="w-full min-h-[50px] px-5 py-3.5 my-1 bg-indigo-600 hover:bg-indigo-700 active:scale-98 text-white font-black text-base rounded-2xl shadow-md transition-all">
-          Next Unit →
+          id="quizReturnHubCtaBtn" 
+          class="w-full min-h-[52px] px-5 py-4 my-1 bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 active:scale-98 text-white font-black text-base rounded-2xl shadow-md transition-all flex items-center justify-center gap-2">
+          <span>Return to Dashboard Hub →</span>
         </button>
 
         <div class="flex items-center gap-3">
           <button 
             id="quizResultsRetakeBtn" 
-            class="flex-1 min-h-[48px] px-3 py-2 border-2 border-slate-200 hover:bg-slate-50 text-slate-700 font-bold text-sm rounded-2xl active:scale-98 transition-all">
+            class="flex-1 min-h-[48px] px-3 py-2.5 border-2 border-slate-200 hover:bg-slate-50 text-slate-700 font-bold text-sm rounded-2xl active:scale-98 transition-all">
             🔄 Retake Quiz
           </button>
 
           <button 
             id="quizResultsReturnUnitBtn" 
-            class="flex-1 min-h-[48px] px-3 py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-sm rounded-2xl active:scale-98 transition-all">
-            Unit Text
+            class="flex-1 min-h-[48px] px-3 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-sm rounded-2xl active:scale-98 transition-all">
+            Review Lesson Text
           </button>
         </div>
-
-        <button 
-          id="quizResultsReturnHubBtn" 
-          class="w-full min-h-[48px] text-slate-600 hover:text-slate-900 font-bold text-sm py-2">
-          Return to Dashboard Hub
-        </button>
       </div>
     </div>
   `;
 
   container.innerHTML = html;
 
-  const curriculum = window.CURRICULUM_DATA || [];
-  const nextUnitBtn = document.getElementById("quizResultsNextUnitBtn");
-  if (nextUnitBtn) {
-    const curMod = curriculum[appState.currentModuleIndex];
-    if (appState.currentUnitIndex < (curMod.units || []).length - 1) {
-      nextUnitBtn.onclick = () => navigateTo("unit", appState.currentModuleIndex, appState.currentUnitIndex + 1);
-    } else if (appState.currentModuleIndex < curriculum.length - 1) {
-      nextUnitBtn.onclick = () => navigateTo("unit", appState.currentModuleIndex + 1, 0);
-    } else {
-      nextUnitBtn.innerText = "🏆 Completed All Units! Back to Hub";
-      nextUnitBtn.onclick = () => navigateTo("dashboard");
-    }
+  // Route back to dashboard hub
+  const hubBtn = document.getElementById("quizReturnHubCtaBtn");
+  if (hubBtn) {
+    hubBtn.addEventListener("click", () => navigateTo("dashboard"));
   }
 
   const retakeBtn = document.getElementById("quizResultsRetakeBtn");
   if (retakeBtn) {
-    retakeBtn.onclick = () => navigateTo("quiz", appState.currentModuleIndex, appState.currentUnitIndex);
+    retakeBtn.addEventListener("click", () => navigateTo("quiz", appState.currentModuleIndex, appState.currentUnitIndex));
   }
 
   const returnUnitBtn = document.getElementById("quizResultsReturnUnitBtn");
   if (returnUnitBtn) {
-    returnUnitBtn.onclick = () => navigateTo("unit", appState.currentModuleIndex, appState.currentUnitIndex);
-  }
-
-  const returnHubBtn = document.getElementById("quizResultsReturnHubBtn");
-  if (returnHubBtn) {
-    returnHubBtn.onclick = () => navigateTo("dashboard");
+    returnUnitBtn.addEventListener("click", () => navigateTo("unit", appState.currentModuleIndex, appState.currentUnitIndex));
   }
 }
 
@@ -890,6 +915,8 @@ if (typeof document !== "undefined") {
 if (typeof window !== "undefined") {
   window.navigateTo = navigateTo;
   window.renderDashboard = renderDashboard;
+  window.renderUnitView = renderUnitView;
+  window.renderQuizView = renderQuizView;
   window.renderCurrentView = renderCurrentView;
   window.saveAppState = saveAppState;
   window.markUnitComplete = markUnitComplete;
@@ -903,6 +930,8 @@ if (typeof module !== "undefined" && module.exports) {
     markUnitComplete,
     navigateTo,
     renderDashboard,
+    renderUnitView,
+    renderQuizView,
     renderCurrentView
   };
 }
