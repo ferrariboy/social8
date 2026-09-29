@@ -5,6 +5,28 @@
  * Aligned with the British Columbia Social Studies 8 Curriculum (c. 600 CE - 1750 CE)
  */
 
+// Helper to universally guarantee access to CURRICULUM_DATA across scopes
+function getCurriculumData() {
+  if (typeof CURRICULUM_DATA !== "undefined" && Array.isArray(CURRICULUM_DATA) && CURRICULUM_DATA.length > 0) {
+    return CURRICULUM_DATA;
+  }
+  if (typeof window !== "undefined" && Array.isArray(window.CURRICULUM_DATA) && window.CURRICULUM_DATA.length > 0) {
+    return window.CURRICULUM_DATA;
+  }
+  if (typeof globalThis !== "undefined" && Array.isArray(globalThis.CURRICULUM_DATA) && globalThis.CURRICULUM_DATA.length > 0) {
+    return globalThis.CURRICULUM_DATA;
+  }
+  return [];
+}
+
+// Synchronize global references
+if (typeof window !== "undefined") {
+  if (typeof CURRICULUM_DATA !== "undefined") {
+    window.CURRICULUM_DATA = CURRICULUM_DATA;
+  }
+  window.getCurriculumData = getCurriculumData;
+}
+
 // ==========================================
 // 1. Global State Management
 // ==========================================
@@ -105,14 +127,16 @@ function toggleUnitCompletion(unitId) {
 // 3. Routing & State Shift Handler
 // ==========================================
 
-function navigateTo(viewName, modIdx, unitIdx) {
+function navigateTo(viewName, modIdx = null, unitIdx = null) {
+  const curriculum = getCurriculumData();
   appState.activeView = viewName;
 
-  if (typeof modIdx === "number") {
-    appState.currentModuleIndex = Math.max(0, Math.min(modIdx, (window.CURRICULUM_DATA || []).length - 1));
+  if (typeof modIdx === "number" && curriculum.length > 0) {
+    const maxMods = curriculum.length - 1;
+    appState.currentModuleIndex = Math.max(0, Math.min(modIdx, maxMods));
   }
-  if (typeof unitIdx === "number") {
-    const currentMod = (window.CURRICULUM_DATA || [])[appState.currentModuleIndex];
+  if (typeof unitIdx === "number" && curriculum.length > 0) {
+    const currentMod = curriculum[appState.currentModuleIndex];
     const maxUnits = currentMod && currentMod.units ? currentMod.units.length - 1 : 0;
     appState.currentUnitIndex = Math.max(0, Math.min(unitIdx, maxUnits));
   }
@@ -150,9 +174,9 @@ function renderCurrentView() {
     }
     renderDashboard();
   } else if (appState.activeView === "unit") {
-    const curriculum = window.CURRICULUM_DATA || [];
-    const module = curriculum[appState.currentModuleIndex];
-    const unit = module && module.units ? module.units[appState.currentUnitIndex] : null;
+    const curriculum = getCurriculumData();
+    const module = curriculum[appState.currentModuleIndex] || curriculum[0];
+    const unit = (module && module.units) ? (module.units[appState.currentUnitIndex] || module.units[0]) : null;
     if (viewTitle) viewTitle.innerText = unit ? unit.title : "Lesson View";
     if (backBtn) {
       backBtn.style.display = "inline-flex";
@@ -160,9 +184,13 @@ function renderCurrentView() {
         <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/>
         </svg>
-        <span>Dashboard</span>
+        <span class="hidden sm:inline">Dashboard</span>
+        <span class="sm:hidden">Back</span>
       `;
-      backBtn.onclick = () => navigateTo("dashboard");
+      backBtn.onclick = (e) => {
+        if (e) e.preventDefault();
+        navigateTo("dashboard");
+      };
     }
     renderUnitView();
   } else if (appState.activeView === "quiz") {
@@ -173,9 +201,13 @@ function renderCurrentView() {
         <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
         </svg>
-        <span>Exit Quiz</span>
+        <span class="hidden sm:inline">Exit Quiz</span>
+        <span class="sm:hidden">Exit</span>
       `;
-      backBtn.onclick = () => navigateTo("unit", appState.currentModuleIndex, appState.currentUnitIndex);
+      backBtn.onclick = (e) => {
+        if (e) e.preventDefault();
+        navigateTo("unit", appState.currentModuleIndex, appState.currentUnitIndex);
+      };
     }
     renderQuizView();
   }
@@ -186,7 +218,7 @@ function updateGlobalHeaderProgress() {
   const progressText = document.getElementById("globalProgressText");
   const drawerSummary = document.getElementById("drawerProgressSummary");
 
-  const curriculum = window.CURRICULUM_DATA || [];
+  const curriculum = getCurriculumData();
   let totalUnits = 0;
   curriculum.forEach(m => {
     if (m.units) totalUnits += m.units.length;
@@ -196,7 +228,7 @@ function updateGlobalHeaderProgress() {
   const percent = totalUnits > 0 ? Math.round((completed / totalUnits) * 100) : 0;
 
   if (progressText) {
-    progressText.innerText = `${percent}% Done (${completed}/${totalUnits})`;
+    progressText.innerHTML = `<span>${percent}%</span> <span class="hidden sm:inline">Done (${completed}/${totalUnits})</span>`;
   }
   if (drawerSummary) {
     drawerSummary.innerText = `${completed} of ${totalUnits} Units Completed (${percent}%)`;
@@ -208,7 +240,7 @@ function updateGlobalHeaderProgress() {
 // ==========================================
 
 function openCurriculumDrawer() {
-  if (typeof document === "undefined") return;
+  if (typeof document === "undefined" || !document.body) return;
   document.body.classList.add("drawer-open");
   const drawer = document.getElementById("curriculumDrawer");
   if (drawer) drawer.setAttribute("aria-hidden", "false");
@@ -216,7 +248,7 @@ function openCurriculumDrawer() {
 }
 
 function closeCurriculumDrawer() {
-  if (typeof document === "undefined") return;
+  if (typeof document === "undefined" || !document.body) return;
   document.body.classList.remove("drawer-open");
   const drawer = document.getElementById("curriculumDrawer");
   if (drawer) drawer.setAttribute("aria-hidden", "true");
@@ -226,7 +258,7 @@ function renderDrawerModulesList(filterText = "") {
   const container = document.getElementById("drawerModulesList");
   if (!container) return;
 
-  const curriculum = window.CURRICULUM_DATA || [];
+  const curriculum = getCurriculumData();
   const completedList = appState.appSessionState.completedUnits || [];
   const query = filterText.toLowerCase().trim();
 
@@ -342,13 +374,14 @@ function renderDashboard() {
   const container = document.getElementById("viewDisplayEngine");
   if (!container) return;
 
-  const curriculum = window.CURRICULUM_DATA || [];
+  const curriculum = getCurriculumData();
   const completedList = appState.appSessionState.completedUnits || [];
 
-  const resumeModIdx = Math.max(0, Math.min(appState.currentModuleIndex, curriculum.length - 1));
-  const resumeMod = curriculum[resumeModIdx];
-  const resumeUnitIdx = Math.max(0, Math.min(appState.currentUnitIndex, (resumeMod && resumeMod.units ? resumeMod.units.length - 1 : 0)));
-  const resumeUnit = resumeMod && resumeMod.units ? resumeMod.units[resumeUnitIdx] : null;
+  const resumeModIdx = Math.max(0, Math.min(appState.currentModuleIndex || 0, curriculum.length > 0 ? curriculum.length - 1 : 0));
+  const resumeMod = curriculum[resumeModIdx] || curriculum[0];
+  const modUnits = resumeMod && resumeMod.units ? resumeMod.units : [];
+  const resumeUnitIdx = Math.max(0, Math.min(appState.currentUnitIndex || 0, modUnits.length > 0 ? modUnits.length - 1 : 0));
+  const resumeUnit = modUnits[resumeUnitIdx] || modUnits[0];
 
   let totalUnits = 0;
   let masteredCount = 0;
@@ -452,12 +485,12 @@ function renderDashboard() {
           Curriculum Modules
         </h3>
         <span class="text-xs font-bold text-slate-600 bg-slate-200/90 px-3 py-1 rounded-full">
-          All 8 Modules & 24 Units
+          All 8 Modules & 64 Units
         </span>
       </div>
 
-      <!-- Quick Filter Pills -->
-      <div class="flex items-center gap-2 overflow-x-auto pb-1 max-w-full text-xs font-bold" id="moduleFilterPills">
+      <!-- Quick Filter Pills (No Scrollbars) -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-1 max-w-full text-xs font-bold no-scrollbar hide-scrollbar" id="moduleFilterPills">
         <button data-filter="all" class="filter-pill px-4 py-2 rounded-xl transition-all ${appState.activeModuleFilter === 'all' ? 'bg-slate-900 text-white shadow-sm' : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-100'}">All Modules (8)</button>
         <button data-filter="europe" class="filter-pill px-4 py-2 rounded-xl transition-all ${appState.activeModuleFilter === 'europe' ? 'bg-slate-900 text-white shadow-sm' : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-100'}">Europe & Middle Ages</button>
         <button data-filter="asia" class="filter-pill px-4 py-2 rounded-xl transition-all ${appState.activeModuleFilter === 'asia' ? 'bg-slate-900 text-white shadow-sm' : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-100'}">Asia & Islamic World</button>
@@ -567,20 +600,26 @@ function renderDashboard() {
 
   const resumeBtn = document.getElementById("resumeLearningCtaBtn");
   if (resumeBtn) {
-    resumeBtn.addEventListener("click", () => {
+    resumeBtn.addEventListener("click", (e) => {
+      if (e) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
       navigateTo("unit", resumeModIdx, resumeUnitIdx);
     });
   }
 
   container.querySelectorAll(".filter-pill").forEach(pill => {
-    pill.addEventListener("click", () => {
+    pill.addEventListener("click", (e) => {
+      if (e) e.preventDefault();
       appState.activeModuleFilter = pill.getAttribute("data-filter");
       renderDashboard();
     });
   });
 
   container.querySelectorAll(".unit-navigation-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
+    btn.addEventListener("click", (e) => {
+      if (e) e.preventDefault();
       const mIdx = parseInt(btn.getAttribute("data-module-index"), 10);
       const uIdx = parseInt(btn.getAttribute("data-unit-index"), 10);
       navigateTo("unit", mIdx, uIdx);
@@ -596,16 +635,16 @@ function renderUnitView() {
   const container = document.getElementById("viewDisplayEngine");
   if (!container) return;
 
-  const curriculum = window.CURRICULUM_DATA || [];
-  const module = curriculum[appState.currentModuleIndex];
-  if (!module || !module.units) {
-    navigateTo("dashboard");
+  const curriculum = getCurriculumData();
+  const module = curriculum[appState.currentModuleIndex] || curriculum[0];
+  if (!module || !module.units || module.units.length === 0) {
+    console.warn("Module or units not found", appState.currentModuleIndex);
     return;
   }
 
-  const unit = module.units[appState.currentUnitIndex];
+  const unit = module.units[appState.currentUnitIndex] || module.units[0];
   if (!unit) {
-    navigateTo("dashboard");
+    console.warn("Unit not found", appState.currentUnitIndex);
     return;
   }
 
@@ -1140,9 +1179,9 @@ function renderQuizView() {
   const container = document.getElementById("viewDisplayEngine");
   if (!container) return;
 
-  const curriculum = window.CURRICULUM_DATA || [];
-  const module = curriculum[appState.currentModuleIndex];
-  const unit = module && module.units ? module.units[appState.currentUnitIndex] : null;
+  const curriculum = getCurriculumData();
+  const module = curriculum[appState.currentModuleIndex] || curriculum[0];
+  const unit = module && module.units ? (module.units[appState.currentUnitIndex] || module.units[0]) : null;
 
   if (!unit || !unit.quiz || unit.quiz.length === 0) {
     navigateTo("unit", appState.currentModuleIndex, appState.currentUnitIndex);
@@ -1292,8 +1331,9 @@ function renderQuizResults(container, unit, questions) {
 
   markUnitComplete(unit.unitId, scorePercent);
 
-  const curriculum = window.CURRICULUM_DATA || [];
-  const hasNextUnit = appState.currentUnitIndex < (curriculum[appState.currentModuleIndex].units || []).length - 1;
+  const curriculum = getCurriculumData();
+  const currentMod = curriculum[appState.currentModuleIndex] || curriculum[0];
+  const hasNextUnit = appState.currentUnitIndex < (currentMod.units || []).length - 1;
   const hasNextModule = appState.currentModuleIndex < curriculum.length - 1;
 
   let feedbackBadge = "🏆 Mastered";

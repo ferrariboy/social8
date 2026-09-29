@@ -5816,3 +5816,11 @@ const CURRICULUM_DATA = [
     ]
   }
 ];
+
+if (typeof window !== "undefined") {
+  window.CURRICULUM_DATA = CURRICULUM_DATA;
+}
+if (typeof globalThis !== "undefined") {
+  globalThis.CURRICULUM_DATA = CURRICULUM_DATA;
+}
+
