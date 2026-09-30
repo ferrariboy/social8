@@ -674,14 +674,69 @@ function renderUnitView() {
     plainEnglishImpact: unit.specializedFocusContext?.plainEnglishImpact || "Without this breakthrough, communication, government administration, and trade would have remained localized."
   };
 
+  // Master 5-Image Gallery Array for every unit
+  const gallery = (unit.gallery && unit.gallery.length === 5) ? unit.gallery : [
+    {
+      slot: 1,
+      id: `${unit.unitId}-1`,
+      imageUrl: `images/${unit.unitId}-1.jpg`,
+      title: unit.title.replace(/^Unit \d+:\s*/, "") + " (Historical Context Scene)",
+      category: "Historical Context Scene",
+      caption: unit.plainEnglish?.theBigIdea || (unit.content ? unit.content.background.substring(0, 150) : "") || "Primary historical event overview.",
+      provenance: unit.visualArtifact?.provenance || "Museum Archive Collection"
+    },
+    {
+      slot: 2,
+      id: `${unit.unitId}-2`,
+      imageUrl: `images/${unit.unitId}-2.jpg`,
+      title: (unit.primarySourceContext?.authorAndEra ? unit.primarySourceContext.authorAndEra.split(',')[0] : unit.title) + " - Primary Archival Document",
+      category: "Primary Source Document",
+      caption: unit.primarySourceContext?.plainEnglishMeaning || "Eyewitness historical document.",
+      provenance: unit.primarySourceContext?.authorAndEra || "National Archives & Manuscript Collection"
+    },
+    {
+      slot: 3,
+      id: `${unit.unitId}-3`,
+      imageUrl: `images/${unit.unitId}-3.jpg`,
+      title: unit.specializedFocusContext?.title || "Technology, Invention & Customary Law",
+      category: "Technology, Invention & Law",
+      caption: unit.specializedFocusContext?.plainEnglishImpact || "Technological or institutional breakthrough.",
+      provenance: "Museum of Historical Technology"
+    },
+    {
+      slot: 4,
+      id: `${unit.unitId}-4`,
+      imageUrl: `images/${unit.unitId}-4.jpg`,
+      title: "Cartographic Reconstruction: Territorial Realm & Frontiers",
+      category: "Historical Cartography",
+      caption: "Geographical frontiers, trade corridors, and territorial boundaries.",
+      provenance: "Historical Cartography Archives"
+    },
+    {
+      slot: 5,
+      id: `${unit.unitId}-5`,
+      imageUrl: `images/${unit.unitId}-5.jpg`,
+      title: unit.visualArtifact?.title || "Archaeological Relic & Material Culture",
+      category: "Archaeological Artifact",
+      caption: unit.visualArtifact?.description || "Archaeological artifact, architecture, or numismatic relic.",
+      provenance: unit.visualArtifact?.provenance || "State Antiquities & National Archaeological Museum"
+    }
+  ];
+
+  const img1 = gallery[0];
+  const img2 = gallery[1];
+  const img3 = gallery[2];
+  const img4 = gallery[3];
+  const img5 = gallery[4];
+
   const artifact = {
-    imageUrl: unit.visualArtifact?.imageUrl || `images/${unit.unitId}.jpg`,
-    title: unit.visualArtifact?.title || "Historical Cartographic or Archaeological Primary Artifact",
-    provenance: unit.visualArtifact?.provenance || "Museum Archive Collection",
-    description: unit.visualArtifact?.description || (unit.content ? unit.content.graphicDescription : "") || "Historical primary visual and archaeological record.",
+    imageUrl: img1.imageUrl,
+    title: img1.title,
+    provenance: img1.provenance,
+    description: img1.caption,
     visualClues: (unit.visualArtifact?.visualClues && unit.visualArtifact.visualClues.length > 0)
       ? unit.visualArtifact.visualClues 
-      : ["Observe the craft materials and techniques used by artisans of this era."]
+      : ["Observe the craft materials, symbols, and artistic techniques used by artisans of this era."]
   };
 
   let html = `
@@ -805,18 +860,21 @@ function renderUnitView() {
             <span class="text-xs font-bold text-slate-400 hidden sm:block">Systemic Historical Analysis</span>
           </div>
 
-          <!-- Embedded Historical Figure in Context -->
+          <!-- Figure 1: Embedded Historical Context Scene -->
           <figure class="mb-8 rounded-2xl overflow-hidden border border-slate-200 bg-slate-900 shadow-md">
             <img 
-              src="${artifact.imageUrl}" 
-              alt="${artifact.title}" 
+              src="${img1.imageUrl}" 
+              alt="${img1.title}" 
               loading="lazy"
               class="w-full max-h-[460px] object-cover bg-slate-950 transition-transform duration-300 hover:scale-[1.01]"
               onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'800\\' height=\\'450\\' viewBox=\\'0 0 800 450\\'%3E%3Crect width=\\'100%25\\' height=\\'100%25\\' fill=\\'%230f172a\\'/%3E%3Ctext x=\\'50%25\\' y=\\'50%25\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' fill=\\'%2394a3b8\\' font-family=\\'sans-serif\\' font-size=\\'20\\'%3E🏛️ Primary Historical Visual Record%3C/text%3E%3C/svg%3E';"
             />
-            <figcaption class="p-3.5 bg-slate-900/95 border-t border-slate-800 text-xs text-slate-300 flex flex-wrap items-center justify-between gap-2">
-              <span class="font-bold text-white">Figure: ${artifact.title}</span>
-              <span class="text-slate-400 font-mono">${artifact.provenance}</span>
+            <figcaption class="p-4 bg-slate-900/95 border-t border-slate-800 text-xs text-slate-300 flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <span class="font-bold text-white text-sm">Figure 1 (Historical Scene): ${img1.title}</span>
+                <p class="text-slate-400 mt-0.5 text-xs">${img1.caption}</p>
+              </div>
+              <span class="text-indigo-400 font-mono text-[11px] bg-slate-800/80 px-2.5 py-1 rounded border border-slate-700">${img1.provenance}</span>
             </figcaption>
           </figure>
 
@@ -847,6 +905,24 @@ function renderUnitView() {
               <span class="font-black uppercase tracking-wider text-amber-800 block mb-1">What is this document?</span>
               ${psContext.purpose} <strong>Context:</strong> ${psContext.authorAndEra}.
             </div>
+
+            <!-- Figure 2: Primary Source Archival Manuscript Document -->
+            <figure class="rounded-2xl overflow-hidden border border-amber-300 bg-slate-900 shadow-md">
+              <img 
+                src="${img2.imageUrl}" 
+                alt="${img2.title}" 
+                loading="lazy"
+                class="w-full max-h-[400px] object-contain bg-slate-950 p-2 transition-transform duration-300 hover:scale-[1.01]"
+                onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'800\\' height=\\'400\\' viewBox=\\'0 0 800 400\\'%3E%3Crect width=\\'100%25\\' height=\\'100%25\\' fill=\\'%231e1b4b\\'/%3E%3Ctext x=\\'50%25\\' y=\\'50%25\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' fill=\\'%23fcd34d\\' font-family=\\'sans-serif\\' font-size=\\'18\\'%3E📜 Primary Archival Document%3C/text%3E%3C/svg%3E';"
+              />
+              <figcaption class="p-3.5 bg-amber-950/95 border-t border-amber-900/80 text-xs text-amber-200 flex flex-wrap items-center justify-between gap-2">
+                <div>
+                  <span class="font-bold text-amber-100 text-sm">Figure 2 (Archival Manuscript): ${img2.title}</span>
+                  <p class="text-amber-300/80 mt-0.5 text-xs">${img2.caption}</p>
+                </div>
+                <span class="text-amber-400 font-mono text-[11px] bg-amber-900/60 px-2 py-0.5 rounded border border-amber-800">${img2.provenance}</span>
+              </figcaption>
+            </figure>
 
             <!-- Original Archival Quote -->
             <blockquote class="italic text-slate-900 text-lg sm:text-xl leading-relaxed font-serif bg-white p-6 rounded-2xl shadow-inner border border-amber-300 my-3">
@@ -891,6 +967,24 @@ function renderUnitView() {
               ${focusContext.purpose}
             </div>
 
+            <!-- Figure 3: Technology, Invention & Law Artifact -->
+            <figure class="rounded-2xl overflow-hidden border border-emerald-300 bg-slate-900 shadow-md">
+              <img 
+                src="${img3.imageUrl}" 
+                alt="${img3.title}" 
+                loading="lazy"
+                class="w-full max-h-[400px] object-contain bg-slate-950 p-2 transition-transform duration-300 hover:scale-[1.01]"
+                onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'800\\' height=\\'400\\' viewBox=\\'0 0 800 400\\'%3E%3Crect width=\\'100%25\\' height=\\'100%25\\' fill=\\'%23064e3b\\'/%3E%3Ctext x=\\'50%25\\' y=\\'50%25\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' fill=\\'%236ee7b7\\' font-family=\\'sans-serif\\' font-size=\\'18\\'%3E⚙️ Technological & Legal Artifact%3C/text%3E%3C/svg%3E';"
+              />
+              <figcaption class="p-3.5 bg-slate-900/95 border-t border-slate-800 text-xs text-slate-300 flex flex-wrap items-center justify-between gap-2">
+                <div>
+                  <span class="font-bold text-emerald-400 text-sm">Figure 3 (Technology & Law): ${img3.title}</span>
+                  <p class="text-slate-400 mt-0.5 text-xs">${img3.caption}</p>
+                </div>
+                <span class="text-slate-400 font-mono text-[11px] bg-slate-800/80 px-2 py-0.5 rounded border border-slate-700">${img3.provenance}</span>
+              </figcaption>
+            </figure>
+
             <!-- Detailed Mechanism -->
             <div class="text-lg text-slate-800 leading-relaxed font-normal bg-emerald-50/30 p-6 rounded-2xl border border-emerald-100">
               <p>${focusContext.details}</p>
@@ -909,59 +1003,125 @@ function renderUnitView() {
         </article>
 
         <!-- ============================================== -->
-        <!-- SECTION 5: VISUAL HISTORY GALLERY & REAL IMAGES -->
+        <!-- SECTION 5: VISUAL HISTORY GALLERY & ARCHIVES -->
         <!-- ============================================== -->
-        <article id="sectionArtifactMap" class="bg-slate-900 text-slate-100 rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-800">
-          <div class="flex items-center justify-between gap-3 mb-6 border-b border-slate-800 pb-4 flex-wrap">
+        <article id="sectionArtifactMap" class="bg-slate-900 text-slate-100 rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-800 space-y-8">
+          <div class="flex items-center justify-between gap-3 border-b border-slate-800 pb-4 flex-wrap">
             <div class="flex items-center gap-3">
-              <span class="w-10 h-10 rounded-2xl bg-slate-800 text-indigo-400 flex items-center justify-center text-xl">🗺️</span>
+              <span class="w-10 h-10 rounded-2xl bg-indigo-900/60 text-indigo-400 flex items-center justify-center text-xl">🏛️</span>
               <div>
-                <span class="text-xs font-mono uppercase tracking-wider text-indigo-400">Primary Visual Record</span>
+                <span class="text-xs font-mono uppercase tracking-wider text-indigo-400">Primary Visual Archives</span>
                 <h3 class="text-2xl font-black text-white tracking-tight">
-                  4. Visual History Gallery: Artifacts & Cartography
+                  4. Visual History Gallery: Cartography & Material Culture
                 </h3>
               </div>
             </div>
-            <span class="text-xs font-mono text-slate-400">${artifact.provenance}</span>
+            <span class="text-xs font-mono text-slate-400">5 Distinct Primary Visual Records</span>
           </div>
 
-          <!-- Embedded Real Image -->
-          <div class="mb-6 rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 flex flex-col items-center">
-            <img 
-              src="${artifact.imageUrl}" 
-              alt="${artifact.title}" 
-              loading="lazy"
-              class="w-full max-h-[520px] object-contain bg-slate-950 p-2 rounded-2xl transition-transform hover:scale-[1.01]"
-              onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'800\\' height=\\'450\\' viewBox=\\'0 0 800 450\\'%3E%3Crect width=\\'100%25\\' height=\\'100%25\\' fill=\\'%23020617\\'/%3E%3Ctext x=\\'50%25\\' y=\\'50%25\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' fill=\\'%2364748b\\' font-family=\\'sans-serif\\' font-size=\\'18\\'%3E🗺️ Historical Artifact Record%3C/text%3E%3C/svg%3E';"
-            />
-            <div class="w-full p-4 bg-slate-950/90 border-t border-slate-800 text-center text-xs text-slate-300 font-mono">
-              <strong>Figure:</strong> ${artifact.title}
+          <!-- Side-by-side 2-Card Grid: Cartography + Archaeological Artifact -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- Card A: Figure 4 - Historical Cartography -->
+            <div class="bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden flex flex-col">
+              <div class="p-3 bg-slate-900 border-b border-slate-800 flex items-center justify-between text-xs">
+                <span class="font-bold text-amber-400 uppercase tracking-wider">Figure 4: Historical Cartography</span>
+                <span class="text-slate-400 font-mono text-[10px]">Territorial Realm</span>
+              </div>
+              <div class="aspect-4/3 bg-slate-950 flex items-center justify-center overflow-hidden">
+                <img 
+                  src="${img4.imageUrl}" 
+                  alt="${img4.title}" 
+                  loading="lazy"
+                  class="w-full h-full object-contain p-2 transition-transform duration-300 hover:scale-105"
+                  onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'800\\' height=\\'500\\' viewBox=\\'0 0 800 500\\'%3E%3Crect width=\\'100%25\\' height=\\'100%25\\' fill=\\'%23020617\\'/%3E%3Ctext x=\\'50%25\\' y=\\'50%25\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' fill=\\'%2364748b\\' font-family=\\'sans-serif\\' font-size=\\'18\\'%3E🗺️ Historical Cartography%3C/text%3E%3C/svg%3E';"
+                />
+              </div>
+              <div class="p-4 bg-slate-900/90 border-t border-slate-800 flex-1 flex flex-col justify-between text-xs space-y-2">
+                <div>
+                  <h4 class="font-bold text-white text-sm mb-1">${img4.title}</h4>
+                  <p class="text-slate-300 leading-relaxed">${img4.caption}</p>
+                </div>
+                <div class="pt-2 border-t border-slate-800 text-[11px] font-mono text-slate-400">
+                  <strong>Provenance:</strong> ${img4.provenance}
+                </div>
+              </div>
+            </div>
+
+            <!-- Card B: Figure 5 - Archaeological Artifact -->
+            <div class="bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden flex flex-col">
+              <div class="p-3 bg-slate-900 border-b border-slate-800 flex items-center justify-between text-xs">
+                <span class="font-bold text-emerald-400 uppercase tracking-wider">Figure 5: Archaeological Artifact</span>
+                <span class="text-slate-400 font-mono text-[10px]">Material Culture</span>
+              </div>
+              <div class="aspect-4/3 bg-slate-950 flex items-center justify-center overflow-hidden">
+                <img 
+                  src="${img5.imageUrl}" 
+                  alt="${img5.title}" 
+                  loading="lazy"
+                  class="w-full h-full object-contain p-2 transition-transform duration-300 hover:scale-105"
+                  onerror="this.onerror=null; this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'800\\' height=\\'500\\' viewBox=\\'0 0 800 500\\'%3E%3Crect width=\\'100%25\\' height=\\'100%25\\' fill=\\'%23020617\\'/%3E%3Ctext x=\\'50%25\\' y=\\'50%25\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' fill=\\'%2364748b\\' font-family=\\'sans-serif\\' font-size=\\'18\\'%3E🏺 Archaeological Artifact%3C/text%3E%3C/svg%3E';"
+                />
+              </div>
+              <div class="p-4 bg-slate-900/90 border-t border-slate-800 flex-1 flex flex-col justify-between text-xs space-y-2">
+                <div>
+                  <h4 class="font-bold text-white text-sm mb-1">${img5.title}</h4>
+                  <p class="text-slate-300 leading-relaxed">${img5.caption}</p>
+                </div>
+                <div class="pt-2 border-t border-slate-800 text-[11px] font-mono text-slate-400">
+                  <strong>Provenance:</strong> ${img5.provenance}
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Unit Visual Archive Strip: All 5 Images in This Unit -->
+          <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800">
+            <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+              <span class="text-xs font-black uppercase tracking-wider text-indigo-400">
+                Unit Visual Archive: 5 Primary Records
+              </span>
+              <span class="text-xs text-slate-400 font-mono">
+                Click any record to inspect in full resolution
+              </span>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+              ${gallery.map((g, idx) => `
+                <a href="${g.imageUrl}" target="_blank" rel="noopener noreferrer" class="group block bg-slate-900 rounded-xl overflow-hidden border border-slate-800 hover:border-indigo-500 transition-all text-left">
+                  <div class="aspect-video bg-slate-950 overflow-hidden relative">
+                    <img 
+                      src="${g.imageUrl}" 
+                      alt="${g.title}" 
+                      loading="lazy" 
+                      class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    />
+                    <span class="absolute top-1 left-1 bg-slate-950/80 text-white text-[10px] font-black px-1.5 py-0.5 rounded">
+                      #${idx + 1}
+                    </span>
+                  </div>
+                  <div class="p-2 text-[11px]">
+                    <div class="font-bold text-slate-200 line-clamp-1 group-hover:text-indigo-400 transition-colors">${g.category}</div>
+                    <div class="text-[10px] text-slate-400 line-clamp-1">${g.title}</div>
+                  </div>
+                </a>
+              `).join("")}
             </div>
           </div>
 
-          <!-- Artifact Description & Analysis -->
-          <div class="space-y-4">
-            <div class="text-sm sm:text-base text-slate-200 leading-relaxed font-mono bg-slate-950 p-5 rounded-2xl border border-slate-800">
-              <span class="text-xs font-bold uppercase tracking-wider text-indigo-400 block mb-2 font-sans">
-                Archaeological & Cartographic Record:
-              </span>
-              ${artifact.description}
-            </div>
-
-            <!-- Visual Clues Guide -->
-            <div class="bg-slate-800/80 p-5 rounded-2xl border border-slate-700">
-              <span class="text-xs font-black uppercase tracking-wider text-emerald-400 block mb-2 font-sans">
-                🔍 Visual Investigation Guide (What to Look For):
-              </span>
-              <ul class="space-y-2 text-xs sm:text-sm text-slate-300 font-sans">
-                ${artifact.visualClues.map(c => `
-                  <li class="flex items-start gap-2">
-                    <span class="text-indigo-400 font-black">•</span>
-                    <span>${c}</span>
-                  </li>
-                `).join("")}
-              </ul>
-            </div>
+          <!-- Visual Clues Guide -->
+          <div class="bg-slate-800/80 p-5 rounded-2xl border border-slate-700">
+            <span class="text-xs font-black uppercase tracking-wider text-emerald-400 block mb-2 font-sans">
+              🔍 Visual Investigation Guide (What to Look For Across All Records):
+            </span>
+            <ul class="space-y-2 text-xs sm:text-sm text-slate-300 font-sans">
+              ${artifact.visualClues.map(c => `
+                <li class="flex items-start gap-2">
+                  <span class="text-indigo-400 font-black">•</span>
+                  <span>${c}</span>
+                </li>
+              `).join("")}
+            </ul>
           </div>
         </article>
 

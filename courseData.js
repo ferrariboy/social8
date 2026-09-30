@@ -2,15 +2,7 @@
  * British Columbia Grade 8 Social Studies Discovery Portal
  * Comprehensive Curriculum Master Dataset (c. 600 CE - 1750 CE)
  * 8 Modules | 64 Complete In-Depth Study Units | 256 Evaluation Assessments
- * 
- * Features per Unit:
- * - 200% expanded historical context (background, primary source, specialized focus, artifact description)
- * - Plain English breakdown for 13-year-old / Grade 8 learners (The Big Idea, Modern Analogy, Key Takeaways)
- * - Primary Source Deep Dive with complete context, author background, and line-by-line translation
- * - Specialized Focus on inventions, laws, tools, and breakthroughs with real-world impact
- * - Visual History Gallery with verified high-resolution Wikimedia Commons historical artifacts & visual analysis clues
- * - Verified YouTube video lessons with direct fallback links
- * - 4-question challenging practice evaluations with analytical explanations
+ * 5 Unique Historical Images Per Unit (320 Distinct Visual Records Total)
  */
 
 const CURRICULUM_DATA = [
@@ -50,7 +42,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Wergild substituted financial compensation for violent revenge, keeping fragile early medieval communities from destroying themselves through continuous clan warfare."
         },
         "visualArtifact": {
-          "imageUrl": "images/M1-U1.jpg",
+          "imageUrl": "images/M1-U1-1.jpg",
           "title": "Coronation of Charlemagne as Holy Roman Emperor (800 CE)",
           "provenance": "Maximilianeum Historical Collection, Munich",
           "visualClues": [
@@ -105,6 +97,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Germanic kings ruled through personal loyalty networks, rewarding warriors with land grants, livestock, and battlefield plunder in exchange for military service."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M1-U1-1",
+            "imageUrl": "images/M1-U1-1.jpg",
+            "title": "Fragmentation of Western Europe and the Fall of Rome (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "When the Roman Empire fell apart in the late 400s CE, Western Europe lost its central government, standing army, paved highways, and unified currency. In its place arose competing regional Germanic kingdoms where populations fled cities to survive in fortified rural villages.",
+            "provenance": "Maximilianeum Historical Collection, Munich"
+          },
+          {
+            "slot": 2,
+            "id": "M1-U1-2",
+            "imageUrl": "images/M1-U1-2.jpg",
+            "title": "Bishop Gregory of Tours - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Gregory is lamenting that schools and reading have completely vanished across Gaul (modern France), so almost nobody can read or write about what is happening.",
+            "provenance": "Bishop Gregory of Tours, writing around 590 CE during the early Merovingian Fran"
+          },
+          {
+            "slot": 3,
+            "id": "M1-U1-3",
+            "imageUrl": "images/M1-U1-3.jpg",
+            "title": "Wergild & The Mechanics of Germanic Customary Law",
+            "category": "Technology, Invention & Law",
+            "caption": "Wergild substituted financial compensation for violent revenge, keeping fragile early medieval communities from destroying themselves through continuous clan warfare.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M1-U1-4",
+            "imageUrl": "images/M1-U1-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Fragmentation of Western Europe",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M1-U1-5",
+            "imageUrl": "images/M1-U1-5.jpg",
+            "title": "Coronation of Charlemagne as Holy Roman Emperor",
+            "category": "Archaeological Artifact",
+            "caption": "Cartographic Reconstruction: The Territorial Fragmentation of Post-Roman Western Europe (c. 600 CE). The map highlights the partitioned real",
+            "provenance": "Maximilianeum Historical Collection, Munich"
+          }
         ]
       },
       {
@@ -140,7 +179,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Without Carolingian Minuscule, ancient Greek and Roman philosophy would have been lost to transcription errors, and modern books would not have lowercase letters or spaces."
         },
         "visualArtifact": {
-          "imageUrl": "images/M1-U2.jpg",
+          "imageUrl": "images/M1-U2-1.jpg",
           "title": "Silver Denier Coin of Charlemagne (Minted at Mainz, 812-814 CE)",
           "provenance": "Cabinet des Medailles, Bibliotheque nationale de France, Paris",
           "visualClues": [
@@ -195,6 +234,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Einhard noted that Charlemagne practiced diligently with wax tablets under his pillow to form letters, but because he began late in life, he achieved poor success in writing."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M1-U2-1",
+            "imageUrl": "images/M1-U2-1.jpg",
+            "title": "Rise of the Franks and the Carolingian Empire (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Charlemagne (Charles the Great) unified most of modern France, Germany, and northern Italy into the Carolingian Empire. Crowned Emperor by Pope Leo III on Christmas Day 800 CE, he built schools, standardized handwriting, and sent royal inspectors to enforce his laws.",
+            "provenance": "Cabinet des Medailles, Bibliotheque nationale de France, Paris"
+          },
+          {
+            "slot": 2,
+            "id": "M1-U2-2",
+            "imageUrl": "images/M1-U2-2.jpg",
+            "title": "Einhard - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Charlemagne spoke Latin fluently and promoted learning, but even though he kept writing tablets under his pillow, he struggled to learn how to write letters because he started as an adult.",
+            "provenance": "Einhard, a Frankish scholar and courtier who lived directly in Charlemagne's hou"
+          },
+          {
+            "slot": 3,
+            "id": "M1-U2-3",
+            "imageUrl": "images/M1-U2-3.jpg",
+            "title": "Carolingian Minuscule & Administrative Inspection (Missi Dominici)",
+            "category": "Technology, Invention & Law",
+            "caption": "Without Carolingian Minuscule, ancient Greek and Roman philosophy would have been lost to transcription errors, and modern books would not have lowercase letters or spaces.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M1-U2-4",
+            "imageUrl": "images/M1-U2-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Rise of the Franks",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M1-U2-5",
+            "imageUrl": "images/M1-U2-5.jpg",
+            "title": "Silver Denier Coin of Charlemagne",
+            "category": "Archaeological Artifact",
+            "caption": "Manuscript Illumination: Carolingian Gospel Book with Carolingian Minuscule Script (c. 800 CE). The page shows disciplined, elegant lowercas",
+            "provenance": "Cabinet des Medailles, Bibliotheque nationale de France, Paris"
+          }
         ]
       },
       {
@@ -230,7 +316,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This decentralized power across thousands of fortified local castles, making it nearly impossible for one king to tyrannize the entire country without noble consent."
         },
         "visualArtifact": {
-          "imageUrl": "images/M1-U3.jpg",
+          "imageUrl": "images/M1-U3-1.jpg",
           "title": "Peasants Plowing Manorial Strip Fields Below the Feudal Castle (March, c. 1412)",
           "provenance": "Les Tres Riches Heures du Duc de Berry, Musee Conde, Chantilly",
           "visualClues": [
@@ -285,6 +371,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Because vassals could accept fiefs from multiple lords, warfare between those lords forced vassals to choose which oath to break."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M1-U3-1",
+            "imageUrl": "images/M1-U3-1.jpg",
+            "title": "Feudal Hierarchy, Lordship, and the Oath of Fealty (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Feudalism was a medieval system of mutual promises. Kings owned all the land but gave big pieces (fiefs) to noble lords in exchange for military loyalty. Lords gave smaller pieces to knights who promised to fight, while peasant serfs did all the farming in exchange for safety.",
+            "provenance": "Les Tres Riches Heures du Duc de Berry, Musee Conde, Chantilly"
+          },
+          {
+            "slot": 2,
+            "id": "M1-U3-2",
+            "imageUrl": "images/M1-U3-2.jpg",
+            "title": "Galbert of Bruges - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: The passage describes the physical ceremony of becoming a vassal: joining hands, swearing unconditional loyalty, and sealing the pact with a symbolic kiss of peace.",
+            "provenance": "Galbert of Bruges, a Flemish notary and cleric writing in Flanders in 1127 CE."
+          },
+          {
+            "slot": 3,
+            "id": "M1-U3-3",
+            "imageUrl": "images/M1-U3-3.jpg",
+            "title": "Subinfeudation & The Feudal Military Contract",
+            "category": "Technology, Invention & Law",
+            "caption": "This decentralized power across thousands of fortified local castles, making it nearly impossible for one king to tyrannize the entire country without noble consent.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M1-U3-4",
+            "imageUrl": "images/M1-U3-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Feudal Hierarchy, Lordship,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M1-U3-5",
+            "imageUrl": "images/M1-U3-5.jpg",
+            "title": "Peasants Plowing Manorial Strip Fields Below the Feudal Castle",
+            "category": "Archaeological Artifact",
+            "caption": "Medieval Woodcut: The Ceremony of Homage and Investiture (13th Century). A kneeling vassal in knightly tunic places his clasped hands within",
+            "provenance": "Les Tres Riches Heures du Duc de Berry, Musee Conde, Chantilly"
+          }
         ]
       },
       {
@@ -320,7 +453,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This farming revolution doubled food output across northern Europe, sparking population growth and freeing up people to become blacksmiths, stonemasons, and scholars."
         },
         "visualArtifact": {
-          "imageUrl": "images/M1-U4.jpg",
+          "imageUrl": "images/M1-U4-1.jpg",
           "title": "Peasants Plowing with Heavy Wheeled Carruca from the Luttrell Psalter (c. 1330)",
           "provenance": "British Library, London (Add MS 42130)",
           "visualClues": [
@@ -375,6 +508,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "The carruca used an iron blade and moldboard to slice through and turn over the dense, wet clay soils of northern Europe, unlocking vast new farmland."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M1-U4-1",
+            "imageUrl": "images/M1-U4-1.jpg",
+            "title": "Manorial Economy and the Daily Life of Serfs (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "While feudalism was the political and military system for nobles, manorialism was the economic system for peasants. Most Europeans were serfs: peasant farmers bound to the lord's estate who surrendered unpaid field labor in exchange for farmland and castle protection.",
+            "provenance": "British Library, London (Add MS 42130)"
+          },
+          {
+            "slot": 2,
+            "id": "M1-U4-2",
+            "imageUrl": "images/M1-U4-2.jpg",
+            "title": "Manorial bailiff and legal steward at Durnford Manor - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: This document lists John's rent: he must do unpaid manual labor 3 days a week for the lord, plow an acre of land, give hens and eggs on holidays, and pay a fine if his daughter gets married.",
+            "provenance": "Manorial bailiff and legal steward at Durnford Manor, England (13th Century)."
+          },
+          {
+            "slot": 3,
+            "id": "M1-U4-3",
+            "imageUrl": "images/M1-U4-3.jpg",
+            "title": "The Carruca Heavy Plow & Three-Field Crop Rotation",
+            "category": "Technology, Invention & Law",
+            "caption": "This farming revolution doubled food output across northern Europe, sparking population growth and freeing up people to become blacksmiths, stonemasons, and scholars.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M1-U4-4",
+            "imageUrl": "images/M1-U4-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Manorial Economy",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M1-U4-5",
+            "imageUrl": "images/M1-U4-5.jpg",
+            "title": "Peasants Plowing with Heavy Wheeled Carruca from the Luttrell Psalter",
+            "category": "Archaeological Artifact",
+            "caption": "Diagram: The Layout of a Medieval Manor and Three-Field System. The diagram displays the central manor house and church, flanked by the Autu",
+            "provenance": "British Library, London (Add MS 42130)"
+          }
         ]
       },
       {
@@ -410,7 +590,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This established the fundamental Western concept that the power of governments has legal limits and cannot dictate religious or spiritual conscience."
         },
         "visualArtifact": {
-          "imageUrl": "images/M1-U5.jpg",
+          "imageUrl": "images/M1-U5-1.jpg",
           "title": "Fresco of Pope Innocent III at the Sacro Speco, Subiaco (c. 1219 CE)",
           "provenance": "Monastery of San Benedetto, Subiaco, Italy",
           "visualClues": [
@@ -465,6 +645,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "After being excommunicated and facing a rebellion by his German dukes, Henry IV made a desperate winter pilgrimage to Canossa to beg Pope Gregory VII for forgiveness."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M1-U5-1",
+            "imageUrl": "images/M1-U5-1.jpg",
+            "title": "Medieval Catholic Church, Papacy, and Canon Law (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "In medieval Western Europe, the Roman Catholic Church was more powerful than any single king or queen. Led by the Pope, the Church collected its own continental taxes (tithes), operated its own courts and legal system (Canon Law), and held the keys to eternal salvation through the Seven Sacraments.",
+            "provenance": "Monastery of San Benedetto, Subiaco, Italy"
+          },
+          {
+            "slot": 2,
+            "id": "M1-U5-2",
+            "imageUrl": "images/M1-U5-2.jpg",
+            "title": "Pope Gregory VII - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: The Pope is declaring that only he has the power to appoint and fire kings, that all world leaders must kiss his feet, and that no human court on Earth has the right to put the Pope on trial.",
+            "provenance": "Pope Gregory VII, issued in Rome in 1075 CE during the Investiture Controversy."
+          },
+          {
+            "slot": 3,
+            "id": "M1-U5-3",
+            "imageUrl": "images/M1-U5-3.jpg",
+            "title": "Canon Law, Lay Investiture & The Concordat of Worms",
+            "category": "Technology, Invention & Law",
+            "caption": "This established the fundamental Western concept that the power of governments has legal limits and cannot dictate religious or spiritual conscience.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M1-U5-4",
+            "imageUrl": "images/M1-U5-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Medieval Catholic Church, Papacy,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M1-U5-5",
+            "imageUrl": "images/M1-U5-5.jpg",
+            "title": "Fresco of Pope Innocent III at the Sacro Speco",
+            "category": "Archaeological Artifact",
+            "caption": "Historical Fresco: Emperor Henry IV at the Castle of Canossa (1077 CE). The German emperor kneels barefoot in the snow outside the fortress ",
+            "provenance": "Monastery of San Benedetto, Subiaco, Italy"
+          }
         ]
       },
       {
@@ -500,7 +727,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Because parchment was so durable, these manuscripts have survived over 1,000 years in pristine condition, preserving ancient human history into the modern era."
         },
         "visualArtifact": {
-          "imageUrl": "images/M1-U6.jpg",
+          "imageUrl": "images/M1-U6-1.jpg",
           "title": "Benedictine Monk Copying Manuscripts in a Medieval Scriptorium",
           "provenance": "Royal Library of Belgium, Brussels (MS 9015)",
           "visualClues": [
@@ -555,6 +782,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Without the tireless hand-copying of manuscripts in monastic scriptoria, the majority of ancient Greek and Roman philosophy, history, and science would have been lost."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M1-U6-1",
+            "imageUrl": "images/M1-U6-1.jpg",
+            "title": "Monastic Orders, Scriptoria, and the Preservation of Knowledge (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Monasteries were isolated communities where monks and nuns dedicated their lives to prayer, physical work, and study under strict rules like the Rule of Saint Benedict. In rooms called scriptoria, monks spent years copying ancient books by hand onto animal skins, preserving Greek, Roman, and Christian knowledge.",
+            "provenance": "Royal Library of Belgium, Brussels (MS 9015)"
+          },
+          {
+            "slot": 2,
+            "id": "M1-U6-2",
+            "imageUrl": "images/M1-U6-2.jpg",
+            "title": "An anonymous Benedictine scribe writing in a European scriptorium around 1100 CE. - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: The monk is telling readers to be gentle with the book because copying it was brutal physical work that destroyed his eyesight, cramped his fingers, and made his entire body ache for months.",
+            "provenance": "An anonymous Benedictine scribe writing in a European scriptorium around 1100 CE"
+          },
+          {
+            "slot": 3,
+            "id": "M1-U6-3",
+            "imageUrl": "images/M1-U6-3.jpg",
+            "title": "Parchment, Iron Gall Ink & The Art of Illumination",
+            "category": "Technology, Invention & Law",
+            "caption": "Because parchment was so durable, these manuscripts have survived over 1,000 years in pristine condition, preserving ancient human history into the modern era.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M1-U6-4",
+            "imageUrl": "images/M1-U6-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Monastic Orders, Scriptoria,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M1-U6-5",
+            "imageUrl": "images/M1-U6-5.jpg",
+            "title": "Benedictine Monk Copying Manuscripts in a Medieval Scriptorium",
+            "category": "Archaeological Artifact",
+            "caption": "Manuscript Miniature: A Benedictine Monk Working at an Inclined Desk in a Scriptorium (c. 1200 CE). The monk holds an inkhorn in his left ha",
+            "provenance": "Royal Library of Belgium, Brussels (MS 9015)"
+          }
         ]
       },
       {
@@ -590,7 +864,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "These stone strongholds made local defense supreme, until gunpowder cannons in the 1400s made stone walls vulnerable to artillery bombardment."
         },
         "visualArtifact": {
-          "imageUrl": "images/M1-U7.jpg",
+          "imageUrl": "images/M1-U7-1.jpg",
           "title": "Krak des Chevaliers: Concentric Crusader Castle in Syria (12th Century)",
           "provenance": "UNESCO World Heritage Site, Homs Governorate, Syria",
           "visualClues": [
@@ -645,6 +919,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "A bypassed castle left enemy knights at the army's rear who could ambush messengers, destroy supply wagons, and starve the invading army."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M1-U7-1",
+            "imageUrl": "images/M1-U7-1.jpg",
+            "title": "Medieval Castles, Siege Warfare, and the Chivalric Code (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Castles were not just homes for royalty; they were lethal military fortresses built to control surrounding territory. Attacking a stone castle required massive siege weapons like trebuchets and battering rams, while knights were expected to follow Chivalry: a code of martial honor and Christian conduct.",
+            "provenance": "UNESCO World Heritage Site, Homs Governorate, Syria"
+          },
+          {
+            "slot": 2,
+            "id": "M1-U7-2",
+            "imageUrl": "images/M1-U7-2.jpg",
+            "title": "An anonymous French trouvere poet - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Roland is the ultimate chivalric warrior: brave, unstoppable, and loyal to Charlemagne. Even when his skull is literally bursting from blowing his war horn, he refuses to retreat.",
+            "provenance": "An anonymous French trouvere poet, composed around 1100 CE at the time of the Fi"
+          },
+          {
+            "slot": 3,
+            "id": "M1-U7-3",
+            "imageUrl": "images/M1-U7-3.jpg",
+            "title": "Concentric Castle Architecture & The Physics of the Trebuchet",
+            "category": "Technology, Invention & Law",
+            "caption": "These stone strongholds made local defense supreme, until gunpowder cannons in the 1400s made stone walls vulnerable to artillery bombardment.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M1-U7-4",
+            "imageUrl": "images/M1-U7-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Medieval Castles, Siege Warfare,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M1-U7-5",
+            "imageUrl": "images/M1-U7-5.jpg",
+            "title": "Krak des Chevaliers: Concentric Crusader Castle in Syria",
+            "category": "Archaeological Artifact",
+            "caption": "Architectural Cutaway: A Concentric Stone Castle under Siege (13th Century). The illustration depicts an outer moat with drawbridge, murder ",
+            "provenance": "UNESCO World Heritage Site, Homs Governorate, Syria"
+          }
         ]
       },
       {
@@ -680,7 +1001,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "It ended the idea of absolute divine right, proving that leaders are public servants who are accountable to the law just like everyday citizens."
         },
         "visualArtifact": {
-          "imageUrl": "images/M1-U8.jpg",
+          "imageUrl": "images/M1-U8-1.jpg",
           "title": "The Magna Carta Exemplar (June 1215, British Library, London)",
           "provenance": "British Library Cotton Collection, London (Cotton MS Augustus II.106)",
           "visualClues": [
@@ -735,6 +1056,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Clause 61 empowered an elected committee of 25 barons to monitor the king and seize royal property if he violated any term of the agreement."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M1-U8-1",
+            "imageUrl": "images/M1-U8-1.jpg",
+            "title": "Magna Carta  and the Birth of Constitutional Limits (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "In 1215, English barons rebelled against the tyrannical King John and forced him to sign the Magna Carta (Great Charter) at Runnymede. For the first time in European history, it established the principle that even the King is not above the law, creating the ancestor of our modern rights, fair trials, and due process.",
+            "provenance": "British Library Cotton Collection, London (Cotton MS Augustus II.106)"
+          },
+          {
+            "slot": 2,
+            "id": "M1-U8-2",
+            "imageUrl": "images/M1-U8-2.jpg",
+            "title": "Agreed upon by King John of England and his rebel barons at Runnymede meadow in June 1215. - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: No government can arrest you, lock you up, or take your property unless you have been found guilty under the law by a fair trial of your peers. Justice can never be sold for a bribe or delayed.",
+            "provenance": "Agreed upon by King John of England and his rebel barons at Runnymede meadow in "
+          },
+          {
+            "slot": 3,
+            "id": "M1-U8-3",
+            "imageUrl": "images/M1-U8-3.jpg",
+            "title": "Clause 39, Due Process & The Enforcement Council of 25 Barons",
+            "category": "Technology, Invention & Law",
+            "caption": "It ended the idea of absolute divine right, proving that leaders are public servants who are accountable to the law just like everyday citizens.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M1-U8-4",
+            "imageUrl": "images/M1-U8-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Magna Carta",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M1-U8-5",
+            "imageUrl": "images/M1-U8-5.jpg",
+            "title": "Magna Carta Exemplar",
+            "category": "Archaeological Artifact",
+            "caption": "Historical Document: The Cotton MS Augustus II.106 Exemplar of the Magna Carta (1215 CE). Written in dense Latin iron gall ink on a single s",
+            "provenance": "British Library Cotton Collection, London (Cotton MS Augustus II.106)"
+          }
         ]
       }
     ]
@@ -775,7 +1143,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "These two innovations allowed Constantinople to withstand dozens of massive foreign sieges, protecting Eastern Roman knowledge, law, and wealth for 1,100 years."
         },
         "visualArtifact": {
-          "imageUrl": "images/M2-U9.jpg",
+          "imageUrl": "images/M2-U9-1.jpg",
           "title": "The Hagia Sophia (Church of Holy Wisdom), Istanbul, Turkey",
           "provenance": "Constructed 532-537 CE under Emperor Justinian I, Istanbul",
           "visualClues": [
@@ -830,6 +1198,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "The Byzantine Empire was not a separate new state to its inhabitants; it was the uninterrupted Eastern Roman Empire, maintaining Roman legal institutions, citizenship, and imperial titles."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M2-U9-1",
+            "imageUrl": "images/M2-U9-1.jpg",
+            "title": "Byzantium: The New Rome and the Fortress of Constantinople (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "While Western Europe was broken into small rural kingdoms, the Eastern Roman Empire survived as the Byzantine Empire for another thousand years. Its capital, Constantinople, was the richest and most heavily fortified metropolis in the medieval Western world.",
+            "provenance": "Constructed 532-537 CE under Emperor Justinian I, Istanbul"
+          },
+          {
+            "slot": 2,
+            "id": "M2-U9-2",
+            "imageUrl": "images/M2-U9-2.jpg",
+            "title": "Procopius of Caesarea - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Procopius is awestruck by the Hagia Sophia cathedral, saying its massive unsupported dome is so magnificent and bright that it looks like it is dangling from heaven on a golden chain.",
+            "provenance": "Procopius of Caesarea, court historian during the reign of Emperor Justinian I ("
+          },
+          {
+            "slot": 3,
+            "id": "M2-U9-3",
+            "imageUrl": "images/M2-U9-3.jpg",
+            "title": "The Theodosian Walls & Greek Fire (Secret Incendiary Weapon)",
+            "category": "Technology, Invention & Law",
+            "caption": "These two innovations allowed Constantinople to withstand dozens of massive foreign sieges, protecting Eastern Roman knowledge, law, and wealth for 1,100 years.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M2-U9-4",
+            "imageUrl": "images/M2-U9-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Byzantium: The New Rome",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M2-U9-5",
+            "imageUrl": "images/M2-U9-5.jpg",
+            "title": "Hagia Sophia",
+            "category": "Archaeological Artifact",
+            "caption": "Architectural Cross-Section: The Tripartite Theodosian Land Walls of Constantinople (c. 450 CE). The diagram illustrates the deep external m",
+            "provenance": "Constructed 532-537 CE under Emperor Justinian I, Istanbul"
+          }
         ]
       },
       {
@@ -865,7 +1280,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This legal code forms the foundation of modern civil law systems in Quebec, France, Germany, Latin America, and Japan, establishing the principle that the accused is innocent until proven guilty."
         },
         "visualArtifact": {
-          "imageUrl": "images/M2-U10.jpg",
+          "imageUrl": "images/M2-U10-1.jpg",
           "title": "Mosaic of Emperor Justinian and His Imperial Court (San Vitale, Ravenna)",
           "provenance": "Completed c. 547 CE, Basilica of San Vitale, Ravenna, Italy",
           "visualClues": [
@@ -920,6 +1335,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "General Belisarius was Justinian's primary commander, reconquering North Africa from the Vandals and parts of Italy from the Ostrogoths."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M2-U10-1",
+            "imageUrl": "images/M2-U10-1.jpg",
+            "title": "Justinian, Theodora, and the Corpus Juris Civilis (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Emperor Justinian I and his brilliant co-ruler, Empress Theodora, led Byzantium at its height. Justinian reconquered parts of Italy and North Africa, built the Hagia Sophia, and reorganized centuries of chaotic Roman laws into the 'Corpus Juris Civilis' (Code of Justinian) - the foundation of modern legal systems across the world.",
+            "provenance": "Completed c. 547 CE, Basilica of San Vitale, Ravenna, Italy"
+          },
+          {
+            "slot": 2,
+            "id": "M2-U10-2",
+            "imageUrl": "images/M2-U10-2.jpg",
+            "title": "Procopius of Caesarea - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Theodora tells Justinian that running away like a coward is shameful, and that she would rather die bravely wearing her royal purple imperial robes than live in exile as a nobody.",
+            "provenance": "Procopius of Caesarea, writing around 550 CE about the Nika Riots of 532 CE."
+          },
+          {
+            "slot": 3,
+            "id": "M2-U10-3",
+            "imageUrl": "images/M2-U10-3.jpg",
+            "title": "The Corpus Juris Civilis (The Justinian Code)",
+            "category": "Technology, Invention & Law",
+            "caption": "This legal code forms the foundation of modern civil law systems in Quebec, France, Germany, Latin America, and Japan, establishing the principle that the accused is innocent until proven guilty.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M2-U10-4",
+            "imageUrl": "images/M2-U10-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Justinian, Theodora,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M2-U10-5",
+            "imageUrl": "images/M2-U10-5.jpg",
+            "title": "Mosaic of Emperor Justinian and His Imperial Court",
+            "category": "Archaeological Artifact",
+            "caption": "Mosaic Composition: Emperor Justinian I and Empress Theodora with Their Retinue (c. 547 CE), Basilica of San Vitale, Ravenna. Justinian hold",
+            "provenance": "Completed c. 547 CE, Basilica of San Vitale, Ravenna, Italy"
+          }
         ]
       },
       {
@@ -955,7 +1417,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "By protecting non-Muslim minorities through the Dhimmi system, early Islamic rulers maintained social stability and incorporated skilled Christian, Jewish, and Persian scholars into imperial governance."
         },
         "visualArtifact": {
-          "imageUrl": "images/M2-U11.jpg",
+          "imageUrl": "images/M2-U11-1.jpg",
           "title": "Illuminated Quranic Manuscript Page with Gold Leaf and Calligraphy",
           "provenance": "Islamic Calligraphic Collection, c. 1300 CE",
           "visualClues": [
@@ -1010,6 +1472,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "The Byzantine and Sasanian Empires had fought a devastating war against each other from 602 to 628 CE, leaving both empires economically exhausted and their border populations alienated."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M2-U11-1",
+            "imageUrl": "images/M2-U11-1.jpg",
+            "title": "Rise of Islam, the Arabian Peninsula, and the Early Caliphates (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "In the early 600s CE, the Prophet Muhammad united the nomadic and trading tribes of the Arabian Peninsula under Islam. Following his death, early Caliphates expanded rapidly, creating an empire stretching from Spain to India within a century, united by the Arabic language and trade.",
+            "provenance": "Islamic Calligraphic Collection, c. 1300 CE"
+          },
+          {
+            "slot": 2,
+            "id": "M2-U11-2",
+            "imageUrl": "images/M2-U11-2.jpg",
+            "title": "Attributed to Caliph Umar I or early Umayyad legal scholars - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Non-Muslims (Christians and Jews) agreed to pay a tax called the jizya and obey civil laws in exchange for the Muslim government protecting their lives, churches, and freedom to worship.",
+            "provenance": "Attributed to Caliph Umar I or early Umayyad legal scholars, 7th-8th century CE."
+          },
+          {
+            "slot": 3,
+            "id": "M2-U11-3",
+            "imageUrl": "images/M2-U11-3.jpg",
+            "title": "The Five Pillars & The Dhimmi Legal Framework",
+            "category": "Technology, Invention & Law",
+            "caption": "By protecting non-Muslim minorities through the Dhimmi system, early Islamic rulers maintained social stability and incorporated skilled Christian, Jewish, and Persian scholars into imperial governance.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M2-U11-4",
+            "imageUrl": "images/M2-U11-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Rise of Islam, the Arabian Peninsula,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M2-U11-5",
+            "imageUrl": "images/M2-U11-5.jpg",
+            "title": "Illuminated Quranic Manuscript Page with Gold Leaf and Calligraphy",
+            "category": "Archaeological Artifact",
+            "caption": "Manuscript Page: Early Kufic Calligraphy from a Ninth-Century Quran. The parchment features bold, horizontal geometric script in dark carbon",
+            "provenance": "Islamic Calligraphic Collection, c. 1300 CE"
+          }
         ]
       },
       {
@@ -1045,7 +1554,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "These breakthroughs replaced superstition with empirical testing: algebra made modern engineering possible, while Ibn Sina proved that diseases spread through contagious microbes and contaminated water."
         },
         "visualArtifact": {
-          "imageUrl": "images/M2-U12.jpg",
+          "imageUrl": "images/M2-U12-1.jpg",
           "title": "Brass Astrolabe Designed by Islamic Astronomer Al-Biruni",
           "provenance": "Astronomical Scientific Instrument, Islamic Golden Age, c. 1000-1200 CE",
           "visualClues": [
@@ -1100,6 +1609,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Ibn Sina's Canon of Medicine synthesized clinical observations, pharmacology, and anatomy, establishing systematic diagnosis and quarantine protocols that guided European and Middle Eastern medicine for centuries."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M2-U12-1",
+            "imageUrl": "images/M2-U12-1.jpg",
+            "title": "Islamic Golden Age: Science, Medicine, and Mathematics (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "During the Abbasid Caliphate, scholars in Baghdad gathered texts from Greece, India, and Persia to translate and expand them at the 'House of Wisdom'. Muslim scientists invented algebra, pioneered modern optics, revolutionized surgery, and mapped the stars while Western Europe was in the early Middle Ages.",
+            "provenance": "Astronomical Scientific Instrument, Islamic Golden Age, c. 1000-1200 CE"
+          },
+          {
+            "slot": 2,
+            "id": "M2-U12-2",
+            "imageUrl": "images/M2-U12-2.jpg",
+            "title": "Muhammad ibn Musa al-Khwarizmi - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Al-Khwarizmi explains that he invented algebra to solve practical everyday problems, such as calculating trade profits, dividing family inheritances fairly, and surveying farm boundaries.",
+            "provenance": "Muhammad ibn Musa al-Khwarizmi, Persian mathematician working at the House of Wi"
+          },
+          {
+            "slot": 3,
+            "id": "M2-U12-3",
+            "imageUrl": "images/M2-U12-3.jpg",
+            "title": "Algebra ('Al-Jabr') & Ibn Sina's Medical Encyclopedia",
+            "category": "Technology, Invention & Law",
+            "caption": "These breakthroughs replaced superstition with empirical testing: algebra made modern engineering possible, while Ibn Sina proved that diseases spread through contagious microbes and contaminated water.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M2-U12-4",
+            "imageUrl": "images/M2-U12-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Islamic Golden Age: Science, Medicine,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M2-U12-5",
+            "imageUrl": "images/M2-U12-5.jpg",
+            "title": "Brass Astrolabe Designed by Islamic Astronomer Al-Biruni",
+            "category": "Archaeological Artifact",
+            "caption": "Scientific Diagram: Anatomical Eye Diagram and Optical Mechanics from Ibn al-Haytham's Book of Optics (Kitab al-Manazir, c. 1021 CE). The ma",
+            "provenance": "Astronomical Scientific Instrument, Islamic Golden Age, c. 1000-1200 CE"
+          }
         ]
       },
       {
@@ -1135,7 +1691,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This split not only divided religious doctrine but also determined whether future nations (like Russia, Greece, and Serbia) looked east toward Constantinople or west toward Rome and Western Europe."
         },
         "visualArtifact": {
-          "imageUrl": "images/M2-U13.jpg",
+          "imageUrl": "images/M2-U13-1.jpg",
           "title": "Byzantine Mosaic of Christ Pantocrator (Deësis Mosaic, Hagia Sophia)",
           "provenance": "South Gallery of Hagia Sophia, Constantinople, c. 1261 CE",
           "visualClues": [
@@ -1190,6 +1746,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "The Western Roman Catholic Church conducted its liturgy and administration in Latin, while the Eastern Orthodox Church operated in Greek."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M2-U13-1",
+            "imageUrl": "images/M2-U13-1.jpg",
+            "title": "Great Schism of 1054: Roman Catholicism vs. Eastern Orthodoxy (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "In 1054 CE, centuries of political rivalry and theological arguments culminated in the 'Great Schism', permanently splitting the Christian Church into two branches: the Roman Catholic Church in the West (led by the Pope in Rome) and the Eastern Orthodox Church in the East (led by the Patriarch of Constantinople).",
+            "provenance": "South Gallery of Hagia Sophia, Constantinople, c. 1261 CE"
+          },
+          {
+            "slot": 2,
+            "id": "M2-U13-2",
+            "imageUrl": "images/M2-U13-2.jpg",
+            "title": "Cardinal Humbert of Silva Candida - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Cardinal Humbert curses the Patriarch of Constantinople, banishing him from the Church and telling him he will burn with the devil unless he bows to the Pope's authority.",
+            "provenance": "Cardinal Humbert of Silva Candida, papal envoy representing Pope Leo IX (July 16"
+          },
+          {
+            "slot": 3,
+            "id": "M2-U13-3",
+            "imageUrl": "images/M2-U13-3.jpg",
+            "title": "The Filioque Dispute & Competing Concepts of Religious Authority",
+            "category": "Technology, Invention & Law",
+            "caption": "This split not only divided religious doctrine but also determined whether future nations (like Russia, Greece, and Serbia) looked east toward Constantinople or west toward Rome and Western Europe.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M2-U13-4",
+            "imageUrl": "images/M2-U13-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Great Schism of 1054: Roman Catholicism vs. Eastern Orthodoxy",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M2-U13-5",
+            "imageUrl": "images/M2-U13-5.jpg",
+            "title": "Byzantine Mosaic of Christ Pantocrator",
+            "category": "Archaeological Artifact",
+            "caption": "Comparative Liturgical Icon: Christ Pantocrator Mosaic in the Apse of Hagia Sophia. Christ is depicted in traditional Byzantine Orthodox ico",
+            "provenance": "South Gallery of Hagia Sophia, Constantinople, c. 1261 CE"
+          }
         ]
       },
       {
@@ -1225,7 +1828,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "These commercial inventions allowed goods, books, and ideas to move safely across thousands of kilometers from Spain to China, knitting Afro-Eurasia into a single interconnected economy."
         },
         "visualArtifact": {
-          "imageUrl": "images/M2-U14.jpg",
+          "imageUrl": "images/M2-U14-1.jpg",
           "title": "The Hypostyle Prayer Hall of the Great Mosque of Cordoba (Mezquita)",
           "provenance": "Constructed 785-987 CE under the Umayyad Caliphate of Cordoba, Spain",
           "visualClues": [
@@ -1280,6 +1883,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Khusraw recorded that merchants caught cheating or lying were publicly humiliated by being mounted on a camel and paraded through the bazaar to deter fraudulent business practices."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M2-U14-1",
+            "imageUrl": "images/M2-U14-1.jpg",
+            "title": "Islamic Architecture, Trade Networks, and the Grand Bazaars (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Islamic merchants developed vast trading networks across the Mediterranean, the Sahara, and the Indian Ocean, protected by standardized contracts and credit notes (checks). In bustling cities like Cairo and Baghdad, grand covered bazaars (suqs) and breathtaking mosques with geometric tilework became the beating hearts of urban life.",
+            "provenance": "Constructed 785-987 CE under the Umayyad Caliphate of Cordoba, Spain"
+          },
+          {
+            "slot": 2,
+            "id": "M2-U14-2",
+            "imageUrl": "images/M2-U14-2.jpg",
+            "title": "Nasir Khusraw - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Nasir Khusraw describes how enormous and wealthy the markets of Cairo were, noting that shopkeepers were punished with public humiliation if they cheated customers or lied about product quality.",
+            "provenance": "Nasir Khusraw, Persian scholar, traveler, and poet writing in 1050 CE."
+          },
+          {
+            "slot": 3,
+            "id": "M2-U14-3",
+            "imageUrl": "images/M2-U14-3.jpg",
+            "title": "Suftaja (Bills of Exchange) & Caravanserai Trade Networks",
+            "category": "Technology, Invention & Law",
+            "caption": "These commercial inventions allowed goods, books, and ideas to move safely across thousands of kilometers from Spain to China, knitting Afro-Eurasia into a single interconnected economy.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M2-U14-4",
+            "imageUrl": "images/M2-U14-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Islamic Architecture, Trade Networks,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M2-U14-5",
+            "imageUrl": "images/M2-U14-5.jpg",
+            "title": "Hypostyle Prayer Hall of the Great Mosque of Cordoba",
+            "category": "Archaeological Artifact",
+            "caption": "Architectural Elevation: The Hypostyle Prayer Hall of the Great Mosque of Cordoba (Mezquita, Spain). The image shows the infinite forest of ",
+            "provenance": "Constructed 785-987 CE under the Umayyad Caliphate of Cordoba, Spain"
+          }
         ]
       },
       {
@@ -1315,7 +1965,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Averroës proved that scientific logic and religious faith could coexist peacefully, changing European university education and enabling modern philosophical inquiry."
         },
         "visualArtifact": {
-          "imageUrl": "images/M2-U15.jpg",
+          "imageUrl": "images/M2-U15-1.jpg",
           "title": "The Court of the Lions at the Alhambra Fortress, Granada, Spain",
           "provenance": "Nasrid Dynasty, constructed c. 1362-1391 CE, Granada, Spain",
           "visualClues": [
@@ -1370,6 +2020,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Averroës wrote comprehensive commentaries on Aristotle demonstrating that reason and faith were mutually compatible, which directly shaped European scholastic thinkers like Thomas Aquinas."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M2-U15-1",
+            "imageUrl": "images/M2-U15-1.jpg",
+            "title": "Al-Andalus Umayyad Caliphate and Cultural Synthesis in Cordoba (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "While most of Europe struggled with illiteracy, Muslim Spain (known as Al-Andalus) became the most enlightened and civilized corner of the continent. In its capital, Cordoba, Muslim, Jewish, and Christian scholars lived together, producing groundbreaking philosophy, medicine, and poetry.",
+            "provenance": "Nasrid Dynasty, constructed c. 1362-1391 CE, Granada, Spain"
+          },
+          {
+            "slot": 2,
+            "id": "M2-U15-2",
+            "imageUrl": "images/M2-U15-2.jpg",
+            "title": "Hrotsvitha of Gandersheim - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Hrotsvitha praises Cordoba as the 'jewel of the world', in awe of its sparkling fountains, luxurious palaces, immense wealth, and world-class universities.",
+            "provenance": "Hrotsvitha of Gandersheim, a German Christian canoness and poet writing around 9"
+          },
+          {
+            "slot": 3,
+            "id": "M2-U15-3",
+            "imageUrl": "images/M2-U15-3.jpg",
+            "title": "Ibn Rushd (Averroës) & The Translation Movement in Spain",
+            "category": "Technology, Invention & Law",
+            "caption": "Averroës proved that scientific logic and religious faith could coexist peacefully, changing European university education and enabling modern philosophical inquiry.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M2-U15-4",
+            "imageUrl": "images/M2-U15-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Al-Andalus Umayyad Caliphate",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M2-U15-5",
+            "imageUrl": "images/M2-U15-5.jpg",
+            "title": "Court of the Lions at the Alhambra Fortress",
+            "category": "Archaeological Artifact",
+            "caption": "Architectural View: The Court of the Lions (Patio de los Leones) at the Alhambra Palace, Granada. Slender white marble columns support delic",
+            "provenance": "Nasrid Dynasty, constructed c. 1362-1391 CE, Granada, Spain"
+          }
         ]
       },
       {
@@ -1405,7 +2102,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This siege proved that high stone walls were no longer safe against gunpowder artillery, transforming world military tactics and forcing nations to build modern star-shaped earthwork fortresses."
         },
         "visualArtifact": {
-          "imageUrl": "images/M2-U16.jpg",
+          "imageUrl": "images/M2-U16-1.jpg",
           "title": "Contemporary Depiction of the Siege of Constantinople (1453)",
           "provenance": "Bibliotheque nationale de France, illuminated manuscript, c. 1455 CE",
           "visualClues": [
@@ -1460,6 +2157,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "With the Ottomans controlling trade through Constantinople, European merchants faced heavy tolls and restrictions, compelling Portugal and Spain to finance oceanic expeditions around Africa and across the Atlantic."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M2-U16-1",
+            "imageUrl": "images/M2-U16-1.jpg",
+            "title": "Siege and Fall of Constantinople  and Its Global Impact (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "On May 29, 1453, Sultan Mehmed II and the Ottoman army used massive gunpowder cannons to breach the legendary walls of Constantinople. The fall of the city marked the end of the Roman Empire after 1,500 years, shocked Christian Europe, and pushed European sailors to seek new sea routes to Asia - triggering the Age of Exploration.",
+            "provenance": "Bibliotheque nationale de France, illuminated manuscript, c. 1455 CE"
+          },
+          {
+            "slot": 2,
+            "id": "M2-U16-2",
+            "imageUrl": "images/M2-U16-2.jpg",
+            "title": "Niccolo Barbaro - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Barbaro writes with immense grief that the Byzantine emperor died fighting heroically on the broken walls, and that after 1,100 years, the great Christian imperial capital had fallen to the Ottomans.",
+            "provenance": "Niccolo Barbaro, a Venetian surgeon who survived the siege on May 29, 1453."
+          },
+          {
+            "slot": 3,
+            "id": "M2-U16-3",
+            "imageUrl": "images/M2-U16-3.jpg",
+            "title": "Urban's Super-Bombard & Gunpowder Siege Warfare",
+            "category": "Technology, Invention & Law",
+            "caption": "This siege proved that high stone walls were no longer safe against gunpowder artillery, transforming world military tactics and forcing nations to build modern star-shaped earthwork fortresses.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M2-U16-4",
+            "imageUrl": "images/M2-U16-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Siege",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M2-U16-5",
+            "imageUrl": "images/M2-U16-5.jpg",
+            "title": "Contemporary Depiction of the Siege of Constantinople",
+            "category": "Archaeological Artifact",
+            "caption": "Historical Painting: The Ottoman Entry into Constantinople by Jean-Joseph Benjamin-Constant (1876). Sultan Mehmed II rides a white stallion ",
+            "provenance": "Bibliotheque nationale de France, illuminated manuscript, c. 1455 CE"
+          }
         ]
       }
     ]
@@ -1500,7 +2244,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Chang'an's symmetrical grid planning became the blueprint for ancient East Asian capital cities, including Nara and Kyoto in Japan."
         },
         "visualArtifact": {
-          "imageUrl": "images/M3-U17.jpg",
+          "imageUrl": "images/M3-U17-1.jpg",
           "title": "Tang Dynasty Sancai Glazed Terracotta Bactrian Camel (8th Century CE)",
           "provenance": "Shaanxi History Museum, Xi'an, China",
           "visualClues": [
@@ -1555,6 +2299,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "The Silk Road flourished under Tang military protection, carrying silk, ceramics, spices, glass, and philosophies between China, Central Asia, Persia, and the Mediterranean."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M3-U17-1",
+            "imageUrl": "images/M3-U17-1.jpg",
+            "title": "Tang Dynasty and the Cosmopolitan Silk Road (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "The Tang Dynasty (618 - 907 CE) was China's golden age of poetry, international trade, and cultural openness. Its capital, Chang'an, was the largest city in the world, filled with foreign merchants, Persian polo players, and vibrant Silk Road markets.",
+            "provenance": "Shaanxi History Museum, Xi'an, China"
+          },
+          {
+            "slot": 2,
+            "id": "M3-U17-2",
+            "imageUrl": "images/M3-U17-2.jpg",
+            "title": "Li Bai - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Li Bai describes wealthy young Chinese men hanging out in Chang'an's international taverns, drinking imported western wine served by foreign Sogdian waitresses, listening to Central Asian music.",
+            "provenance": "Li Bai, one of China's most celebrated Daoist poets, writing during the height o"
+          },
+          {
+            "slot": 3,
+            "id": "M3-U17-3",
+            "imageUrl": "images/M3-U17-3.jpg",
+            "title": "Tang Sancai Ceramic Glazes & Urban Grid Planning",
+            "category": "Technology, Invention & Law",
+            "caption": "Chang'an's symmetrical grid planning became the blueprint for ancient East Asian capital cities, including Nara and Kyoto in Japan.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M3-U17-4",
+            "imageUrl": "images/M3-U17-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Tang Dynasty",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M3-U17-5",
+            "imageUrl": "images/M3-U17-5.jpg",
+            "title": "Tang Dynasty Sancai Glazed Terracotta Bactrian Camel",
+            "category": "Archaeological Artifact",
+            "caption": "Ceramic Sculpture: Tang Dynasty Sancai Glazed Terracotta Camel with Foreign Caravan Musicians (c. 720 CE). The Bactrian camel carries two sa",
+            "provenance": "Shaanxi History Museum, Xi'an, China"
+          }
         ]
       },
       {
@@ -1590,7 +2381,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Paper money made long-distance commerce vastly easier, while cheap iron tools enabled farmers to build irrigation canals and soldiers to wear hardened steel armor."
         },
         "visualArtifact": {
-          "imageUrl": "images/M3-U18.jpg",
+          "imageUrl": "images/M3-U18-1.jpg",
           "title": "Along the River During the Qingming Festival (Detail: Rainbow Bridge)",
           "provenance": "Zhang Zeduan, handscroll, ink and color on silk, Palace Museum, Beijing, c. 1100 CE",
           "visualClues": [
@@ -1645,6 +2436,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Song metallurgists pioneered the use of coal coke rather than wood charcoal, generating the intense heat necessary to produce colossal quantities of iron and steel."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M3-U18-1",
+            "imageUrl": "images/M3-U18-1.jpg",
+            "title": "Song Dynasty: Economic Revolution, Commercialization, and Urbanization (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "The Song Dynasty (960 - 1279 CE) experienced the world's first true economic and industrial revolution, centuries before Europe. Chinese cities swelled, iron production skyrocketed, fast-ripening rice fed a booming population, and the government printed the world's first paper money.",
+            "provenance": "Zhang Zeduan, handscroll, ink and color on silk, Palace Museum, Beijing, c. 1100 CE"
+          },
+          {
+            "slot": 2,
+            "id": "M3-U18-2",
+            "imageUrl": "images/M3-U18-2.jpg",
+            "title": "Meng Yuanlao - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Meng recalls that Kaifeng was an exciting 24-hour city where night markets never closed, restaurants served hot snacks and ice drinks all night, and streets were lit with glowing red lanterns.",
+            "provenance": "Meng Yuanlao, a civilian scholar writing in 1147 CE after the fall of Kaifeng to"
+          },
+          {
+            "slot": 3,
+            "id": "M3-U18-3",
+            "imageUrl": "images/M3-U18-3.jpg",
+            "title": "Jiaozi (Paper Money) & Massive Coal-Fired Iron Smelting",
+            "category": "Technology, Invention & Law",
+            "caption": "Paper money made long-distance commerce vastly easier, while cheap iron tools enabled farmers to build irrigation canals and soldiers to wear hardened steel armor.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M3-U18-4",
+            "imageUrl": "images/M3-U18-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Song Dynasty: Economic Revolution, Commercialization,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M3-U18-5",
+            "imageUrl": "images/M3-U18-5.jpg",
+            "title": "Along the River During the Qingming Festival",
+            "category": "Archaeological Artifact",
+            "caption": "Panoramic Scroll Detail: Along the River During the Qingming Festival (Qingming Shanghe Tu) by Zhang Zeduan (c. 1100 CE). The scroll depicts",
+            "provenance": "Zhang Zeduan, handscroll, ink and color on silk, Palace Museum, Beijing, c. 1100 CE"
+          }
         ]
       },
       {
@@ -1680,7 +2518,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This system broke the monopoly of the warrior nobility, giving commoners a path to power and inspiring modern Western civil service exams in Britain, Canada, and the United States."
         },
         "visualArtifact": {
-          "imageUrl": "images/M3-U19.jpg",
+          "imageUrl": "images/M3-U19-1.jpg",
           "title": "Imperial Civil Service Examination Candidates in Beijing (Historical Illustration)",
           "provenance": "National Library of China Historical Collection, Beijing",
           "visualClues": [
@@ -1735,6 +2573,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Scholars who passed the final imperial palace exam earned the prestigious title of 'Jinshi' and were appointed directly to high provincial and central government ministries."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M3-U19-1",
+            "imageUrl": "images/M3-U19-1.jpg",
+            "title": "Scholar-Bureaucracy and the Imperial Civil Service Examination (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Instead of being ruled by hereditary warlords or nobles, Imperial China was governed by the 'Scholar-Gentry' - educated officials chosen through competitive national civil service exams. Anyone, even a poor farm boy, could theoretically study Confucian texts and become a high-ranking imperial minister.",
+            "provenance": "National Library of China Historical Collection, Beijing"
+          },
+          {
+            "slot": 2,
+            "id": "M3-U19-2",
+            "imageUrl": "images/M3-U19-2.jpg",
+            "title": "Wang Anshi - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Wang Anshi argues that making students memorize fancy poetry is useless if they don't know how to stop river floods, feed hungry people during famines, or fix broken tax systems.",
+            "provenance": "Wang Anshi, famed Song Dynasty reformer, economist, and Grand Councilor (c. 1058"
+          },
+          {
+            "slot": 3,
+            "id": "M3-U19-3",
+            "imageUrl": "images/M3-U19-3.jpg",
+            "title": "The Keju Examination Security System & Blind Grading",
+            "category": "Technology, Invention & Law",
+            "caption": "This system broke the monopoly of the warrior nobility, giving commoners a path to power and inspiring modern Western civil service exams in Britain, Canada, and the United States.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M3-U19-4",
+            "imageUrl": "images/M3-U19-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Scholar-Bureaucracy",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M3-U19-5",
+            "imageUrl": "images/M3-U19-5.jpg",
+            "title": "Imperial Civil Service Examination Candidates in Beijing",
+            "category": "Archaeological Artifact",
+            "caption": "Historical Woodblock Illustration: The Imperial Palace Examination (Keju) in the Forbidden City. Hundreds of candidate scholars kneel at ind",
+            "provenance": "National Library of China Historical Collection, Beijing"
+          }
         ]
       },
       {
@@ -1770,7 +2655,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Without the magnetic compass, Columbus and Da Gama could not have crossed oceans; without gunpowder, feudal castles would still dominate warfare."
         },
         "visualArtifact": {
-          "imageUrl": "images/M3-U20.jpg",
+          "imageUrl": "images/M3-U20-1.jpg",
           "title": "The Diamond Sutra - Earliest Dated Woodblock Printed Book (868 CE)",
           "provenance": "Discovered in the Mogao Caves, Dunhuang, China; British Library, London",
           "visualClues": [
@@ -1825,6 +2710,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Song mariners magnetized iron needles and floated them in water bowls, creating the magnetic compass that allowed ships to maintain course without seeing the sun or stars."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M3-U20-1",
+            "imageUrl": "images/M3-U20-1.jpg",
+            "title": "Four Great Chinese Inventions: Gunpowder, Printing, Compass, Paper (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Ancient and medieval China invented four world-changing technologies: paper, movable-type printing, the magnetic compass, and gunpowder. Together, these 'Four Great Inventions' revolutionized global literacy, oceanic navigation, and warfare across the planet.",
+            "provenance": "Discovered in the Mogao Caves, Dunhuang, China; British Library, London"
+          },
+          {
+            "slot": 2,
+            "id": "M3-U20-2",
+            "imageUrl": "images/M3-U20-2.jpg",
+            "title": "Shen Kuo - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Shen Kuo describes how magnetic needles point toward magnetic south (discovering magnetic declination) and explains how Bi Sheng invented reusable clay movable type to print books quickly.",
+            "provenance": "Shen Kuo, brilliant Song Dynasty scientist, astronomer, and government minister "
+          },
+          {
+            "slot": 3,
+            "id": "M3-U20-3",
+            "imageUrl": "images/M3-U20-3.jpg",
+            "title": "The Fire Lance (Huo Qiang) & Navigational Compass",
+            "category": "Technology, Invention & Law",
+            "caption": "Without the magnetic compass, Columbus and Da Gama could not have crossed oceans; without gunpowder, feudal castles would still dominate warfare.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M3-U20-4",
+            "imageUrl": "images/M3-U20-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Four Great Chinese Inventions: Gunpowder, Printing, Compass, Paper",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M3-U20-5",
+            "imageUrl": "images/M3-U20-5.jpg",
+            "title": "Diamond Sutra - Earliest Dated Woodblock Printed Book",
+            "category": "Archaeological Artifact",
+            "caption": "Artifact Illustration: The Diamond Sutra (868 CE, British Library). The woodblock print features a frontispiece showing the Buddha seated on",
+            "provenance": "Discovered in the Mogao Caves, Dunhuang, China; British Library, London"
+          }
         ]
       },
       {
@@ -1860,7 +2792,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Without the invention of Hiragana by Heian women, Japanese literature would have remained trapped in borrowed Chinese characters, and masterpieces like Genji would never have been written."
         },
         "visualArtifact": {
-          "imageUrl": "images/M3-U21.jpg",
+          "imageUrl": "images/M3-U21-1.jpg",
           "title": "Heian Aristocratic Nobles from The Tale of Genji (Painting by Tosa Mitsuoki)",
           "provenance": "Edo Period tribute to Heian Court Culture, Kyoto National Museum",
           "visualClues": [
@@ -1915,6 +2847,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Hiragana provided a phonetic, flowing script that allowed Japanese writers, especially women, to compose poetry, novels, and diaries in their native language."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M3-U21-1",
+            "imageUrl": "images/M3-U21-1.jpg",
+            "title": "Classical Japan: The Heian Court, Aristocracy, and the Tale of Genji (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "During the Heian Period (794 - 1185 CE), Japanese court nobles in Kyoto lived in an isolated world dedicated to art, poetry, beauty, and refined manners. It was during this era that a noblewoman named Murasaki Shikibu wrote 'The Tale of Genji', considered the world's very first novel.",
+            "provenance": "Edo Period tribute to Heian Court Culture, Kyoto National Museum"
+          },
+          {
+            "slot": 2,
+            "id": "M3-U21-2",
+            "imageUrl": "images/M3-U21-2.jpg",
+            "title": "Lady Murasaki Shikibu - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Murasaki explains that cherry blossoms are beautiful precisely because they do not last forever, and that a truly wise person feels deep empathy and gentle sadness for the fleeting nature of all life.",
+            "provenance": "Lady Murasaki Shikibu, Heian court lady-in-waiting and novelist (c. 1008 CE)."
+          },
+          {
+            "slot": 3,
+            "id": "M3-U21-3",
+            "imageUrl": "images/M3-U21-3.jpg",
+            "title": "The Hiragana Phonetic Script & Junihitoe Silk Aesthetics",
+            "category": "Technology, Invention & Law",
+            "caption": "Without the invention of Hiragana by Heian women, Japanese literature would have remained trapped in borrowed Chinese characters, and masterpieces like Genji would never have been written.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M3-U21-4",
+            "imageUrl": "images/M3-U21-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Classical Japan: The Heian Court, Aristocracy,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M3-U21-5",
+            "imageUrl": "images/M3-U21-5.jpg",
+            "title": "Heian Aristocratic Nobles from The Tale of Genji",
+            "category": "Archaeological Artifact",
+            "caption": "Handscroll Illustration: The Tale of Genji Emaki (12th Century). The painting utilizes the 'fukinuki yatai' (blown-off roof) perspective, al",
+            "provenance": "Edo Period tribute to Heian Court Culture, Kyoto National Museum"
+          }
         ]
       },
       {
@@ -1950,7 +2929,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This intense warrior code created an elite military class that successfully repelled two massive Mongol invasions in 1274 and 1281 CE."
         },
         "visualArtifact": {
-          "imageUrl": "images/M3-U22.jpg",
+          "imageUrl": "images/M3-U22-1.jpg",
           "title": "Complete Samurai Lacquered Plate Armor and Kabuto Helmet",
           "provenance": "Tokyo National Museum Historical Armor Collection",
           "visualClues": [
@@ -2005,6 +2984,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Minamoto no Yoritomo defeated the Taira clan in the Genpei War and was named the first permanent Shogun, establishing the Kamakura Bakufu in 1192."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M3-U22-1",
+            "imageUrl": "images/M3-U22-1.jpg",
+            "title": "Kamakura Shogunate, Bushido, and the Rise of the Samurai Class (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "While Kyoto aristocrats wrote poetry, military clans seized control of the provinces. In 1185, Minamoto no Yoritomo became Japan's first 'Shogun' (military dictator), establishing a feudal system where elite samurai warriors ruled through absolute loyalty, martial honor, and the warrior code of Bushido.",
+            "provenance": "Tokyo National Museum Historical Armor Collection"
+          },
+          {
+            "slot": 2,
+            "id": "M3-U22-2",
+            "imageUrl": "images/M3-U22-2.jpg",
+            "title": "Oral tradition compiled around 1240 CE - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: The chronicle warns that even the proudest warlords will fall like dust in the wind, and reminds warriors that their only duty in life is absolute loyalty to their master until death.",
+            "provenance": "Oral tradition compiled around 1240 CE, recounting the Genpei War between the Ta"
+          },
+          {
+            "slot": 3,
+            "id": "M3-U22-3",
+            "imageUrl": "images/M3-U22-3.jpg",
+            "title": "Folded Tamahagane Katana & The Ritual of Seppuku",
+            "category": "Technology, Invention & Law",
+            "caption": "This intense warrior code created an elite military class that successfully repelled two massive Mongol invasions in 1274 and 1281 CE.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M3-U22-4",
+            "imageUrl": "images/M3-U22-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Kamakura Shogunate, Bushido,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M3-U22-5",
+            "imageUrl": "images/M3-U22-5.jpg",
+            "title": "Complete Samurai Lacquered Plate Armor and Kabuto Helmet",
+            "category": "Archaeological Artifact",
+            "caption": "Museum Artifact Display: Complete Kamakura-Period Samurai O-Yoroi Armor with Kabuto Helmet (Tokyo National Museum). The armor features laced",
+            "provenance": "Tokyo National Museum Historical Armor Collection"
+          }
         ]
       },
       {
@@ -2040,7 +3066,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This victory accelerated the unification of Japan, proving that military discipline, technology, and logistics mattered far more than ancient noble bloodlines."
         },
         "visualArtifact": {
-          "imageUrl": "images/M3-U23.jpg",
+          "imageUrl": "images/M3-U23-1.jpg",
           "title": "Himeji Castle ('The White Heron'), UNESCO World Heritage Site",
           "provenance": "Constructed 1581-1609 by Toyotomi Hideyoshi and Ikeda Terumasa, Hyogo, Japan",
           "visualClues": [
@@ -2095,6 +3121,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "The mortar-less curved stone walls (mushagaeshi) absorbed seismic shockwaves during earthquakes and curved steeply near the top, making them nearly impossible for enemy infantry to scale."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M3-U23-1",
+            "imageUrl": "images/M3-U23-1.jpg",
+            "title": "Sengoku Period: Daimyo Warlords and Castle Warfare (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Following the collapse of the Ashikaga Shogunate in 1467, Japan shattered into more than a century of total civil war known as the 'Sengoku Period' (Warring States). Regional warlords (Daimyo) built massive hilltop castles, deployed peasant ashigaru armies, and adopted European firearms to conquer rivals.",
+            "provenance": "Constructed 1581-1609 by Toyotomi Hideyoshi and Ikeda Terumasa, Hyogo, Japan"
+          },
+          {
+            "slot": 2,
+            "id": "M3-U23-2",
+            "imageUrl": "images/M3-U23-2.jpg",
+            "title": "Oda Nobunaga - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Nobunaga orders his peasant gunners to hide behind wooden fences and take turns firing in three continuous waves so the charging samurai cavalry face a non-stop wall of bullets.",
+            "provenance": "Oda Nobunaga, the revolutionary Sengoku daimyo who began the unification of Japa"
+          },
+          {
+            "slot": 3,
+            "id": "M3-U23-3",
+            "imageUrl": "images/M3-U23-3.jpg",
+            "title": "The Battle of Nagashino & Rotating Matchlock Volley Fire",
+            "category": "Technology, Invention & Law",
+            "caption": "This victory accelerated the unification of Japan, proving that military discipline, technology, and logistics mattered far more than ancient noble bloodlines.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M3-U23-4",
+            "imageUrl": "images/M3-U23-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Sengoku Period: Daimyo Warlords",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M3-U23-5",
+            "imageUrl": "images/M3-U23-5.jpg",
+            "title": "Himeji Castle",
+            "category": "Archaeological Artifact",
+            "caption": "Architectural Photograph: Himeji Castle ('White Heron Castle', Hyogo Prefecture). The colossal stone fortress rises on an imposing curved st",
+            "provenance": "Constructed 1581-1609 by Toyotomi Hideyoshi and Ikeda Terumasa, Hyogo, Japan"
+          }
         ]
       },
       {
@@ -2130,7 +3203,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "These traditions provided a peaceful sanctuary where bitter warrior rivals could meet unarmed, defusing conflict and creating a shared cultural foundation for a peaceful Japan."
         },
         "visualArtifact": {
-          "imageUrl": "images/M3-U24.jpg",
+          "imageUrl": "images/M3-U24-1.jpg",
           "title": "The Karesansui Zen Dry Rock Garden at Ryoan-ji Temple, Kyoto",
           "provenance": "UNESCO World Heritage Site, constructed c. 1499 CE, Kyoto, Japan",
           "visualClues": [
@@ -2185,6 +3258,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Kintsugi is the traditional Japanese art of repairing broken pottery with gold lacquer, turning the visible cracks into an artistic feature that celebrates the object's survival and history."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M3-U24-1",
+            "imageUrl": "images/M3-U24-1.jpg",
+            "title": "Japanese Feudal Society, Zen Buddhism, and Cultural Arts (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Despite constant warfare, the medieval era gave birth to Japan's most iconic cultural traditions. Influenced by Zen Buddhism, arts like the Tea Ceremony (Chanoyu), rock gardens, ink-wash painting, and masked Noh theater taught warriors mindfulness, self-discipline, and finding beauty in simplicity.",
+            "provenance": "UNESCO World Heritage Site, constructed c. 1499 CE, Kyoto, Japan"
+          },
+          {
+            "slot": 2,
+            "id": "M3-U24-2",
+            "imageUrl": "images/M3-U24-2.jpg",
+            "title": "Sen no Rikyu - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Sen no Rikyu says making tea is not about showing off expensive gold cups; it is about boiling water, being humble, and finding deep peaceful joy in a simple cup of tea and a single flower.",
+            "provenance": "Sen no Rikyu, the supreme tea master of the Sengoku period, serving Oda Nobunaga"
+          },
+          {
+            "slot": 3,
+            "id": "M3-U24-3",
+            "imageUrl": "images/M3-U24-3.jpg",
+            "title": "Kintsugi (Golden Joinery) & The Architecture of the Tea Room",
+            "category": "Technology, Invention & Law",
+            "caption": "These traditions provided a peaceful sanctuary where bitter warrior rivals could meet unarmed, defusing conflict and creating a shared cultural foundation for a peaceful Japan.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M3-U24-4",
+            "imageUrl": "images/M3-U24-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Japanese Feudal Society, Zen Buddhism,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M3-U24-5",
+            "imageUrl": "images/M3-U24-5.jpg",
+            "title": "Karesansui Zen Dry Rock Garden at Ryoan-ji Temple",
+            "category": "Archaeological Artifact",
+            "caption": "Landscape Photograph: The Dry Zen Rock Garden (Karesansui) at Ryoan-ji Temple, Kyoto (c. 1499 CE). Fifteen moss-ringed boulders are arranged",
+            "provenance": "UNESCO World Heritage Site, constructed c. 1499 CE, Kyoto, Japan"
+          }
         ]
       }
     ]
@@ -2225,7 +3345,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Without Genoese naval supply ships bringing timber, carpenters, and iron, the Crusaders would have died of thirst and starvation outside Jerusalem's stone walls."
         },
         "visualArtifact": {
-          "imageUrl": "images/M4-U25.jpg",
+          "imageUrl": "images/M4-U25-1.jpg",
           "title": "Pope Urban II Preaching the First Crusade at the Council of Clermont",
           "provenance": "Jean Colombe, illumination from 'Passages d'outremer', c. 1474 CE; Bibliotheque nationale de France",
           "visualClues": [
@@ -2280,6 +3400,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "In 1096, undisciplined mobs of the People's Crusade attacked thriving Jewish communities in the Rhineland, carrying out horrific pogroms before ever reaching the Middle East."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M4-U25-1",
+            "imageUrl": "images/M4-U25-1.jpg",
+            "title": "First Crusade and the Clash of Faiths in the Levant (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "In 1095, Pope Urban II called on European Christians to march to the Middle East and capture Jerusalem from Muslim rule. Driven by religious zeal, promises of forgiveness for sins, and hunger for land, thousands of crusaders marched thousands of miles, culminating in the bloody conquest of Jerusalem in 1099.",
+            "provenance": "Jean Colombe, illumination from 'Passages d'outremer', c. 1474 CE; Bibliotheque nationale de France"
+          },
+          {
+            "slot": 2,
+            "id": "M4-U25-2",
+            "imageUrl": "images/M4-U25-2.jpg",
+            "title": "Raymond of Aguilers - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Raymond of Aguilers describes with intense pride the horrific slaughter inside Jerusalem, claiming that Crusaders rode through streets knee-deep in blood and believing this cruelty was God's righteous will.",
+            "provenance": "Raymond of Aguilers, a Catholic priest and personal chaplain to Count Raymond of"
+          },
+          {
+            "slot": 3,
+            "id": "M4-U25-3",
+            "imageUrl": "images/M4-U25-3.jpg",
+            "title": "Mobile Wooden Siege Towers (Belfries) & Judean Siege Logistics",
+            "category": "Technology, Invention & Law",
+            "caption": "Without Genoese naval supply ships bringing timber, carpenters, and iron, the Crusaders would have died of thirst and starvation outside Jerusalem's stone walls.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M4-U25-4",
+            "imageUrl": "images/M4-U25-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of First Crusade",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M4-U25-5",
+            "imageUrl": "images/M4-U25-5.jpg",
+            "title": "Pope Urban II Preaching the First Crusade at the Council of Clermont",
+            "category": "Archaeological Artifact",
+            "caption": "Manuscript Illumination: Pope Urban II Preaching the First Crusade at the Council of Clermont (1095 CE). The Pope stands on an elevated wood",
+            "provenance": "Jean Colombe, illumination from 'Passages d'outremer', c. 1474 CE; Bibliotheque nationale de France"
+          }
         ]
       },
       {
@@ -2315,7 +3482,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "When European knights returned from the Crusades, they copied these concentric stone designs to build King Edward I's famous Welsh castles (like Caernarfon and Conwy)."
         },
         "visualArtifact": {
-          "imageUrl": "images/M4-U26.jpg",
+          "imageUrl": "images/M4-U26-1.jpg",
           "title": "Medieval Manuscript Depiction of Sultan Saladin",
           "provenance": "Illuminated manuscript, National Library of France, c. 1250 CE",
           "visualClues": [
@@ -2370,6 +3537,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Concentric castles utilized multiple rings of walls with round towers, where the elevated inner wall allowed simultaneous archer fire over the outer defensive perimeter."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M4-U26-1",
+            "imageUrl": "images/M4-U26-1.jpg",
+            "title": "Crusader States, Saladin, and the Third Crusade (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "After conquering Jerusalem, Western knights set up four 'Crusader States' in the Middle East. Decades later, a brilliant Muslim sultan named Saladin united Egypt and Syria, retook Jerusalem, and fought the legendary English King Richard the Lionheart to a draw in the Third Crusade.",
+            "provenance": "Illuminated manuscript, National Library of France, c. 1250 CE"
+          },
+          {
+            "slot": 2,
+            "id": "M4-U26-2",
+            "imageUrl": "images/M4-U26-2.jpg",
+            "title": "Baha ad-Din ibn Shaddad - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Baha ad-Din explains that when Saladin recaptured Jerusalem, he showed immense kindness and mercy, paying ransoms for poor widows and allowing Christians to leave peacefully without bloodshed.",
+            "provenance": "Baha ad-Din ibn Shaddad, jurist, scholar, and trusted personal advisor to Sultan"
+          },
+          {
+            "slot": 3,
+            "id": "M4-U26-3",
+            "imageUrl": "images/M4-U26-3.jpg",
+            "title": "Concentric Castle Architecture & The Knights Hospitaller",
+            "category": "Technology, Invention & Law",
+            "caption": "When European knights returned from the Crusades, they copied these concentric stone designs to build King Edward I's famous Welsh castles (like Caernarfon and Conwy).",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M4-U26-4",
+            "imageUrl": "images/M4-U26-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Crusader States, Saladin,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M4-U26-5",
+            "imageUrl": "images/M4-U26-5.jpg",
+            "title": "Medieval Manuscript Depiction of Sultan Saladin",
+            "category": "Archaeological Artifact",
+            "caption": "Historical Woodcut: King Richard the Lionheart and Sultan Saladin at the Battle of Arsuf (1191). Richard rides in plate armor on a heavy Eur",
+            "provenance": "Illuminated manuscript, National Library of France, c. 1250 CE"
+          }
         ]
       },
       {
@@ -2405,7 +3619,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "These tactics allowed Mongol armies to conquer more territory in 25 years than the Roman Empire conquered in 400 years."
         },
         "visualArtifact": {
-          "imageUrl": "images/M4-U27.jpg",
+          "imageUrl": "images/M4-U27-1.jpg",
           "title": "Official Imperial Portrait of Genghis Khan (Universal Ruler)",
           "provenance": "National Palace Museum, Taipei, Yuan Dynasty Imperial Collection",
           "visualClues": [
@@ -2460,6 +3674,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "By rotating between several steppe ponies, Mongol riders prevented their horses from fatiguing, allowing armies to achieve incredible overland speeds that stunned enemies."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M4-U27-1",
+            "imageUrl": "images/M4-U27-1.jpg",
+            "title": "Genghis Khan and the Rise of the Mongol Empire (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Born as an outcast named Temujin on the harsh Mongolian steppe, Genghis Khan united warring nomadic tribes through meritocracy and psychological warfare. His fast-moving horse archers conquered northern China, Central Asia, and Persia, building the largest continuous land empire in world history.",
+            "provenance": "National Palace Museum, Taipei, Yuan Dynasty Imperial Collection"
+          },
+          {
+            "slot": 2,
+            "id": "M4-U27-2",
+            "imageUrl": "images/M4-U27-2.jpg",
+            "title": "An anonymous Mongol court scribe - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Genghis Khan orders his soldiers never to stop to loot during battle, promising that captured treasure will be shared equally among everyone, and declaring that men will be promoted based on skill and bravery rather than noble birth.",
+            "provenance": "An anonymous Mongol court scribe, written shortly after Genghis Khan's death (c."
+          },
+          {
+            "slot": 3,
+            "id": "M4-U27-3",
+            "imageUrl": "images/M4-U27-3.jpg",
+            "title": "The Composite Recurve Bow & The Nerge Encirclement Tactic",
+            "category": "Technology, Invention & Law",
+            "caption": "These tactics allowed Mongol armies to conquer more territory in 25 years than the Roman Empire conquered in 400 years.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M4-U27-4",
+            "imageUrl": "images/M4-U27-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Genghis Khan",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M4-U27-5",
+            "imageUrl": "images/M4-U27-5.jpg",
+            "title": "Official Imperial Portrait of Genghis Khan",
+            "category": "Archaeological Artifact",
+            "caption": "Imperial Portrait: Court Portrait of Genghis Khan (Yuan Dynasty Album, National Palace Museum, Taipei). The aged Khan is depicted with calm,",
+            "provenance": "National Palace Museum, Taipei, Yuan Dynasty Imperial Collection"
+          }
         ]
       },
       {
@@ -2495,7 +3756,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This network enabled ideas, inventions (like printing and gunpowder), and trade goods to travel between China, Persia, and Europe in weeks rather than years."
         },
         "visualArtifact": {
-          "imageUrl": "images/M4-U28.jpg",
+          "imageUrl": "images/M4-U28-1.jpg",
           "title": "Catalan Atlas (1375) - Silk Road Caravan Crossing Asia under the Pax Mongolica",
           "provenance": "Abraham Cresques, Majorcan cartographer; Bibliotheque nationale de France, Paris",
           "visualClues": [
@@ -2550,6 +3811,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Marco Polo was a merchant from the maritime republic of Venice who traveled with his father and uncle across the Silk Road to China during the Pax Mongolica."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M4-U28-1",
+            "imageUrl": "images/M4-U28-1.jpg",
+            "title": "Pax Mongolica, Silk Road Revitalization, and Postal Yam System (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Once the Mongols conquered Eurasia, they established the 'Pax Mongolica' (Mongol Peace). For over a century, a single government protected the entire Silk Road from Europe to China, using a high-speed horse postal service called the 'Yam' that let messengers gallop 300 kilometers a day.",
+            "provenance": "Abraham Cresques, Majorcan cartographer; Bibliotheque nationale de France, Paris"
+          },
+          {
+            "slot": 2,
+            "id": "M4-U28-2",
+            "imageUrl": "images/M4-U28-2.jpg",
+            "title": "Marco Polo - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Marco Polo is stunned by the Yam postal system, describing how couriers change fresh horses at relay stations every 25 miles, allowing messages to fly across the empire in three days instead of a month.",
+            "provenance": "Marco Polo, a Venetian merchant who served at the court of Kublai Khan in China "
+          },
+          {
+            "slot": 3,
+            "id": "M4-U28-3",
+            "imageUrl": "images/M4-U28-3.jpg",
+            "title": "The Yam Postal Network & The Paiza Diplomatic Passport",
+            "category": "Technology, Invention & Law",
+            "caption": "This network enabled ideas, inventions (like printing and gunpowder), and trade goods to travel between China, Persia, and Europe in weeks rather than years.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M4-U28-4",
+            "imageUrl": "images/M4-U28-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Pax Mongolica, Silk Road Revitalization,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M4-U28-5",
+            "imageUrl": "images/M4-U28-5.jpg",
+            "title": "Catalan Atlas  - Silk Road Caravan Crossing Asia under the Pax Mongolica",
+            "category": "Archaeological Artifact",
+            "caption": "Cartographic Document: Detail of the Catalan Atlas (1375 CE, BNF Paris). The map depicts a Silk Road merchant caravan of laden camels and mo",
+            "provenance": "Abraham Cresques, Majorcan cartographer; Bibliotheque nationale de France, Paris"
+          }
         ]
       },
       {
@@ -2585,7 +3893,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This cross-cultural collaboration created the most accurate calendar in world history prior to modern satellites, guiding Chinese agriculture for 400 years."
         },
         "visualArtifact": {
-          "imageUrl": "images/M4-U29.jpg",
+          "imageUrl": "images/M4-U29-1.jpg",
           "title": "Official Imperial Court Portrait of Kublai Khan (Yuan Dynasty Album)",
           "provenance": "Araniko (Anige), Nepalese court artist to Kublai Khan; National Palace Museum, Taipei",
           "visualClues": [
@@ -2640,6 +3948,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Guo Shoujing's Shoushi Calendar calculated the length of the year to 365.2425 days, matching the accuracy of the modern Gregorian calendar three centuries before Europe adopted it."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M4-U29-1",
+            "imageUrl": "images/M4-U29-1.jpg",
+            "title": "Kublai Khan and the Yuan Dynasty in China (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Genghis Khan's grandson, Kublai Khan, completed the conquest of China in 1279 and founded the Yuan Dynasty. Instead of turning China into pasture for horses, he adopted Chinese imperial customs, built a glittering new capital at Beijing (Dadu), and promoted global trade and science.",
+            "provenance": "Araniko (Anige), Nepalese court artist to Kublai Khan; National Palace Museum, Taipei"
+          },
+          {
+            "slot": 2,
+            "id": "M4-U29-2",
+            "imageUrl": "images/M4-U29-2.jpg",
+            "title": "Rashid al-Din Hamadani - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Rashid al-Din praises Kublai Khan as an enlightened and wise emperor who loved learning, welcomed foreign scientists, and built the magnificent, gold-filled capital of Beijing.",
+            "provenance": "Rashid al-Din Hamadani, Persian physician, historian, and Prime Minister to the "
+          },
+          {
+            "slot": 3,
+            "id": "M4-U29-3",
+            "imageUrl": "images/M4-U29-3.jpg",
+            "title": "Guo Shoujing's Solar Observatory & The Shoushi Calendar (1281 CE)",
+            "category": "Technology, Invention & Law",
+            "caption": "This cross-cultural collaboration created the most accurate calendar in world history prior to modern satellites, guiding Chinese agriculture for 400 years.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M4-U29-4",
+            "imageUrl": "images/M4-U29-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Kublai Khan",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M4-U29-5",
+            "imageUrl": "images/M4-U29-5.jpg",
+            "title": "Official Imperial Court Portrait of Kublai Khan",
+            "category": "Archaeological Artifact",
+            "caption": "Museum Artifact Display: The Gaocheng Astronomical Observatory Tower (Henan Province, 1276 CE). The imposing brick and stone trapezoidal tow",
+            "provenance": "Araniko (Anige), Nepalese court artist to Kublai Khan; National Palace Museum, Taipei"
+          }
         ]
       },
       {
@@ -2675,7 +4030,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "These interconnected networks proved that centuries before European colonization, Asia and Africa possessed the richest and most peaceful trade networks on Earth."
         },
         "visualArtifact": {
-          "imageUrl": "images/M4-U30.jpg",
+          "imageUrl": "images/M4-U30-1.jpg",
           "title": "Portrait of Venetian Merchant and World Traveler Marco Polo",
           "provenance": "Galleria dei Ritratti, Florence, Italy",
           "visualClues": [
@@ -2730,6 +4085,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Because Sharia legal principles were standardized across the Islamic world (Dar al-Islam), Ibn Battuta's training as a Qadi (judge) qualified him to serve in courts from Delhi to the Maldives."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M4-U30-1",
+            "imageUrl": "images/M4-U30-1.jpg",
+            "title": "Marco Polo and Ibn Battuta: Medieval Global Travelers (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "During the 1300s, two legendary travelers journeyed across the known world. Marco Polo from Venice spent 24 years traveling to China and serving Kublai Khan, while Ibn Battuta from Morocco traveled over 117,000 kilometers across Africa, the Middle East, India, and China, recording daily life across the medieval globe.",
+            "provenance": "Galleria dei Ritratti, Florence, Italy"
+          },
+          {
+            "slot": 2,
+            "id": "M4-U30-2",
+            "imageUrl": "images/M4-U30-2.jpg",
+            "title": "Ibn Battuta - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Ibn Battuta marvels that China is the safest and most well-policed nation on Earth, where a wealthy traveler can journey alone for nine months without ever being robbed because of strict government registration.",
+            "provenance": "Ibn Battuta, Moroccan Islamic jurist, scholar, and world traveler (dictated c. 1"
+          },
+          {
+            "slot": 3,
+            "id": "M4-U30-3",
+            "imageUrl": "images/M4-U30-3.jpg",
+            "title": "Indian Ocean Monsoon Dhows & The Islamic Qadi Network",
+            "category": "Technology, Invention & Law",
+            "caption": "These interconnected networks proved that centuries before European colonization, Asia and Africa possessed the richest and most peaceful trade networks on Earth.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M4-U30-4",
+            "imageUrl": "images/M4-U30-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Marco Polo",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M4-U30-5",
+            "imageUrl": "images/M4-U30-5.jpg",
+            "title": "Portrait of Venetian Merchant and World Traveler Marco Polo",
+            "category": "Archaeological Artifact",
+            "caption": "Historical Engraving: Marco Polo Departing Venice for the Orient (1271 CE, Bodleian Library). Galleys with furled sails prepare to cast off ",
+            "provenance": "Galleria dei Ritratti, Florence, Italy"
+          }
         ]
       },
       {
@@ -2765,7 +4167,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Although doctors did not yet understand bacteria, practices invented during this crisis - such as Venice's 40-day ship isolation ('quarantine') - form the basis of modern public health disease control."
         },
         "visualArtifact": {
-          "imageUrl": "images/M4-U31.jpg",
+          "imageUrl": "images/M4-U31-1.jpg",
           "title": "Doctor Schnabel von Rom (Medieval Plague Doctor Beak Mask)",
           "provenance": "Paul Furst, copper engraving, Nuremberg, Germany, 1656",
           "visualClues": [
@@ -2820,6 +4222,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "The port of Venice required incoming ships from plague areas to wait in the harbor for forty days ('quaranta giorni' in Italian) to ensure no disease was aboard, creating the term 'quarantine'."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M4-U31-1",
+            "imageUrl": "images/M4-U31-1.jpg",
+            "title": "Black Death : Path of Pandemic across Afro-Eurasia (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Between 1346 and 1353, the deadliest pandemic in human history - the Black Death - swept across Afro-Eurasia. Caused by bacteria living on flea-infested rats traveling along Mongol trade routes and ships, it killed between 30% and 60% of the European population in just a few horrifying years.",
+            "provenance": "Paul Furst, copper engraving, Nuremberg, Germany, 1656"
+          },
+          {
+            "slot": 2,
+            "id": "M4-U31-2",
+            "imageUrl": "images/M4-U31-2.jpg",
+            "title": "Giovanni Boccaccio - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Boccaccio writes with deep sorrow that so many people died every single day that cemeteries ran out of room, forcing city workers to dig massive open trenches and stack corpses on top of each other like cargo in a ship.",
+            "provenance": "Giovanni Boccaccio, Italian author and humanist writing in Florence directly aft"
+          },
+          {
+            "slot": 3,
+            "id": "M4-U31-3",
+            "imageUrl": "images/M4-U31-3.jpg",
+            "title": "The Pathology of Yersinia Pestis & The Plague Doctor Beak Mask",
+            "category": "Technology, Invention & Law",
+            "caption": "Although doctors did not yet understand bacteria, practices invented during this crisis - such as Venice's 40-day ship isolation ('quarantine') - form the basis of modern public health disease control.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M4-U31-4",
+            "imageUrl": "images/M4-U31-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Black Death : Path of Pandemic across Afro-Eurasia",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M4-U31-5",
+            "imageUrl": "images/M4-U31-5.jpg",
+            "title": "Doctor Schnabel von Rom",
+            "category": "Archaeological Artifact",
+            "caption": "Historical Woodcut Engraving: Doctor Schnabel von Rom (The Plague Doctor) by Paul Furst (1656). The physician stands in full protective gear",
+            "provenance": "Paul Furst, copper engraving, Nuremberg, Germany, 1656"
+          }
         ]
       },
       {
@@ -2855,7 +4304,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Although Wat Tyler was killed, the revolt terrified the monarchy; the poll tax was abandoned, wage freezes collapsed, and serfdom permanently dissolved across England."
         },
         "visualArtifact": {
-          "imageUrl": "images/M4-U32.jpg",
+          "imageUrl": "images/M4-U32-1.jpg",
           "title": "The Death of Wat Tyler in the English Peasants' Revolt of 1381",
           "provenance": "Jean Froissart, Chronicles (MS Fr. 2644), Royal Library of Brussels, c. 1470 CE",
           "visualClues": [
@@ -2910,6 +4359,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "The flat Poll Tax of 1381 forced poor farm laborers to pay the exact same tax as wealthy nobles, sparking nationwide fury and rebellion."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M4-U32-1",
+            "imageUrl": "images/M4-U32-1.jpg",
+            "title": "Socioeconomic Aftermath of the Plague and the Peasants' Revolt (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "By wiping out one-third of Europe's workers, the Black Death accidentally destroyed the feudal system. Because surviving peasants were suddenly in high demand, they demanded higher wages and freedom. When the English government tried to freeze wages and raise taxes, peasants rebelled in 1381, marching on London.",
+            "provenance": "Jean Froissart, Chronicles (MS Fr. 2644), Royal Library of Brussels, c. 1470 CE"
+          },
+          {
+            "slot": 2,
+            "id": "M4-U32-2",
+            "imageUrl": "images/M4-U32-2.jpg",
+            "title": "John Ball - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: John Ball asks: When Adam dug the soil and Eve spun wool, who was the nobleman? He argues that God created all humans equal, and that society will never be fair until serfdom is abolished and goods are shared.",
+            "provenance": "John Ball, a radical egalitarian English priest, speaking during the Peasants' R"
+          },
+          {
+            "slot": 3,
+            "id": "M4-U32-3",
+            "imageUrl": "images/M4-U32-3.jpg",
+            "title": "The Statute of Laborers (1351) & The Flat Poll Tax",
+            "category": "Technology, Invention & Law",
+            "caption": "Although Wat Tyler was killed, the revolt terrified the monarchy; the poll tax was abandoned, wage freezes collapsed, and serfdom permanently dissolved across England.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M4-U32-4",
+            "imageUrl": "images/M4-U32-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Socioeconomic Aftermath of the Plague",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M4-U32-5",
+            "imageUrl": "images/M4-U32-5.jpg",
+            "title": "Death of Wat Tyler in the English Peasants' Revolt of 1381",
+            "category": "Archaeological Artifact",
+            "caption": "Manuscript Illumination: The Murder of Wat Tyler by Mayor William Walworth at Smithfield (1381 CE, Froissart's Chronicles). King Richard II ",
+            "provenance": "Jean Froissart, Chronicles (MS Fr. 2644), Royal Library of Brussels, c. 1470 CE"
+          }
         ]
       }
     ]
@@ -2950,7 +4446,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This sophisticated customs and monetary system funded West Africa's first great empire and supplied medieval European and Islamic mints with their gold coins."
         },
         "visualArtifact": {
-          "imageUrl": "images/M5-U33.jpg",
+          "imageUrl": "images/M5-U33-1.jpg",
           "title": "Sudano-Sahelian Adobe Architecture (Great Mosque of Djenne)",
           "provenance": "UNESCO World Heritage Site, architectural tradition originating in the medieval Sahel, Mali",
           "visualClues": [
@@ -3005,6 +4501,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "The silent barter allowed merchants and gold miners with different languages and trade secrets to negotiate fair trades by leaving salt and gold in turns without physical contact."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M5-U33-1",
+            "imageUrl": "images/M5-U33-1.jpg",
+            "title": "Trans-Saharan Gold-Salt Trade and the Ghana Empire (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Between 700 and 1200 CE, the ancient Ghana Empire became unimaginably wealthy by controlling the desert trade routes between West African goldfields and North African salt mines. Known as the 'Land of Gold', Ghana taxed every pound of goods entering and leaving its borders.",
+            "provenance": "UNESCO World Heritage Site, architectural tradition originating in the medieval Sahel, Mali"
+          },
+          {
+            "slot": 2,
+            "id": "M5-U33-2",
+            "imageUrl": "images/M5-U33-2.jpg",
+            "title": "Abu Ubayd al-Bakri - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Al-Bakri describes the incredible royal wealth of the King of Ghana, whose princes wore gold braided into their hair, whose bodyguards carried solid gold swords, and whose royal guard dogs wore gold and silver collars.",
+            "provenance": "Abu Ubayd al-Bakri, an Arab scholar writing in Cordoba, Spain (1068 CE), using e"
+          },
+          {
+            "slot": 3,
+            "id": "M5-U33-3",
+            "imageUrl": "images/M5-U33-3.jpg",
+            "title": "The Silent Barter System & The Royal Gold Nugget Monopoly",
+            "category": "Technology, Invention & Law",
+            "caption": "This sophisticated customs and monetary system funded West Africa's first great empire and supplied medieval European and Islamic mints with their gold coins.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M5-U33-4",
+            "imageUrl": "images/M5-U33-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Trans-Saharan Gold-Salt Trade",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M5-U33-5",
+            "imageUrl": "images/M5-U33-5.jpg",
+            "title": "Sudano-Sahelian Adobe Architecture",
+            "category": "Archaeological Artifact",
+            "caption": "Cartographic Reconstruction: The Trans-Saharan Caravan Routes (c. 1000 CE). The map shows the network of desert trails connecting Sijilmasa ",
+            "provenance": "UNESCO World Heritage Site, architectural tradition originating in the medieval Sahel, Mali"
+          }
         ]
       },
       {
@@ -3040,7 +4583,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "The image of Mansa Musa holding a golden nugget obsessed European kings, directly motivating Portuguese exploratory voyages down the African coast in the 1400s."
         },
         "visualArtifact": {
-          "imageUrl": "images/M5-U34.jpg",
+          "imageUrl": "images/M5-U34-1.jpg",
           "title": "Mansa Musa of Mali Holding a Golden Nugget (Catalan Atlas, 1375)",
           "provenance": "Abraham Cresques, Majorcan World Map, Bibliotheque nationale de France, Paris",
           "visualClues": [
@@ -3095,6 +4638,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "The Kouroukan Fouga was the oral constitution of the Mali Empire, dividing responsibilities among clans, establishing governance councils, and protecting social order."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M5-U34-1",
+            "imageUrl": "images/M5-U34-1.jpg",
+            "title": "Mali Empire, Mansa Musa, and the Pilgrimage of 1324 (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "In the 1200s, Sundiata Keita founded the Mali Empire, which grew even larger and wealthier than Ghana. Its most famous emperor, Mansa Musa, was the richest person in world history. In 1324, his lavish gold-giving pilgrimage to Mecca put Mali on European maps and caused runaway inflation in Cairo.",
+            "provenance": "Abraham Cresques, Majorcan World Map, Bibliotheque nationale de France, Paris"
+          },
+          {
+            "slot": 2,
+            "id": "M5-U34-2",
+            "imageUrl": "images/M5-U34-2.jpg",
+            "title": "Shihab al-Umari - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Al-Umari records that Mansa Musa gave away so much gold in Cairo that he completely crashed the gold market, and that even twelve years later, gold had not recovered its original value.",
+            "provenance": "Shihab al-Umari, an Arab court administrator and historian writing in Cairo in 1"
+          },
+          {
+            "slot": 3,
+            "id": "M5-U34-3",
+            "imageUrl": "images/M5-U34-3.jpg",
+            "title": "The Catalan Atlas (1375) & The Kouroukan Fouga Constitution",
+            "category": "Technology, Invention & Law",
+            "caption": "The image of Mansa Musa holding a golden nugget obsessed European kings, directly motivating Portuguese exploratory voyages down the African coast in the 1400s.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M5-U34-4",
+            "imageUrl": "images/M5-U34-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Mali Empire, Mansa Musa,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M5-U34-5",
+            "imageUrl": "images/M5-U34-5.jpg",
+            "title": "Mansa Musa of Mali Holding a Golden Nugget",
+            "category": "Archaeological Artifact",
+            "caption": "Manuscript Detail: Mansa Musa depicted in the Catalan Atlas (1375 CE, BNF Paris). The King of Mali is illustrated in magnificent robes, hold",
+            "provenance": "Abraham Cresques, Majorcan World Map, Bibliotheque nationale de France, Paris"
+          }
         ]
       },
       {
@@ -3130,7 +4720,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Timbuktu's manuscripts preserved classical Greek philosophy, advanced trigonometry, and human rights treatises through centuries when European learning was still recovering from the Dark Ages."
         },
         "visualArtifact": {
-          "imageUrl": "images/M5-U35.jpg",
+          "imageUrl": "images/M5-U35-1.jpg",
           "title": "Ancient Scientific and Astronomy Manuscript from Timbuktu, Mali",
           "provenance": "Ahmed Baba Institute of Higher Islamic Studies, Timbuktu, Mali",
           "visualClues": [
@@ -3185,6 +4775,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "The extremely dry Sahelian desert air prevented mold, rot, and moisture damage, preserving hundreds of thousands of handwritten texts in private family archives for centuries."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M5-U35-1",
+            "imageUrl": "images/M5-U35-1.jpg",
+            "title": "Songhai Empire, Timbuktu, and Sankore University (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Following Mali's decline, the Songhai Empire became the largest empire in African history. Its jewel was the desert metropolis of Timbuktu, home to Sankore University where 25,000 students studied astronomy, mathematics, medicine, and Islamic law from hundreds of thousands of hand-written manuscripts.",
+            "provenance": "Ahmed Baba Institute of Higher Islamic Studies, Timbuktu, Mali"
+          },
+          {
+            "slot": 2,
+            "id": "M5-U35-2",
+            "imageUrl": "images/M5-U35-2.jpg",
+            "title": "Leo Africanus - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Leo Africanus reports that in Timbuktu, the book trade was more profitable than gold or salt, and that the King paid high salaries to university professors, judges, and doctors because education was respected above all else.",
+            "provenance": "Leo Africanus (al-Hasan al-Wazzan), an Andalusian traveler, diplomat, and author"
+          },
+          {
+            "slot": 3,
+            "id": "M5-U35-3",
+            "imageUrl": "images/M5-U35-3.jpg",
+            "title": "Sankore University Degrees & Timbuktu Manuscript Science",
+            "category": "Technology, Invention & Law",
+            "caption": "Timbuktu's manuscripts preserved classical Greek philosophy, advanced trigonometry, and human rights treatises through centuries when European learning was still recovering from the Dark Ages.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M5-U35-4",
+            "imageUrl": "images/M5-U35-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Songhai Empire, Timbuktu,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M5-U35-5",
+            "imageUrl": "images/M5-U35-5.jpg",
+            "title": "Ancient Scientific and Astronomy Manuscript from Timbuktu",
+            "category": "Archaeological Artifact",
+            "caption": "Manuscript Page: Timbuktu Astronomical and Mathematical Manuscript (Sankore University Collection, 14th Century). The parchment features Ara",
+            "provenance": "Ahmed Baba Institute of Higher Islamic Studies, Timbuktu, Mali"
+          }
         ]
       },
       {
@@ -3220,7 +4857,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This architecture housed a cosmopolitan civilization that connected African interior gold with Chinese imperial courts and Indian textile markets."
         },
         "visualArtifact": {
-          "imageUrl": "images/M5-U36.jpg",
+          "imageUrl": "images/M5-U36-1.jpg",
           "title": "Ruins of the Great Mosque of Kilwa Kisiwani (Coral Limestone)",
           "provenance": "Constructed 11th - 14th Century CE, UNESCO World Heritage Site, Tanzania",
           "visualClues": [
@@ -3275,6 +4912,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Ibn Battuta visited Kilwa Kisiwani on the Tanzanian coast in 1331 and praised its elegant coral architecture and pious, generous sultan."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M5-U36-1",
+            "imageUrl": "images/M5-U36-1.jpg",
+            "title": "Swahili Coast: Indian Ocean Dhow Trade and Kilwa Kisiwani (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Along the coast of East Africa, a chain of wealthy, independent city-states flourished through trade across the Indian Ocean. Known as the Swahili civilization, they spoke a blend of Bantu and Arabic, sailed dhow ships using seasonal monsoon winds, and built gleaming coral-stone palaces.",
+            "provenance": "Constructed 11th - 14th Century CE, UNESCO World Heritage Site, Tanzania"
+          },
+          {
+            "slot": 2,
+            "id": "M5-U36-2",
+            "imageUrl": "images/M5-U36-2.jpg",
+            "title": "Ibn Battuta - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Ibn Battuta praises Kilwa as one of the most gorgeous and well-built cities on Earth, admiring its stone architecture and the immense generosity of its Sultan.",
+            "provenance": "Ibn Battuta, Moroccan legal scholar visiting Kilwa Kisiwani in 1331 CE."
+          },
+          {
+            "slot": 3,
+            "id": "M5-U36-3",
+            "imageUrl": "images/M5-U36-3.jpg",
+            "title": "Coral Rag Masonry & The Husuni Kubwa Palace Complex",
+            "category": "Technology, Invention & Law",
+            "caption": "This architecture housed a cosmopolitan civilization that connected African interior gold with Chinese imperial courts and Indian textile markets.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M5-U36-4",
+            "imageUrl": "images/M5-U36-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Swahili Coast: Indian Ocean Dhow Trade",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M5-U36-5",
+            "imageUrl": "images/M5-U36-5.jpg",
+            "title": "Ruins of the Great Mosque of Kilwa Kisiwani",
+            "category": "Archaeological Artifact",
+            "caption": "Architectural Ruins: The Great Mosque and Palace Ruins of Kilwa Kisiwani (UNESCO World Heritage Site, Tanzania). The photograph shows ancien",
+            "provenance": "Constructed 11th - 14th Century CE, UNESCO World Heritage Site, Tanzania"
+          }
         ]
       },
       {
@@ -3310,7 +4994,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "These mathematical calendars guided planting seasons, religious rituals, and diplomatic treaties, proving the Maya were among the greatest astronomers of antiquity."
         },
         "visualArtifact": {
-          "imageUrl": "images/M5-U37.jpg",
+          "imageUrl": "images/M5-U37-1.jpg",
           "title": "El Castillo (Pyramid of Kukulcan) at Chichen Itza, Mexico",
           "provenance": "UNESCO World Heritage Site, Classic/Terminal Maya, Yucatan, Mexico",
           "visualClues": [
@@ -3365,6 +5049,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Maya astronomers tracked the synodic cycle of Venus (583.92 days) with breathtaking accuracy, using its morning and evening star appearances to schedule rituals and military campaigns."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M5-U37-1",
+            "imageUrl": "images/M5-U37-1.jpg",
+            "title": "Classic Maya: City-States, Hieroglyphs, Astronomy, and Calendars (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "In the rainforests of Mesoamerica, the Maya civilization built towering limestone pyramid temples, deciphered the movement of the stars, and created the only complete written script in the ancient Americas. Their sophisticated mathematical system included the concept of zero centuries before Europeans understood it.",
+            "provenance": "UNESCO World Heritage Site, Classic/Terminal Maya, Yucatan, Mexico"
+          },
+          {
+            "slot": 2,
+            "id": "M5-U37-2",
+            "imageUrl": "images/M5-U37-2.jpg",
+            "title": "K'iche' Maya council of elders - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: The Popol Vuh recounts how the gods tried to create humans from mud and wood, but failed until they molded human flesh and blood out of sacred maize (corn).",
+            "provenance": "K'iche' Maya council of elders, transcribed in the Guatemalan highlands (c. 1550"
+          },
+          {
+            "slot": 3,
+            "id": "M5-U37-3",
+            "imageUrl": "images/M5-U37-3.jpg",
+            "title": "The Dresden Codex Venus Tables & The Base-20 Zero System",
+            "category": "Technology, Invention & Law",
+            "caption": "These mathematical calendars guided planting seasons, religious rituals, and diplomatic treaties, proving the Maya were among the greatest astronomers of antiquity.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M5-U37-4",
+            "imageUrl": "images/M5-U37-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Classic Maya: City-States, Hieroglyphs, Astronomy,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M5-U37-5",
+            "imageUrl": "images/M5-U37-5.jpg",
+            "title": "El Castillo  at Chichen Itza",
+            "category": "Archaeological Artifact",
+            "caption": "Architectural Photograph: The Pyramid of Kukulcan (El Castillo) at Chichen Itza (Yucatan, Mexico). During the spring and autumn equinoxes, t",
+            "provenance": "UNESCO World Heritage Site, Classic/Terminal Maya, Yucatan, Mexico"
+          }
         ]
       },
       {
@@ -3400,7 +5131,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This sustainable, chemical-free farming system sustained one of the densest urban populations in antiquity without destroying the surrounding ecosystem."
         },
         "visualArtifact": {
-          "imageUrl": "images/M5-U38.jpg",
+          "imageUrl": "images/M5-U38-1.jpg",
           "title": "The Founding of Tenochtitlan (Codex Mendoza, Folio 2r)",
           "provenance": "Commissioned by Viceroy Antonio de Mendoza, 1541; Bodleian Library, Oxford",
           "visualClues": [
@@ -3455,6 +5186,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "The Aztec Empire operated as a tributary empire, demanding regular shipments of valuable commodities (cacao, cotton, warrior costumes, food, and jade) from subject city-states."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M5-U38-1",
+            "imageUrl": "images/M5-U38-1.jpg",
+            "title": "Aztec Empire : Tenochtitlan, Chinampas, and Tributary Rule (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "In the 1300s, the Mexica (Aztecs) built a breathtaking metropolis called Tenochtitlan on an island in the middle of Lake Texcoco. Feeding 250,000 people through floating gardens (chinampas), they conquered neighboring nations and created a powerful empire fueled by trade, tribute, and religious devotion.",
+            "provenance": "Commissioned by Viceroy Antonio de Mendoza, 1541; Bodleian Library, Oxford"
+          },
+          {
+            "slot": 2,
+            "id": "M5-U38-2",
+            "imageUrl": "images/M5-U38-2.jpg",
+            "title": "Bernal Diaz del Castillo - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Diaz del Castillo recalls being utterly speechless when seeing Tenochtitlan rising out of the water with its white stone pyramids and causeways, saying it looked like a magical fairy-tale dream that no European had ever imagined.",
+            "provenance": "Bernal Diaz del Castillo, a Spanish foot soldier under Hernan Cortes, writing ab"
+          },
+          {
+            "slot": 3,
+            "id": "M5-U38-3",
+            "imageUrl": "images/M5-U38-3.jpg",
+            "title": "Chinampa Wetland Agriculture & The Great Dike of Nezahualcoyotl",
+            "category": "Technology, Invention & Law",
+            "caption": "This sustainable, chemical-free farming system sustained one of the densest urban populations in antiquity without destroying the surrounding ecosystem.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M5-U38-4",
+            "imageUrl": "images/M5-U38-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Aztec Empire : Tenochtitlan, Chinampas,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M5-U38-5",
+            "imageUrl": "images/M5-U38-5.jpg",
+            "title": "Founding of Tenochtitlan",
+            "category": "Archaeological Artifact",
+            "caption": "Manuscript Frontispiece: Codex Mendoza Folio 2r (Bodleian Library, Oxford). The pictorial page depicts the founding of Tenochtitlan: an eagl",
+            "provenance": "Commissioned by Viceroy Antonio de Mendoza, 1541; Bodleian Library, Oxford"
+          }
         ]
       },
       {
@@ -3490,7 +5268,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "When massive earthquakes in Peru destroyed Spanish colonial cathedrals, the underlying Inca stone foundations remained completely undamaged."
         },
         "visualArtifact": {
-          "imageUrl": "images/M5-U39.jpg",
+          "imageUrl": "images/M5-U39-1.jpg",
           "title": "The Citadel and Agricultural Terraces of Machu Picchu, Peru",
           "provenance": "Constructed c. 1450 CE under Emperor Pachacuti; UNESCO World Heritage Site",
           "visualClues": [
@@ -3545,6 +5323,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "The Mit'a was a reciprocal labor tax system where households provided labor for imperial construction and farming projects, while the state guaranteed food relief and infrastructure in return."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M5-U39-1",
+            "imageUrl": "images/M5-U39-1.jpg",
+            "title": "Inca Empire : Andes Engineering, Terracing, and the Qhapaq Ñan (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "High in the jagged Andes Mountains of South America, the Inca built 'Tawantinsuyu' - an empire stretching 4,000 kilometers without using the wheel, iron tools, or written alphabets. They conquered the mountains through mortar-less earthquake-proof stonework, high-altitude terrace farms, and a 40,000-kilometer highway network.",
+            "provenance": "Constructed c. 1450 CE under Emperor Pachacuti; UNESCO World Heritage Site"
+          },
+          {
+            "slot": 2,
+            "id": "M5-U39-2",
+            "imageUrl": "images/M5-U39-2.jpg",
+            "title": "Felipe Guaman Poma de Ayala - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Guaman Poma explains that the Inca government kept giant mountain warehouses stocked with food, shoes, and clothing, guaranteeing that nobody went hungry or homeless, while royal relay runners delivered fresh ocean fish to the emperor in two days.",
+            "provenance": "Felipe Guaman Poma de Ayala, a noble indigenous Quechua chronicler writing aroun"
+          },
+          {
+            "slot": 3,
+            "id": "M5-U39-3",
+            "imageUrl": "images/M5-U39-3.jpg",
+            "title": "Mortarless Ashlar Masonry & The Quipu Knotted String Calculator",
+            "category": "Technology, Invention & Law",
+            "caption": "When massive earthquakes in Peru destroyed Spanish colonial cathedrals, the underlying Inca stone foundations remained completely undamaged.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M5-U39-4",
+            "imageUrl": "images/M5-U39-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Inca Empire : Andes Engineering, Terracing,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M5-U39-5",
+            "imageUrl": "images/M5-U39-5.jpg",
+            "title": "Citadel and Agricultural Terraces of Machu Picchu",
+            "category": "Archaeological Artifact",
+            "caption": "Architectural Photograph: The High-Altitude Citadel of Machu Picchu (Cusco Region, Peru). The stone city sits on a narrow mountain ridge bet",
+            "provenance": "Constructed c. 1450 CE under Emperor Pachacuti; UNESCO World Heritage Site"
+          }
         ]
       },
       {
@@ -3580,7 +5405,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Monks Mound proves that indigenous North Americans were master architects and city-builders capable of mobilizing thousands of workers for public infrastructure."
         },
         "visualArtifact": {
-          "imageUrl": "images/M5-U40.jpg",
+          "imageUrl": "images/M5-U40-1.jpg",
           "title": "Monks Mound - Largest Prehistoric Earthen Pyramid in the Americas",
           "provenance": "Cahokia Mounds State Historic Site, UNESCO World Heritage Site, Collinsville, Illinois",
           "visualClues": [
@@ -3635,6 +5460,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Chunkey was the major Mississippian spectator sport, where athletes hurled poles at a rolling carved stone disc, drawing huge crowds and heavy betting."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M5-U40-1",
+            "imageUrl": "images/M5-U40-1.jpg",
+            "title": "Indigenous North American Regional Societies: Cahokia and Mound Builders (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Centuries before European contact, Native American societies built thriving urban civilizations across North America. Near modern-day St. Louis, the metropolis of Cahokia was home to 20,000 people and featured 'Monks Mound' - a colossal earthen pyramid with a base larger than the Great Pyramid of Giza.",
+            "provenance": "Cahokia Mounds State Historic Site, UNESCO World Heritage Site, Collinsville, Illinois"
+          },
+          {
+            "slot": 2,
+            "id": "M5-U40-2",
+            "imageUrl": "images/M5-U40-2.jpg",
+            "title": "Father Jacques Marquette - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Father Marquette describes seeing massive earthen pyramid hills built by human hands along the river, observing that native chiefs lived in temples atop these mounds and held sacred harvest festivals.",
+            "provenance": "Father Jacques Marquette, French Jesuit missionary and explorer (1673)."
+          },
+          {
+            "slot": 3,
+            "id": "M5-U40-3",
+            "imageUrl": "images/M5-U40-3.jpg",
+            "title": "Monks Mound Soil Stratigraphy & The Woodhenge Sun Calendar",
+            "category": "Technology, Invention & Law",
+            "caption": "Monks Mound proves that indigenous North Americans were master architects and city-builders capable of mobilizing thousands of workers for public infrastructure.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M5-U40-4",
+            "imageUrl": "images/M5-U40-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Indigenous North American Regional Societies: Cahokia",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M5-U40-5",
+            "imageUrl": "images/M5-U40-5.jpg",
+            "title": "Monks Mound - Largest Prehistoric Earthen Pyramid in the Americas",
+            "category": "Archaeological Artifact",
+            "caption": "Aerial Photograph: Monks Mound at Cahokia Mounds State Historic Site (Illinois). The colossal rectangular four-tiered earthen pyramid rises ",
+            "provenance": "Cahokia Mounds State Historic Site, UNESCO World Heritage Site, Collinsville, Illinois"
+          }
         ]
       }
     ]
@@ -3675,7 +5547,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Without double-entry bookkeeping, global corporations and international trade could not function, while humanism created modern secular universities and liberal arts education."
         },
         "visualArtifact": {
-          "imageUrl": "images/M6-U41.jpg",
+          "imageUrl": "images/M6-U41-1.jpg",
           "title": "The Duomo of Florence (Santa Maria del Fiore) by Filippo Brunelleschi",
           "provenance": "Completed 1436 CE, Florence, Italy; UNESCO World Heritage Site",
           "visualClues": [
@@ -3730,6 +5602,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Luca Pacioli published the first mathematical description of double-entry bookkeeping, providing merchants with a systematic method to track debits, credits, and profits."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M6-U41-1",
+            "imageUrl": "images/M6-U41-1.jpg",
+            "title": "Italian Renaissance: Humanism, Merchant Patrons, and Florence (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Beginning in fourteenth-century Italy, the Renaissance ('rebirth') revived ancient Greek and Roman philosophy, art, and literature. In wealthy merchant republics like Florence, rich banking families like the Medici spent their fortunes sponsoring artists, architects, and thinkers who celebrated human potential.",
+            "provenance": "Completed 1436 CE, Florence, Italy; UNESCO World Heritage Site"
+          },
+          {
+            "slot": 2,
+            "id": "M6-U41-2",
+            "imageUrl": "images/M6-U41-2.jpg",
+            "title": "Pico della Mirandola - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Pico writes that unlike animals which are trapped by instinct, God gave human beings free will to shape their own destiny, allowing anyone to rise through education and virtue to become something truly great.",
+            "provenance": "Pico della Mirandola, Italian Renaissance nobleman and humanist philosopher (148"
+          },
+          {
+            "slot": 3,
+            "id": "M6-U41-3",
+            "imageUrl": "images/M6-U41-3.jpg",
+            "title": "Petrarch's Humanism & Pacioli's Double-Entry Bookkeeping",
+            "category": "Technology, Invention & Law",
+            "caption": "Without double-entry bookkeeping, global corporations and international trade could not function, while humanism created modern secular universities and liberal arts education.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M6-U41-4",
+            "imageUrl": "images/M6-U41-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Italian Renaissance: Humanism, Merchant Patrons,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M6-U41-5",
+            "imageUrl": "images/M6-U41-5.jpg",
+            "title": "Duomo of Florence  by Filippo Brunelleschi",
+            "category": "Archaeological Artifact",
+            "caption": "Architectural Photograph: The Cathedral of Santa Maria del Fiore (The Duomo of Florence) designed by Filippo Brunelleschi (c. 1436 CE). The ",
+            "provenance": "Completed 1436 CE, Florence, Italy; UNESCO World Heritage Site"
+          }
         ]
       },
       {
@@ -3765,7 +5684,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Linear perspective transformed Western art, architectural blueprints, computer graphics, and virtual reality camera rendering."
         },
         "visualArtifact": {
-          "imageUrl": "images/M6-U42.jpg",
+          "imageUrl": "images/M6-U42-1.jpg",
           "title": "The School of Athens (Scuola di Atene) by Raphael Sanzio",
           "provenance": "Fresco in the Stanza della Segnatura, Apostolic Palace, Vatican City, c. 1509-1511 CE",
           "visualClues": [
@@ -3820,6 +5739,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 0,
             "explanation": "Chiaroscuro is the artistic technique of using deep shadows and bright highlights to create dramatic three-dimensional form and weight on a flat painting."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M6-U42-1",
+            "imageUrl": "images/M6-U42-1.jpg",
+            "title": "Masters of the Renaissance: Leonardo da Vinci, Michelangelo, and Perspective (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "During the High Renaissance, master artists revolutionized visual reality. Leonardo da Vinci dissected human bodies and filled notebooks with flying machines, while Michelangelo carved colossal marble statues like David and painted the Sistine Chapel ceiling. Artists mastered linear perspective to make flat paintings look three-dimensional.",
+            "provenance": "Fresco in the Stanza della Segnatura, Apostolic Palace, Vatican City, c. 1509-1511 CE"
+          },
+          {
+            "slot": 2,
+            "id": "M6-U42-2",
+            "imageUrl": "images/M6-U42-2.jpg",
+            "title": "Giorgio Vasari - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Vasari writes with awe about Leonardo da Vinci, declaring that heaven blessed Leonardo with such superhuman beauty, grace, and intelligence that he could master and solve any problem in science or art with effortless ease.",
+            "provenance": "Giorgio Vasari, Florentine painter, architect, and biographer writing in 1550 CE"
+          },
+          {
+            "slot": 3,
+            "id": "M6-U42-3",
+            "imageUrl": "images/M6-U42-3.jpg",
+            "title": "Brunelleschi's Linear Perspective & Leonardo's Sfumato Glazing",
+            "category": "Technology, Invention & Law",
+            "caption": "Linear perspective transformed Western art, architectural blueprints, computer graphics, and virtual reality camera rendering.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M6-U42-4",
+            "imageUrl": "images/M6-U42-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Masters of the Renaissance: Leonardo da Vinci, Michelangelo,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M6-U42-5",
+            "imageUrl": "images/M6-U42-5.jpg",
+            "title": "School of Athens  by Raphael Sanzio",
+            "category": "Archaeological Artifact",
+            "caption": "Renaissance Fresco: The School of Athens (Scuola di Atene) by Raphael (1509 - 1511 CE, Apostolic Palace, Vatican). The fresco depicts classi",
+            "provenance": "Fresco in the Stanza della Segnatura, Apostolic Palace, Vatican City, c. 1509-1511 CE"
+          }
         ]
       },
       {
@@ -3855,7 +5821,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Oil painting completely replaced egg tempera, enabling the rich color palettes and realism of Rembrandt, Vermeer, and later modern painting."
         },
         "visualArtifact": {
-          "imageUrl": "images/M6-U43.jpg",
+          "imageUrl": "images/M6-U43-1.jpg",
           "title": "Portrait of Desiderius Erasmus of Rotterdam by Hans Holbein the Younger",
           "provenance": "1523 CE, Oil and tempera on wood; National Gallery, London",
           "visualClues": [
@@ -3910,6 +5876,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "In The Praise of Folly (1511), Erasmus used humorous satire to criticize the hypocrisy, vanity, and corruption of the clergy and nobility."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M6-U43-1",
+            "imageUrl": "images/M6-U43-1.jpg",
+            "title": "Northern Renaissance: Realism, Erasmus, and Christian Humanism (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "As Renaissance ideas spread north to Germany, the Netherlands, and England, artists and scholars adapted them to their own cultures. Northern artists mastered oil painting and microscopic everyday realism, while 'Christian Humanists' like Erasmus used wit and scholarship to reform Church corruption.",
+            "provenance": "1523 CE, Oil and tempera on wood; National Gallery, London"
+          },
+          {
+            "slot": 2,
+            "id": "M6-U43-2",
+            "imageUrl": "images/M6-U43-2.jpg",
+            "title": "Desiderius Erasmus of Rotterdam - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Erasmus hilariously mocks lazy, illiterate monks who scream church songs they do not understand, beg for food while pretending to be holy, and act like arrogant hypocrites instead of following Jesus.",
+            "provenance": "Desiderius Erasmus of Rotterdam, Dutch priest, classical scholar, and Christian "
+          },
+          {
+            "slot": 3,
+            "id": "M6-U43-3",
+            "imageUrl": "images/M6-U43-3.jpg",
+            "title": "Van Eyck's Linseed Oil Glazing & The Arnolfini Convex Mirror",
+            "category": "Technology, Invention & Law",
+            "caption": "Oil painting completely replaced egg tempera, enabling the rich color palettes and realism of Rembrandt, Vermeer, and later modern painting.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M6-U43-4",
+            "imageUrl": "images/M6-U43-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Northern Renaissance: Realism, Erasmus,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M6-U43-5",
+            "imageUrl": "images/M6-U43-5.jpg",
+            "title": "Portrait of Desiderius Erasmus of Rotterdam by Hans Holbein the Younger",
+            "category": "Archaeological Artifact",
+            "caption": "Oil Painting Portrait: Portrait of Desiderius Erasmus of Rotterdam by Hans Holbein the Younger (1523 CE, National Gallery, London). The scho",
+            "provenance": "1523 CE, Oil and tempera on wood; National Gallery, London"
+          }
         ]
       },
       {
@@ -3945,7 +5958,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Movable metal type drove down book prices by over 85%, breaking the monopoly of the Church and sparking the scientific, political, and democratic revolutions of modern history."
         },
         "visualArtifact": {
-          "imageUrl": "images/M6-U44.jpg",
+          "imageUrl": "images/M6-U44-1.jpg",
           "title": "The Gutenberg 42-Line Bible (Lenox Copy, New York Public Library)",
           "provenance": "Johannes Gutenberg, Mainz, Germany, c. 1455 CE; New York Public Library",
           "visualClues": [
@@ -4000,6 +6013,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Between 1450 and 1500, printing presses across Europe produced an estimated 20 million books, exceeding all the handwritten manuscripts produced in the previous thousand years."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M6-U44-1",
+            "imageUrl": "images/M6-U44-1.jpg",
+            "title": "Johannes Gutenberg and the Movable Type Printing Revolution (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Around 1450 in Germany, Johannes Gutenberg combined movable metal type, oil-based ink, and a wooden screw press to invent mechanical printing. Considered the most important invention of the second millennium, it made books cheap, broke the Church's monopoly on information, and sparked the modern information age.",
+            "provenance": "Johannes Gutenberg, Mainz, Germany, c. 1455 CE; New York Public Library"
+          },
+          {
+            "slot": 2,
+            "id": "M6-U44-2",
+            "imageUrl": "images/M6-U44-2.jpg",
+            "title": "Aeneas Silvius Piccolomini - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Piccolomini writes excitedly that he examined sample pages of Gutenberg's printed Bible and found the text so clean, sharp, and error-free that an old man could read it without glasses, noting that every copy sold out before printing was even completed.",
+            "provenance": "Aeneas Silvius Piccolomini (later Pope Pius II), Italian humanist scholar and pa"
+          },
+          {
+            "slot": 3,
+            "id": "M6-U44-3",
+            "imageUrl": "images/M6-U44-3.jpg",
+            "title": "The Lead-Tin-Antimony Type Alloy & The Adjustable Hand Mold",
+            "category": "Technology, Invention & Law",
+            "caption": "Movable metal type drove down book prices by over 85%, breaking the monopoly of the Church and sparking the scientific, political, and democratic revolutions of modern history.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M6-U44-4",
+            "imageUrl": "images/M6-U44-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Johannes Gutenberg",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M6-U44-5",
+            "imageUrl": "images/M6-U44-5.jpg",
+            "title": "Gutenberg 42-Line Bible",
+            "category": "Archaeological Artifact",
+            "caption": "Museum Artifact Display: The Gutenberg Bible (Lenox Copy, New York Public Library). The opened folio shows two balanced columns of 42 lines ",
+            "provenance": "Johannes Gutenberg, Mainz, Germany, c. 1455 CE; New York Public Library"
+          }
         ]
       },
       {
@@ -4035,7 +6095,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This translation encouraged mass literacy so ordinary families could read at home, creating the public school systems and religious freedom debates of modern history."
         },
         "visualArtifact": {
-          "imageUrl": "images/M6-U45.jpg",
+          "imageUrl": "images/M6-U45-1.jpg",
           "title": "Portrait of Martin Luther by Lucas Cranach the Elder (1529)",
           "provenance": "Lucas Cranach the Elder, Uffizi Gallery, Florence, Italy",
           "visualClues": [
@@ -4090,6 +6150,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Luther's German translation of the Bible standardized the modern German language, ignited mass literacy, and gave common people direct access to sacred scripture."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M6-U45-1",
+            "imageUrl": "images/M6-U45-1.jpg",
+            "title": "Martin Luther and the Protestant Reformation (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "In 1517, a German monk named Martin Luther challenged the Catholic Church by nailing his 95 Theses to a church door in Wittenberg, furiously protesting the sale of 'indulgences' (pay-to-get-into-heaven certificates). Backed by the printing press, his protest split Western Christianity into Catholic and Protestant branches forever.",
+            "provenance": "Lucas Cranach the Elder, Uffizi Gallery, Florence, Italy"
+          },
+          {
+            "slot": 2,
+            "id": "M6-U45-2",
+            "imageUrl": "images/M6-U45-2.jpg",
+            "title": "Martin Luther - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Luther challenges: If the Pope truly has the power to free souls from suffering in Purgatory, why doesn't he free them out of pure Christian love, rather than demanding poor peasants pay money to build a luxury church in Rome?",
+            "provenance": "Martin Luther, German monk and professor of biblical theology at the University "
+          },
+          {
+            "slot": 3,
+            "id": "M6-U45-3",
+            "imageUrl": "images/M6-U45-3.jpg",
+            "title": "The Three Solas & The Vernacular German Bible Translation",
+            "category": "Technology, Invention & Law",
+            "caption": "This translation encouraged mass literacy so ordinary families could read at home, creating the public school systems and religious freedom debates of modern history.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M6-U45-4",
+            "imageUrl": "images/M6-U45-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Martin Luther",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M6-U45-5",
+            "imageUrl": "images/M6-U45-5.jpg",
+            "title": "Portrait of Martin Luther by Lucas Cranach the Elder",
+            "category": "Archaeological Artifact",
+            "caption": "Historical Portrait Painting: Martin Luther by Lucas Cranach the Elder (1529 CE, Uffizi Gallery, Florence). Luther is depicted in his black ",
+            "provenance": "Lucas Cranach the Elder, Uffizi Gallery, Florence, Italy"
+          }
         ]
       },
       {
@@ -4125,7 +6232,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This redistribution created the wealthy British parliamentary gentry class that would eventually challenge the absolute power of kings in the English Civil War."
         },
         "visualArtifact": {
-          "imageUrl": "images/M6-U46.jpg",
+          "imageUrl": "images/M6-U46-1.jpg",
           "title": "Portrait of King Henry VIII of England by Hans Holbein the Younger",
           "provenance": "Hans Holbein the Younger, royal court painter; Walker Art Gallery, Liverpool",
           "visualClues": [
@@ -4180,6 +6287,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "The Crown closed all Catholic monasteries between 1536 and 1541, melting down their treasures and selling vast church estates to loyal English nobles to fund the royal treasury."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M6-U46-1",
+            "imageUrl": "images/M6-U46-1.jpg",
+            "title": "English Reformation, Henry VIII, and Religious Conflicts (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Unlike Germany's theological reform, England's Reformation was driven by royal politics. When the Pope refused to annul King Henry VIII's marriage to Catherine of Aragon, Henry broke with Rome, made himself Supreme Head of the Church of England, and seized the Catholic Church's vast wealth.",
+            "provenance": "Hans Holbein the Younger, royal court painter; Walker Art Gallery, Liverpool"
+          },
+          {
+            "slot": 2,
+            "id": "M6-U46-2",
+            "imageUrl": "images/M6-U46-2.jpg",
+            "title": "Reformation Parliament of England under King Henry VIII . - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Parliament declares that King Henry VIII and his royal heirs are the sole supreme rulers of the Church of England on Earth, completely abolishing the Pope's authority and giving the King power to define religious doctrine.",
+            "provenance": "The Reformation Parliament of England under King Henry VIII (November 1534)."
+          },
+          {
+            "slot": 3,
+            "id": "M6-U46-3",
+            "imageUrl": "images/M6-U46-3.jpg",
+            "title": "The Act of Supremacy (1534) & Cromwell's Monastic Dissolution",
+            "category": "Technology, Invention & Law",
+            "caption": "This redistribution created the wealthy British parliamentary gentry class that would eventually challenge the absolute power of kings in the English Civil War.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M6-U46-4",
+            "imageUrl": "images/M6-U46-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of English Reformation, Henry VIII,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M6-U46-5",
+            "imageUrl": "images/M6-U46-5.jpg",
+            "title": "Portrait of King Henry VIII of England by Hans Holbein the Younger",
+            "category": "Archaeological Artifact",
+            "caption": "Royal Portrait: Portrait of King Henry VIII of England by Hans Holbein the Younger (c. 1537 CE, Walker Art Gallery, Liverpool). Henry stands",
+            "provenance": "Hans Holbein the Younger, royal court painter; Walker Art Gallery, Liverpool"
+          }
         ]
       },
       {
@@ -4215,7 +6369,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Jesuit education produced many of Europe's top scientists and philosophers, while Baroque art and architecture transformed Rome, Vienna, and Latin America."
         },
         "visualArtifact": {
-          "imageUrl": "images/M6-U47.jpg",
+          "imageUrl": "images/M6-U47-1.jpg",
           "title": "The Assembly of the Council of Trent (Cathedral of San Vigilio, 1563)",
           "provenance": "Museo Diocesano Tridentino, Trento, Italy",
           "visualClues": [
@@ -4270,6 +6424,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "The Church sponsored the Baroque style, employing theatrical lighting, rich colors, and dynamic movement (seen in Bernini and Caravaggio) to evoke intense spiritual awe."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M6-U47-1",
+            "imageUrl": "images/M6-U47-1.jpg",
+            "title": "Catholic Counter-Reformation and the Council of Trent (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Facing the loss of millions of believers across northern Europe, the Catholic Church launched the 'Counter-Reformation'. Meeting at the Council of Trent, Church leaders banned corrupt practices like selling indulgences, reaffirmed traditional Catholic doctrines, and deployed the highly educated Jesuit order to win back souls through schools and missionary work.",
+            "provenance": "Museo Diocesano Tridentino, Trento, Italy"
+          },
+          {
+            "slot": 2,
+            "id": "M6-U47-2",
+            "imageUrl": "images/M6-U47-2.jpg",
+            "title": "Council of Trent - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: The Council strictly bans all financial buying and selling of indulgences to eliminate greed and abuse, while ordering that paintings and statues of Christ and the saints must be kept in churches to inspire holy respect.",
+            "provenance": "The Council of Trent, convened under Popes Paul III, Julius III, and Pius IV (De"
+          },
+          {
+            "slot": 3,
+            "id": "M6-U47-3",
+            "imageUrl": "images/M6-U47-3.jpg",
+            "title": "Ignatius of Loyola's Spiritual Exercises & The Baroque Visual Revolution",
+            "category": "Technology, Invention & Law",
+            "caption": "Jesuit education produced many of Europe's top scientists and philosophers, while Baroque art and architecture transformed Rome, Vienna, and Latin America.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M6-U47-4",
+            "imageUrl": "images/M6-U47-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Catholic Counter-Reformation",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M6-U47-5",
+            "imageUrl": "images/M6-U47-5.jpg",
+            "title": "Assembly of the Council of Trent",
+            "category": "Archaeological Artifact",
+            "caption": "Historical Painting: The Council of Trent in Session (Museo Diocesano Tridentino, Trento). Cardinals in scarlet robes and bishops in white m",
+            "provenance": "Museo Diocesano Tridentino, Trento, Italy"
+          }
         ]
       },
       {
@@ -4305,7 +6506,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Galileo's experimental method laid the direct groundwork for Sir Isaac Newton's Universal Law of Gravitation and modern physics."
         },
         "visualArtifact": {
-          "imageUrl": "images/M6-U48.jpg",
+          "imageUrl": "images/M6-U48-1.jpg",
           "title": "Portrait of Galileo Galilei by Justus Sustermans (1636)",
           "provenance": "Justus Sustermans, Uffizi Gallery, Florence, Italy",
           "visualClues": [
@@ -4360,6 +6561,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "The Inquisition convicted Galileo of vehement suspicion of heresy in 1633, forcing him to recant his Copernican teachings and placing him under permanent house arrest for the rest of his life."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M6-U48-1",
+            "imageUrl": "images/M6-U48-1.jpg",
+            "title": "Scientific Revolution: Copernicus, Galileo, and the Heliocentric Universe (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Between 1543 and 1700, thinkers overturned centuries of ancient Greek dogma by establishing modern science. Nicolas Copernicus proved that Earth revolves around the sun (heliocentrism), and Galileo Galilei used a telescope to discover moons orbiting Jupiter, proving that humans are not the physical center of the universe.",
+            "provenance": "Justus Sustermans, Uffizi Gallery, Florence, Italy"
+          },
+          {
+            "slot": 2,
+            "id": "M6-U48-2",
+            "imageUrl": "images/M6-U48-2.jpg",
+            "title": "Galileo Galilei - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Galileo announces to the world that through his telescope, he discovered four moons orbiting Jupiter, proving definitively that Earth is not the only center of motion in the cosmos.",
+            "provenance": "Galileo Galilei, Italian professor of mathematics, astronomer, and physicist (Ma"
+          },
+          {
+            "slot": 3,
+            "id": "M6-U48-3",
+            "imageUrl": "images/M6-U48-3.jpg",
+            "title": "Galileo's Refracting Optical Telescope & The Laws of Inertia",
+            "category": "Technology, Invention & Law",
+            "caption": "Galileo's experimental method laid the direct groundwork for Sir Isaac Newton's Universal Law of Gravitation and modern physics.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M6-U48-4",
+            "imageUrl": "images/M6-U48-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Scientific Revolution: Copernicus, Galileo,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M6-U48-5",
+            "imageUrl": "images/M6-U48-5.jpg",
+            "title": "Portrait of Galileo Galilei by Justus Sustermans",
+            "category": "Archaeological Artifact",
+            "caption": "Scientific Diagram: Galileo's Telescopic Sketches of the Lunar Surface and Jupiter's Moons (Sidereus Nuncius, 1610 CE). The page shows Galil",
+            "provenance": "Justus Sustermans, Uffizi Gallery, Florence, Italy"
+          }
         ]
       }
     ]
@@ -4400,7 +6648,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "The Volta do Mar principle allowed Columbus, Dias, and Da Gama to cross oceans and return home safely, creating modern global shipping lanes."
         },
         "visualArtifact": {
-          "imageUrl": "images/M7-U49.jpg",
+          "imageUrl": "images/M7-U49-1.jpg",
           "title": "Navigational Brass Astrolabe and Celestial Calculation Plates",
           "provenance": "Maritime Navigational Collection, National Maritime Museum, Greenwich",
           "visualClues": [
@@ -4455,6 +6703,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Prince Henry the Navigator gathered cartographers, astronomers, and shipwrights at Sagres, financing systematic exploration down the West African coast."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M7-U49-1",
+            "imageUrl": "images/M7-U49-1.jpg",
+            "title": "Navigational Innovations: The Caravel, Astrolabe, and Portolan Charts (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "For centuries, European sailors were terrified to sail far into the open Atlantic Ocean. In the 1400s, Portuguese shipwrights and navigators combined Arab sails, Chinese compasses, and European hulls to invent the 'Caravel' and mariner's astrolabe, unlocking the ability to cross global oceans.",
+            "provenance": "Maritime Navigational Collection, National Maritime Museum, Greenwich"
+          },
+          {
+            "slot": 2,
+            "id": "M7-U49-2",
+            "imageUrl": "images/M7-U49-2.jpg",
+            "title": "Gomes Eanes de Zurara - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Zurara records that sailors were terrified of sailing past Cape Bojador, fearing boiling water and monsters, until Gil Eanes sailed past it and brought back wild roses to prove the new lands were normal and safe.",
+            "provenance": "Gomes Eanes de Zurara, royal Portuguese chronicler writing in Lisbon (c. 1453 CE"
+          },
+          {
+            "slot": 3,
+            "id": "M7-U49-3",
+            "imageUrl": "images/M7-U49-3.jpg",
+            "title": "The Mariner's Cast-Brass Astrolabe & The Volta do Mar Gyre",
+            "category": "Technology, Invention & Law",
+            "caption": "The Volta do Mar principle allowed Columbus, Dias, and Da Gama to cross oceans and return home safely, creating modern global shipping lanes.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M7-U49-4",
+            "imageUrl": "images/M7-U49-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Navigational Innovations: The Caravel, Astrolabe,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M7-U49-5",
+            "imageUrl": "images/M7-U49-5.jpg",
+            "title": "Navigational Brass Astrolabe and Celestial Calculation Plates",
+            "category": "Archaeological Artifact",
+            "caption": "Museum Artifact Display: Brass Mariner's Astrolabe (16th Century, National Maritime Museum, Greenwich). The heavy, pierced circular brass di",
+            "provenance": "Maritime Navigational Collection, National Maritime Museum, Greenwich"
+          }
         ]
       },
       {
@@ -4490,7 +6785,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Portugal broke Venice's monopoly, redirected the spice trade around Africa to Lisbon, and established Europe's first global maritime trading post empire."
         },
         "visualArtifact": {
-          "imageUrl": "images/M7-U50.jpg",
+          "imageUrl": "images/M7-U50-1.jpg",
           "title": "Portrait of Portuguese Explorer Vasco da Gama (First Count of Vidigueira)",
           "provenance": "National Library of Portugal Historical Portrait Collection, Lisbon",
           "visualClues": [
@@ -4545,6 +6840,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 2,
             "explanation": "Despite losing two ships and half his crew to scurvy, the spices Da Gama brought back generated an astounding 3,000% profit, proving the immense wealth of direct sea trade."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M7-U50-1",
+            "imageUrl": "images/M7-U50-1.jpg",
+            "title": "Portuguese Oceanic Voyages: Prince Henry, Bartolomeu Dias, and Vasco da Gama (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Over decades, Portuguese captains systematically mapped the unknown coast of Africa. In 1488, Bartolomeu Dias rounded the stormy Cape of Good Hope, and in 1498, Vasco da Gama sailed all the way to India - discovering the first direct all-water sea route from Europe to Asian spice markets.",
+            "provenance": "National Library of Portugal Historical Portrait Collection, Lisbon"
+          },
+          {
+            "slot": 2,
+            "id": "M7-U50-2",
+            "imageUrl": "images/M7-U50-2.jpg",
+            "title": "An anonymous Portuguese sailor or clerk aboard Vasco da Gama's flagship Sao Gabriel . - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: When Portuguese sailors stepped ashore in India, local Arab traders were stunned and asked what on earth brought them so far from home, to which the Portuguese famously answered: 'We have come looking for Christians and spices.'",
+            "provenance": "An anonymous Portuguese sailor or clerk aboard Vasco da Gama's flagship Sao Gabr"
+          },
+          {
+            "slot": 3,
+            "id": "M7-U50-3",
+            "imageUrl": "images/M7-U50-3.jpg",
+            "title": "The Cartaz Maritime Taxation Pass & Afonso de Albuquerque's Fortresses",
+            "category": "Technology, Invention & Law",
+            "caption": "Portugal broke Venice's monopoly, redirected the spice trade around Africa to Lisbon, and established Europe's first global maritime trading post empire.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M7-U50-4",
+            "imageUrl": "images/M7-U50-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Portuguese Oceanic Voyages: Prince Henry, Bartolomeu Dias,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M7-U50-5",
+            "imageUrl": "images/M7-U50-5.jpg",
+            "title": "Portrait of Portuguese Explorer Vasco da Gama",
+            "category": "Archaeological Artifact",
+            "caption": "Lithograph Portrait: Vasco da Gama, First Count of Vidigueira (c. 1838, National Library of Portugal). The bearded explorer stands in polish",
+            "provenance": "National Library of Portugal Historical Portrait Collection, Lisbon"
+          }
         ]
       },
       {
@@ -4580,7 +6922,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This treaty established the legal doctrine of colonial conquest, ignoring the rights and sovereignty of millions of indigenous inhabitants."
         },
         "visualArtifact": {
-          "imageUrl": "images/M7-U51.jpg",
+          "imageUrl": "images/M7-U51-1.jpg",
           "title": "The Cantino Planisphere World Map (1502) with the Tordesillas Line",
           "provenance": "Smuggled Portuguese state nautical chart; Biblioteca Estense Universitaria, Modena, Italy",
           "visualClues": [
@@ -4635,6 +6977,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "When Pedro Alvares Cabral landed in Brazil in 1500, it lay east of the Tordesillas meridian line, placing it legally under Portuguese imperial jurisdiction."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M7-U51-1",
+            "imageUrl": "images/M7-U51-1.jpg",
+            "title": "Christopher Columbus, the Spanish Caribbean Invasions, and the Tordesillas Treaty (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Believing he could reach Asian spice markets faster by sailing west into the Atlantic, Italian navigator Christopher Columbus convinced the Spanish monarchs to fund his voyage in 1492. Instead of Asia, he landed in the Caribbean, opening the Americas to European colonization and devastating indigenous populations.",
+            "provenance": "Smuggled Portuguese state nautical chart; Biblioteca Estense Universitaria, Modena, Italy"
+          },
+          {
+            "slot": 2,
+            "id": "M7-U51-2",
+            "imageUrl": "images/M7-U51-2.jpg",
+            "title": "Christopher Columbus - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Columbus observes that the Taino people are peaceful, handsome, and carry no iron weapons, noting that when shown a sword, they cut themselves on the sharp blade, and immediately muses that they would make obedient servants and converts.",
+            "provenance": "Christopher Columbus, Italian explorer sailing under the flag of Spain (October "
+          },
+          {
+            "slot": 3,
+            "id": "M7-U51-3",
+            "imageUrl": "images/M7-U51-3.jpg",
+            "title": "The Treaty of Tordesillas (1494) & The Cantino World Map (1502)",
+            "category": "Technology, Invention & Law",
+            "caption": "This treaty established the legal doctrine of colonial conquest, ignoring the rights and sovereignty of millions of indigenous inhabitants.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M7-U51-4",
+            "imageUrl": "images/M7-U51-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Christopher Columbus, the Spanish Caribbean Invasions,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M7-U51-5",
+            "imageUrl": "images/M7-U51-5.jpg",
+            "title": "Cantino Planisphere World Map  with the Tordesillas Line",
+            "category": "Archaeological Artifact",
+            "caption": "Cartographic Masterwork: The Cantino Planisphere World Map (1502, Biblioteca Estense, Modena). The illuminated parchment depicts Europe, Afr",
+            "provenance": "Smuggled Portuguese state nautical chart; Biblioteca Estense Universitaria, Modena, Italy"
+          }
         ]
       },
       {
@@ -4670,7 +7059,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "The collapse of the Aztec and Inca empires enabled Spain to seize trillions of dollars in silver, funding the Spanish Golden Age and transforming world currencies."
         },
         "visualArtifact": {
-          "imageUrl": "images/M7-U52.jpg",
+          "imageUrl": "images/M7-U52-1.jpg",
           "title": "Florentine Codex Folio 53v - The Devastating Smallpox Epidemic in Mexico",
           "provenance": "Fray Bernardino de Sahagun and Nahua artists, c. 1577; Laurentian Library, Florence",
           "visualClues": [
@@ -4725,6 +7114,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 0,
             "explanation": "The Macuahuitl was an oak club edged with flaked obsidian glass; while razor-sharp against unarmored skin, it shattered upon impact with hardened Spanish steel armor."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M7-U52-1",
+            "imageUrl": "images/M7-U52-1.jpg",
+            "title": "Spanish Conquest of the Aztec and Inca Empires: Cortés and Pizarro (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Within fifty years of Columbus's landing, small bands of Spanish conquistadors toppled the two mightiest empires in the Americas: Hernan Cortes conquered the Aztec Empire in Mexico, and Francisco Pizarro conquered the Inca Empire in Peru. They succeeded not through numbers, but through steel armor, horses, gunpowder, local alliances, and catastrophic European smallpox epidemics.",
+            "provenance": "Fray Bernardino de Sahagun and Nahua artists, c. 1577; Laurentian Library, Florence"
+          },
+          {
+            "slot": 2,
+            "id": "M7-U52-2",
+            "imageUrl": "images/M7-U52-2.jpg",
+            "title": "Nahua elders and scribes of Tenochtitlan/Tlatelolco - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Indigenous witnesses describe how smallpox wiped out entire families, causing agonizing sores over their bodies, leaving people paralyzed with pain and starving to death because nobody was healthy enough to cook food.",
+            "provenance": "Nahua elders and scribes of Tenochtitlan/Tlatelolco, recorded in Nahuatl in 1555"
+          },
+          {
+            "slot": 3,
+            "id": "M7-U52-3",
+            "imageUrl": "images/M7-U52-3.jpg",
+            "title": "Toledo Steel Rapier Metallurgy & The Smallpox Epidemic Shock",
+            "category": "Technology, Invention & Law",
+            "caption": "The collapse of the Aztec and Inca empires enabled Spain to seize trillions of dollars in silver, funding the Spanish Golden Age and transforming world currencies.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M7-U52-4",
+            "imageUrl": "images/M7-U52-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Spanish Conquest of the Aztec",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M7-U52-5",
+            "imageUrl": "images/M7-U52-5.jpg",
+            "title": "Florentine Codex Folio 53v - The Devastating Smallpox Epidemic in Mexico",
+            "category": "Archaeological Artifact",
+            "caption": "Manuscript Illumination: Indigenous Victims of Smallpox (Florentine Codex, Book XII, Folio 53v). The Nahua painting shows indigenous Aztec p",
+            "provenance": "Fray Bernardino de Sahagun and Nahua artists, c. 1577; Laurentian Library, Florence"
+          }
         ]
       },
       {
@@ -4761,7 +7197,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Without the Columbian Exchange, Italy would have no tomatoes, Ireland no potatoes, Switzerland no chocolate, and America no horses, wheat, or coffee."
         },
         "visualArtifact": {
-          "imageUrl": "images/M7-U53.jpg",
+          "imageUrl": "images/M7-U53-1.jpg",
           "title": "Early European Botanical Illustration of the Andean Potato Plant",
           "provenance": "Renaissance botanical herbal manuscript, Royal Botanic Gardens Archive, c. 1590",
           "visualClues": [
@@ -4816,6 +7252,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "The potato's high caloric density and resilience against harsh weather ended recurrent European famines, sparking population growth that fueled urban industrialization."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M7-U53-1",
+            "imageUrl": "images/M7-U53-1.jpg",
+            "title": "Columbian Exchange: Biological, Agricultural, and Demographic Transformations (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Following 1492, the Eastern and Western Hemispheres were permanently joined in the 'Columbian Exchange' - the massive transfer of plants, animals, cultures, and diseases across the Atlantic. While European diseases decimated Native populations, American crops like potatoes and corn fueled a global population explosion.",
+            "provenance": "Renaissance botanical herbal manuscript, Royal Botanic Gardens Archive, c. 1590"
+          },
+          {
+            "slot": 2,
+            "id": "M7-U53-2",
+            "imageUrl": "images/M7-U53-2.jpg",
+            "title": "Bartolome de las Casas - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Las Casas condemns Spanish cruelty, describing native peoples as peaceful sheep and conquistadors as ravenous wolves, recording that out of three million original inhabitants on Hispaniola, fewer than two hundred survived.",
+            "provenance": "Bartolome de las Casas, Spanish friar, historian, and former slave owner who bec"
+          },
+          {
+            "slot": 3,
+            "id": "M7-U53-3",
+            "imageUrl": "images/M7-U53-3.jpg",
+            "title": "The Andean Potato Caloric Revolution & The Great Dying",
+            "category": "Technology, Invention & Law",
+            "caption": "Without the Columbian Exchange, Italy would have no tomatoes, Ireland no potatoes, Switzerland no chocolate, and America no horses, wheat, or coffee.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M7-U53-4",
+            "imageUrl": "images/M7-U53-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Columbian Exchange: Biological, Agricultural,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M7-U53-5",
+            "imageUrl": "images/M7-U53-5.jpg",
+            "title": "Early European Botanical Illustration of the Andean Potato Plant",
+            "category": "Archaeological Artifact",
+            "caption": "Scientific Botanical Illustration: Potato Plant (Solanum tuberosum) from Leonhart Fuchs's Herbal (1542 CE). The colored woodcut illustrates ",
+            "provenance": "Renaissance botanical herbal manuscript, Royal Botanic Gardens Archive, c. 1590"
+          }
         ]
       },
       {
@@ -4851,7 +7334,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "The profits from the slave trade and slave-grown sugar financed European banks, insurance corporations (like Lloyd's of London), and early industrial factories."
         },
         "visualArtifact": {
-          "imageUrl": "images/M7-U54.jpg",
+          "imageUrl": "images/M7-U54-1.jpg",
           "title": "Stowage of the British Slave Ship Brookes under the Regulated Slave Trade Act (1788)",
           "provenance": "Society for Effecting the Abolition of the Slave Trade, London, 1788",
           "visualClues": [
@@ -4906,6 +7389,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Olaudah Equiano's autobiography gave the world an authentic, heartbreaking firsthand account of the Middle Passage, becoming a powerful weapon in the campaign to abolish slavery."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M7-U54-1",
+            "imageUrl": "images/M7-U54-1.jpg",
+            "title": "Transatlantic Slave Trade and the Middle Passage (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Between the 1500s and 1800s, over twelve million enslaved Africans were forcibly shipped across the Atlantic Ocean to work on European sugar, tobacco, and cotton plantations in the Americas. Known as the 'Middle Passage', this triangular trade caused unimaginable human suffering and fueled European colonial wealth.",
+            "provenance": "Society for Effecting the Abolition of the Slave Trade, London, 1788"
+          },
+          {
+            "slot": 2,
+            "id": "M7-U54-2",
+            "imageUrl": "images/M7-U54-2.jpg",
+            "title": "Olaudah Equiano - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Equiano describes the suffocating stench, extreme heat, and agonizing shrieks of terror inside the crowded hold of a slave ship, recording that the cruelty was so unbearable that he begged God for death to end his suffering.",
+            "provenance": "Olaudah Equiano (Gustavus Vassa), an Igbo African who was enslaved as a child, b"
+          },
+          {
+            "slot": 3,
+            "id": "M7-U54-3",
+            "imageUrl": "images/M7-U54-3.jpg",
+            "title": "The Brookes Slave Ship Cross-Section & The Triangular Trade System",
+            "category": "Technology, Invention & Law",
+            "caption": "The profits from the slave trade and slave-grown sugar financed European banks, insurance corporations (like Lloyd's of London), and early industrial factories.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M7-U54-4",
+            "imageUrl": "images/M7-U54-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Transatlantic Slave Trade",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M7-U54-5",
+            "imageUrl": "images/M7-U54-5.jpg",
+            "title": "Stowage of the British Slave Ship Brookes under the Regulated Slave Trade Act",
+            "category": "Archaeological Artifact",
+            "caption": "Abolitionist Diagram: Plan and Sections of the Slave Ship Brookes of Liverpool (1788). The black-and-white architectural engraving shows hun",
+            "provenance": "Society for Effecting the Abolition of the Slave Trade, London, 1788"
+          }
         ]
       },
       {
@@ -4941,7 +7471,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "The Spanish Piece of Eight was so reliable that it served as legal tender in the United States until 1857, and its 'Pillars of Hercules' banner inspired the modern dollar sign ($)."
         },
         "visualArtifact": {
-          "imageUrl": "images/M7-U55.jpg",
+          "imageUrl": "images/M7-U55-1.jpg",
           "title": "Spanish Silver Real de a Ocho (Piece of Eight) Minted at Potosí",
           "provenance": "Minted at the Casa de la Moneda, Potosí, Bolivia, 17th Century",
           "visualClues": [
@@ -4996,6 +7526,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "The Manila Galleons crossed the Pacific Ocean between Acapulco and Manila, exchanging American silver for Chinese silks, porcelain, and spices."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M7-U55-1",
+            "imageUrl": "images/M7-U55-1.jpg",
+            "title": "Manila Galleons and the Rise of Global Silver Currencies (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "In 1545, the Spanish discovered a mountain of pure silver at Potosí in Bolivia. Mined by forced indigenous and enslaved labor, this silver was minted into 'Pieces of Eight' - the world's first global currency. Spanish 'Manila Galleons' sailed across the Pacific to trade silver for Chinese silks and porcelain, connecting the entire world in trade for the first time.",
+            "provenance": "Minted at the Casa de la Moneda, Potosí, Bolivia, 17th Century"
+          },
+          {
+            "slot": 2,
+            "id": "M7-U55-2",
+            "imageUrl": "images/M7-U55-2.jpg",
+            "title": "Antonio Vazquez de Espinosa - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Vazquez de Espinosa writes that so much silver was extracted from Potosi that you could build a bridge of solid silver from Bolivia all the way to Madrid, but laments that this wealth cost the lives of thousands of indigenous miners dying from toxic mercury fumes.",
+            "provenance": "Antonio Vazquez de Espinosa, Spanish friar and traveler who visited Potosi in th"
+          },
+          {
+            "slot": 3,
+            "id": "M7-U55-3",
+            "imageUrl": "images/M7-U55-3.jpg",
+            "title": "The Patio Mercury Amalgamation Process & The Spanish Dollar",
+            "category": "Technology, Invention & Law",
+            "caption": "The Spanish Piece of Eight was so reliable that it served as legal tender in the United States until 1857, and its 'Pillars of Hercules' banner inspired the modern dollar sign ($).",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M7-U55-4",
+            "imageUrl": "images/M7-U55-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Manila Galleons",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M7-U55-5",
+            "imageUrl": "images/M7-U55-5.jpg",
+            "title": "Spanish Silver Real de a Ocho  Minted at Potosí",
+            "category": "Archaeological Artifact",
+            "caption": "Museum Artifact Display: Spanish Silver Real de a Ocho (Piece of Eight) Minted at Potosi (c. 1650 CE). The unevenly hammered silver coin fea",
+            "provenance": "Minted at the Casa de la Moneda, Potosí, Bolivia, 17th Century"
+          }
         ]
       },
       {
@@ -5031,7 +7608,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This financial revolution allowed private corporations to become more powerful than sovereign nations, laying the groundwork for the modern global stock market."
         },
         "visualArtifact": {
-          "imageUrl": "images/M7-U56.jpg",
+          "imageUrl": "images/M7-U56-1.jpg",
           "title": "The Dutch East India Company (VOC) Headquarters in Batavia, Java (1665)",
           "provenance": "Andries Beeckman, oil on canvas, Rijksmuseum, Amsterdam",
           "visualClues": [
@@ -5086,6 +7663,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "The Amsterdam Stock Exchange was established in 1602 by the Dutch East India Company, creating the world's first continuous market for public stock trading."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M7-U56-1",
+            "imageUrl": "images/M7-U56-1.jpg",
+            "title": "Mercantilism, Joint-Stock Companies, and the Dutch and British East India Companies (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "In the 1600s, European powers adopted 'Mercantilism' - the economic belief that a nation's power depends on hoarding gold and silver by exporting more than it imports. To conquer global trade, the Dutch and British invented the 'Joint-Stock Company' - mega-corporations that had their own private armies, navies, and colonies.",
+            "provenance": "Andries Beeckman, oil on canvas, Rijksmuseum, Amsterdam"
+          },
+          {
+            "slot": 2,
+            "id": "M7-U56-2",
+            "imageUrl": "images/M7-U56-2.jpg",
+            "title": "Thomas Mun - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Thomas Mun explains that the secret to national wealth is simple: always sell more goods to foreign countries than you buy from them, because the difference must be paid directly to your country in pure gold and silver.",
+            "provenance": "Thomas Mun, director of the British East India Company and mercantilist economic"
+          },
+          {
+            "slot": 3,
+            "id": "M7-U56-3",
+            "imageUrl": "images/M7-U56-3.jpg",
+            "title": "The Amsterdam Stock Exchange & The Joint-Stock Corporation",
+            "category": "Technology, Invention & Law",
+            "caption": "This financial revolution allowed private corporations to become more powerful than sovereign nations, laying the groundwork for the modern global stock market.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M7-U56-4",
+            "imageUrl": "images/M7-U56-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Mercantilism, Joint-Stock Companies,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M7-U56-5",
+            "imageUrl": "images/M7-U56-5.jpg",
+            "title": "Dutch East India Company  Headquarters in Batavia",
+            "category": "Archaeological Artifact",
+            "caption": "Historical Oil Painting: Ships of the Dutch East India Company (VOC) in the Harbor of Batavia by Andries Beeckman (c. 1665 CE, Rijksmuseum, ",
+            "provenance": "Andries Beeckman, oil on canvas, Rijksmuseum, Amsterdam"
+          }
         ]
       }
     ]
@@ -5126,7 +7750,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "The Potlatch prevented extreme poverty, bonded diverse coastal nations in peaceful alliances, and maintained ancestral oral law for thousands of years."
         },
         "visualArtifact": {
-          "imageUrl": "images/M8-U57.jpg",
+          "imageUrl": "images/M8-U57-1.jpg",
           "title": "Haida Totem Poles and Big Houses at Skidegate, Haida Gwaii (1878)",
           "provenance": "George Mercer Dawson photograph, Geological Survey of Canada; Library and Archives Canada",
           "visualClues": [
@@ -5181,6 +7805,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Artisans cut precision kerf-grooves into a flat cedar board, steamed the wood until flexible, bent the single piece into four corners, and pegged it securely."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M8-U57-1",
+            "imageUrl": "images/M8-U57-1.jpg",
+            "title": "Pacific Northwest Coast Nations: Cedar, Salmon, Potlatch, and Matrilineal Clans (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Along the rugged Pacific Northwest coast of British Columbia, nations like the Haida, Nuu-chah-nulth, Kwakwaka'wakw, and Coast Salish developed one of the wealthiest non-agricultural societies on Earth. Living in cedar plank longhouses, they harvested millions of migrating salmon and held lavish 'Potlatch' ceremonies where leaders proved their greatness by giving away wealth rather than hoarding it.",
+            "provenance": "George Mercer Dawson photograph, Geological Survey of Canada; Library and Archives Canada"
+          },
+          {
+            "slot": 2,
+            "id": "M8-U57-2",
+            "imageUrl": "images/M8-U57-2.jpg",
+            "title": "Chief O'waxalagalis - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Chief O'waxalagalis explains that while white settlers hoard their money in banks to feel rich, indigenous chiefs prove their true nobility by giving their canoes, blankets, and treasures away to their people, like rain returning to the earth.",
+            "provenance": "Chief O'waxalagalis, Kwakwaka'wakw hereditary chief of Vancouver Island, recorde"
+          },
+          {
+            "slot": 3,
+            "id": "M8-U57-3",
+            "imageUrl": "images/M8-U57-3.jpg",
+            "title": "Steam-Bentwood Cedar Engineering & The Potlatch Legal System",
+            "category": "Technology, Invention & Law",
+            "caption": "The Potlatch prevented extreme poverty, bonded diverse coastal nations in peaceful alliances, and maintained ancestral oral law for thousands of years.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M8-U57-4",
+            "imageUrl": "images/M8-U57-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Pacific Northwest Coast Nations: Cedar, Salmon, Potlatch,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M8-U57-5",
+            "imageUrl": "images/M8-U57-5.jpg",
+            "title": "Haida Totem Poles and Big Houses at Skidegate",
+            "category": "Archaeological Artifact",
+            "caption": "Archival Photograph: Haida Totem Poles and Cedar Longhouses at Skidegate, Haida Gwaii (photographed by George M. Dawson, 1878). Monumental c",
+            "provenance": "George Mercer Dawson photograph, Geological Survey of Canada; Library and Archives Canada"
+          }
         ]
       },
       {
@@ -5216,7 +7887,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "The birchbark canoe made Canadian exploration and the historic fur trade possible; without it, Europeans could never have traveled through the Canadian interior."
         },
         "visualArtifact": {
-          "imageUrl": "images/M8-U58.jpg",
+          "imageUrl": "images/M8-U58-1.jpg",
           "title": "Indigenous Plains Bison Hunt on Horseback (Painting by George Catlin)",
           "provenance": "George Catlin, Smithsonian American Art Museum, Washington, D.C.",
           "visualClues": [
@@ -5271,6 +7942,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Head-Smashed-In Buffalo Jump in southern Alberta is a world-renowned archaeological site where indigenous hunters guided bison over cliffs for over five millennia."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M8-U58-1",
+            "imageUrl": "images/M8-U58-1.jpg",
+            "title": "Plains and Boreal Forest Nations: Seasonal Migration, the Buffalo, and Birchbark Canoes (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Across the vast Interior Plains and Boreal Forests of Canada, nations like the Blackfoot, Plains Cree, Dene, and Anishinaabe mastered mobile survival. Plains nations built their lives around the massive American Bison, using every part of the animal for food, clothing, and shelter, while Northern nations engineered lightweight birchbark canoes to navigate river highways.",
+            "provenance": "George Catlin, Smithsonian American Art Museum, Washington, D.C."
+          },
+          {
+            "slot": 2,
+            "id": "M8-U58-2",
+            "imageUrl": "images/M8-U58-2.jpg",
+            "title": "Many Guns - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Many Guns explains that before horses existed, the buffalo provided everything the Blackfoot needed to survive, describing how communities worked together to guide herds over cliffs and sang songs of gratitude to the spirits of the animals.",
+            "provenance": "Many Guns, Peigan Blackfoot elder, recorded in the late nineteenth century."
+          },
+          {
+            "slot": 3,
+            "id": "M8-U58-3",
+            "imageUrl": "images/M8-U58-3.jpg",
+            "title": "Head-Smashed-In Buffalo Jump & The Birchbark Canoe (Wiigwaasi-Jiimaan)",
+            "category": "Technology, Invention & Law",
+            "caption": "The birchbark canoe made Canadian exploration and the historic fur trade possible; without it, Europeans could never have traveled through the Canadian interior.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M8-U58-4",
+            "imageUrl": "images/M8-U58-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Plains",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M8-U58-5",
+            "imageUrl": "images/M8-U58-5.jpg",
+            "title": "Indigenous Plains Bison Hunt on Horseback",
+            "category": "Archaeological Artifact",
+            "caption": "Historical Landscape Painting: Buffalo Bull Hunt (c. 1832) by George Catlin. Indigenous Plains hunters mounted on agile horses gallop alongs",
+            "provenance": "George Catlin, Smithsonian American Art Museum, Washington, D.C."
+          }
         ]
       },
       {
@@ -5306,7 +8024,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Benjamin Franklin and the American Founders studied the Haudenosaunee federal system when drafting the US Constitution, while the 7th Generation rule inspires modern environmental conservation."
         },
         "visualArtifact": {
-          "imageUrl": "images/M8-U59.jpg",
+          "imageUrl": "images/M8-U59-1.jpg",
           "title": "The Hiawatha Wampum Belt of the Haudenosaunee Confederacy",
           "provenance": "Onondaga Nation Keeper of the Wampum; New York State Museum Archive",
           "visualClues": [
@@ -5361,6 +8079,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "The Seventh Generation principle requires leaders to weigh how every decision made today will affect the environment, children, and society seven generations into the future."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M8-U59-1",
+            "imageUrl": "images/M8-U59-1.jpg",
+            "title": "Haudenosaunee Confederacy and the Great Law of Peace (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Centuries before the American or Canadian constitutions were written, five warring nations in the Eastern Woodlands united to form the Haudenosaunee Confederacy (Iroquois League). Guided by the Peacemaker and Clan Mothers, they created the 'Great Law of Peace' - the world's oldest participatory democracy.",
+            "provenance": "Onondaga Nation Keeper of the Wampum; New York State Museum Archive"
+          },
+          {
+            "slot": 2,
+            "id": "M8-U59-2",
+            "imageUrl": "images/M8-U59-2.jpg",
+            "title": "Great Peacemaker - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: The Peacemaker plants a White Pine tree, orders all leaders to bury their weapons of war into an underground river forever, and instructs chiefs to make decisions not for themselves, but for the welfare of the children of the Seventh Generation yet unborn.",
+            "provenance": "The Great Peacemaker (Deganawida), Hiawatha, and the founding Clan Mothers (c. 1"
+          },
+          {
+            "slot": 3,
+            "id": "M8-U59-3",
+            "imageUrl": "images/M8-U59-3.jpg",
+            "title": "The Hiawatha Wampum Belt & The Seventh Generation Principle",
+            "category": "Technology, Invention & Law",
+            "caption": "Benjamin Franklin and the American Founders studied the Haudenosaunee federal system when drafting the US Constitution, while the 7th Generation rule inspires modern environmental conservation.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M8-U59-4",
+            "imageUrl": "images/M8-U59-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Haudenosaunee Confederacy",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M8-U59-5",
+            "imageUrl": "images/M8-U59-5.jpg",
+            "title": "Hiawatha Wampum Belt of the Haudenosaunee Confederacy",
+            "category": "Archaeological Artifact",
+            "caption": "Museum Artifact Display: The Hiawatha Wampum Belt (Onondaga Nation, New York State Museum). The woven purple shell-bead belt shows thirty-ei",
+            "provenance": "Onondaga Nation Keeper of the Wampum; New York State Museum Archive"
+          }
         ]
       },
       {
@@ -5396,7 +8161,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "L'Anse aux Meadows proved the Norse were the first Europeans to reach the Americas, though conflict with indigenous First Nations forced them to abandon the settlement within a few decades."
         },
         "visualArtifact": {
-          "imageUrl": "images/M8-U60.jpg",
+          "imageUrl": "images/M8-U60-1.jpg",
           "title": "Reconstructed Norse Turf Longhouses at L'Anse aux Meadows, Newfoundland",
           "provenance": "UNESCO World Heritage Site, Parks Canada, excavated 1960",
           "visualClues": [
@@ -5451,6 +8216,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "The Norse sagas referred to indigenous American peoples (ancestors of the Beothuk, Innu, or Dorset) as 'Skraelings'."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M8-U60-1",
+            "imageUrl": "images/M8-U60-1.jpg",
+            "title": "Early Norse Expeditions: L'Anse aux Meadows and Vinland (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Five hundred years before Christopher Columbus sailed, Viking explorers from Scandinavia crossed the North Atlantic. Led by Leif Erikson around 1000 CE, Norse sailors built a base camp at L'Anse aux Meadows in northern Newfoundland, naming the region 'Vinland' after wild grapes and timber.",
+            "provenance": "UNESCO World Heritage Site, Parks Canada, excavated 1960"
+          },
+          {
+            "slot": 2,
+            "id": "M8-U60-2",
+            "imageUrl": "images/M8-U60-2.jpg",
+            "title": "Transcribed from oral tradition into Old Norse manuscripts in Iceland . - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: The saga describes Leif Erikson finding fertile lands with wild grapes and timber, and recounts a later attempt by Thorfinn Karlsefni to build a permanent colony, describing early trade and fierce battles with indigenous people called 'Skraelings'.",
+            "provenance": "Transcribed from oral tradition into Old Norse manuscripts in Iceland (c. 1200 -"
+          },
+          {
+            "slot": 3,
+            "id": "M8-U60-3",
+            "imageUrl": "images/M8-U60-3.jpg",
+            "title": "Bog Iron Smelting at L'Anse aux Meadows & The Clinker Knarr Ship",
+            "category": "Technology, Invention & Law",
+            "caption": "L'Anse aux Meadows proved the Norse were the first Europeans to reach the Americas, though conflict with indigenous First Nations forced them to abandon the settlement within a few decades.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M8-U60-4",
+            "imageUrl": "images/M8-U60-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Early Norse Expeditions: L'Anse aux Meadows",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M8-U60-5",
+            "imageUrl": "images/M8-U60-5.jpg",
+            "title": "Reconstructed Norse Turf Longhouses at L'Anse aux Meadows",
+            "category": "Archaeological Artifact",
+            "caption": "Archaeological Reconstruction: Reconstructed Norse Turf Longhouses at L'Anse aux Meadows National Historic Site (Newfoundland). The photogra",
+            "provenance": "UNESCO World Heritage Site, Parks Canada, excavated 1960"
+          }
         ]
       },
       {
@@ -5486,7 +8298,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Without indigenous medical intervention, Cartier's entire crew would have died in the winter of 1535, ending early French colonial exploration of Canada."
         },
         "visualArtifact": {
-          "imageUrl": "images/M8-U61.jpg",
+          "imageUrl": "images/M8-U61-1.jpg",
           "title": "Jacques Cartier Meeting the St. Lawrence Iroquoians at Hochelaga (1535)",
           "provenance": "Historical illustration of the visit to Mount Royal, National Archives of Canada",
           "visualClues": [
@@ -5541,6 +8353,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Cartier climbed the mountain behind Hochelaga and named it 'Mont Royal' in honor of King Francis I, which became the modern city of Montreal."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M8-U61-1",
+            "imageUrl": "images/M8-U61-1.jpg",
+            "title": "Jacques Cartier and the Early French Exploration of the St. Lawrence River (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "In 1534, French King Francis I sent sea captain Jacques Cartier to find a northern sea route to China and search for gold. Cartier explored the Gulf of St. Lawrence, kidnapped the sons of an Iroquoian chief to act as guides, and claimed the territory for France, accidentally naming the country 'Canada' from the Huron word for village.",
+            "provenance": "Historical illustration of the visit to Mount Royal, National Archives of Canada"
+          },
+          {
+            "slot": 2,
+            "id": "M8-U61-2",
+            "imageUrl": "images/M8-U61-2.jpg",
+            "title": "Jacques Cartier - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Cartier describes raising a giant wooden cross claiming Canada for the French King, recording that Chief Donnacona boldly sailed out in a canoe to protest that the land belonged to his people, and admits that he lied to the chief by claiming the cross was merely a harmless sailing beacon.",
+            "provenance": "Jacques Cartier, Breton mariner and explorer representing the King of France (Ju"
+          },
+          {
+            "slot": 3,
+            "id": "M8-U61-3",
+            "imageUrl": "images/M8-U61-3.jpg",
+            "title": "The Annedda White Cedar Scurvy Remedy & The Origin of the Name 'Canada'",
+            "category": "Technology, Invention & Law",
+            "caption": "Without indigenous medical intervention, Cartier's entire crew would have died in the winter of 1535, ending early French colonial exploration of Canada.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M8-U61-4",
+            "imageUrl": "images/M8-U61-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Jacques Cartier",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M8-U61-5",
+            "imageUrl": "images/M8-U61-5.jpg",
+            "title": "Jacques Cartier Meeting the St. Lawrence Iroquoians at Hochelaga",
+            "category": "Archaeological Artifact",
+            "caption": "Historical Lithograph: Jacques Cartier Meeting the St. Lawrence Iroquoians at Hochelaga (October 1535). Cartier and his armed officers in Re",
+            "provenance": "Historical illustration of the visit to Mount Royal, National Archives of Canada"
+          }
         ]
       },
       {
@@ -5576,7 +8435,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "Quebec City became the political and military capital of New France, giving France strategic control over the gateway to the North American interior for 150 years."
         },
         "visualArtifact": {
-          "imageUrl": "images/M8-U62.jpg",
+          "imageUrl": "images/M8-U62-1.jpg",
           "title": "Historical View of Quebec City and the St. Lawrence River",
           "provenance": "National Archives of Canada, early settlement cartography collection",
           "visualClues": [
@@ -5631,6 +8490,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "European demand for beaver fur felt hats, which were waterproof, durable, and fashionable, drove the entire Canadian fur trade economy for two centuries."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M8-U62-1",
+            "imageUrl": "images/M8-U62-1.jpg",
+            "title": "Samuel de Champlain, the Founding of Quebec , and First Nations Alliances (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "Known as the 'Father of New France', Samuel de Champlain founded Quebec City in 1608 as a permanent fur-trading post. Unlike Spanish conquerors, Champlain realized that the French could only survive by learning indigenous languages and forging military alliances with the Wendat (Huron), Algonquin, and Innu nations.",
+            "provenance": "National Archives of Canada, early settlement cartography collection"
+          },
+          {
+            "slot": 2,
+            "id": "M8-U62-2",
+            "imageUrl": "images/M8-U62-2.jpg",
+            "title": "Samuel de Champlain - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Champlain describes stepping forward with his gun to defend his Wendat and Algonquin allies against an attacking force of Mohawk warriors, firing a single musket shot that killed two enemy chiefs and caused the terrified enemy to retreat.",
+            "provenance": "Samuel de Champlain, French navigator, cartographer, and Governor of New France "
+          },
+          {
+            "slot": 3,
+            "id": "M8-U62-3",
+            "imageUrl": "images/M8-U62-3.jpg",
+            "title": "Champlain's Coastal Cartography & The 1608 Quebec Habitation",
+            "category": "Technology, Invention & Law",
+            "caption": "Quebec City became the political and military capital of New France, giving France strategic control over the gateway to the North American interior for 150 years.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M8-U62-4",
+            "imageUrl": "images/M8-U62-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Samuel de Champlain, the Founding of Quebec ,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M8-U62-5",
+            "imageUrl": "images/M8-U62-5.jpg",
+            "title": "Historical View of Quebec City and the St. Lawrence River",
+            "category": "Archaeological Artifact",
+            "caption": "Engraving: The Habitation of Quebec (L'Habitation de Quebec) sketched by Samuel de Champlain (1608). The fortified wooden settlement feature",
+            "provenance": "National Archives of Canada, early settlement cartography collection"
+          }
         ]
       },
       {
@@ -5666,7 +8572,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "This superhuman canoe logistics network connected Montreal to the Rocky Mountains, creating the geographical boundary lines that define modern Canada today."
         },
         "visualArtifact": {
-          "imageUrl": "images/M8-U63.jpg",
+          "imageUrl": "images/M8-U63-1.jpg",
           "title": "Indigenous Traders and French Canadian Fur Traders Exchanging Goods (1777)",
           "provenance": "Library and Archives Canada, Historical Canadian Art Collection, Ottawa",
           "visualClues": [
@@ -5721,6 +8627,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "European copper kettles did not crack over fires like clay pots, steel knives held sharp edges longer than flint, and wool stayed warm even when wet, revolutionizing daily camp life."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M8-U63-1",
+            "imageUrl": "images/M8-U63-1.jpg",
+            "title": "Fur Trade Frontier: The Coureurs des Bois, the Wendat, and the Voyageurs (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "The Canadian fur trade was built on partnership between Indigenous nations and French traders. Young Frenchmen called 'Coureurs des Bois' (Runners of the Woods) lived with native families, adopted their languages, and intermarried, creating the distinct Métis culture, while 'Voyageurs' paddled heavy canoes 3,000 miles into the interior.",
+            "provenance": "Library and Archives Canada, Historical Canadian Art Collection, Ottawa"
+          },
+          {
+            "slot": 2,
+            "id": "M8-U63-2",
+            "imageUrl": "images/M8-U63-2.jpg",
+            "title": "Pierre-Esprit Radisson - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Radisson writes boastfully that he and his fellow traders lived as free as Roman emperors in the Canadian wilderness, living with native families, hunting on snowshoes, running dangerous river rapids, and being treated with immense love and respect.",
+            "provenance": "Pierre-Esprit Radisson, French coureur des bois, explorer, and fur trader (c. 16"
+          },
+          {
+            "slot": 3,
+            "id": "M8-U63-3",
+            "imageUrl": "images/M8-U63-3.jpg",
+            "title": "The 36-Foot Maitre Canot & The Voyageur 180-Pound Tumpline Portage",
+            "category": "Technology, Invention & Law",
+            "caption": "This superhuman canoe logistics network connected Montreal to the Rocky Mountains, creating the geographical boundary lines that define modern Canada today.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M8-U63-4",
+            "imageUrl": "images/M8-U63-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Fur Trade Frontier: The Coureurs des Bois, the Wendat,",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M8-U63-5",
+            "imageUrl": "images/M8-U63-5.jpg",
+            "title": "Indigenous Traders and French Canadian Fur Traders Exchanging Goods",
+            "category": "Archaeological Artifact",
+            "caption": "Historical Oil Painting: Fur Traders in Canada (1777). French Canadian voyageurs and indigenous hunters stand beside a large birchbark freig",
+            "provenance": "Library and Archives Canada, Historical Canadian Art Collection, Ottawa"
+          }
         ]
       },
       {
@@ -5756,7 +8709,7 @@ const CURRICULUM_DATA = [
           "plainEnglishImpact": "The long-lot strip farm system remains visible today from airplanes flying over Quebec, while the Filles du Roi are the ancestral grandmothers of millions of modern French Canadians across North America."
         },
         "visualArtifact": {
-          "imageUrl": "images/M8-U64.jpg",
+          "imageUrl": "images/M8-U64-1.jpg",
           "title": "Aerial View of the Historical Seigneurial Long-Lot Strip Farms along the St. Lawrence",
           "provenance": "Historical Geographic Cadastral Survey, National Archives of Quebec",
           "visualClues": [
@@ -5811,6 +8764,53 @@ const CURRICULUM_DATA = [
             "correctIndex": 1,
             "explanation": "Pehr Kalm was deeply impressed by the high standard of living of Canadian habitants, noting they were far better fed, healthier, and happier than European commoners."
           }
+        ],
+        "gallery": [
+          {
+            "slot": 1,
+            "id": "M8-U64-1",
+            "imageUrl": "images/M8-U64-1.jpg",
+            "title": "Seigneurial System and Daily Settlement Life in New France (Historical Context Scene)",
+            "category": "Historical Context Scene",
+            "caption": "To encourage farming and settlement in New France, the French Crown divided land along the St. Lawrence River using the 'Seigneurial System'. Narrow, rectangular strip farms gave every farmer direct access to the river for water and transportation, while the Catholic Church and festivals formed the heart of daily French Canadian village life.",
+            "provenance": "Historical Geographic Cadastral Survey, National Archives of Quebec"
+          },
+          {
+            "slot": 2,
+            "id": "M8-U64-2",
+            "imageUrl": "images/M8-U64-2.jpg",
+            "title": "Pehr  Kalm - Archival Text Record",
+            "category": "Primary Source Document",
+            "caption": "Eyewitness archival parchment or inscription: Kalm marvels that the St. Lawrence River looks like one continuous cheerful village because homes are built close together along the water, noting that Canadian farm families are healthier, better fed, and more cheerful than European peasants.",
+            "provenance": "Pehr (Peter) Kalm, Swedish naturalist and student of Linnaeus who visited New Fr"
+          },
+          {
+            "slot": 3,
+            "id": "M8-U64-3",
+            "imageUrl": "images/M8-U64-3.jpg",
+            "title": "The Rang Long-Lot Cadastral Survey & The Filles du Roi Program",
+            "category": "Technology, Invention & Law",
+            "caption": "The long-lot strip farm system remains visible today from airplanes flying over Quebec, while the Filles du Roi are the ancestral grandmothers of millions of modern French Canadians across North America.",
+            "provenance": "Museum of Historical Technology & Law"
+          },
+          {
+            "slot": 4,
+            "id": "M8-U64-4",
+            "imageUrl": "images/M8-U64-4.jpg",
+            "title": "Cartographic Reconstruction: Realm of Seigneurial System",
+            "category": "Historical Cartography",
+            "caption": "Territorial boundaries, navigation routes, and geopolitical spheres of influence during this era.",
+            "provenance": "Historical Cartography Archives & Royal Geographical Society"
+          },
+          {
+            "slot": 5,
+            "id": "M8-U64-5",
+            "imageUrl": "images/M8-U64-5.jpg",
+            "title": "Aerial View of the Historical Seigneurial Long-Lot Strip Farms along the St. Lawrence",
+            "category": "Archaeological Artifact",
+            "caption": "Aerial Cartographic Diagram: The Seigneurial Long-Lot Cadastral System along the St. Lawrence River (18th Century, National Archives of Queb",
+            "provenance": "Historical Geographic Cadastral Survey, National Archives of Quebec"
+          }
         ]
       }
     ]
@@ -5823,4 +8823,3 @@ if (typeof window !== "undefined") {
 if (typeof globalThis !== "undefined") {
   globalThis.CURRICULUM_DATA = CURRICULUM_DATA;
 }
-

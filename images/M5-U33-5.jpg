@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+  <rect x="20" y="20" width="760" height="460" rx="16" fill="none" stroke="#334155" stroke-width="2"/>
+  <rect x="30" y="30" width="740" height="440" rx="12" fill="none" stroke="url(#gold)" stroke-width="1" stroke-dasharray="8 4"/>
+  <circle cx="400" cy="180" r="54" fill="#312e81" stroke="#6366f1" stroke-width="2"/>
+  <text x="400" y="195" font-size="44" text-anchor="middle" fill="#e0e7ff">🏛️</text>
+  <text x="400" y="275" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="bold" fill="#f59e0b" text-anchor="middle" letter-spacing="2">ARCHAEOLOGICAL ARTIFACT</text>
+  <text x="400" y="315" font-family="system-ui, -apple-system, sans-serif" font-size="19" font-weight="900" fill="#ffffff" text-anchor="middle">Sudano-Sahelian Adobe Architecture</text>
+  <text x="400" y="355" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">UNESCO World Heritage Site, architectural tradition originating in the medieval Sahel, Mali</text>
+  <text x="400" y="420" font-family="monospace" font-size="11" fill="#64748b" text-anchor="middle">PRIMARY HISTORICAL RECORD • BRITISH COLUMBIA SOCIAL STUDIES 8</text>
+</svg>
